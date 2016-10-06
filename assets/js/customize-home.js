@@ -6,63 +6,59 @@ $('#version')
   .attr('target', '_blank')
   .append(
     $('<i>')
-      .addClass('fa fa-spinner fa-spin')
+    .addClass('fa fa-spinner fa-spin')
   )
   .append(' Last Update: ')
-  .append(version)
-;
+  .append(version);
 
 // search
-for ( var id in searchServices ) {
+for (var id in searchServices) {
   $('#search-services').append(
     $('<option>')
-      .attr('value', id)
-      .html(searchServices[id].name)
+    .attr('value', id)
+    .html(searchServices[id].name)
   );
 };
 
 $('#search-services')
-  .dropdown()
-;
+  .dropdown();
 
 $('#search-button').click(function() {
   var service = $('#search-services').val();
   var query = $('#search-query').val();
-  if ( query ) {
+  if (query) {
     window.open(searchServices[service].url + query + searchServices[service].suffix, '_blank');
     $('#search-div').removeClass('error');
     $('#search-query').attr('placeholder', '立即搜索');
-  }
-  else {
+  } else {
     $('#search-div').addClass('error');
     $('#search-query').attr('placeholder', '请输入搜索内容');
   };
 });
 
-$(window).keyup(function( event ) {
+$(window).keyup(function(event) {
   var windowTop = $(window).scrollTop();
   var windowHeight = $(window).innerHeight();
   var windowBottom = windowTop + windowHeight;
   var searchBoxTop = $('#search-div').offset().top;
   var searchBoxHeight = $('#search-div').innerHeight();
   var searchBoxBottom = searchBoxTop + searchBoxHeight;
-  if ( event.key == 'Enter' && searchBoxBottom > windowTop && searchBoxTop < windowBottom ) {
+  if (event.key == 'Enter' && searchBoxBottom > windowTop && searchBoxTop < windowBottom) {
     var service = $('#search-services').val();
     var query = $('#search-query').val();
-    if ( query ) {
+    if (query) {
       window.open(searchServices[service].url + query + searchServices[service].suffix, '_blank');
       $('#search-div').removeClass('error');
       $('#search-query').attr('placeholder', '立即搜索');
-    }
-    else {
+    } else {
       $('#search-div').addClass('error');
       $('#search-query').attr('placeholder', '请输入搜索内容');
     };
   };
 });
 
-$('#search-query').keyup(function( event ) {
-  if ( event.key ) {
+$('#search-query').keyup(function(event) {
+  if (event.key) {
     if ($('#search-query').val()) {
       $('#search-div').removeClass('error');
       $('#search-query').attr('placeholder', '立即搜索');
@@ -72,39 +68,39 @@ $('#search-query').keyup(function( event ) {
 
 // links
 var count = 0;
-for ( var pubLinkGroupName in pubLinks ) {
+for (var pubLinkGroupName in pubLinks) {
   ++count;
   var pubLinksHolderId = 'pub-links-' + count;
   $('#pub-links').append(
     $('<div>').addClass('column')
-      .attr('id', pubLinksHolderId)
-      .append($('<h3>').addClass('ui header').html(pubLinkGroupName))
+    .attr('id', pubLinksHolderId)
+    .append($('<h3>').addClass('ui header').html(pubLinkGroupName))
   );
-  for ( var pubLinkName in pubLinks[pubLinkGroupName] ) {
+  for (var pubLinkName in pubLinks[pubLinkGroupName]) {
     $('#' + pubLinksHolderId).append(
       $('<a>').addClass('ui button')
-        .attr('href', pubLinks[pubLinkGroupName][pubLinkName].url)
-        .attr('target', '_blank')
-        .html(pubLinkName)
+      .attr('href', pubLinks[pubLinkGroupName][pubLinkName].url)
+      .attr('target', '_blank')
+      .html(pubLinkName)
     );
   };
 };
 
 var count = 0;
-for ( var byrLinkGroupName in byrLinks ) {
+for (var byrLinkGroupName in byrLinks) {
   ++count;
   var byrLinksHolderId = 'byr-links-' + count;
   $('#byr-links').append(
     $('<div>').addClass('column')
-      .attr('id', byrLinksHolderId)
-      .append($('<h3>').addClass('ui header').html(byrLinkGroupName))
+    .attr('id', byrLinksHolderId)
+    .append($('<h3>').addClass('ui header').html(byrLinkGroupName))
   );
-  for ( var byrLinkName in byrLinks[byrLinkGroupName] ) {
+  for (var byrLinkName in byrLinks[byrLinkGroupName]) {
     $('#' + byrLinksHolderId).append(
       $('<a>').addClass('ui button')
-        .attr('href', byrLinks[byrLinkGroupName][byrLinkName].url)
-        .attr('target', '_blank')
-        .html(byrLinkName)
+      .attr('href', byrLinks[byrLinkGroupName][byrLinkName].url)
+      .attr('target', '_blank')
+      .html(byrLinkName)
     );
   };
 };
