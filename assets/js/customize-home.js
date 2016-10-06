@@ -4,7 +4,12 @@
 $('#version')
   .attr('href', 'https://github.com/iROCKBUNNY/BYR-Navi/commits/gh-pages')
   .attr('target', '_blank')
-  .html('Last Update: ' + version)
+  .append(
+    $('<i>')
+      .addClass('fa fa-spinner fa-spin')
+  )
+  .append(' Last Update: ')
+  .append(version)
 ;
 
 // search
