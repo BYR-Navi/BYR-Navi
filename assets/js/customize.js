@@ -44,6 +44,15 @@ $('#copyright')
   )
 ;
 
+// footer feedback
+$('#feedback-footer-link')
+  .on('click', function () {
+    $('#contacts-dimmer')
+      .dimmer('show')
+    ;
+  })
+;
+
 // search
 for ( var id in searchServices ) {
   $('#search-services').append(
