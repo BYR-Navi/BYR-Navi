@@ -1,74 +1,87 @@
-/* Customized CSS */
+/* customize-donate.css */
 
 .hidden.menu {
-  display: none;
+    display: none;
 }
 
 .masthead.segment {
-  min-height: 300px;
-  padding: 1em 0em;
+    min-height: 300px;
+    padding: 1em 0em;
 }
+
 .masthead h1.ui.header {
     margin-top: 1.5em;
     font-size: 3em;
     font-weight: normal;
 }
+
 .masthead h2 {
-  margin-bottom: 1.5em;
-  font-size: 1.7em;
-  font-weight: normal;
+    margin-bottom: 1.5em;
+    font-size: 1.7em;
+    font-weight: normal;
 }
+
+
 /*.masthead .ui.compact.selection.dropdown {
   min-width: 115px;
 }*/
+
+
 /*.masthead .ui.inverted.submit.button {
   margin-bottom: 10px;
   width: 110px;
 }*/
 
 .ui.vertical.stripe {
-  padding: 8em 0em;
+    padding: 8em 0em;
 }
+
 .ui.vertical.stripe h3 {
-  font-size: 2em;
+    font-size: 2em;
 }
+
 .ui.vertical.stripe .button + h3,
 .ui.vertical.stripe p + h3 {
-  margin-top: 3em;
+    margin-top: 3em;
 }
+
 .ui.vertical.stripe .floated.image {
-  clear: both;
+    clear: both;
 }
+
 .ui.vertical.stripe p {
-  font-size: 1.33em;
+    font-size: 1.33em;
 }
+
 .ui.vertical.stripe .horizontal.divider {
-  margin: 3em 0em;
+    margin: 3em 0em;
 }
 
 .links.stripe.segment,
 .quote.stripe.segment {
-  padding: 0em;
+    padding: 0em;
 }
+
 .quote.stripe.segment .grid .column {
-  padding-top: 5em;
-  padding-bottom: 5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .footer.segment {
-  padding: 5em 0em;
+    padding: 5em 0em;
 }
 
 .secondary.pointing.menu .toc.item {
-  display: none;
+    display: none;
 }
 
 #links .ui.header {
-  margin-top: 20px;
-  margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
+
 #links .ui.button {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 #contacts-dimmer div.item {
@@ -76,28 +89,28 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .ui.fixed.menu {
-    display: none !important;
-  }
-  .secondary.pointing.menu .item,
-  .secondary.pointing.menu .menu {
-    display: none;
-  }
-  .secondary.pointing.menu .toc.item {
-    display: block;
-  }
-  .masthead.segment {
-    min-height: 160px;
-  }
-  .masthead h1.ui.header {
-    margin-top: 1em;
-    font-size: 1.8em;
-  }
-  .masthead h2 {
-    margin-bottom: 1em;
-    font-size: 1.5em;
-  }
-  #contacts-dimmer div.item {
-      font-size: 1em;
-  }
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+    .masthead.segment {
+        min-height: 160px;
+    }
+    .masthead h1.ui.header {
+        margin-top: 1em;
+        font-size: 1.8em;
+    }
+    .masthead h2 {
+        margin-bottom: 1em;
+        font-size: 1.5em;
+    }
+    #contacts-dimmer div.item {
+        font-size: 1em;
+    }
 }
