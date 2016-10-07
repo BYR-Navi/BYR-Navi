@@ -36,3 +36,10 @@ $('#feedback-footer-link')
         $('#contacts-dimmer')
             .dimmer('show');
     });
+
+// loading dimmer
+$('.loading')
+    .on('click', function() {
+        $('#loading-dimmer')
+            .dimmer('show');
+    });
