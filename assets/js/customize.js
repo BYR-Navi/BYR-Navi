@@ -21,6 +21,17 @@ $(document)
 
     });
 
+// powered by
+for (var i in poweredBy) {
+    $('#powered-by')
+        .append(
+            $('<a>')
+            .addClass('item')
+            .attr('href', poweredBy[i].url)
+            .attr('target', '_blank').html(poweredBy[i].name)
+        );
+};
+
 // copyright
 $('#copyright')
     .html(
