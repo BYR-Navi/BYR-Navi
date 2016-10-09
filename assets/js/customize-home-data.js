@@ -1,7 +1,7 @@
 // customize-home-data.js
 
 // version
-var version = 'October 7, 2016';
+var version = 'October 9, 2016';
 
 // search
 var searchServices = {
