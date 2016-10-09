@@ -1,7 +1,7 @@
 // customize-home-data.js
 
 // version
-var lastCommitTime = '2016-10-09T22:14:55';
+var lastCommitTime = '2016-10-10T03:34:05';
 var version = moment(lastCommitTime, 'YYYY-MM-DDTh:mm:ss').utcOffset(8).fromNow();
 
 // search
@@ -9,7 +9,7 @@ var searchServices = {
     'baidu': {
         'name': '百度',
         'url': 'http://www.baidu.com/s?wd=',
-        'suffix': ''
+        'suffix': '&ie=utf-8'
     },
     'google': {
         'name': '谷歌',

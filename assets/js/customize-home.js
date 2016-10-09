@@ -28,9 +28,8 @@ $('#search-button').click(function() {
     var query = $('#search-query').val();
     query = query.replace('#', '%23');
     if (query) {
+        $('#search-query').select().focus();
         window.open(searchServices[service].url + query + searchServices[service].suffix, '_blank');
-        $('#search-div').removeClass('error');
-        $('#search-query').attr('placeholder', '立即搜索');
     } else {
         $('#search-div').addClass('error');
         $('#search-query').attr('placeholder', '请输入搜索内容');
@@ -49,9 +48,8 @@ $(window).keyup(function(event) {
         var query = $('#search-query').val();
         query = query.replace('#', '%23');
         if (query) {
+            $('#search-query').select().focus();
             window.open(searchServices[service].url + query + searchServices[service].suffix, '_blank');
-            $('#search-div').removeClass('error');
-            $('#search-query').attr('placeholder', '立即搜索');
         } else {
             $('#search-div').addClass('error');
             $('#search-query').attr('placeholder', '请输入搜索内容');
