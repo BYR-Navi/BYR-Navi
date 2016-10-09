@@ -1,5 +1,16 @@
 // customize-home.js
 
+// version
+$('#version')
+    .attr('href', 'https://github.com/iROCKBUNNY/BYR-Navi/commits/gh-pages')
+    .attr('target', '_blank')
+    .append(
+        $('<i>')
+        .addClass('fa fa-spinner fa-spin')
+    )
+    .append(' Updated ')
+    .append(version);
+
 // search
 for (var id in searchServices) {
     $('#search-services').append(

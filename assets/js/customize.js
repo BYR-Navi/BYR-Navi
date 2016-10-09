@@ -21,17 +21,6 @@ $(document)
 
     });
 
-// version
-$('.version')
-    .attr('href', 'https://github.com/iROCKBUNNY/BYR-Navi/commits/gh-pages')
-    .attr('target', '_blank')
-    .append(
-        $('<i>')
-        .addClass('fa fa-spinner fa-spin')
-    )
-    .append(' Updated ')
-    .append(version);
-
 // powered by
 for (var i in poweredBy) {
     $('#powered-by')

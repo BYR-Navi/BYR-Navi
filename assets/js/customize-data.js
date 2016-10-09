@@ -1,9 +1,5 @@
 // customize-data.js
 
-// version
-var lastCommitTime = '2016-10-09T03:02:00Z';
-var version = moment(lastCommitTime, 'YYYY-MM-DDTh:mm:ssZ').fromNow();
-
 // powered by
 var poweredBy = [
     {

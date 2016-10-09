@@ -1,5 +1,9 @@
 // customize-home-data.js
 
+// version
+var lastCommitTime = '2016-10-09T03:06:00Z';
+var version = moment(lastCommitTime, 'YYYY-MM-DDTh:mm:ssZ').fromNow();
+
 // search
 var searchServices = {
     'baidu': {
