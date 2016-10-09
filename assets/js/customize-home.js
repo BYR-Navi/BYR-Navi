@@ -8,7 +8,7 @@ $('#version')
         $('<i>')
         .addClass('fa fa-spinner fa-spin')
     )
-    .append(' Last Update: ')
+    .append(' Updated ')
     .append(version);
 
 // search
