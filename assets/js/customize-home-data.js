@@ -1,7 +1,7 @@
 // customize-home-data.js
 
 // version
-var lastCommitTime = '2016-10-10T03:34:05';
+var lastCommitTime = '2016-10-10T15:48:05';
 var version = moment(lastCommitTime, 'YYYY-MM-DDTh:mm:ss').utcOffset(8).fromNow();
 
 // search
