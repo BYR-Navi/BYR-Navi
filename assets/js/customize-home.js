@@ -6,7 +6,7 @@ $('#version')
     .attr('target', '_blank')
     .append(
         $('<i>')
-        .addClass('fa fa-spinner fa-pulse fa-fw')
+        .addClass('fa fa-cog fa-spin fa-fw')
     )
     .append(' Updated ')
     .append(version);
