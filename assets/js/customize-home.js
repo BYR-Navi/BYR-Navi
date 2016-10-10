@@ -36,6 +36,11 @@ $('#search-button').click(function() {
     };
 });
 
+$(document)
+    .ready(function() {
+        $('#search-query').focus();
+    });
+
 $(window).keyup(function(event) {
     var windowTop = $(window).scrollTop();
     var windowHeight = $(window).innerHeight();
