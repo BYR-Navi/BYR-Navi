@@ -52,7 +52,7 @@ $(window).keyup(function(event) {
             window.open(searchServices[service].url + query + searchServices[service].suffix, '_blank');
         } else {
             $('#search-div').addClass('error');
-            $('#search-query').attr('placeholder', '请输入搜索内容');
+            $('#search-query').attr('placeholder', '请输入搜索内容').focus();
         };
     };
 });
