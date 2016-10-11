@@ -41,8 +41,8 @@ $('#copyright')
         }
     );
 
-// footer feedback
-$('#feedback-footer-link')
+// feedback
+$('.feedback')
     .on('click', function() {
         $('#contacts-dimmer')
             .dimmer('show');
