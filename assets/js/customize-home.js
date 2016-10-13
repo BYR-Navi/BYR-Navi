@@ -28,12 +28,15 @@ $('#search-button').click(function() {
     var query = $('#search-query').val();
     query = query.replace('#', '%23');
     if (query) {
-        $('#search-query').select().focus();
         window.open(searchServices[service].url + query + searchServices[service].suffix, '_blank');
     } else {
         $('#search-div').addClass('error');
         $('#search-query').attr('placeholder', '请输入搜索内容');
     };
+});
+
+$('#search-query').click(function() {
+    $(this).select();
 });
 
 $(document)
@@ -53,7 +56,6 @@ $(window).keyup(function(event) {
         var query = $('#search-query').val();
         query = query.replace('#', '%23');
         if (query) {
-            $('#search-query').select().focus();
             window.open(searchServices[service].url + query + searchServices[service].suffix, '_blank');
         } else {
             $('#search-div').addClass('error');
