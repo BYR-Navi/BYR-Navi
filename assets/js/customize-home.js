@@ -26,7 +26,7 @@ $('#search-services')
 $('#search-button').click(function() {
     var service = $('#search-services').val();
     var query = $('#search-query').val();
-    query = query.replace('#', '%23');
+    query = encodeURIComponent(query);
     if (query) {
         window.open(searchServices[service].url + query + searchServices[service].suffix, '_blank');
     } else {
@@ -54,7 +54,7 @@ $(window).keyup(function(event) {
     if (event.key == 'Enter' && searchBoxBottom > windowTop && searchBoxTop < windowBottom) {
         var service = $('#search-services').val();
         var query = $('#search-query').val();
-        query = query.replace('#', '%23');
+        query = encodeURIComponent(query);
         if (query) {
             window.open(searchServices[service].url + query + searchServices[service].suffix, '_blank');
         } else {
