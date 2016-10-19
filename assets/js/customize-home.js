@@ -73,6 +73,21 @@ $('#search-query').keyup(function(event) {
     };
 });
 
+// query suggestions
+var sugParams = {
+    "XOffset": -3, //提示框位置横向偏移量,单位px
+    "YOffset": -2, //提示框位置纵向偏移量,单位px
+    // "width": $('#search-query').innerWidth(), //提示框宽度，单位px
+    "fontColor": "rgba(0, 0, 0, 0.87)", //提示框文字颜色
+    "fontColorHI": "rgba(0, 0, 0, 0.87)", //提示框高亮选择时文字颜色
+    "fontSize": "14px", //文字大小
+    "fontFamily": "Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif", //文字字体
+    "borderColor": "rgba(34, 36, 38, 0.14902)", //提示框的边框颜色
+    "bgcolorHI": "rgba(0, 0, 0, 0.05)", //提示框高亮选择的颜色
+    "sugSubmit": false //选中提示框中词条时是否提交表单
+};
+BaiduSuggestion.bind('search-query', sugParams);
+
 // links
 var count = 0;
 for (var pubLinkGroupName in pubLinks) {
