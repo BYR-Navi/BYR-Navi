@@ -481,10 +481,11 @@ var BaiduSuggestion = (function() {
 
     function A() { L(".bdSug_wpr", "line-height:normal;background:#FFF;padding:0;margin:0;border:1px solid #817F82;position:absolute;z-index:9999;");
         L(".bdSug_wpr table", "padding:0;width:100%;background:#fff;cursor:default;");
-        L(".bdSug_wpr tr", "padding:0;margin:0");
-        L(".bdSug_wpr td", "padding:10px 16px;margin:0;text-align:left;vertical-align:middle;font:14px verdana;font-weight:normal;text-decoration:none;text-indent:0");
-        L(".bdSug_mo", "background:#36c;color:#fff");
-        L(".bdSug_pre", "padding:0;margin:0");
+        L(".bdSug_wpr tr", "padding:0;margin:0;");
+        L(".bdSug_wpr td", "padding:10px 16px;margin:0;text-align:left;vertical-align:middle;font:14px verdana;font-weight:normal;text-decoration:none;text-indent:0;");
+        L(".bdSug_mo", "background:#36c;color:#fff;");
+        L(".bdSug_mo td", "font-weight:bold;");
+        L(".bdSug_pre", "padding:0;margin:0;");
         L(".bdsug_copy", "margin:0;background:transparent url(http://www.baidu.com/img/bd.gif) no-repeat;font-size:13px;color:#77c;text-decoration:none;padding:0 2px 0 16px;") }
     A();
     var H = document.body.getElementsByTagName("INPUT");
