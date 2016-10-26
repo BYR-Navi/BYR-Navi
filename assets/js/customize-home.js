@@ -1,15 +1,16 @@
 // customize-home.js
 
 // version
-$('#version')
-    .attr('href', 'https://github.com/iROCKBUNNY/BYR-Navi/commits/gh-pages')
-    .attr('target', '_blank')
-    .append(
-        $('<i>')
-        .addClass('fa fa-refresh fa-spin fa-fw')
-    )
-    .append(' Updated ')
-    .append(version);
+$.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
+    $('#version')
+        .attr('href', 'https://github.com/iROCKBUNNY/BYR-Navi/commits/gh-pages')
+        .attr('target', '_blank')
+        .append(
+            $('<i>')
+            .addClass('fa fa-refresh fa-spin fa-fw')
+        )
+        .append(' Updated ' + moment(data.pushed_at, 'YYYY-MM-DDTh:mm:ssZ').fromNow());
+});
 
 // search
 for (var id in searchServices) {
