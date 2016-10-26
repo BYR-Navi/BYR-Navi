@@ -2,12 +2,31 @@
 
 // version
 $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
+    $('#stargazer')
+        .attr('href', 'https://github.com/iROCKBUNNY/BYR-Navi/stargazers')
+        .attr('target', '_blank')
+        .append(
+            $('<i>')
+            // .addClass('fa fa-star fa-fw')
+            .addClass('star icon')
+        )
+        .append(' ' + data.stargazers_count + ' Stargazers');
+    $('#fork')
+        .attr('href', 'https://github.com/iROCKBUNNY/BYR-Navi/network')
+        .attr('target', '_blank')
+        .append(
+            $('<i>')
+            // .addClass('fa fa-code-fork fa-fw')
+            .addClass('fork icon')
+        )
+        .append(data.forks_count + ' Forks');
     $('#version')
         .attr('href', 'https://github.com/iROCKBUNNY/BYR-Navi/commits/gh-pages')
         .attr('target', '_blank')
         .append(
             $('<i>')
-            .addClass('fa fa-refresh fa-spin fa-fw')
+            // .addClass('fa fa-refresh fa-spin fa-fw')
+            .addClass('rocket icon')
         )
         .append(' Updated ' + moment(data.pushed_at, 'YYYY-MM-DDTh:mm:ssZ').fromNow());
 });

@@ -29,16 +29,22 @@
     font-weight: normal;
 }
 
-
 /*.masthead .ui.compact.selection.dropdown {
   min-width: 115px;
 }*/
-
 
 /*.masthead .ui.inverted.submit.button {
   margin-bottom: 10px;
   width: 110px;
 }*/
+
+.masthead .ui.horizontal.link.list {
+    margin-top: 7px;
+}
+
+.masthead .ui.link.list {
+    margin-top: 7px;
+}
 
 .ui.vertical.stripe {
     padding: 8em 0em;

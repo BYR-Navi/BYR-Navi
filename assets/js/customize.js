@@ -49,7 +49,7 @@ $('.feedback')
     });
 
 // loading dimmer
-$('.loading')
+$('.loading-trigger')
     .on('click', function() {
         $('#loading-dimmer')
             .dimmer('show');
