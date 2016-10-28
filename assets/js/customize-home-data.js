@@ -22,6 +22,11 @@ var searchServices = {
         'url': 'http://google.hbspy.moe/#q=',
         'suffix': ''
     },
+    'ieeexplore': {
+        'name': 'IEEE Xplore',
+        'url': 'http://ieeexplore.ieee.org/search/searchresult.jsp?queryText=',
+        'suffix': ''
+    },
     'baiduxueshu': {
         'name': '百度学术',
         'url': 'http://xueshu.baidu.com/s?wd=',
