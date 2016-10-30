@@ -21,7 +21,7 @@ $.getJSON('https://vps.irockbunny.com/analytics/?callback=?', {
     'format': 'JSON',
     'token_auth': 'f415eff9302de22d195d1d87b092c825'
 }, function(data) {
-    $('#visit').text('您是本站今天 ' + data.value + ' 名重要访客之一');
+    $('#visit').text('您是今天本站 ' + data.value + ' 位重要访客之一');
 });
 
 // search
