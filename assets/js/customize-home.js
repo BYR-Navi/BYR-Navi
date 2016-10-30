@@ -11,6 +11,19 @@ function updateVersion() {
 updateVersion();
 setInterval(updateVersion, 15000);
 
+// analytics
+$.getJSON('https://vps.irockbunny.com/analytics/?callback=?', {
+    'module': 'API',
+    'method': 'VisitsSummary.getUniqueVisitors',
+    'idSite': '1',
+    'period': 'day',
+    'date': 'today',
+    'format': 'JSON',
+    'token_auth': 'f415eff9302de22d195d1d87b092c825'
+}, function(data) {
+    $('#visit').text('感谢您成为本站今天 ' + data.value + ' 名访客中重要的一员');
+});
+
 // search
 for (var id in searchServices) {
     $('#search-services').append(
