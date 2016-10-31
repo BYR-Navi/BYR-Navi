@@ -20,7 +20,7 @@ function updateVisit() {
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': 'f415eff9302de22d195d1d87b092c825'
+        'token_auth': analyticsToken
     }, function(data) {
         $('#visit').text('您是今天莅临本站的 ' + data.value + ' 位重要访客之一');
     });

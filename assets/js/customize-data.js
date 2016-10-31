@@ -27,3 +27,6 @@ var poweredBy = [
         'url': 'https://pages.github.com/'
     }
 ];
+
+// analytics token
+var analyticsToken = 'f415eff9302de22d195d1d87b092c825';

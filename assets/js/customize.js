@@ -64,7 +64,7 @@ function updateAnalytics() {
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': 'f415eff9302de22d195d1d87b092c825'
+        'token_auth': analyticsToken
     }, function(data) {
         $('#today-ip').text(data.value);
     });
@@ -75,7 +75,7 @@ function updateAnalytics() {
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': 'f415eff9302de22d195d1d87b092c825'
+        'token_auth': analyticsToken
     }, function(data) {
         $('#today-pv').text(data.value);
     });
@@ -86,7 +86,7 @@ function updateAnalytics() {
         'period': 'day',
         'date': 'yesterday',
         'format': 'JSON',
-        'token_auth': 'f415eff9302de22d195d1d87b092c825'
+        'token_auth': analyticsToken
     }, function(data) {
         $('#yesterday-ip').text(data.value);
     });
@@ -97,7 +97,7 @@ function updateAnalytics() {
         'period': 'day',
         'date': 'yesterday',
         'format': 'JSON',
-        'token_auth': 'f415eff9302de22d195d1d87b092c825'
+        'token_auth': analyticsToken
     }, function(data) {
         $('#yesterday-pv').text(data.value);
     });
