@@ -28,5 +28,6 @@ var poweredBy = [
     }
 ];
 
-// analytics token
+// analytics
+var analyticsAPIurl = 'https://vps.irockbunny.com/analytics/?callback=?';
 var analyticsToken = 'f415eff9302de22d195d1d87b092c825';

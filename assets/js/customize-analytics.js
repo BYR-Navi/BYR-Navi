@@ -2,7 +2,7 @@
 
 // visit
 function updateVisit() {
-    $.getJSON('https://vps.irockbunny.com/analytics/?callback=?', {
+    $.getJSON(analyticsAPIurl, {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': '1',
@@ -78,7 +78,7 @@ var option = {
 visitSummaryChart.setOption(option);
 visitSummaryChart.showLoading();
 function updateVisitSummaryChart() {
-    $.getJSON('https://vps.irockbunny.com/analytics/?callback=?', {
+    $.getJSON(analyticsAPIurl, {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': '1',
@@ -104,7 +104,7 @@ function updateVisitSummaryChart() {
             }]
         });
     });
-    $.getJSON('https://vps.irockbunny.com/analytics/?callback=?', {
+    $.getJSON(analyticsAPIurl, {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
         'idSite': '1',
@@ -125,7 +125,7 @@ function updateVisitSummaryChart() {
             }]
         });
     });
-    $.getJSON('https://vps.irockbunny.com/analytics/?callback=?', {
+    $.getJSON(analyticsAPIurl, {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
         'idSite': '1',

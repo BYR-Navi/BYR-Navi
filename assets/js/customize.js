@@ -57,7 +57,7 @@ $('.loading-trigger')
 
 // analytics
 function updateAnalytics() {
-    $.getJSON('https://vps.irockbunny.com/analytics/?callback=?', {
+    $.getJSON(analyticsAPIurl, {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': '1',
@@ -68,7 +68,7 @@ function updateAnalytics() {
     }, function(data) {
         $('#today-ip').text(data.value);
     });
-    $.getJSON('https://vps.irockbunny.com/analytics/?callback=?', {
+    $.getJSON(analyticsAPIurl, {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
         'idSite': '1',
@@ -79,7 +79,7 @@ function updateAnalytics() {
     }, function(data) {
         $('#today-pv').text(data.value);
     });
-    $.getJSON('https://vps.irockbunny.com/analytics/?callback=?', {
+    $.getJSON(analyticsAPIurl, {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': '1',
@@ -90,7 +90,7 @@ function updateAnalytics() {
     }, function(data) {
         $('#yesterday-ip').text(data.value);
     });
-    $.getJSON('https://vps.irockbunny.com/analytics/?callback=?', {
+    $.getJSON(analyticsAPIurl, {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
         'idSite': '1',

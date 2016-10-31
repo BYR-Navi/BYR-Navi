@@ -13,7 +13,7 @@ setInterval(updateVersion, 15000);
 
 // visit
 function updateVisit() {
-    $.getJSON('https://vps.irockbunny.com/analytics/?callback=?', {
+    $.getJSON(analyticsAPIurl, {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': '1',
