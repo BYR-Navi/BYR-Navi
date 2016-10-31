@@ -1,4 +1,4 @@
-/* customize-donate.css */
+/* customize-analytics.css */
 
 .hidden.menu {
     display: none;
@@ -77,6 +77,10 @@
 
 #contacts-dimmer div.item {
     font-size: 2em;
+}
+
+.echart-container {
+    height: 400px;
 }
 
 @media only screen and (max-width: 700px) {

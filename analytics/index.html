@@ -7,19 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <!-- Site Properties -->
-    <title>北邮人导航 &middot; BYR-Navi</title>
+    <title>访客分析 &middot; 北邮人导航 &middot; BYR-Navi</title>
     <meta name="author" content="iROCKBUNNY" />
     <meta name="description" content="BYR-Navi" />
     <meta name="keywords" content="北邮人导航, BYR-Navi, BYR, BUPT, Navi, Navigation" />
     <!-- Semantic UI CSS -->
-    <link rel="stylesheet" type="text/css" href="./assets/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/semantic/semantic.min.css">
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
     <!-- Customized CSS -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/customize.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/customize-analytics.css">
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
-    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="icon" href="../favicon.ico">
     <!-- Google Analytics -->
     <script>
     (function(i, s, o, g, r, a, m) {
@@ -66,9 +66,9 @@
     <!-- Following Menu -->
     <div class="ui large top fixed hidden menu">
         <div class="ui container">
-            <a class="active item loading-trigger" href="./"><i class="star icon"></i> 北邮人导航</a>
-            <a class="item loading-trigger" href="./analytics/"><i class="line chart icon"></i> 访客分析</a>
-            <a class="item loading-trigger" href="./donate/" title="买雪糕给辛苦滴程序猿和设计师"><i class="heart icon"></i> 支持一发</a>
+            <a class="item loading-trigger" href="../"><i class="star icon"></i> 北邮人导航</a>
+            <a class="active item loading-trigger" href="../analytics/"><i class="line chart icon"></i> 访客分析</a>
+            <a class="item loading-trigger" href="../donate/" title="买雪糕给辛苦滴程序猿和设计师"><i class="heart icon"></i> 支持一发</a>
             <div class="right menu">
                 <a class="item" href="https://github.com/iROCKBUNNY/BYR-Navi" target="_blank"><i class="github icon"></i> GitHub</a>
             </div>
@@ -76,9 +76,9 @@
     </div>
     <!-- Sidebar Menu -->
     <div class="ui vertical inverted sidebar menu">
-        <a class="active item loading-trigger" href="./"><i class="star icon"></i> 北邮人导航</a>
-        <a class="item loading-trigger" href="./analytics/"><i class="line chart icon"></i> 访客分析</a>
-        <a class="item loading-trigger" href="./donate/" title="买雪糕给辛苦滴程序猿和设计师"><i class="heart icon"></i> 支持一发</a>
+        <a class="item loading-trigger" href="../"><i class="star icon"></i> 北邮人导航</a>
+        <a class="active item loading-trigger" href="../analytics/"><i class="line chart icon"></i> 访客分析</a>
+        <a class="item loading-trigger" href="../donate/" title="买雪糕给辛苦滴程序猿和设计师"><i class="heart icon"></i> 支持一发</a>
         <a class="right item" href="https://github.com/iROCKBUNNY/BYR-Navi" target="_blank"><i class="github icon"></i> GitHub</a>
     </div>
     <!-- Page Contents -->
@@ -87,43 +87,25 @@
             <div class="ui container">
                 <div class="ui large secondary inverted pointing menu">
                     <a class="toc item"><i class="sidebar icon"></i></a>
-                    <a class="active item loading-trigger" href="./"><i class="star icon"></i> 北邮人导航</a>
-                    <a class="item loading-trigger" href="./analytics/"><i class="line chart icon"></i> 访客分析</a>
-                    <a class="item loading-trigger" href="./donate/" title="买雪糕给辛苦滴程序猿和设计师"><i class="heart icon"></i> 支持一发</a>
+                    <a class="item loading-trigger" href="../"><i class="star icon"></i> 北邮人导航</a>
+                    <a class="active item loading-trigger" href="../analytics/"><i class="line chart icon"></i> 访客分析</a>
+                    <a class="item loading-trigger" href="../donate/" title="买雪糕给辛苦滴程序猿和设计师"><i class="heart icon"></i> 支持一发</a>
                     <div class="right menu">
                         <a class="item" href="https://github.com/iROCKBUNNY/BYR-Navi" target="_blank"><i class="github icon"></i> GitHub</a>
                     </div>
                 </div>
             </div>
             <div class="ui text container">
-                <h1 class="ui inverted header"><i class="star icon"></i></h1>
-                <h2>北邮人导航 &middot; BYR-Navi</h2>
-                <div class="ui inverted fluid left icon action input" id="search-div">
-                    <i class="search icon"></i>
-                    <input id="search-query" type="text" placeholder="立即搜索">
-                    <select class="ui compact selection dropdown" id="search-services"></select>
-                    <div id="search-button" type="submit" class="ui button">Go</div>
-                </div>
-                <div class="ui inverted horizontal link list">
-                    <a id="stargazer" class="item" href="https://github.com/iROCKBUNNY/BYR-Navi/stargazers" target="_blank"></a>
-                    <a id="fork" class="item" href="https://github.com/iROCKBUNNY/BYR-Navi/network" target="_blank"></a>
-                    <a id="version" class="item" href="https://github.com/iROCKBUNNY/BYR-Navi/commits/gh-pages" target="_blank"></a>
-                </div>
-                <div class="ui inverted link list">
-                    <a id="visit" class="item loading-trigger" href="./analytics/"></a>
-                    <a class="item loading-trigger" href="./donate/">买雪糕给辛苦滴程序猿和设计师</a>
-                </div>
+                <h1 class="ui inverted header"><i class="line chart icon"></i> 访客分析</h1>
+                <h2 id="visit"></h2>
             </div>
         </div>
-        <div id="links">
-            <div class="ui vertical stripe links segment">
-                <div class="ui equal width stackable internally celled grid">
-                    <div class="center aligned row" id="pub-links"></div>
-                </div>
-            </div>
-            <div class="ui vertical stripe links segment">
-                <div class="ui equal width stackable internally celled grid">
-                    <div class="center aligned row" id="byr-links"></div>
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="center aligned column">
+                        <div id="visit-summary" class="echart-container"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,7 +129,7 @@
                         <div class="ui inverted link list">
                             <div id="copyright" class="item"></div>
                             <div class="item">Designed and built with all the love and passion in the world by iROCKBUNNY.</div>
-                            <a class="item loading-trigger" href="./analytics/">
+                            <a class="item loading-trigger" href="../analytics/">
                                 Visitors / Page Views:
                                 <span id="today-ip"></span> / <span id="today-pv"></span> (Today)
                                 &middot;
@@ -170,19 +152,17 @@
         <div class="ui loader"></div>
     </div>
     <!-- jQuery -->
-    <script src="./assets/js/jquery-3.1.1.min.js"></script>
-    <script src="./assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="../assets/js/jquery-3.1.1.min.js"></script>
+    <script src="../assets/js/jquery-migrate-3.0.0.min.js"></script>
     <!-- Semantic UI JS -->
-    <script src="./assets/semantic/semantic.min.js"></script>
-    <!-- Moment.js -->
-    <script src="./assets/js/moment.min.js"></script>
-    <!-- Query Suggestions -->
-    <script src="./assets/js/query-suggest.js"></script>
+    <script src="../assets/semantic/semantic.min.js"></script>
+    <!-- Baidu ECharts -->
+    <script src="../assets/js/echarts.min.js"></script>
+    <script src="../assets/js/macarons.js"></script>
     <!-- Cutomized JS -->
-    <script src="./assets/js/customize-data.js"></script>
-    <script src="./assets/js/customize.js"></script>
-    <script src="./assets/js/customize-home-data.js"></script>
-    <script src="./assets/js/customize-home.js"></script>
+    <script src="../assets/js/customize-data.js"></script>
+    <script src="../assets/js/customize.js"></script>
+    <script src="../assets/js/customize-analytics.js"></script>
 </body>
 
 </html>
