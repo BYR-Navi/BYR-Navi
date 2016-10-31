@@ -25,7 +25,7 @@ var option = {
         right: 'center'
     },
     tooltip: {
-        trigger: 'item'
+        trigger: 'axis'
     },
     legend: {
         data: ['访客数', '访问次数', '浏览次数'],
@@ -34,21 +34,20 @@ var option = {
     },
     dataZoom: [
         {
+            type: 'slider',
             show: true,
             realtime: true,
             start: 50,
             end: 100
-        },
-        {
-            type: 'inside',
-            realtime: true,
-            start: 50,
-            end: 100
         }
-    ],    xAxis: {
+    ],
+    xAxis: {
+        type : 'category',
         data: []
     },
-    yAxis: {},
+    yAxis: {
+        type: 'value'
+    },
     series: [{
         name: '访客数',
         type: 'bar',
