@@ -19,6 +19,10 @@ var poweredBy = [
         'url': 'http://momentjs.com/'
     },
     {
+        'name': 'ECharts',
+        'url': 'http://echarts.baidu.com/'
+    },
+    {
         'name': 'GitHub Pages',
         'url': 'https://pages.github.com/'
     }
