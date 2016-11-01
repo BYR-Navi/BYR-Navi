@@ -21,17 +21,6 @@
     font-weight: normal;
 }
 
-
-/*.masthead .ui.compact.selection.dropdown {
-  min-width: 115px;
-}*/
-
-
-/*.masthead .ui.inverted.submit.button {
-  margin-bottom: 10px;
-  width: 110px;
-}*/
-
 .ui.vertical.stripe {
     padding: 8em 0em;
 }
@@ -55,6 +44,10 @@
 
 .ui.vertical.stripe .horizontal.divider {
     margin: 3em 0em;
+}
+
+.ui.vertical.stripe .ui.statistic .label {
+    font-size: 1.2em;
 }
 
 .stats.stripe.segment,
