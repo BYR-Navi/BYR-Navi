@@ -90,6 +90,9 @@ var option = {
             magicType: {
                 type: ['bar', 'line']
             },
+            dataView: {
+                readOnly: true
+            },
             saveAsImage: {
                 excludeComponents: ['toolbox', 'dataZoom']
             }
