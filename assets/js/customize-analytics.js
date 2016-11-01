@@ -12,6 +12,62 @@ function updateVisit() {
         'token_auth': analyticsToken
     }, function(data) {
         $('#visit').text('您是今天莅临本站的 ' + data.value + ' 位重要访客之一');
+        $('#today-visitors-stat').text(data.value);
+    });
+    $.getJSON(analyticsAPIurl, {
+        'module': 'API',
+        'method': 'VisitsSummary.getVisits',
+        'idSite': '1',
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': analyticsToken
+    }, function(data) {
+        $('#today-visits-stat').text(data.value);
+    });
+    $.getJSON(analyticsAPIurl, {
+        'module': 'API',
+        'method': 'VisitsSummary.getActions',
+        'idSite': '1',
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': analyticsToken
+    }, function(data) {
+        $('#today-actions-stat').text(data.value);
+    });
+    $.getJSON(analyticsAPIurl, {
+        'module': 'API',
+        'method': 'VisitsSummary.getUniqueVisitors',
+        'idSite': '1',
+        'period': 'day',
+        'date': 'yesterday',
+        'format': 'JSON',
+        'token_auth': analyticsToken
+    }, function(data) {
+        $('#yesterday-visitors-stat').text(data.value);
+    });
+    $.getJSON(analyticsAPIurl, {
+        'module': 'API',
+        'method': 'VisitsSummary.getVisits',
+        'idSite': '1',
+        'period': 'day',
+        'date': 'yesterday',
+        'format': 'JSON',
+        'token_auth': analyticsToken
+    }, function(data) {
+        $('#yesterday-visits-stat').text(data.value);
+    });
+    $.getJSON(analyticsAPIurl, {
+        'module': 'API',
+        'method': 'VisitsSummary.getActions',
+        'idSite': '1',
+        'period': 'day',
+        'date': 'yesterday',
+        'format': 'JSON',
+        'token_auth': analyticsToken
+    }, function(data) {
+        $('#yesterday-actions-stat').text(data.value);
     });
 };
 updateVisit();
