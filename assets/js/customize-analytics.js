@@ -252,17 +252,16 @@ visitHourlyChart.setOption({
         splitLine: {
             show: true,
             lineStyle: {
-                color: '#999',
                 type: 'dashed'
             }
         },
-        axisLine: {
-            show: false
-        }
     },
     yAxis: {
         type: 'category',
         data: [],
+        splitLine: {
+            show: true
+        },
         axisLine: {
             show: false
         }
