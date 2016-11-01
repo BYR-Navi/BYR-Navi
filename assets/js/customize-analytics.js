@@ -83,6 +83,18 @@ var option = {
     tooltip: {
         trigger: 'axis'
     },
+    toolbox: {
+        showTitle: false,
+        feature: {
+            restore: {},
+            magicType: {
+                type: ['bar', 'line']
+            },
+            saveAsImage: {
+                excludeComponents: ['toolbox', 'dataZoom']
+            }
+        }
+    },
     legend: {
         data: ['访客数', '访问次数', '浏览次数'],
         right: 'center',
