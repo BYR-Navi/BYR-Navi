@@ -56,6 +56,28 @@ $('.loading-trigger')
     });
 
 // analytics
+$.getJSON(analyticsAPIurl, {
+    'module': 'API',
+    'method': 'VisitsSummary.getVisits',
+    'idSite': '1',
+    'period': 'day',
+    'date': 'yesterday',
+    'format': 'JSON',
+    'token_auth': analyticsToken
+}, function(data) {
+    $('#yesterday-visits').text(data.value);
+});
+$.getJSON(analyticsAPIurl, {
+    'module': 'API',
+    'method': 'VisitsSummary.getActions',
+    'idSite': '1',
+    'period': 'day',
+    'date': 'yesterday',
+    'format': 'JSON',
+    'token_auth': analyticsToken
+}, function(data) {
+    $('#yesterday-actions').text(data.value);
+});
 function updateAnalytics() {
     $.getJSON(analyticsAPIurl, {
         'module': 'API',
@@ -78,28 +100,6 @@ function updateAnalytics() {
         'token_auth': analyticsToken
     }, function(data) {
         $('#today-actions').text(data.value);
-    });
-    $.getJSON(analyticsAPIurl, {
-        'module': 'API',
-        'method': 'VisitsSummary.getVisits',
-        'idSite': '1',
-        'period': 'day',
-        'date': 'yesterday',
-        'format': 'JSON',
-        'token_auth': analyticsToken
-    }, function(data) {
-        $('#yesterday-visits').text(data.value);
-    });
-    $.getJSON(analyticsAPIurl, {
-        'module': 'API',
-        'method': 'VisitsSummary.getActions',
-        'idSite': '1',
-        'period': 'day',
-        'date': 'yesterday',
-        'format': 'JSON',
-        'token_auth': analyticsToken
-    }, function(data) {
-        $('#yesterday-actions').text(data.value);
     });
 };
 updateAnalytics();
