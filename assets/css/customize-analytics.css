@@ -76,6 +76,10 @@
 .echart-container {
     height: 400px;
 }
+#visit-hourly.echart-container {
+    height: 600px;
+}
+
 
 @media only screen and (max-width: 700px) {
     .ui.fixed.menu {

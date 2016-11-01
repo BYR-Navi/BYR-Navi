@@ -75,10 +75,15 @@ setInterval(updateVisit, 15000);
 
 // chart
 var visitSummaryChart = echarts.init(document.getElementById('visit-summary'), 'macarons');
-var option = {
+visitSummaryChart.setOption({
     title: {
         text: '访客数据总览（过去90天）',
-        right: 'center'
+        left: 'center'
+    },
+    legend: {
+        data: ['访客数', '访问次数', '浏览次数'],
+        right: 'center',
+        top: 30
     },
     tooltip: {
         trigger: 'axis'
@@ -97,11 +102,6 @@ var option = {
                 excludeComponents: ['toolbox', 'dataZoom']
             }
         }
-    },
-    legend: {
-        data: ['访客数', '访问次数', '浏览次数'],
-        right: 'center',
-        top: 30
     },
     dataZoom: [
         {
@@ -145,8 +145,7 @@ var option = {
     animationDelayUpdate: function (idx) {
         return idx * 5;
     }
-};
-visitSummaryChart.setOption(option);
+});
 visitSummaryChart.showLoading();
 function updateVisitSummaryChart() {
     $.getJSON(analyticsAPIurl, {
@@ -158,15 +157,15 @@ function updateVisitSummaryChart() {
         'format': 'JSON',
         'token_auth': analyticsToken
     }, function(data) {
-        var dates = [];
+        var days = [];
         var visitors = [];
         for (var i in data) {
-            dates.push(i);
+            days.push(i);
             visitors.push(data[i]);
         };
         visitSummaryChart.setOption({
             xAxis: {
-                data: dates
+                data: days
             },
             series: [{
                 name: '访客数',
@@ -218,3 +217,151 @@ function updateVisitSummaryChart() {
 updateVisitSummaryChart();
 visitSummaryChart.hideLoading();
 setInterval(updateVisitSummaryChart, 15000);
+
+var visitHourlyChart = echarts.init(document.getElementById('visit-hourly'), 'macarons');
+visitHourlyChart.setOption({
+    title: {
+        text: '访客数据（7x24小时）',
+        left: 'center'
+    },
+    legend: {
+        data: ['访客数', '访问次数', '浏览次数'],
+        selectedMode: 'single',
+        right: 'center',
+        top: 30
+    },
+    tooltip: {
+        position: 'top',
+        formatter: function (params) {
+            return params.seriesName + ': ' + params.value[2] + ' in ' + params.value[0] + ' of ' + params.value[1];
+        }
+    },
+    toolbox: {
+        showTitle: false,
+        feature: {
+            restore: {},
+            saveAsImage: {
+                excludeComponents: ['toolbox']
+            }
+        }
+    },
+    xAxis: {
+        type: 'category',
+        data: ['0h', '1h', '2h', '3h', '4h', '5h', '6h', '7h', '8h', '9h', '10h', '11h', '12h', '13h', '14h', '15h', '16h', '17h', '18h', '19h', '20h', '21h', '22h', '23h'],
+        boundaryGap: false,
+        splitLine: {
+            show: true,
+            lineStyle: {
+                color: '#999',
+                type: 'dashed'
+            }
+        },
+        axisLine: {
+            show: false
+        }
+    },
+    yAxis: {
+        type: 'category',
+        data: [],
+        axisLine: {
+            show: false
+        }
+    },
+    series: [{
+        name: '访客数',
+        type: 'scatter',
+        data: [],
+        animationDelay: function (idx) {
+            return idx * 10 + 100;
+        }
+    },
+    {
+        name: '访问次数',
+        type: 'scatter',
+        data: [],
+        animationDelay: function (idx) {
+            return idx * 10 + 100;
+        }
+    },
+    {
+        name: '浏览次数',
+        type: 'scatter',
+        data: [],
+        animationDelay: function (idx) {
+            return idx * 10 + 100;
+        }
+    }]
+});
+visitHourlyChart.showLoading();
+function normalizeSymbolSize(val, data) {
+    if (val === 0) {
+        return 0;
+    } else {
+        var max = 50;
+        var min = 5;
+        var data_max = Math.max(...data.map(function(item) {
+            return item[2];
+        }));
+        var data_min = Math.min(...data.map(function(item) {
+            return item[2];
+        }));
+        if (data_max === data_min) {
+            return (max - min) / 2 + min;
+        } else {
+            return (val - data_min) / (data_max - data_min) * (max - min) + min;
+        };
+    };
+};
+function updateVisitHourlyChart() {
+    $.getJSON(analyticsAPIurl, {
+        'module': 'API',
+        'method': 'VisitTime.getVisitInformationPerLocalTime',
+        'idSite': '1',
+        'period': 'day',
+        'date': 'last7',
+        'format': 'JSON',
+        'token_auth': analyticsToken
+    }, function(data) {
+        var days = [];
+        var visitors = [];
+        var visits = [];
+        var actions = [];
+        for (var day in data) {
+            days.unshift(day);
+            for (var hourNum in data[day]) {
+                visitors.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_uniq_visitors']]);
+                visits.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_visits']]);
+                actions.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_actions']]);
+            };
+        };
+        visitHourlyChart.setOption({
+            yAxis: {
+                data: days
+            },
+            series: [{
+                name: '访客数',
+                data: visitors,
+                symbolSize: function (val) {
+                    return normalizeSymbolSize(val[2], visitors);
+                }
+            },
+            {
+                name: '访问次数',
+                data: visits,
+                symbolSize: function (val) {
+                    return normalizeSymbolSize(val[2], visits);
+                }
+            },
+            {
+                name: '浏览次数',
+                data: actions,
+                symbolSize: function (val) {
+                    return normalizeSymbolSize(val[2], actions);
+                }
+            }]
+        });
+    });
+};
+updateVisitHourlyChart();
+visitHourlyChart.hideLoading();
+setInterval(updateVisitHourlyChart, 15000);
