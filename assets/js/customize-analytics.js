@@ -12,6 +12,7 @@ var countUpOptions = {
 var yesterdayVisitorsCountUp = new CountUp('yesterday-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayVisitsCountUp = new CountUp('yesterday-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayActionsCountUp = new CountUp('yesterday-actions-stat', 0, 0, 0, 2.5, countUpOptions);
+var todayVisitCountUp = new CountUp('visit', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
@@ -58,7 +59,7 @@ function updateVisit() {
         'format': 'JSON',
         'token_auth': analyticsToken
     }, function(data) {
-        $('#visit').text('您是今天莅临本站的 ' + data.value + ' 位重要访客之一');
+        todayVisitCountUp.update(data.value);
         todayVisitorsCountUp.update(data.value);
     });
     $.getJSON(analyticsAPIurl, {

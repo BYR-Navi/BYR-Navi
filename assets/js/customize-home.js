@@ -12,6 +12,15 @@ updateVersion();
 setInterval(updateVersion, 15000);
 
 // visit
+var countUpOptions = {
+    useEasing: true,
+    useGrouping: true,
+    separator: ',',
+    decimal: '.',
+    prefix: '',
+    suffix: ''
+};
+var visitCountUp = new CountUp('visit', 0, 0, 0, 2.5, countUpOptions);
 function updateVisit() {
     $.getJSON(analyticsAPIurl, {
         'module': 'API',
@@ -22,7 +31,7 @@ function updateVisit() {
         'format': 'JSON',
         'token_auth': analyticsToken
     }, function(data) {
-        $('#visit').text('您是今天莅临本站的 ' + data.value + ' 位重要访客之一');
+        visitCountUp.update(data.value);
     });
 };
 updateVisit();

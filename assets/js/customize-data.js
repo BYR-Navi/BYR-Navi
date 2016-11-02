@@ -19,6 +19,10 @@ var poweredBy = [
         'url': 'http://momentjs.com/'
     },
     {
+        'name': 'CountUp.js',
+        'url': 'http://inorganik.github.io/countUp.js/'
+    },
+    {
         'name': 'ECharts',
         'url': 'http://echarts.baidu.com/'
     },
