@@ -1,6 +1,20 @@
 // customize-analytics.js
 
 // visit
+var countUpOptions = {
+    useEasing: true,
+    useGrouping: true,
+    separator: ',',
+    decimal: '.',
+    prefix: '',
+    suffix: ''
+};
+var yesterdayVisitorsCountUp = new CountUp('yesterday-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
+var yesterdayVisitsCountUp = new CountUp('yesterday-visits-stat', 0, 0, 0, 2.5, countUpOptions);
+var yesterdayActionsCountUp = new CountUp('yesterday-actions-stat', 0, 0, 0, 2.5, countUpOptions);
+var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
+var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
+var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
 $.getJSON(analyticsAPIurl, {
     'module': 'API',
     'method': 'VisitsSummary.getUniqueVisitors',
@@ -10,7 +24,7 @@ $.getJSON(analyticsAPIurl, {
     'format': 'JSON',
     'token_auth': analyticsToken
 }, function(data) {
-    $('#yesterday-visitors-stat').text(data.value);
+    yesterdayVisitorsCountUp.update(data.value);
 });
 $.getJSON(analyticsAPIurl, {
     'module': 'API',
@@ -21,7 +35,7 @@ $.getJSON(analyticsAPIurl, {
     'format': 'JSON',
     'token_auth': analyticsToken
 }, function(data) {
-    $('#yesterday-visits-stat').text(data.value);
+    yesterdayVisitsCountUp.update(data.value);
 });
 $.getJSON(analyticsAPIurl, {
     'module': 'API',
@@ -32,7 +46,7 @@ $.getJSON(analyticsAPIurl, {
     'format': 'JSON',
     'token_auth': analyticsToken
 }, function(data) {
-    $('#yesterday-actions-stat').text(data.value);
+    yesterdayActionsCountUp.update(data.value);
 });
 function updateVisit() {
     $.getJSON(analyticsAPIurl, {
@@ -45,7 +59,7 @@ function updateVisit() {
         'token_auth': analyticsToken
     }, function(data) {
         $('#visit').text('您是今天莅临本站的 ' + data.value + ' 位重要访客之一');
-        $('#today-visitors-stat').text(data.value);
+        todayVisitorsCountUp.update(data.value);
     });
     $.getJSON(analyticsAPIurl, {
         'module': 'API',
@@ -56,7 +70,7 @@ function updateVisit() {
         'format': 'JSON',
         'token_auth': analyticsToken
     }, function(data) {
-        $('#today-visits-stat').text(data.value);
+        todayVisitsCountUp.update(data.value);
     });
     $.getJSON(analyticsAPIurl, {
         'module': 'API',
@@ -67,7 +81,7 @@ function updateVisit() {
         'format': 'JSON',
         'token_auth': analyticsToken
     }, function(data) {
-        $('#today-actions-stat').text(data.value);
+        todayActionsCountUp.update(data.value);
     });
 };
 updateVisit();
