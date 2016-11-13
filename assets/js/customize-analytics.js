@@ -379,3 +379,165 @@ function updateVisitHourlyChart() {
 updateVisitHourlyChart();
 visitHourlyChart.hideLoading();
 setInterval(updateVisitHourlyChart, 15000);
+
+var visitMapChart = echarts.init(document.getElementById('visit-map'), 'macarons');
+visitMapChart.setOption({
+    title: {
+        text: '今日访客来源',
+        left: 'center'
+    },
+    legend: {
+        data: ['访客数', '访问次数', '浏览次数'],
+        selectedMode: 'single',
+        right: 'center',
+        top: 30
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: function (params) {
+            var value = params.value
+            if (!value) {
+                value = 0
+            };
+            return params.name + ': ' + value;
+        }
+    },
+    toolbox: {
+        showTitle: false,
+        feature: {
+            restore: {},
+            saveAsImage: {
+                excludeComponents: ['toolbox']
+            }
+        }
+    },
+    visualMap: {
+        min: 0,
+        max: 500,
+        text:['High','Low'],
+        calculable: true,
+        inRange: {
+            color: ['lightskyblue','yellow', 'orangered']
+        }
+    },
+    series: [{
+        name: '访客数',
+        type: 'map',
+        mapType: 'world',
+        showLegendSymbol: false,
+        itemStyle: {
+            emphasis: {
+                label: {
+                    show:true
+                }
+            }
+        },
+        data:[]
+    },
+    {
+        name: '访问次数',
+        type: 'map',
+        mapType: 'world',
+        showLegendSymbol: false,
+        itemStyle: {
+            emphasis: {
+                label: {
+                    show:true
+                }
+            }
+        },
+        data:[]
+    },
+    {
+        name: '浏览次数',
+        type: 'map',
+        mapType: 'world',
+        showLegendSymbol: false,
+        itemStyle: {
+            emphasis: {
+                label: {
+                    show:true
+                }
+            }
+        },
+        data:[]
+    }]
+});
+function updateVisitMapChart() {
+    $.getJSON(analyticsAPIurl, {
+        'module': 'API',
+        'method': 'UserCountry.getCountry',
+        'idSite': '1',
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': analyticsToken
+    }, function(data) {
+        var visitors = [];
+        var visits = [];
+        var actions = [];
+        var visitorsChina = 0;
+        var visitsChina = 0;
+        var actionsChina = 0;
+        for (var i in data) {
+            if (data[i]['label'] == 'China') {
+                var visitorsChina = visitorsChina + data[i]['nb_uniq_visitors'];
+                var visitsChina = visitsChina + data[i]['nb_visits'];
+                var actionsChina = actionsChina + data[i]['nb_actions'];
+            } else if (data[i]['label'] == 'Hong Kong SAR China') {
+                var visitorsChina = visitorsChina + data[i]['nb_uniq_visitors'];
+                var visitsChina = visitsChina + data[i]['nb_visits'];
+                var actionsChina = actionsChina + data[i]['nb_actions'];
+            } else if (data[i]['label'] == 'Taiwan') {
+                var visitorsChina = visitorsChina + data[i]['nb_uniq_visitors'];
+                var visitsChina = visitsChina + data[i]['nb_visits'];
+                var actionsChina = actionsChina + data[i]['nb_actions'];
+            } else if (data[i]['label'] == 'Unknown') {
+                var visitorsChina = visitorsChina + data[i]['nb_uniq_visitors'];
+                var visitsChina = visitsChina + data[i]['nb_visits'];
+                var actionsChina = actionsChina + data[i]['nb_actions'];
+            } else {
+                visitors.push({
+                    'name': data[i]['label'].replace('United States', 'United States of America'),
+                    'value': data[i]['nb_uniq_visitors']
+                });
+                visits.push({
+                    'name': data[i]['label'].replace('United States', 'United States of America'),
+                    'value': data[i]['nb_visits']
+                });
+                actions.push({
+                    'name': data[i]['label'].replace('United States', 'United States of America'),
+                    'value': data[i]['nb_actions']
+                });
+            };
+        };
+        visitors.push({
+            'name': 'China',
+            'value': visitorsChina
+        });
+        visits.push({
+            'name': 'China',
+            'value': visitsChina
+        });
+        actions.push({
+            'name': 'China',
+            'value': actionsChina
+        });
+        visitMapChart.setOption({
+            series: [{
+                name: '访客数',
+                data: visitors
+            },
+            {
+                name: '访问次数',
+                data: visits
+            },
+            {
+                name: '浏览次数',
+                data: actions
+            }]
+        });
+    });
+};
+updateVisitMapChart();
+setInterval(updateVisitMapChart, 15000);
