@@ -388,4 +388,4 @@ var byrLinks = {
             'url': 'http://www.bupt.edu.cn/content/content.php?p=6_10_80'
         }
     }
-}
+};

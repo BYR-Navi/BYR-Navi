@@ -46,8 +46,7 @@ for (var id in searchServices) {
     );
 };
 
-$('#search-services')
-    .dropdown();
+$('#search-services').dropdown();
 
 $('#search-button').click(function() {
     var service = $('#search-services').val();
@@ -152,28 +151,3 @@ for (var byrLinkGroupName in byrLinks) {
         );
     };
 };
-
-// var count = 0;
-// for ( var linkGroupName in links ) {
-//   ++count;
-//   var linksHolderId = 'links-' + count;
-//   $('#links').append(
-//     $('<div>').addClass('ui vertical stripe segment').append(
-//       $('<div>').addClass('ui middle aligned stackable grid container').append(
-//         $('<div>').addClass('row').append(
-//           $('<div>').addClass('center aligned column')
-//             .attr('id', linksHolderId)
-//             .append($('<h3>').addClass('ui header').html(linkGroupName))
-//         )
-//       )
-//     )
-//   );
-//   for ( var linkName in links[linkGroupName] ) {
-//     $('#' + linksHolderId).append(
-//       $('<a>').addClass('ui black basic button')
-//         .attr('href', links[linkGroupName][linkName].url)
-//         .attr('target', '_blank')
-//         .html(linkName)
-//     );
-//   };
-// };
