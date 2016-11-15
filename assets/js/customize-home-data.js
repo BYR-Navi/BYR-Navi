@@ -77,6 +77,11 @@ var searchServices = {
         'url': 'http://www.panc.cc/s/',
         'suffix': '/td_0'
     },
+    'quzhuanpan': {
+        'name': '去转盘',
+        'url': 'http://www.quzhuanpan.com/source/search.action?q=',
+        'suffix': '&currentPage=1'
+    },
     'byr': {
         'name': '北邮人论坛',
         'url': 'http://search.icybee.cn/bbs/?key=',
