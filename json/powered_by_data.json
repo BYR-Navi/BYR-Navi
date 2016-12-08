@@ -25,6 +25,10 @@
             "url": "http://inorganik.github.io/countUp.js/"
         },
         {
+            "name": "JavaScript Cookie",
+            "url": "https://github.com/js-cookie/js-cookie"
+        },
+        {
             "name": "ECharts",
             "url": "http://echarts.baidu.com/"
         },
