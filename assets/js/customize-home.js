@@ -44,22 +44,27 @@ $.getJSON(urlPrefix + '/json/search_service_data.json', function(data) {
     for (var i in data.search_services) {
         $('#search-services').append(
             $('<option>')
-                .attr('id', 'search-service-' + i)
-                .attr('value', i)
+                .attr('id', data.search_services[i].id)
+                .attr('value', data.search_services[i].id)
                 .attr('data-url', data.search_services[i].url)
                 .attr('data-suffix', data.search_services[i].suffix)
                 .html(data.search_services[i].name)
         );
     };
     $('#search-services').dropdown();
+    if (Cookies.get('byr_navi_previous_search_service_option') == undefined) {
+        Cookies.set('byr_navi_previous_search_service_option', $('#search-services').val(), { expires: 365 });
+    } else {
+        $('#search-services').dropdown('set selected', Cookies.get('byr_navi_previous_search_service_option'));
+    };
 });
 
 $('#search-button').click(function() {
-    var serviceOption = $('#search-services').val();
-    var service = $('#search-service-' + serviceOption);
+    var service = $('#' + $('#search-services').val());
     var query = $('#search-query').val();
     query = encodeURIComponent(query);
     if (query) {
+        Cookies.set('byr_navi_previous_search_service_option', $('#search-services').val(), { expires: 365 });
         window.open(service.attr('data-url') + query + service.attr('data-suffix'), '_blank');
     } else {
         $('#search-div').addClass('error');
@@ -71,10 +76,9 @@ $('#search-query').click(function() {
     $(this).select();
 });
 
-$(document)
-    .ready(function() {
-        $('#search-query').focus();
-    });
+$(document).ready(function() {
+    $('#search-query').focus();
+});
 
 $(window).keyup(function(event) {
     var windowTop = $(window).scrollTop();
@@ -84,11 +88,11 @@ $(window).keyup(function(event) {
     var searchBoxHeight = $('#search-div').innerHeight();
     var searchBoxBottom = searchBoxTop + searchBoxHeight;
     if (event.key == 'Enter' && searchBoxBottom > windowTop && searchBoxTop < windowBottom) {
-        var serviceOption = $('#search-services').val();
-        var service = $('#search-service-' + serviceOption);
+        var service = $('#' + $('#search-services').val());
         var query = $('#search-query').val();
         query = encodeURIComponent(query);
         if (query) {
+            Cookies.set('byr_navi_previous_search_service_option', $('#search-services').val(), { expires: 365 });
             window.open(service.attr('data-url') + query + service.attr('data-suffix'), '_blank');
         } else {
             $('#search-div').addClass('error');
