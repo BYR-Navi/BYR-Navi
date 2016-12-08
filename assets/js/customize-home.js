@@ -22,38 +22,45 @@ var countUpOptions = {
 };
 var visitCountUp = new CountUp('visit', 0, 0, 0, 2.5, countUpOptions);
 function updateVisit() {
-    $.getJSON(analyticsAPIurl, {
-        'module': 'API',
-        'method': 'VisitsSummary.getUniqueVisitors',
-        'idSite': '1',
-        'period': 'day',
-        'date': 'today',
-        'format': 'JSON',
-        'token_auth': analyticsToken
-    }, function(data) {
-        visitCountUp.update(data.value);
+    $.getJSON(urlPrefix + '/json/analytics_data.json', function(data) {
+        $.getJSON(data.analytics.api_url, {
+            'module': 'API',
+            'method': 'VisitsSummary.getUniqueVisitors',
+            'idSite': '1',
+            'period': 'day',
+            'date': 'today',
+            'format': 'JSON',
+            'token_auth': data.analytics.token
+        }, function(data) {
+            visitCountUp.update(data.value);
+        });
     });
 };
 updateVisit();
 setInterval(updateVisit, 15000);
 
 // search
-for (var id in searchServices) {
-    $('#search-services').append(
-        $('<option>')
-        .attr('value', id)
-        .html(searchServices[id].name)
-    );
-};
-
-$('#search-services').dropdown();
+$.getJSON(urlPrefix + '/json/search_service_data.json', function(data) {
+    for (var i in data.search_services) {
+        $('#search-services').append(
+            $('<option>')
+                .attr('id', 'search-service-' + i)
+                .attr('value', i)
+                .attr('data-url', data.search_services[i].url)
+                .attr('data-suffix', data.search_services[i].suffix)
+                .html(data.search_services[i].name)
+        );
+    };
+    $('#search-services').dropdown();
+});
 
 $('#search-button').click(function() {
-    var service = $('#search-services').val();
+    var serviceOption = $('#search-services').val();
+    var service = $('#search-service-' + serviceOption);
     var query = $('#search-query').val();
     query = encodeURIComponent(query);
     if (query) {
-        window.open(searchServices[service].url + query + searchServices[service].suffix, '_blank');
+        window.open(service.attr('data-url') + query + service.attr('data-suffix'), '_blank');
     } else {
         $('#search-div').addClass('error');
         $('#search-query').attr('placeholder', '请输入搜索内容');
@@ -77,11 +84,12 @@ $(window).keyup(function(event) {
     var searchBoxHeight = $('#search-div').innerHeight();
     var searchBoxBottom = searchBoxTop + searchBoxHeight;
     if (event.key == 'Enter' && searchBoxBottom > windowTop && searchBoxTop < windowBottom) {
-        var service = $('#search-services').val();
+        var serviceOption = $('#search-services').val();
+        var service = $('#search-service-' + serviceOption);
         var query = $('#search-query').val();
         query = encodeURIComponent(query);
         if (query) {
-            window.open(searchServices[service].url + query + searchServices[service].suffix, '_blank');
+            window.open(service.attr('data-url') + query + service.attr('data-suffix'), '_blank');
         } else {
             $('#search-div').addClass('error');
             $('#search-query').attr('placeholder', '请输入搜索内容').focus();
@@ -114,40 +122,44 @@ var sugParams = {
 BaiduSuggestion.bind('search-query', sugParams);
 
 // links
-var count = 0;
-for (var pubLinkGroupName in pubLinks) {
-    ++count;
-    var pubLinksHolderId = 'pub-links-' + count;
-    $('#pub-links').append(
-        $('<div>').addClass('column')
-        .attr('id', pubLinksHolderId)
-        .append($('<h3>').addClass('ui header').html(pubLinkGroupName))
-    );
-    for (var pubLinkName in pubLinks[pubLinkGroupName]) {
-        $('#' + pubLinksHolderId).append(
-            $('<a>').addClass('ui button')
-            .attr('href', pubLinks[pubLinkGroupName][pubLinkName].url)
-            .attr('target', '_blank')
-            .html(pubLinkName)
-        );
-    };
-};
 
-var count = 0;
-for (var byrLinkGroupName in byrLinks) {
-    ++count;
-    var byrLinksHolderId = 'byr-links-' + count;
-    $('#byr-links').append(
-        $('<div>').addClass('column')
-        .attr('id', byrLinksHolderId)
-        .append($('<h3>').addClass('ui header').html(byrLinkGroupName))
-    );
-    for (var byrLinkName in byrLinks[byrLinkGroupName]) {
-        $('#' + byrLinksHolderId).append(
-            $('<a>').addClass('ui button')
-            .attr('href', byrLinks[byrLinkGroupName][byrLinkName].url)
-            .attr('target', '_blank')
-            .html(byrLinkName)
+$.getJSON(urlPrefix + '/json/link_data.json', function(data) {
+    for (var i in data.public_links) {
+        $('#public-links').append(
+            $('<div>')
+                .addClass('column')
+                .attr('id', 'public-links-' + i)
+                .append($('<h3>')
+                .addClass('ui header')
+                .html(data.public_links[i].category))
         );
+        for (var j in data.public_links[i].links) {
+            $('#public-links-' + i).append(
+                $('<a>')
+                    .addClass('ui button')
+                    .attr('href', data.public_links[i].links[j].url)
+                    .attr('target', '_blank')
+                    .html(data.public_links[i].links[j].name)
+            );
+        };
     };
-};
+    for (var i in data.byr_links) {
+        $('#byr-links').append(
+            $('<div>')
+                .addClass('column')
+                .attr('id', 'byr-links-' + i)
+                .append($('<h3>')
+                .addClass('ui header')
+                .html(data.byr_links[i].category))
+        );
+        for (var j in data.byr_links[i].links) {
+            $('#byr-links-' + i).append(
+                $('<a>')
+                    .addClass('ui button')
+                    .attr('href', data.byr_links[i].links[j].url)
+                    .attr('target', '_blank')
+                    .html(data.byr_links[i].links[j].name)
+            );
+        };
+    };
+});
