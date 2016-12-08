@@ -5,7 +5,7 @@ function updateVersion() {
     $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
         $('#stargazer').html('<i class="star icon"></i> ' + data.stargazers_count + ' Stargazers');
         $('#fork').html('<i class="fork icon"></i>' + data.forks_count + ' Forks');
-        $('#version').html('<i class="rocket icon"></i> Updated ' + moment(data.pushed_at, 'YYYY-MM-DDTh:mm:ssZ').fromNow());
+        $('#version').html('<i class="rocket icon"></i> Updated ' + moment(data.updated_at, 'YYYY-MM-DDTh:mm:ssZ').fromNow());
     });
 };
 updateVersion();
@@ -122,7 +122,6 @@ var sugParams = {
 BaiduSuggestion.bind('search-query', sugParams);
 
 // links
-
 $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
     for (var i in data.public_links) {
         $('#public-links').append(
