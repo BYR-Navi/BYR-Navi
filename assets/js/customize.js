@@ -45,7 +45,8 @@ $('.feedback')
     });
 
 
-var urlPrefix = 'http://localhost/BYR-Navi';
+// var urlPrefix = 'http://localhost/BYR-Navi';
+var urlPrefix = 'http://byr123.irockbunny.com';
 
 // powered by
 $.getJSON(urlPrefix + '/json/powered_by_data.json', function(data) {
