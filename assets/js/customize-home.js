@@ -1,15 +1,28 @@
 // customize-home.js
 
+// progress bar
+$('#page-loading-progress').progress({
+    total: 4,
+    onSuccess: function() {
+        $('#page-loading-progress').fadeOut('slow', function() {
+            $('#page-loading-progress').remove();
+        });
+    }
+});
+
 // version
-function updateVersion() {
+function updateVersion(updateProgressBar) {
     $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
         $('#stargazer').html('<i class="star icon"></i> ' + data.stargazers_count + ' Stargazers');
         $('#fork').html('<i class="fork icon"></i>' + data.forks_count + ' Forks');
         $('#version').html('<i class="rocket icon"></i> Updated ' + moment(data.pushed_at, 'YYYY-MM-DDTh:mm:ssZ').fromNow());
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
     });
 };
-updateVersion();
-setInterval(updateVersion, 15000);
+updateVersion(true);
+setInterval(updateVersion(false), 15000);
 
 // visit
 var countUpOptions = {
@@ -21,7 +34,7 @@ var countUpOptions = {
     suffix: ''
 };
 var visitCountUp = new CountUp('visit', 0, 0, 0, 2.5, countUpOptions);
-function updateVisit() {
+function updateVisit(updateProgressBar) {
     $.getJSON(urlPrefix + '/json/analytics_data.json', function(data) {
         $.getJSON(data.analytics.api_url, {
             'module': 'API',
@@ -33,11 +46,14 @@ function updateVisit() {
             'token_auth': data.analytics.token
         }, function(data) {
             visitCountUp.update(data.value);
+            if (updateProgressBar) {
+                $('#page-loading-progress').progress('increment');
+            };
         });
     });
 };
-updateVisit();
-setInterval(updateVisit, 15000);
+updateVisit(true);
+setInterval(updateVisit(false), 15000);
 
 // search
 $.getJSON(urlPrefix + '/json/search_service_data.json', function(data) {
@@ -57,6 +73,7 @@ $.getJSON(urlPrefix + '/json/search_service_data.json', function(data) {
     } else {
         $('#search-services').dropdown('set selected', Cookies.get('byr_navi_previous_search_service_option'));
     };
+    $('#page-loading-progress').progress('increment');
 });
 
 $('#search-button').click(function() {
@@ -165,4 +182,5 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
             );
         };
     };
+    $('#page-loading-progress').progress('increment');
 });
