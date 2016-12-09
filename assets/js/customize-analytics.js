@@ -4,7 +4,7 @@
 $('#page-loading-progress').progress({
     total: 11,
     onSuccess: function() {
-        $('#page-loading-progress').fadeOut('slow', function() {
+        $('#page-loading-progress').fadeOut(1000, function() {
             $('#page-loading-progress').remove();
         });
     }
