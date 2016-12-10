@@ -68,7 +68,7 @@ $.getJSON(urlPrefix + '/json/search_service_data.json', function(data) {
         );
     };
     $('#search-services').dropdown();
-    if (Cookies.get('byr_navi_previous_search_service_option') == undefined) {
+    if (Cookies.get('byr_navi_previous_search_service_option') == undefined || $('#' + Cookies.get('byr_navi_previous_search_service_option')).length === 0) {
         Cookies.set('byr_navi_previous_search_service_option', $('#search-services').val(), { expires: 365 });
     } else {
         $('#search-services').dropdown('set selected', Cookies.get('byr_navi_previous_search_service_option'));
