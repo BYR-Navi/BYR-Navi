@@ -113,4 +113,6 @@ function updateAnalytics() {
     });
 };
 updateAnalytics();
-setInterval(updateAnalytics, 15000);
+setInterval(function() {
+    updateAnalytics();
+}, 15000);

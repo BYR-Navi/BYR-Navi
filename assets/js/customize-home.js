@@ -22,7 +22,9 @@ function updateVersion(updateProgressBar) {
     });
 };
 updateVersion(true);
-setInterval(updateVersion(false), 15000);
+setInterval(function() {
+    updateVersion(false);
+}, 15000);
 
 // visit
 var countUpOptions = {
@@ -53,7 +55,9 @@ function updateVisit(updateProgressBar) {
     });
 };
 updateVisit(true);
-setInterval(updateVisit(false), 15000);
+setInterval(function() {
+    updateVisit(false);
+}, 15000);
 
 // search
 $.getJSON(urlPrefix + '/json/search_service_data.json', function(data) {

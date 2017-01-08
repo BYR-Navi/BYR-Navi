@@ -112,7 +112,9 @@ function updateVisit(updateProgressBar) {
     });
 };
 updateVisit(true);
-setInterval(updateVisit(false), 15000);
+setInterval(function() {
+    updateVisit(false);
+}, 15000);
 
 // chart
 var visitSummaryChart = echarts.init(document.getElementById('visit-summary'), 'macarons');
@@ -268,7 +270,9 @@ function updateVisitSummaryChart(updateProgressBar) {
 };
 updateVisitSummaryChart(true);
 visitSummaryChart.hideLoading();
-setInterval(updateVisitSummaryChart(false), 15000);
+setInterval(function() {
+    updateVisitSummaryChart(false);
+}, 15000);
 
 var visitHourlyChart = echarts.init(document.getElementById('visit-hourly'), 'macarons');
 visitHourlyChart.setOption({
@@ -420,7 +424,9 @@ function updateVisitHourlyChart(updateProgressBar) {
 };
 updateVisitHourlyChart(true);
 visitHourlyChart.hideLoading();
-setInterval(updateVisitHourlyChart(false), 15000);
+setInterval(function() {
+    updateVisitHourlyChart(false);
+}, 15000);
 
 var visitMapChart = echarts.init(document.getElementById('visit-map'), 'macarons');
 visitMapChart.setOption({
@@ -587,4 +593,6 @@ function updateVisitMapChart(updateProgressBar) {
     });
 };
 updateVisitMapChart(true);
-setInterval(updateVisitMapChart(false), 15000);
+setInterval(function() {
+    updateVisitMapChart(false);
+}, 15000);
