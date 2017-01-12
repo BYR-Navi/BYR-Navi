@@ -18,12 +18,12 @@
                 {
                     "name": "淘宝",
                     "icon": "",
-                    "style": "basic orange",
+                    "style": "basic",
                     "url": "http://www.taobao.com/"
                 },
                 {
                     "name": "亚马逊",
-                    "icon": "amazon",
+                    "icon": "amazon orange",
                     "style": "basic",
                     "url": "http://www.amazon.cn/"
                 },
@@ -65,12 +65,12 @@
                 {
                     "name": "大众点评",
                     "icon": "",
-                    "style": "basic orange",
+                    "style": "basic",
                     "url": "http://www.dianping.com/beijing"
                 },
                 {
                     "name": "QQ邮箱",
-                    "icon": "",
+                    "icon": "qq",
                     "style": "basic",
                     "url": "http://mail.qq.com/"
                 },
@@ -117,20 +117,20 @@
                 },
                 {
                     "name": "百度贴吧",
-                    "icon": "",
+                    "icon": "paw",
                     "style": "basic blue",
                     "url": "http://tieba.baidu.com/"
                 },
                 {
                     "name": "知乎",
                     "icon": "",
-                    "style": "basic blue",
+                    "style": "basic",
                     "url": "http://www.zhihu.com/"
                 },
                 {
                     "name": "Quora",
                     "icon": "",
-                    "style": "basic red",
+                    "style": "basic",
                     "url": "http://www.quora.com"
                 },
                 {
@@ -146,6 +146,12 @@
                     "url": "http://www.facebook.com/"
                 },
                 {
+                    "name": "Google+",
+                    "icon": "google plus",
+                    "style": "basic red",
+                    "url": "https://plus.google.com/"
+                },
+                {
                     "name": "Tumblr",
                     "icon": "tumblr",
                     "style": "basic blue",
@@ -154,7 +160,7 @@
                 {
                     "name": "Instagram",
                     "icon": "instagram",
-                    "style": "basic",
+                    "style": "basic pink",
                     "url": "http://www.instagram.com"
                 }
             ]
@@ -165,7 +171,7 @@
                 {
                     "name": "CSDN",
                     "icon": "",
-                    "style": "basic red",
+                    "style": "basic",
                     "url": "http://www.csdn.net/"
                 },
                 {
@@ -183,7 +189,7 @@
                 {
                     "name": "GitHub",
                     "icon": "github",
-                    "style": "basic purple",
+                    "style": "basic",
                     "url": "http://github.com/"
                 },
                 {
@@ -259,37 +265,37 @@
                 {
                     "name": "优酷",
                     "icon": "",
-                    "style": "basic blue",
+                    "style": "basic",
                     "url": "http://www.youku.com/"
                 },
                 {
                     "name": "土豆",
                     "icon": "",
-                    "style": "basic orange",
+                    "style": "basic",
                     "url": "http://www.tudou.com/"
                 },
                 {
                     "name": "爱奇艺",
                     "icon": "",
-                    "style": "basic green",
+                    "style": "basic",
                     "url": "http://www.iqiyi.com/"
                 },
                 {
                     "name": "芒果TV",
                     "icon": "",
-                    "style": "basic orange",
+                    "style": "basic",
                     "url": "http://www.mgtv.com/"
                 },
                 {
                     "name": "哔哩哔哩",
                     "icon": "",
-                    "style": "basic blue",
+                    "style": "basic",
                     "url": "http://www.bilibili.com/"
                 },
                 {
                     "name": "AcFun",
                     "icon": "",
-                    "style": "basic pink",
+                    "style": "basic",
                     "url": "http://www.acfun.tv/"
                 },
                 {
@@ -307,7 +313,7 @@
                 {
                     "name": "虾米",
                     "icon": "",
-                    "style": "basic orange",
+                    "style": "basic",
                     "url": "http://www.xiami.com/"
                 },
                 {
