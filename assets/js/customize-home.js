@@ -167,7 +167,7 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
             $('#public-links-' + i).append(
                 $('<a>')
                     .addClass('ui label')
-                    .addClass(data.public_links[i].style)
+                    .addClass(data.public_links[i].links[j].style)
                     .attr('href', data.public_links[i].links[j].url)
                     .attr('target', '_blank')
                     .html(data.public_links[i].links[j].name)
@@ -193,7 +193,7 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
             $('#byr-links-' + i).append(
                 $('<a>')
                     .addClass('ui label')
-                    .addClass(data.byr_links[i].style)
+                    .addClass(data.byr_links[i].links[j].style)
                     .attr('href', data.byr_links[i].links[j].url)
                     .attr('target', '_blank')
                     .html(data.byr_links[i].links[j].name)
