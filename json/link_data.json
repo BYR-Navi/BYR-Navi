@@ -581,7 +581,7 @@
                 },
                 {
                     "name": "校历",
-                    "icon": "calendar black",
+                    "icon": "",
                     "style": "basic",
                     "url": "http://www.bupt.edu.cn/content/content.php?p=6_10_80"
                 }
