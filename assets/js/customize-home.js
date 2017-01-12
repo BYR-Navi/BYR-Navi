@@ -193,7 +193,7 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
             $('#byr-links-' + i).append(
                 $('<a>')
                     .addClass('ui basic label')
-                    .addClass(data.public_links[i].color)
+                    .addClass(data.byr_links[i].color)
                     .attr('href', data.byr_links[i].links[j].url)
                     .attr('target', '_blank')
                     .html(data.byr_links[i].links[j].name)
