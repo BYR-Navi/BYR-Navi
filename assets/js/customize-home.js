@@ -155,7 +155,7 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
                 .append(
                     $('<h3>')
                         .addClass('ui header')
-                        .html(data.public_links[i].category)
+                        .text(data.public_links[i].category)
                 )
                 .append(
                     $('<div>')
@@ -179,6 +179,7 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
                             .addClass(data.public_links[i].links[j].icon)
                             .addClass('icon')
                     )
+                    .append(data.public_links[i].links[j].name)
             } else {
                 $('#public-links-' + i + '-' + j).text(data.public_links[i].links[j].name)
             };
@@ -191,7 +192,7 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
                 .append(
                     $('<h3>')
                         .addClass('ui header')
-                        .html(data.byr_links[i].category)
+                        .text(data.byr_links[i].category)
                     )
                 .append(
                     $('<div>')
@@ -215,6 +216,7 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
                             .addClass(data.byr_links[i].links[j].icon)
                             .addClass('icon')
                     )
+                    .append(data.byr_links[i].links[j].name)
             } else {
                 $('#byr-links-' + i + '-' + j).text(data.byr_links[i].links[j].name)
             };
