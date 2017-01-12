@@ -166,12 +166,22 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
         for (var j in data.public_links[i].links) {
             $('#public-links-' + i).append(
                 $('<a>')
+                    .attr('id', 'public-links-' + i + '-' + j)
                     .addClass('ui label')
                     .addClass(data.public_links[i].links[j].style)
                     .attr('href', data.public_links[i].links[j].url)
                     .attr('target', '_blank')
-                    .html('<i class="' + data.public_links[i].links[j].icon + ' icon"></i>' + data.public_links[i].links[j].name)
             );
+            if (data.public_links[i].links[j].icon !== '') {
+                $('#public-links-' + i + '-' + j)
+                    .append(
+                        $('<i>')
+                            .addClass(data.public_links[i].links[j].icon)
+                            .addClass('icon')
+                    )
+            } else {
+                $('#public-links-' + i + '-' + j).text(data.public_links[i].links[j].name)
+            };
         };
     };
     for (var i in data.byr_links) {
@@ -192,12 +202,22 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
         for (var j in data.byr_links[i].links) {
             $('#byr-links-' + i).append(
                 $('<a>')
+                    .attr('id', 'byr-links-' + i + '-' + j)
                     .addClass('ui label')
                     .addClass(data.byr_links[i].links[j].style)
                     .attr('href', data.byr_links[i].links[j].url)
                     .attr('target', '_blank')
-                    .html('<i class="' + data.byr_links[i].links[j].icon + ' icon"></i>' + data.byr_links[i].links[j].name)
             );
+            if (data.byr_links[i].links[j].icon !== '') {
+                $('#byr-links-' + i + '-' + j)
+                    .append(
+                        $('<i>')
+                            .addClass(data.byr_links[i].links[j].icon)
+                            .addClass('icon')
+                    )
+            } else {
+                $('#byr-links-' + i + '-' + j).text(data.byr_links[i].links[j].name)
+            };
         };
     };
     $('#page-loading-progress').progress('increment');

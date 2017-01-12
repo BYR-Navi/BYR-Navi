@@ -455,13 +455,13 @@
                     "url": "http://bbs.byr.cn/#!elite/path?v=/bbslists"
                 },
                 {
-                    "name": "APP下载",
+                    "name": "论坛APP",
                     "icon": "android",
                     "style": "basic",
                     "url": "http://android.myapp.com/myapp/detail.htm?apkName=cn.byr.bbs.app"
                 },
                 {
-                    "name": "APP下载",
+                    "name": "论坛APP",
                     "icon": "apple",
                     "style": "basic",
                     "url": "http://itunes.apple.com/cn/app/bei-you-ren-lun-tan-bei-you/id1115232927?mt=8"
