@@ -152,15 +152,22 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
         $('#public-links').append(
             $('<div>')
                 .addClass('column')
-                .attr('id', 'public-links-' + i)
-                .append($('<h3>')
-                .addClass('ui header')
-                .html(data.public_links[i].category))
+                .append(
+                    $('<h3>')
+                        .addClass('ui header')
+                        .html(data.public_links[i].category)
+                )
+                .append(
+                    $('<div>')
+                        .attr('id', 'public-links-' + i)
+                        .addClass('ui labels')
+                        .addClass(data.public_links[i].color)
+                )
         );
         for (var j in data.public_links[i].links) {
             $('#public-links-' + i).append(
                 $('<a>')
-                    .addClass('ui button')
+                    .addClass('ui basic label')
                     .attr('href', data.public_links[i].links[j].url)
                     .attr('target', '_blank')
                     .html(data.public_links[i].links[j].name)
@@ -171,15 +178,22 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
         $('#byr-links').append(
             $('<div>')
                 .addClass('column')
-                .attr('id', 'byr-links-' + i)
-                .append($('<h3>')
-                .addClass('ui header')
-                .html(data.byr_links[i].category))
+                .append(
+                    $('<h3>')
+                        .addClass('ui header')
+                        .html(data.byr_links[i].category)
+                    )
+                .append(
+                    $('<div>')
+                        .attr('id', 'byr-links-' + i)
+                        .addClass('ui labels')
+                        .addClass(data.public_links[i].color)
+                )
         );
         for (var j in data.byr_links[i].links) {
             $('#byr-links-' + i).append(
                 $('<a>')
-                    .addClass('ui button')
+                    .addClass('ui basic label')
                     .attr('href', data.byr_links[i].links[j].url)
                     .attr('target', '_blank')
                     .html(data.byr_links[i].links[j].name)

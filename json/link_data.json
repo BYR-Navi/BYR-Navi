@@ -2,6 +2,7 @@
     "public_links": [
         {
             "category": "购物",
+            "color": "",
             "links": [
                 {
                     "name": "京东",
@@ -35,6 +36,7 @@
         },
         {
             "category": "工具",
+            "color": "",
             "links": [
                 {
                     "name": "12306",
@@ -72,6 +74,7 @@
         },
         {
             "category": "社交",
+            "color": "",
             "links": [
                 {
                     "name": "微博",
@@ -113,6 +116,7 @@
         },
         {
             "category": "学习",
+            "color": "",
             "links": [
                 {
                     "name": "CSDN",
@@ -150,6 +154,7 @@
         },
         {
             "category": "求职",
+            "color": "",
             "links": [
                 {
                     "name": "LinkedIn",
@@ -179,6 +184,7 @@
         },
         {
             "category": "娱乐",
+            "color": "",
             "links": [
                 {
                     "name": "优酷",
@@ -209,6 +215,10 @@
                     "url": "http://www.tucao.tv/"
                 },
                 {
+                    "name": "多瑙影院",
+                    "url": "http://www.dnvod.eu/"
+                },
+                {
                     "name": "虾米",
                     "url": "http://www.xiami.com/"
                 },
@@ -222,6 +232,7 @@
     "byr_links": [
         {
             "category": "北邮校园",
+            "color": "",
             "links": [
                 {
                     "name": "北邮官网",
@@ -287,6 +298,7 @@
         },
         {
             "category": "论坛相关",
+            "color": "",
             "links": [
                 {
                     "name": "北邮人论坛",
@@ -336,6 +348,7 @@
         },
         {
             "category": "其他",
+            "color": "",
             "links": [
                 {
                     "name": "空余教室查询",
