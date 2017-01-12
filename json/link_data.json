@@ -70,7 +70,7 @@
                 },
                 {
                     "name": "QQ邮箱",
-                    "icon": "qq",
+                    "icon": "qq black",
                     "style": "basic",
                     "url": "http://mail.qq.com/"
                 },
@@ -105,20 +105,20 @@
             "links": [
                 {
                     "name": "微博",
-                    "icon": "weibo",
-                    "style": "basic red",
+                    "icon": "weibo red",
+                    "style": "basic",
                     "url": "http://weibo.com/"
                 },
                 {
                     "name": "微信网页版",
-                    "icon": "wechat",
-                    "style": "basic green",
+                    "icon": "wechat green",
+                    "style": "basic",
                     "url": "http://wx.qq.com/"
                 },
                 {
                     "name": "百度贴吧",
-                    "icon": "paw",
-                    "style": "basic blue",
+                    "icon": "paw blue",
+                    "style": "basic",
                     "url": "http://tieba.baidu.com/"
                 },
                 {
@@ -141,26 +141,26 @@
                 },
                 {
                     "name": "Facebook",
-                    "icon": "facebook",
-                    "style": "basic blue",
+                    "icon": "facebook blue",
+                    "style": "basic",
                     "url": "http://www.facebook.com/"
                 },
                 {
                     "name": "Google+",
-                    "icon": "google plus",
-                    "style": "basic red",
+                    "icon": "google plus red",
+                    "style": "basic",
                     "url": "https://plus.google.com/"
                 },
                 {
                     "name": "Tumblr",
-                    "icon": "tumblr",
-                    "style": "basic blue",
+                    "icon": "tumblr blue",
+                    "style": "basic",
                     "url": "http://www.tumblr.com/"
                 },
                 {
                     "name": "Instagram",
-                    "icon": "instagram",
-                    "style": "basic pink",
+                    "icon": "instagram pink",
+                    "style": "basic",
                     "url": "http://www.instagram.com"
                 }
             ]
@@ -188,7 +188,7 @@
                 },
                 {
                     "name": "GitHub",
-                    "icon": "github",
+                    "icon": "github black",
                     "style": "basic",
                     "url": "http://github.com/"
                 },
@@ -427,7 +427,7 @@
                 {
                     "name": "北邮人论坛",
                     "icon": "",
-                    "style": "basic teal",
+                    "style": "basic",
                     "url": "http://bbs.byr.cn/#!default"
                 },
                 {
@@ -462,13 +462,13 @@
                 },
                 {
                     "name": "论坛APP",
-                    "icon": "android",
+                    "icon": "android green",
                     "style": "basic",
                     "url": "http://android.myapp.com/myapp/detail.htm?apkName=cn.byr.bbs.app"
                 },
                 {
                     "name": "论坛APP",
-                    "icon": "apple",
+                    "icon": "apple grey",
                     "style": "basic",
                     "url": "http://itunes.apple.com/cn/app/bei-you-ren-lun-tan-bei-you/id1115232927?mt=8"
                 },
