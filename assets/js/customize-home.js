@@ -161,13 +161,13 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
                     $('<div>')
                         .attr('id', 'public-links-' + i)
                         .addClass('ui labels')
-                        .addClass(data.public_links[i].color)
                 )
         );
         for (var j in data.public_links[i].links) {
             $('#public-links-' + i).append(
                 $('<a>')
                     .addClass('ui basic label')
+                    .addClass(data.public_links[i].color)
                     .attr('href', data.public_links[i].links[j].url)
                     .attr('target', '_blank')
                     .html(data.public_links[i].links[j].name)
@@ -187,13 +187,13 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
                     $('<div>')
                         .attr('id', 'byr-links-' + i)
                         .addClass('ui labels')
-                        .addClass(data.public_links[i].color)
                 )
         );
         for (var j in data.byr_links[i].links) {
             $('#byr-links-' + i).append(
                 $('<a>')
                     .addClass('ui basic label')
+                    .addClass(data.public_links[i].color)
                     .attr('href', data.byr_links[i].links[j].url)
                     .attr('target', '_blank')
                     .html(data.byr_links[i].links[j].name)
