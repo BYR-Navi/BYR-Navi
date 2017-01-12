@@ -18,7 +18,7 @@
                 {
                     "name": "淘宝",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic orange",
                     "url": "http://www.taobao.com/"
                 },
                 {
@@ -65,7 +65,7 @@
                 {
                     "name": "大众点评",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic orange",
                     "url": "http://www.dianping.com/beijing"
                 },
                 {
@@ -106,49 +106,49 @@
                 {
                     "name": "微博",
                     "icon": "weibo",
-                    "style": "basic",
+                    "style": "basic red",
                     "url": "http://weibo.com/"
                 },
                 {
                     "name": "微信网页版",
                     "icon": "wechat",
-                    "style": "basic",
+                    "style": "basic green",
                     "url": "http://wx.qq.com/"
                 },
                 {
                     "name": "百度贴吧",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic blue",
                     "url": "http://tieba.baidu.com/"
                 },
                 {
                     "name": "知乎",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic blue",
                     "url": "http://www.zhihu.com/"
                 },
                 {
                     "name": "Quora",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic red",
                     "url": "http://www.quora.com"
                 },
                 {
                     "name": "Youtube",
                     "icon": "youtube",
-                    "style": "basic",
+                    "style": "basic red",
                     "url": "http://www.youtube.com/"
                 },
                 {
                     "name": "Facebook",
                     "icon": "facebook",
-                    "style": "basic",
+                    "style": "basic blue",
                     "url": "http://www.facebook.com/"
                 },
                 {
                     "name": "Tumblr",
                     "icon": "tumblr",
-                    "style": "basic",
+                    "style": "basic blue",
                     "url": "http://www.tumblr.com/"
                 },
                 {
@@ -165,7 +165,7 @@
                 {
                     "name": "CSDN",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic red",
                     "url": "http://www.csdn.net/"
                 },
                 {
@@ -177,13 +177,13 @@
                 {
                     "name": "Stack Overflow",
                     "icon": "stack overflow",
-                    "style": "basic",
+                    "style": "basic orange",
                     "url": "http://stackoverflow.com/"
                 },
                 {
                     "name": "GitHub",
                     "icon": "github",
-                    "style": "basic",
+                    "style": "basic purple",
                     "url": "http://github.com/"
                 },
                 {
@@ -218,7 +218,7 @@
                 {
                     "name": "LinkedIn",
                     "icon": "linkedin",
-                    "style": "basic",
+                    "style": "basic blue",
                     "url": "http://www.linkedin.com/"
                 },
                 {
@@ -259,37 +259,37 @@
                 {
                     "name": "优酷",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic blue",
                     "url": "http://www.youku.com/"
                 },
                 {
                     "name": "土豆",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic orange",
                     "url": "http://www.tudou.com/"
                 },
                 {
                     "name": "爱奇艺",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic green",
                     "url": "http://www.iqiyi.com/"
                 },
                 {
                     "name": "芒果TV",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic orange",
                     "url": "http://www.mgtv.com/"
                 },
                 {
                     "name": "哔哩哔哩",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic blue",
                     "url": "http://www.bilibili.com/"
                 },
                 {
                     "name": "AcFun",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic pink",
                     "url": "http://www.acfun.tv/"
                 },
                 {
@@ -307,7 +307,7 @@
                 {
                     "name": "虾米",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic orange",
                     "url": "http://www.xiami.com/"
                 },
                 {
@@ -421,7 +421,7 @@
                 {
                     "name": "北邮人论坛",
                     "icon": "",
-                    "style": "basic",
+                    "style": "basic teal",
                     "url": "http://bbs.byr.cn/#!default"
                 },
                 {
