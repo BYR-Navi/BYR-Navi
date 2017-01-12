@@ -23,7 +23,7 @@
                 },
                 {
                     "name": "亚马逊",
-                    "icon": "amazon orange",
+                    "icon": "amazon yellow",
                     "style": "basic",
                     "url": "http://www.amazon.cn/"
                 },
@@ -135,8 +135,8 @@
                 },
                 {
                     "name": "Youtube",
-                    "icon": "youtube",
-                    "style": "basic red",
+                    "icon": "youtube red",
+                    "style": "basic",
                     "url": "http://www.youtube.com/"
                 },
                 {
@@ -182,8 +182,8 @@
                 },
                 {
                     "name": "Stack Overflow",
-                    "icon": "stack overflow",
-                    "style": "basic orange",
+                    "icon": "stack overflow orange",
+                    "style": "basic",
                     "url": "http://stackoverflow.com/"
                 },
                 {
