@@ -170,7 +170,7 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
                     .addClass(data.public_links[i].links[j].style)
                     .attr('href', data.public_links[i].links[j].url)
                     .attr('target', '_blank')
-                    .html(data.public_links[i].links[j].name)
+                    .html('<i class="' + data.public_links[i].links[j].icon + ' icon"></i>' + data.public_links[i].links[j].name)
             );
         };
     };
@@ -196,7 +196,7 @@ $.getJSON(urlPrefix + '/json/link_data.json', function(data) {
                     .addClass(data.byr_links[i].links[j].style)
                     .attr('href', data.byr_links[i].links[j].url)
                     .attr('target', '_blank')
-                    .html(data.byr_links[i].links[j].name)
+                    .html('<i class="' + data.byr_links[i].links[j].icon + ' icon"></i>' + data.byr_links[i].links[j].name)
             );
         };
     };
