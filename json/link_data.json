@@ -302,7 +302,7 @@
                 },
                 {
                     "name": "北邮人论坛",
-                    "style": "basic teal",
+                    "style": "basic",
                     "url": "http://bbs.byr.cn/"
                 },
                 {
@@ -357,7 +357,7 @@
             "links": [
                 {
                     "name": "北邮人论坛",
-                    "style": "basic",
+                    "style": "basic teal",
                     "url": "http://bbs.byr.cn/#!default"
                 },
                 {
