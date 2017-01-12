@@ -82,7 +82,7 @@
                 },
                 {
                     "name": "Gmail",
-                    "icon": "",
+                    "icon": "google red",
                     "style": "basic",
                     "url": "http://mail.google.com"
                 },
