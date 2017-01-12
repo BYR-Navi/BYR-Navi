@@ -23,7 +23,7 @@
                 },
                 {
                     "name": "亚马逊",
-                    "icon": "",
+                    "icon": "amazon",
                     "style": "basic",
                     "url": "http://www.amazon.cn/"
                 },
@@ -105,13 +105,13 @@
             "links": [
                 {
                     "name": "微博",
-                    "icon": "",
+                    "icon": "weibo",
                     "style": "basic red",
                     "url": "http://weibo.com/"
                 },
                 {
                     "name": "微信网页版",
-                    "icon": "",
+                    "icon": "wechat",
                     "style": "basic green",
                     "url": "http://wx.qq.com/"
                 },
@@ -135,25 +135,25 @@
                 },
                 {
                     "name": "Youtube",
-                    "icon": "",
+                    "icon": "youtube",
                     "style": "basic red",
                     "url": "http://www.youtube.com/"
                 },
                 {
                     "name": "Facebook",
-                    "icon": "",
+                    "icon": "facebook",
                     "style": "basic blue",
                     "url": "http://www.facebook.com/"
                 },
                 {
                     "name": "Tumblr",
-                    "icon": "",
+                    "icon": "tumblr",
                     "style": "basic blue",
                     "url": "http://www.tumblr.com/"
                 },
                 {
                     "name": "Instagram",
-                    "icon": "",
+                    "icon": "instagram",
                     "style": "basic",
                     "url": "http://www.instagram.com"
                 }
@@ -176,13 +176,13 @@
                 },
                 {
                     "name": "Stack Overflow",
-                    "icon": "",
+                    "icon": "stack overflow",
                     "style": "basic orange",
                     "url": "http://stackoverflow.com/"
                 },
                 {
                     "name": "GitHub",
-                    "icon": "",
+                    "icon": "github",
                     "style": "basic purple",
                     "url": "http://github.com/"
                 },
@@ -217,7 +217,7 @@
             "links": [
                 {
                     "name": "LinkedIn",
-                    "icon": "",
+                    "icon": "linkedin",
                     "style": "basic blue",
                     "url": "http://www.linkedin.com/"
                 },
