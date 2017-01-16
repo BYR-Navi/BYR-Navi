@@ -58,7 +58,7 @@
                 },
                 {
                     "name": "百度地图",
-                    "icon": "",
+                    "icon": "marker red",
                     "style": "basic",
                     "url": "http://map.baidu.com/"
                 },
