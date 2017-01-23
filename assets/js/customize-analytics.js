@@ -129,7 +129,10 @@ visitSummaryChart.setOption({
         top: 30
     },
     tooltip: {
-        trigger: 'axis'
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
     },
     toolbox: {
         showTitle: false,
