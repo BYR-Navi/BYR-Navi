@@ -154,6 +154,7 @@ visitSummaryChart.setOption({
             type: 'slider',
             show: true,
             realtime: true,
+            xAxisIndex: [0],
             start: 50,
             end: 100
         }
