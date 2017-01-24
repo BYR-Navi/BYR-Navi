@@ -119,79 +119,98 @@ setInterval(function() {
 // chart
 var visitSummaryChart = echarts.init(document.getElementById('visit-summary'), 'macarons');
 visitSummaryChart.setOption({
-    title: {
-        text: '访客数据总览（过去90天）',
-        left: 'center'
-    },
-    legend: {
-        data: ['访客数', '访问次数', '浏览次数'],
-        right: 'center',
-        top: 30
-    },
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {
-            type: 'shadow'
+    baseOption: {
+        title: {
+            text: '访客数据总览（过去90天）',
+            left: 'center'
+        },
+        legend: {
+            data: ['访客数', '访问次数', '浏览次数'],
+            right: 'center',
+            top: 30
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        toolbox: {
+            showTitle: false,
+            feature: {
+                restore: {},
+                magicType: {
+                    type: ['bar', 'line']
+                },
+                dataView: {
+                    readOnly: true
+                },
+                saveAsImage: {
+                    excludeComponents: ['toolbox', 'dataZoom']
+                }
+            }
+        },
+        dataZoom: [
+            {
+                type: 'slider',
+                show: true,
+                realtime: true,
+                xAxisIndex: [0],
+                start: 50,
+                end: 100
+            }
+        ],
+        xAxis: {
+            type : 'category',
+            data: []
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [{
+            name: '访客数',
+            type: 'bar',
+            data: [],
+            animationDelay: function (idx) {
+                return idx * 10;
+            }
+        }, {
+            name: '访问次数',
+            type: 'bar',
+            data: [],
+            animationDelay: function (idx) {
+                return idx * 10 + 100;
+            }
+        }, {
+            name: '浏览次数',
+            type: 'bar',
+            data: [],
+            animationDelay: function (idx) {
+                return idx * 10 + 200;
+            }
+        }],
+        animationEasing: 'elasticOut',
+        animationDelayUpdate: function (idx) {
+            return idx * 5;
         }
     },
-    toolbox: {
-        showTitle: false,
-        feature: {
-            restore: {},
-            magicType: {
-                type: ['bar', 'line']
+    media: [{
+        query: {
+            maxWidth: 767
+        },
+        option: {
+            legend: {
+                orient: 'vertical',
+                left: 0
             },
-            dataView: {
-                readOnly: true
+            grid: {
+                top: 110
             },
-            saveAsImage: {
-                excludeComponents: ['toolbox', 'dataZoom']
+            toolbox: {
+                top: 30
             }
         }
-    },
-    dataZoom: [
-        {
-            type: 'slider',
-            show: true,
-            realtime: true,
-            xAxisIndex: [0],
-            start: 50,
-            end: 100
-        }
-    ],
-    xAxis: {
-        type : 'category',
-        data: []
-    },
-    yAxis: {
-        type: 'value'
-    },
-    series: [{
-        name: '访客数',
-        type: 'bar',
-        data: [],
-        animationDelay: function (idx) {
-            return idx * 10;
-        }
-    }, {
-        name: '访问次数',
-        type: 'bar',
-        data: [],
-        animationDelay: function (idx) {
-            return idx * 10 + 100;
-        }
-    }, {
-        name: '浏览次数',
-        type: 'bar',
-        data: [],
-        animationDelay: function (idx) {
-            return idx * 10 + 200;
-        }
-    }],
-    animationEasing: 'elasticOut',
-    animationDelayUpdate: function (idx) {
-        return idx * 5;
-    }
+    }]
 });
 visitSummaryChart.showLoading();
 function updateVisitSummaryChart(updateProgressBar) {
@@ -280,74 +299,93 @@ setInterval(function() {
 
 var visitHourlyChart = echarts.init(document.getElementById('visit-hourly'), 'macarons');
 visitHourlyChart.setOption({
-    title: {
-        text: '访客数据（7x24小时）',
-        left: 'center'
-    },
-    legend: {
-        data: ['访客数', '访问次数', '浏览次数'],
-        selectedMode: 'single',
-        right: 'center',
-        top: 30
-    },
-    tooltip: {
-        position: 'top',
-        formatter: function (params) {
-            return params.value[1] + ' ' + params.value[0] + '<br />' + params.seriesName + ': ' + params.value[2];
-        }
-    },
-    toolbox: {
-        showTitle: false,
-        feature: {
-            restore: {},
-            saveAsImage: {
-                excludeComponents: ['toolbox']
-            }
-        }
-    },
-    xAxis: {
-        type: 'category',
-        data: ['0h', '1h', '2h', '3h', '4h', '5h', '6h', '7h', '8h', '9h', '10h', '11h', '12h', '13h', '14h', '15h', '16h', '17h', '18h', '19h', '20h', '21h', '22h', '23h'],
-        boundaryGap: false,
-        splitLine: {
-            show: true,
-            lineStyle: {
-                type: 'dashed'
+    baseOption: {
+        title: {
+            text: '访客数据（7x24小时）',
+            left: 'center'
+        },
+        legend: {
+            data: ['访客数', '访问次数', '浏览次数'],
+            selectedMode: 'single',
+            right: 'center',
+            top: 30
+        },
+        tooltip: {
+            position: 'top',
+            formatter: function (params) {
+                return params.value[1] + ' ' + params.value[0] + '<br />' + params.seriesName + ': ' + params.value[2];
             }
         },
-    },
-    yAxis: {
-        type: 'category',
-        data: [],
-        splitLine: {
-            show: true
+        toolbox: {
+            showTitle: false,
+            feature: {
+                restore: {},
+                saveAsImage: {
+                    excludeComponents: ['toolbox']
+                }
+            }
         },
-        axisLine: {
-            show: false
-        }
+        xAxis: {
+            type: 'category',
+            data: ['0h', '1h', '2h', '3h', '4h', '5h', '6h', '7h', '8h', '9h', '10h', '11h', '12h', '13h', '14h', '15h', '16h', '17h', '18h', '19h', '20h', '21h', '22h', '23h'],
+            boundaryGap: false,
+            splitLine: {
+                show: true,
+                lineStyle: {
+                    type: 'dashed'
+                }
+            },
+        },
+        yAxis: {
+            type: 'category',
+            data: [],
+            splitLine: {
+                show: true
+            },
+            axisLine: {
+                show: false
+            }
+        },
+        series: [{
+            name: '访客数',
+            type: 'scatter',
+            data: [],
+            animationDelay: function (idx) {
+                return idx * 10 + 100;
+            }
+        },
+        {
+            name: '访问次数',
+            type: 'scatter',
+            data: [],
+            animationDelay: function (idx) {
+                return idx * 10 + 100;
+            }
+        },
+        {
+            name: '浏览次数',
+            type: 'scatter',
+            data: [],
+            animationDelay: function (idx) {
+                return idx * 10 + 100;
+            }
+        }]
     },
-    series: [{
-        name: '访客数',
-        type: 'scatter',
-        data: [],
-        animationDelay: function (idx) {
-            return idx * 10 + 100;
-        }
-    },
-    {
-        name: '访问次数',
-        type: 'scatter',
-        data: [],
-        animationDelay: function (idx) {
-            return idx * 10 + 100;
-        }
-    },
-    {
-        name: '浏览次数',
-        type: 'scatter',
-        data: [],
-        animationDelay: function (idx) {
-            return idx * 10 + 100;
+    media: [{
+        query: {
+            maxWidth: 767
+        },
+        option: {
+            legend: {
+                orient: 'vertical',
+                left: 0
+            },
+            grid: {
+                top: 110
+            },
+            toolbox: {
+                top: 30
+            }
         }
     }]
 });
@@ -434,85 +472,101 @@ setInterval(function() {
 
 var visitMapChart = echarts.init(document.getElementById('visit-map'), 'macarons');
 visitMapChart.setOption({
-    title: {
-        text: '今日访客来源',
-        left: 'center'
-    },
-    legend: {
-        data: ['访客数', '访问次数', '浏览次数'],
-        selectedMode: 'single',
-        right: 'center',
-        top: 30
-    },
-    tooltip: {
-        trigger: 'item',
-        formatter: function (params) {
-            var value = params.value
-            if (!value) {
-                value = 0
-            };
-            return params.name + ': ' + value;
-        }
-    },
-    toolbox: {
-        showTitle: false,
-        feature: {
-            restore: {},
-            saveAsImage: {
-                excludeComponents: ['toolbox']
+    baseOption: {
+        title: {
+            text: '今日访客来源',
+            left: 'center'
+        },
+        legend: {
+            data: ['访客数', '访问次数', '浏览次数'],
+            selectedMode: 'single',
+            right: 'center',
+            top: 30
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: function (params) {
+                var value = params.value
+                if (!value) {
+                    value = 0
+                };
+                return params.name + ': ' + value;
             }
-        }
-    },
-    visualMap: {
-        min: 0,
-        max: 500,
-        text:['High','Low'],
-        calculable: true,
-        inRange: {
-            color: ['lightskyblue','yellow', 'orangered']
-        }
-    },
-    series: [{
-        name: '访客数',
-        type: 'map',
-        mapType: 'world',
-        showLegendSymbol: false,
-        itemStyle: {
-            emphasis: {
-                label: {
-                    show:true
+        },
+        toolbox: {
+            showTitle: false,
+            feature: {
+                restore: {},
+                saveAsImage: {
+                    excludeComponents: ['toolbox']
                 }
             }
         },
-        data:[]
-    },
-    {
-        name: '访问次数',
-        type: 'map',
-        mapType: 'world',
-        showLegendSymbol: false,
-        itemStyle: {
-            emphasis: {
-                label: {
-                    show:true
-                }
+        visualMap: {
+            min: 0,
+            max: 500,
+            text:['High','Low'],
+            calculable: true,
+            inRange: {
+                color: ['lightskyblue','yellow', 'orangered']
             }
         },
-        data:[]
-    },
-    {
-        name: '浏览次数',
-        type: 'map',
-        mapType: 'world',
-        showLegendSymbol: false,
-        itemStyle: {
-            emphasis: {
-                label: {
-                    show:true
+        series: [{
+            name: '访客数',
+            type: 'map',
+            mapType: 'world',
+            showLegendSymbol: false,
+            itemStyle: {
+                emphasis: {
+                    label: {
+                        show:true
+                    }
                 }
-            }
+            },
+            data:[]
         },
-        data:[]
+        {
+            name: '访问次数',
+            type: 'map',
+            mapType: 'world',
+            showLegendSymbol: false,
+            itemStyle: {
+                emphasis: {
+                    label: {
+                        show:true
+                    }
+                }
+            },
+            data:[]
+        },
+        {
+            name: '浏览次数',
+            type: 'map',
+            mapType: 'world',
+            showLegendSymbol: false,
+            itemStyle: {
+                emphasis: {
+                    label: {
+                        show:true
+                    }
+                }
+            },
+            data:[]
+        }]
+    },
+    media: [{
+        query: {
+            maxWidth: 767
+        },
+        option: {
+            legend: {
+                orient: 'vertical',
+                left: 0
+            },
+            toolbox: {
+                top: 30
+            }
+        }
     }]
 });
 function updateVisitMapChart(updateProgressBar) {
