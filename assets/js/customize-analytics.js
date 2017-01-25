@@ -200,14 +200,13 @@ visitSummaryChart.setOption({
         },
         option: {
             legend: {
-                orient: 'vertical',
-                left: 0
+                orient: 'vertical'
             },
             grid: {
                 top: 110
             },
             toolbox: {
-                top: 30
+                show: false
             }
         }
     }]
@@ -377,14 +376,13 @@ visitHourlyChart.setOption({
         },
         option: {
             legend: {
-                orient: 'vertical',
-                left: 0
+                orient: 'vertical'
             },
             grid: {
                 top: 110
             },
             toolbox: {
-                top: 30
+                show: false
             }
         }
     }]
@@ -560,11 +558,10 @@ visitMapChart.setOption({
         },
         option: {
             legend: {
-                orient: 'vertical',
-                left: 0
+                orient: 'vertical'
             },
             toolbox: {
-                top: 30
+                show: false
             }
         }
     }]
