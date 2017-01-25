@@ -32,7 +32,7 @@
     height: 100%;
     content: '';
     background-size: cover;
-    opacity: 0.6;
+    opacity: 0.45;
 }
 .ui.inverted.masthead.segment.bg1:after {
     background-image: url('./../../images/backgrounds/1.jpg');
