@@ -82,6 +82,9 @@
 .ui.inverted.masthead.segment.bg16:after {
     background-image: url('./../../images/backgrounds/16.jpg');
 }
+.ui.inverted.masthead.segment.bg17:after {
+    background-image: url('./../../images/backgrounds/17.jpg');
+}
 .ui.inverted.masthead.segment,
 .ui.inverted.masthead.segment:after {
     -ms-transition:
