@@ -22,11 +22,19 @@
     margin-bottom: 0em;
     font-size: 4em;
     font-weight: normal;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 .masthead h2 {
     font-size: 1.7em;
     font-weight: normal;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 /*.masthead .ui.compact.selection.dropdown {

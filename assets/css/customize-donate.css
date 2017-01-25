@@ -13,12 +13,20 @@
     margin-top: 1.5em;
     font-size: 3em;
     font-weight: normal;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 .masthead h2 {
     margin-bottom: 1.5em;
     font-size: 1.7em;
     font-weight: normal;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 
