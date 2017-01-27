@@ -114,6 +114,21 @@
         margin-bottom: 1em;
         font-size: 1.5em;
     }
+    .ui.stripe.segment {
+        padding: 2em 0em;
+    }
+    .stats.stripe.segment {
+        padding: 0em;
+    }
+    .echart-container {
+        height: 300px;
+    }
+    #visit-hourly.echart-container {
+        height: 400px;
+    }
+    #visit-map.echart-container {
+        height: 400px;
+    }
     #contacts-dimmer div.item {
         font-size: 1em;
     }
