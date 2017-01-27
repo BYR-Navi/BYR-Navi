@@ -388,12 +388,17 @@ visitHourlyChart.setOption({
     }]
 });
 visitHourlyChart.showLoading();
-function normalizeSymbolSize(val, data) {
+function normalizeSymbolSize(val, data, resize) {
     if (val === 0) {
         return 0;
     } else {
-        var max = 40;
-        var min = 10;
+        if (resize) {
+            var max = 20;
+            var min = 5;
+        } else {
+            var max = 40;
+            var min = 10;
+        };
         var data_max = Math.max(...data.map(function(item) {
             return item[2];
         }));
@@ -431,28 +436,58 @@ function updateVisitHourlyChart(updateProgressBar) {
                 };
             };
             visitHourlyChart.setOption({
-                yAxis: {
-                    data: days
+                baseOption: {
+                    yAxis: {
+                        data: days
+                    },
+                    series: [{
+                        name: '访客数',
+                        data: visitors,
+                        symbolSize: function (val) {
+                            return normalizeSymbolSize(val[2], visitors, false);
+                        }
+                    },
+                    {
+                        name: '访问次数',
+                        data: visits,
+                        symbolSize: function (val) {
+                            return normalizeSymbolSize(val[2], visits, false);
+                        }
+                    },
+                    {
+                        name: '浏览次数',
+                        data: actions,
+                        symbolSize: function (val) {
+                            return normalizeSymbolSize(val[2], actions, false);
+                        }
+                    }]
                 },
-                series: [{
-                    name: '访客数',
-                    data: visitors,
-                    symbolSize: function (val) {
-                        return normalizeSymbolSize(val[2], visitors);
-                    }
-                },
-                {
-                    name: '访问次数',
-                    data: visits,
-                    symbolSize: function (val) {
-                        return normalizeSymbolSize(val[2], visits);
-                    }
-                },
-                {
-                    name: '浏览次数',
-                    data: actions,
-                    symbolSize: function (val) {
-                        return normalizeSymbolSize(val[2], actions);
+                media: [{
+                    query: {
+                        maxWidth: 767
+                    },
+                    option: {
+                        series: [{
+                            name: '访客数',
+                            data: visitors,
+                            symbolSize: function (val) {
+                                return normalizeSymbolSize(val[2], visitors, true);
+                            }
+                        },
+                        {
+                            name: '访问次数',
+                            data: visits,
+                            symbolSize: function (val) {
+                                return normalizeSymbolSize(val[2], visits, true);
+                            }
+                        },
+                        {
+                            name: '浏览次数',
+                            data: actions,
+                            symbolSize: function (val) {
+                                return normalizeSymbolSize(val[2], actions, true);
+                            }
+                        }]
                     }
                 }]
             });
