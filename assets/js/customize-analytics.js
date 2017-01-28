@@ -204,7 +204,7 @@ visitSummaryChart.setOption({
             },
             grid: {
                 top: 110,
-                left: 35,
+                left: 40,
                 right: 10
             },
             toolbox: {
