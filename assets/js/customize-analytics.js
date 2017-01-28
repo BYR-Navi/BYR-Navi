@@ -203,7 +203,9 @@ visitSummaryChart.setOption({
                 orient: 'vertical'
             },
             grid: {
-                top: 110
+                top: 110,
+                left: 35,
+                right: 10
             },
             toolbox: {
                 show: false
@@ -379,7 +381,9 @@ visitHourlyChart.setOption({
                 orient: 'vertical'
             },
             grid: {
-                top: 110
+                top: 110,
+                left: 70,
+                right: 10
             },
             toolbox: {
                 show: false
@@ -507,7 +511,7 @@ var visitMapChart = echarts.init(document.getElementById('visit-map'), 'macarons
 visitMapChart.setOption({
     baseOption: {
         title: {
-            text: '今日访客来源',
+            text: '访客来源（过去1个月）',
             left: 'center'
         },
         legend: {
@@ -537,7 +541,7 @@ visitMapChart.setOption({
         },
         visualMap: {
             min: 0,
-            max: 500,
+            max: 3000,
             text:['High','Low'],
             calculable: true,
             inRange: {
@@ -607,7 +611,7 @@ function updateVisitMapChart(updateProgressBar) {
             'module': 'API',
             'method': 'UserCountry.getCountry',
             'idSite': '1',
-            'period': 'day',
+            'period': 'month',
             'date': 'today',
             'format': 'JSON',
             'token_auth': data.analytics.token
@@ -620,25 +624,25 @@ function updateVisitMapChart(updateProgressBar) {
             var actionsChina = 0;
             for (var i in data) {
                 if (data[i]['label'] == 'China') {
-                    var visitorsChina = visitorsChina + data[i]['nb_uniq_visitors'];
+                    var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
                     var visitsChina = visitsChina + data[i]['nb_visits'];
                     var actionsChina = actionsChina + data[i]['nb_actions'];
                 } else if (data[i]['label'] == 'Hong Kong SAR China') {
-                    var visitorsChina = visitorsChina + data[i]['nb_uniq_visitors'];
+                    var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
                     var visitsChina = visitsChina + data[i]['nb_visits'];
                     var actionsChina = actionsChina + data[i]['nb_actions'];
                 } else if (data[i]['label'] == 'Taiwan') {
-                    var visitorsChina = visitorsChina + data[i]['nb_uniq_visitors'];
+                    var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
                     var visitsChina = visitsChina + data[i]['nb_visits'];
                     var actionsChina = actionsChina + data[i]['nb_actions'];
                 } else if (data[i]['label'] == 'Unknown') {
-                    var visitorsChina = visitorsChina + data[i]['nb_uniq_visitors'];
+                    var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
                     var visitsChina = visitsChina + data[i]['nb_visits'];
                     var actionsChina = actionsChina + data[i]['nb_actions'];
                 } else {
                     visitors.push({
                         'name': data[i]['label'].replace('United States', 'United States of America'),
-                        'value': data[i]['nb_uniq_visitors']
+                        'value': data[i]['sum_daily_nb_uniq_visitors']
                     });
                     visits.push({
                         'name': data[i]['label'].replace('United States', 'United States of America'),
