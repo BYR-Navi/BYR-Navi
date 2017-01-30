@@ -13,9 +13,9 @@ $('#page-loading-progress').progress({
 // version
 function updateVersion(updateProgressBar) {
     $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
-        $('#stargazer').html('<i class="star icon"></i> ' + data.stargazers_count + ' Stargazers');
-        $('#fork').html('<i class="fork icon"></i>' + data.forks_count + ' Forks');
-        $('#version').html('<i class="rocket icon"></i> Updated ' + moment(data.pushed_at, 'YYYY-MM-DDTh:mm:ssZ').fromNow());
+        $('#stargazer').html('<i class="yellow star icon"></i> ' + data.stargazers_count + ' Stargazers');
+        $('#fork').html('<i class="purple fork icon"></i>' + data.forks_count + ' Forks');
+        $('#version').html('<i class="orange rocket icon"></i> Updated ' + moment(data.pushed_at, 'YYYY-MM-DDTh:mm:ssZ').fromNow());
         if (updateProgressBar) {
             $('#page-loading-progress').progress('increment');
         };
