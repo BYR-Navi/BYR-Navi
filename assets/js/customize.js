@@ -45,7 +45,7 @@ $('.feedback')
     });
 
 // masthead background
-$('.ui.inverted.masthead.segment').addClass('bg' + Math.ceil(Math.random() * 17)).removeClass('zoomed');
+$('.ui.inverted.masthead.segment').addClass('bg' + Math.ceil(Math.random() * 16)).removeClass('zoomed');
 
 // var urlPrefix = 'http://localhost/BYR-Navi';
 var urlPrefix = 'http://byr123.irockbunny.com';
