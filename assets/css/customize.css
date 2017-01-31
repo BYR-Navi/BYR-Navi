@@ -97,17 +97,6 @@
     display: none;
 }
 
-#logo {
-    transition: -moz-transform 0.2s ease-out;
-    transition: -webkit-transform 0.2s ease-out;
-    transition: transform 0.2s ease-out;
-}
-#logo:hover {
-    -moz-transform: rotateZ(360deg);
-    -webkit-transform: rotateZ(360deg);
-    transform: rotateZ(360deg);
-}
-
 #links .ui.header {
     margin-top: 20px;
     margin-bottom: 10px;
