@@ -102,7 +102,7 @@
     transition: -webkit-transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
 }
-#logo {
+#logo:hover {
     -moz-transform: rotateZ(360deg);
     -webkit-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
