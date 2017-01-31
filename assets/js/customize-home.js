@@ -1,5 +1,12 @@
 // customize-home.js
 
+// logo spin
+$('#logo').hover(function(){
+    $(this).addClass('loading');
+}, function(){
+    $(this).removeClass('loading');
+});
+
 // progress bar
 $('#page-loading-progress').progress({
     total: 4,
