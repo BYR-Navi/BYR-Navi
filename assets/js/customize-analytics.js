@@ -511,7 +511,7 @@ var visitMapChart = echarts.init(document.getElementById('visit-map'), 'macarons
 visitMapChart.setOption({
     baseOption: {
         title: {
-            text: '访客来源（过去1个月）',
+            text: '本月访客来源',
             left: 'center'
         },
         legend: {
