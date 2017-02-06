@@ -302,7 +302,7 @@ var visitHourlyChart = echarts.init(document.getElementById('visit-hourly'), 'ma
 visitHourlyChart.setOption({
     baseOption: {
         title: {
-            text: '访客数据（7x24小时）',
+            text: '访客数据（7×24小时）',
             left: 'center'
         },
         legend: {
