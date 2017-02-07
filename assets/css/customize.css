@@ -222,6 +222,9 @@
 .text-grey-inverted {
     color: #DCDDDE;
 }
+.text-black-inverted {
+    color: #545454;
+}
 
 /* background colors */
 .background-red {
