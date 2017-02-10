@@ -22,7 +22,7 @@ function updateVersion(updateProgressBar) {
     $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
         $('#stargazer').html('<i class="yellow star icon"></i> ' + data.stargazers_count + ' Stargazers');
         $('#fork').html('<i class="orange fork icon"></i>' + data.forks_count + ' Forks');
-        $('#version').html('<i class="black rocket icon"></i> Updated ' + moment(data.pushed_at, 'YYYY-MM-DDTh:mm:ssZ').fromNow());
+        $('#version').html('<i class="black rocket icon"></i> Updated ' + moment(data.pushed_at).fromNow());
         if (updateProgressBar) {
             $('#page-loading-progress').progress('increment');
         };
