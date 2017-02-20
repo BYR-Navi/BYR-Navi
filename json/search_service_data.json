@@ -15,12 +15,6 @@
         {
             "id": "googlemirror",
             "name": "谷歌镜像",
-            "url": "http://www.acgn.ren/search?q=",
-            "suffix": ""
-        },
-        {
-            "id": "googlemirror2",
-            "name": "谷歌镜像2",
             "url": "http://google.hbspy.moe/#q=",
             "suffix": ""
         },
