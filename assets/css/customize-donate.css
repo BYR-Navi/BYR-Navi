@@ -29,17 +29,6 @@
     transform-style: preserve-3d;
 }
 
-
-/*.masthead .ui.compact.selection.dropdown {
-  min-width: 115px;
-}*/
-
-
-/*.masthead .ui.inverted.submit.button {
-  margin-bottom: 10px;
-  width: 110px;
-}*/
-
 .ui.vertical.stripe {
     padding: 8em 0em;
 }
@@ -86,7 +75,7 @@
     font-size: 2em;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
     .ui.fixed.menu {
         display: none !important;
     }

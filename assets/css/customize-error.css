@@ -1,4 +1,4 @@
-/* customize-analytics.css */
+/* customize-error.css */
 
 .hidden.menu {
     display: none;
@@ -33,6 +33,10 @@
     padding: 8em 0em;
 }
 
+.ui.vertical.stripe h1.ui.error.header {
+    font-size: 8em;
+}
+
 .ui.vertical.stripe h3 {
     font-size: 2em;
 }
@@ -54,19 +58,13 @@
     margin: 3em 0em;
 }
 
-.ui.vertical.stripe .ui.statistic .label {
-    font-size: 1.2em;
-}
-
-.stats.stripe.segment,
 .quote.stripe.segment {
     padding: 0em;
 }
 
-.stats.stripe.segment .grid .column,
 .quote.stripe.segment .grid .column {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .footer.segment {
@@ -80,17 +78,6 @@
 #contacts-dimmer div.item {
     font-size: 2em;
 }
-
-.echart-container {
-    height: 400px;
-}
-#visit-hourly.echart-container {
-    height: 600px;
-}
-#visit-map.echart-container {
-    height: 600px;
-}
-
 
 @media only screen and (max-width: 767px) {
     .ui.fixed.menu {
@@ -114,20 +101,8 @@
         margin-bottom: 1em;
         font-size: 1.5em;
     }
-    .ui.stripe.segment {
-        padding: 2em 0em;
-    }
-    .stats.stripe.segment {
-        padding: 0em;
-    }
-    .echart-container {
-        height: 300px;
-    }
-    #visit-hourly.echart-container {
-        height: 400px;
-    }
-    #visit-map.echart-container {
-        height: 400px;
+    .ui.vertical.stripe h1.ui.error.header {
+        font-size: 4em;
     }
     #contacts-dimmer div.item {
         font-size: 1em;
