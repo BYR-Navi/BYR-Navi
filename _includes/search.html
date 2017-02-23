@@ -1,0 +1,21 @@
+<div class="ui text container">
+    <h1 class="ui inverted header"><i id="logo" class="fa fa-star"></i></h1>
+    <h2>{{ site.name }}</h2>
+    <div class="ui inverted fluid left icon action input" id="search-div">
+        <i class="search icon"></i>
+        <input id="search-query" type="text" placeholder="立即搜索">
+        <select class="ui compact selection dropdown" id="search-services">
+            {% for item in site.data.search_services %}<option id="{{ item.id }}" value="{{ item.id }}" data-url="{{ item.url }}" data-suffix="{{ item.suffix }}">{{ item.name }}</option>{% endfor %}
+        </select>
+        <div id="search-button" type="submit" class="ui icon button">Go</div>
+    </div>
+    <div class="ui inverted horizontal link list">
+        <a id="stargazer" class="item" href="https://github.com/iROCKBUNNY/BYR-Navi/stargazers" target="_blank"><i class="star icon"></i>? Stargazers</a>
+        <a id="fork" class="item" href="https://github.com/iROCKBUNNY/BYR-Navi/network/members" target="_blank"><i class="fork icon"></i>? Forks</a>
+        <a id="version" class="item" href="https://github.com/iROCKBUNNY/BYR-Navi/commits" target="_blank"><i class="rocket icon"></i>Updated ? ago</a>
+    </div>
+    <div class="ui inverted link list">
+        <a class="item loading-trigger" href="{{ '/analytics/' | relative_url }}">您是今天莅临本站的 <span id="visit">0</span> 位重要访客之一</a>
+        <a class="item loading-trigger" href="{{ '/donate/' | relative_url }}">买雪糕给辛苦滴程序猿和设计师</a>
+    </div>
+</div>
