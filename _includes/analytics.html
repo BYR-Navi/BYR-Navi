@@ -10,7 +10,7 @@
     </script>
 {% endif %}
 
-{% if site.piwik_analytics.site_id %}
+{% if site.piwik_analytics_site_id %}
     <!-- Piwik -->
     <script type="text/javascript">
     var _paq = _paq || [];
@@ -20,13 +20,13 @@
     (function() {
         var u = "//vps.irockbunny.com/analytics/";
         _paq.push(['setTrackerUrl', u + 'piwik.php']);
-        _paq.push(['setSiteId', '{{ site.piwik_analytics.site_id }}']);
+        _paq.push(['setSiteId', '{{ site.piwik_analytics_site_id }}']);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
     })();
     </script>
     <noscript>
-        <p><img src="//vps.irockbunny.com/analytics/piwik.php?idsite={{ site.piwik_analytics.site_id }}&rec=1" style="border:0;" alt="" /></p>
+        <p><img src="//vps.irockbunny.com/analytics/piwik.php?idsite={{ site.piwik_analytics_site_id }}&rec=1" style="border:0;" alt="" /></p>
     </noscript>
     <!-- End Piwik Code -->
 {% endif %}

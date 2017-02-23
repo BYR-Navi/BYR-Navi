@@ -80,6 +80,11 @@
     padding-bottom: 5em;
 }
 
+.ui.stackable.celled.grid .row .column {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
 .footer.segment {
     padding: 5em 0em;
 }
@@ -90,15 +95,6 @@
 
 #logo {
     font-size: 1.5em;
-}
-
-#links .ui.header {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-#links .ui.button {
-    margin-bottom: 5px;
 }
 
 #contacts-dimmer div.item {

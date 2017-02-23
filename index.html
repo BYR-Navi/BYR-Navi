@@ -8,8 +8,8 @@ home: true
         <div class="ui equal width stackable internally celled grid">
             <div class="center aligned row">
                 {% for category in section.categories %}
-                    <div class="column">
-                        <h3 class="ui header">{{ category.category }}</h3>
+                    <div class="links column">
+                        <div class="ui header">{{ category.category }}</div>
                         <div class="ui labels">
                             {% for link in category.links %}<a class="ui {{ link.style }} label" href="{{ link.url }}" target="_blank">{% if link.icon %}<i class="{{ link.icon }} icon"></i>{% endif %}{{ link.name }}</a>{% endfor %}
                         </div>
