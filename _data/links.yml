@@ -1,0 +1,388 @@
+public:
+- category: 购物
+  links:
+  - name: 京东
+    icon: ''
+    style: basic
+    url: http://www.jd.com/
+  - name: 天猫
+    icon: ''
+    style: basic
+    url: http://www.tmall.com/
+  - name: 淘宝
+    icon: ''
+    style: basic
+    url: http://www.taobao.com/
+  - name: 亚马逊
+    icon: amazon yellow
+    style: basic
+    url: http://www.amazon.cn/
+  - name: 一号店
+    icon: ''
+    style: basic
+    url: http://www.yhd.com/
+  - name: 当当
+    icon: ''
+    style: basic
+    url: http://www.dangdang.com/
+  - name: 网易严选
+    icon: ''
+    style: basic
+    url: http://you.163.com/
+
+- category: 工具
+  links:
+  - name: '12306'
+    icon: ''
+    style: basic
+    url: http://www.12306.cn/
+  - name: 百度地图
+    icon: marker red
+    style: basic
+    url: http://map.baidu.com/
+  - name: 大众点评
+    icon: ''
+    style: basic
+    url: http://www.dianping.com/beijing
+  - name: QQ邮箱
+    icon: qq black
+    style: basic
+    url: http://mail.qq.com/
+  - name: 网易邮箱
+    icon: ''
+    style: basic
+    url: http://email.163.com/
+  - name: Gmail
+    icon: google red
+    style: basic
+    url: http://mail.google.com
+  - name: 有道翻译
+    icon: ''
+    style: basic
+    url: http://fanyi.youdao.com/
+  - name: 快递查询
+    icon: ''
+    style: basic
+    url: http://www.kuaidi100.com/
+
+- category: 社交
+  links:
+  - name: 微博
+    icon: weibo red
+    style: basic
+    url: http://weibo.com/
+  - name: 微信网页版
+    icon: wechat green
+    style: basic
+    url: http://wx.qq.com/
+  - name: 百度贴吧
+    icon: paw blue
+    style: basic
+    url: http://tieba.baidu.com/
+  - name: 知乎
+    icon: ''
+    style: basic
+    url: http://www.zhihu.com/
+  - name: Quora
+    icon: quora red
+    style: basic
+    url: http://www.quora.com
+  - name: Facebook
+    icon: facebook blue
+    style: basic
+    url: http://www.facebook.com/
+  - name: Google+
+    icon: google plus red
+    style: basic
+    url: https://plus.google.com/
+  - name: Tumblr
+    icon: tumblr blue
+    style: basic
+    url: http://www.tumblr.com/
+  - name: Instagram
+    icon: instagram pink
+    style: basic
+    url: http://www.instagram.com
+
+- category: 学习
+  links:
+  - name: CSDN
+    icon: ''
+    style: basic
+    url: http://www.csdn.net/
+  - name: W3School
+    icon: ''
+    style: basic
+    url: http://www.w3school.com.cn/
+  - name: Stack Overflow
+    icon: stack overflow orange
+    style: basic
+    url: http://stackoverflow.com/
+  - name: GitHub
+    icon: github black
+    style: basic
+    url: http://github.com/
+  - name: V2EX
+    icon: ''
+    style: basic
+    url: http://www.v2ex.com/
+  - name: SegmentFault
+    icon: ''
+    style: basic
+    url: http://segmentfault.com/
+  - name: 掘金
+    icon: ''
+    style: basic
+    url: http://gold.xitu.io/
+  - name: 网易公开课
+    icon: ''
+    style: basic
+    url: http://open.163.com/
+
+- category: 求职
+  links:
+  - name: LinkedIn
+    icon: linkedin blue
+    style: basic
+    url: http://www.linkedin.com/
+  - name: 大街网
+    icon: ''
+    style: basic
+    url: http://www.dajie.com/
+  - name: 拉勾网
+    icon: ''
+    style: basic
+    url: http://www.lagou.com/
+  - name: 智联招聘
+    icon: ''
+    style: basic
+    url: http://zhaopin.com/
+  - name: 前程无忧
+    icon: ''
+    style: basic
+    url: http://www.51job.com/
+  - name: 应届生
+    icon: ''
+    style: basic
+    url: http://www.yingjiesheng.com/
+
+- category: 娱乐
+  links:
+  - name: 优酷
+    icon: ''
+    style: basic
+    url: http://www.youku.com/
+  - name: 土豆
+    icon: ''
+    style: basic
+    url: http://www.tudou.com/
+  - name: Youtube
+    icon: youtube red
+    style: basic
+    url: http://www.youtube.com/
+  - name: 爱奇艺
+    icon: ''
+    style: basic
+    url: http://www.iqiyi.com/
+  - name: 芒果TV
+    icon: ''
+    style: basic
+    url: http://www.mgtv.com/
+  - name: 哔哩哔哩
+    icon: ''
+    style: basic
+    url: http://www.bilibili.com/
+  - name: AcFun
+    icon: ''
+    style: basic
+    url: http://www.acfun.tv/
+  - name: 吐槽
+    icon: ''
+    style: basic
+    url: http://www.tucao.tv/
+  - name: 多瑙影院
+    icon: ''
+    style: basic
+    url: http://www.dnvod.eu/
+  - name: 虾米
+    icon: ''
+    style: basic
+    url: http://www.xiami.com/
+  - name: 热歌榜
+    icon: ''
+    style: basic
+    url: http://music.163.com/#/playlist?id=3778678
+
+byr:
+- category: 北邮校园
+  links:
+  - name: 北邮官网
+    icon: ''
+    style: basic
+    url: http://www.bupt.edu.cn/
+  - name: 官方导航
+    icon: ''
+    style: basic
+    url: http://dep.bupt.edu.cn/dh/
+  - name: 本科教务系统
+    icon: ''
+    style: basic
+    url: http://jwxt.bupt.edu.cn/
+  - name: 研究生教务系统
+    icon: ''
+    style: basic
+    url: http://yjxt.bupt.edu.cn/
+  - name: 教务处
+    icon: ''
+    style: basic
+    url: http://jwc.bupt.edu.cn/
+  - name: 北邮人论坛
+    icon: ''
+    style: basic
+    url: http://bbs.byr.cn/
+  - name: 北邮人BT
+    icon: ''
+    style: basic
+    url: http://bt.byr.cn/
+  - name: 北邮IPTV
+    icon: ''
+    style: basic
+    url: http://tv.byr.cn/
+  - name: 信息门户
+    icon: ''
+    style: basic
+    url: http://my.bupt.edu.cn/
+  - name: 图书馆
+    icon: ''
+    style: basic
+    url: http://lib.bupt.edu.cn/
+  - name: 北邮贴吧
+    icon: ''
+    style: basic
+    url: http://tieba.baidu.com/f?kw=%B1%B1%BE%A9%D3%CA%B5%E7%B4%F3%D1%A7
+  - name: 校园网
+    icon: ''
+    style: basic
+    url: http://nic.bupt.edu.cn/
+  - name: 北邮邮箱
+    icon: ''
+    style: basic
+    url: http://mail.bupt.edu.cn/
+  - name: VPN服务
+    icon: ''
+    style: basic
+    url: http://nic.bupt.edu.cn/list/list.php?p=3_24_1
+  - name: 空闲自习室查询
+    icon: ''
+    style: basic
+    url: http://buptclass.com/
+
+- category: 论坛相关
+  links:
+  - name: 北邮人论坛
+    icon: ''
+    style: basic
+    url: http://bbs.byr.cn/#!default
+  - name: 游客版论坛
+    icon: ''
+    style: basic
+    url: http://bbs.cloud.icybee.cn
+  - name: 检索用户回复
+    icon: ''
+    style: basic
+    url: http://search.icybee.cn/
+  - name: 检索用户发帖
+    icon: ''
+    style: basic
+    url: http://search.lovezxp.com/
+  - name: 查看每日十大
+    icon: ''
+    style: basic
+    url: http://bbss.zhengzi.me/
+  - name: 查看论坛数据
+    icon: ''
+    style: basic
+    url: http://bbs.byr.cn/#!elite/path?v=/bbslists
+  - name: 论坛APP
+    icon: apple grey
+    style: basic
+    url: http://itunes.apple.com/cn/app/bei-you-ren-lun-tan-bei-you/id1115232927
+  - name: 论坛APP
+    icon: android green
+    style: basic
+    url: https://github.com/dss886/BYR-BBS-APP-Release
+  - name: 论坛官方微博
+    icon: ''
+    style: basic
+    url: http://weibo.com/byrbbs
+  - name: 论坛投票区
+    icon: ''
+    style: basic
+    url: http://bbs.byr.cn/#!vote
+  - name: 玩转论坛指南
+    icon: ''
+    style: basic
+    url: http://bbs.byr.cn/#!article/Talking/5852307
+
+- category: 其他
+  links:
+  - name: 空余教室查询
+    icon: ''
+    style: basic
+    url: http://jwc.bupt.edu.cn/content/content.php?p=10_2_235
+  - name: 辅修专业
+    icon: ''
+    style: basic
+    url: http://jwc.bupt.edu.cn/list/list.php?p=7_50_1
+  - name: 毕业设计
+    icon: ''
+    style: basic
+    url: http://jwc.bupt.edu.cn/list/list.php?p=9_38_1
+  - name: 学生校际选修
+    icon: ''
+    style: basic
+    url: http://www.xueyuanlu.cn/
+  - name: 创新学分
+    icon: ''
+    style: basic
+    url: http://jwc.bupt.edu.cn/list/list.php?p=9_39_1
+  - name: 课表查询
+    icon: ''
+    style: basic
+    url: http://jwc.bupt.edu.cn/list/list.php?p=4_34_1
+  - name: 考表查询
+    icon: ''
+    style: basic
+    url: http://jwc.bupt.edu.cn/list/list.php?p=4_35_1
+  - name: 出国成绩单办理
+    icon: ''
+    style: basic
+    url: http://jwc.bupt.edu.cn/content/content.php?p=5_27_65
+  - name: 教学事务流程
+    icon: ''
+    style: basic
+    url: http://jwc.bupt.edu.cn/content/content.php?p=5_68_111
+  - name: 创新实践平台
+    icon: ''
+    style: basic
+    url: http://cslab.bupt.edu.cn/innovation/
+  - name: 申请护照通行证
+    icon: ''
+    style: basic
+    url: http://xsc.bupt.edu.cn/content/content.php?p=27_26_48
+  - name: 补办学生证
+    icon: ''
+    style: basic
+    url: http://xsc.bupt.edu.cn/content/content.php?p=27_26_48
+  - name: 校园一卡通
+    icon: ''
+    style: basic
+    url: http://ecard.bupt.edu.cn/
+  - name: 办公电话
+    icon: ''
+    style: basic
+    url: http://www.bupt.edu.cn/content/content.php?p=6_9_79
+  - name: 校历
+    icon: ''
+    style: basic
+    url: http://www.bupt.edu.cn/content/content.php?p=6_10_80

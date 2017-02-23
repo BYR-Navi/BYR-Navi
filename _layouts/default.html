@@ -13,7 +13,10 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/{{ site.version.font_awesome }}/css/font-awesome.min.css">
     <!-- Customized CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize.css' | relative_url }}">
+    {% if page.home %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-home.css' | relative_url }}">{% endif %}
+    {% if page.analytics %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-analytics.css' | relative_url }}">{% endif %}
+    {% if page.donate %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-donate.css' | relative_url }}">{% endif %}
+    {% if page.error %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-error.css' | relative_url }}">{% endif %}
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-masthead.css' | relative_url }}">
     <!-- Favicons -->
     <link rel="apple-touch-icon" type="image/png" href="{{ '/apple-touch-icon.png' | relative_url }}">
@@ -21,49 +24,15 @@
     {% include analytics.html %}
 </head>
 <body>
-    {% include following_menu %}
-    {% include sidebar_menu %}
+    {% include following_menu.html %}
+    {% include sidebar_menu.html %}
     <!-- Page Contents -->
     <div class="pusher">
         <div class="ui inverted vertical masthead center aligned segment zoomed">
-            <div class="ui container">
-                {% include menu %}
-            </div>
-            <div class="ui text container">
-                <h1 class="ui inverted header"><i id="logo" class="fa fa-star"></i></h1>
-                <h2>北邮人导航 &middot; BYR-Navi</h2>
-                <div class="ui inverted fluid left icon action input" id="search-div">
-                    <i class="search icon"></i>
-                    <input id="search-query" type="text" placeholder="立即搜索">
-                    <select class="ui compact selection dropdown" id="search-services"></select>
-                    <div id="search-button" type="submit" class="ui icon button">Go</div>
-                </div>
-                <div class="ui inverted horizontal link list">
-                    <a id="stargazer" class="item" href="https://github.com/iROCKBUNNY/BYR-Navi/stargazers" target="_blank"></a>
-                    <a id="fork" class="item" href="https://github.com/iROCKBUNNY/BYR-Navi/network/members" target="_blank"></a>
-                    <a id="version" class="item" href="https://github.com/iROCKBUNNY/BYR-Navi/commits" target="_blank"></a>
-                </div>
-                <div class="ui inverted link list">
-                    <a class="item loading-trigger" href="./analytics/">您是今天莅临本站的 <span id="visit">0</span> 位重要访客之一</a>
-                    <a class="item loading-trigger" href="./donate/">买雪糕给辛苦滴程序猿和设计师</a>
-                </div>
-            </div>
+            {% include menu.html %}
+            {% if page.home %}{% include search.html %}{% else %}{% endif %}
         </div>
-        <div id="links">
-            <div class="ui vertical stripe links segment">
-            <div id="page-loading-progress" class="ui top attached blue inverted progress">
-                <div class="bar"></div>
-            </div>
-                <div class="ui equal width stackable internally celled grid">
-                    <div id="public-links" class="center aligned row"></div>
-                </div>
-            </div>
-            <div class="ui vertical stripe links segment">
-                <div class="ui equal width stackable internally celled grid">
-                    <div id="byr-links" class="center aligned row"></div>
-                </div>
-            </div>
-        </div>
+        {{ content }}
         {% include footer.html %}
     </div>
     {% include contacts_dimmer.html %}
@@ -72,15 +41,15 @@
     <!-- Semantic UI JS -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/{{ site.version.semantic_ui }}/semantic.min.js"></script>
     <!-- Moment.js -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/{{ site.verison.moment }}/moment.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/{{ site.version.moment }}/moment.min.js"></script>
     <!-- CountUp.js -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/countup.js/{{ site.version.count_up }}/countUp.min.js"></script>
     <!-- JavaScript Cookie -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/js-cookie/{{ site.version.js_cookie }}/js.cookie.min.js"></script>
     <!-- Query Suggestions -->
-    <script type="text/javascript" src="{{ '/assets/js/query-suggest.js' | relative_url }}"></script>
+    {% if page.home %}<script type="text/javascript" src="{{ '/assets/js/query-suggest.js' | relative_url }}"></script>{% endif %}
     <!-- Cutomized JS -->
     <script type="text/javascript" src="{{ '/assets/js/customize.js' | relative_url }}"></script>
-    <script type="text/javascript" src="{{ '/assets/js/customize-home.js' | relative_url }}"></script>
+    {% if page.home %}<script type="text/javascript" src="{{ '/assets/js/customize-home.js' | relative_url }}"></script>{% endif %}
 </body>
 </html>

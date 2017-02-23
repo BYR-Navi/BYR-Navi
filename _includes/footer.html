@@ -3,7 +3,9 @@
         <div class="ui stackable inverted divided equal height stackable grid">
             <div class="three wide column">
                 <h4 class="ui inverted header">Powered by</h4>
-                <div class="ui inverted link list" id="powered-by"></div>
+                <div class="ui inverted link list">
+                    {% for item in site.data.powered_by %}<a class="item" href="{{ item.url }}" target="_blank">{{ item.name }}</a>{% endfor %}
+                </div>
             </div>
             <div class="three wide column">
                 <h4 class="ui inverted header">About</h4>

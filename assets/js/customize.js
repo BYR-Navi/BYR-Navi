@@ -50,19 +50,6 @@ $('.ui.inverted.masthead.segment').addClass('bg' + Math.ceil(Math.random() * 14)
 // var urlPrefix = 'http://localhost/BYR-Navi';
 var urlPrefix = 'http://byr123.irockbunny.com';
 
-// powered by
-$.getJSON(urlPrefix + '/json/powered_by_data.json', function(data) {
-    for (var i in data.powered_by) {
-        $('#powered-by')
-            .append(
-                $('<a>')
-                .addClass('item')
-                .attr('href', data.powered_by[i].url)
-                .attr('target', '_blank').html(data.powered_by[i].name)
-            );
-    };
-});
-
 // analytics
 $.getJSON(urlPrefix + '/json/analytics_data.json', function(data) {
     $.getJSON(data.analytics.api_url, {
