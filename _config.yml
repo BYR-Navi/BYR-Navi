@@ -37,3 +37,4 @@ exclude:
 - README.md
 - Gemfile
 - script
+- vendor
