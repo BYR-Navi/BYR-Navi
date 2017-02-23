@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/license-MIT-blue.svg)
 # [BYR-Navi](http://byr123.irockbunny.com/)
 A Navigation Website for BYR
 
