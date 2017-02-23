@@ -2,18 +2,20 @@
 layout: default
 home: true
 ---
-<div id="links">
+{% for section in site.data.links %}
     <div class="ui vertical stripe links segment">
-    <div id="page-loading-progress" class="ui top attached blue inverted progress">
-        <div class="bar"></div>
-    </div>
+        {% if forloop.first %}{% include page_loading_progress_bar.html %}{% endif %}
         <div class="ui equal width stackable internally celled grid">
-            <div id="public-links" class="center aligned row"></div>
+            <div class="center aligned row">
+                {% for category in section.categories %}
+                    <div class="column">
+                        <h3 class="ui header">{{ category.category }}</h3>
+                        <div class="ui labels">
+                            {% for link in category.links %}<a class="ui {{ link.style }} label" href="{{ link.url }}" target="_blank">{% if link.icon %}<i class="{{ link.icon }} icon"></i>{% endif %}{{ link.name }}</a>{% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
-    <div class="ui vertical stripe links segment">
-        <div class="ui equal width stackable internally celled grid">
-            <div id="byr-links" class="center aligned row"></div>
-        </div>
-    </div>
-</div>
+{% endfor %}

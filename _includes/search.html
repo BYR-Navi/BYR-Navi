@@ -4,7 +4,9 @@
     <div class="ui inverted fluid left icon action input" id="search-div">
         <i class="search icon"></i>
         <input id="search-query" type="text" placeholder="立即搜索">
-        <select class="ui compact selection dropdown" id="search-services"></select>
+        <select class="ui compact selection dropdown" id="search-services">
+            {% for item in site.data.search_services %}<option id="{{ item.id }}" value="{{ item.id }}" data-url="{{ item.url }}" data-suffix="{{ item.suffix }}">{{ item.name }}</option>{% endfor %}
+        </select>
         <div id="search-button" type="submit" class="ui icon button">Go</div>
     </div>
     <div class="ui inverted horizontal link list">

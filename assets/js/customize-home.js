@@ -9,7 +9,7 @@ $('#logo').hover(function(){
 
 // progress bar
 $('#page-loading-progress').progress({
-    total: 4,
+    total: 2,
     onSuccess: function() {
         $('#page-loading-progress').fadeOut(1000, function() {
             $('#page-loading-progress').remove();
@@ -67,25 +67,12 @@ setInterval(function() {
 }, 15000);
 
 // search
-$.getJSON(urlPrefix + '/json/search_service_data.json', function(data) {
-    for (var i in data.search_services) {
-        $('#search-services').append(
-            $('<option>')
-                .attr('id', data.search_services[i].id)
-                .attr('value', data.search_services[i].id)
-                .attr('data-url', data.search_services[i].url)
-                .attr('data-suffix', data.search_services[i].suffix)
-                .html(data.search_services[i].name)
-        );
-    };
-    $('#search-services').dropdown();
-    if (Cookies.get('byr_navi_previous_search_service_option') == undefined || $('#' + Cookies.get('byr_navi_previous_search_service_option')).length === 0) {
-        Cookies.set('byr_navi_previous_search_service_option', $('#search-services').val(), { expires: 365 });
-    } else {
-        $('#search-services').dropdown('set selected', Cookies.get('byr_navi_previous_search_service_option'));
-    };
-    $('#page-loading-progress').progress('increment');
-});
+$('#search-services').dropdown();
+if (Cookies.get('byr_navi_previous_search_service_option') == undefined || $('#' + Cookies.get('byr_navi_previous_search_service_option')).length === 0) {
+    Cookies.set('byr_navi_previous_search_service_option', $('#search-services').val(), { expires: 365 });
+} else {
+    $('#search-services').dropdown('set selected', Cookies.get('byr_navi_previous_search_service_option'));
+};
 
 $('#search-button').click(function() {
     var service = $('#' + $('#search-services').val());
@@ -152,82 +139,3 @@ var sugParams = {
     "sugSubmit": false //选中提示框中词条时是否提交表单
 };
 BaiduSuggestion.bind('search-query', sugParams);
-
-// links
-$.getJSON(urlPrefix + '/json/link_data.json', function(data) {
-    for (var i in data.public_links) {
-        $('#public-links').append(
-            $('<div>')
-                .addClass('column')
-                .append(
-                    $('<h3>')
-                        .addClass('ui header')
-                        .text(data.public_links[i].category)
-                )
-                .append(
-                    $('<div>')
-                        .attr('id', 'public-links-' + i)
-                        .addClass('ui labels')
-                )
-        );
-        for (var j in data.public_links[i].links) {
-            $('#public-links-' + i).append(
-                $('<a>')
-                    .attr('id', 'public-links-' + i + '-' + j)
-                    .addClass('ui label')
-                    .addClass(data.public_links[i].links[j].style)
-                    .attr('href', data.public_links[i].links[j].url)
-                    .attr('target', '_blank')
-            );
-            if (data.public_links[i].links[j].icon !== '') {
-                $('#public-links-' + i + '-' + j)
-                    .append(
-                        $('<i>')
-                            .addClass(data.public_links[i].links[j].icon)
-                            .addClass('icon')
-                    )
-                    .append(data.public_links[i].links[j].name)
-            } else {
-                $('#public-links-' + i + '-' + j).text(data.public_links[i].links[j].name)
-            };
-        };
-    };
-    for (var i in data.byr_links) {
-        $('#byr-links').append(
-            $('<div>')
-                .addClass('column')
-                .append(
-                    $('<h3>')
-                        .addClass('ui header')
-                        .text(data.byr_links[i].category)
-                    )
-                .append(
-                    $('<div>')
-                        .attr('id', 'byr-links-' + i)
-                        .addClass('ui labels')
-                )
-        );
-        for (var j in data.byr_links[i].links) {
-            $('#byr-links-' + i).append(
-                $('<a>')
-                    .attr('id', 'byr-links-' + i + '-' + j)
-                    .addClass('ui label')
-                    .addClass(data.byr_links[i].links[j].style)
-                    .attr('href', data.byr_links[i].links[j].url)
-                    .attr('target', '_blank')
-            );
-            if (data.byr_links[i].links[j].icon !== '') {
-                $('#byr-links-' + i + '-' + j)
-                    .append(
-                        $('<i>')
-                            .addClass(data.byr_links[i].links[j].icon)
-                            .addClass('icon')
-                    )
-                    .append(data.byr_links[i].links[j].name)
-            } else {
-                $('#byr-links-' + i + '-' + j).text(data.byr_links[i].links[j].name)
-            };
-        };
-    };
-    $('#page-loading-progress').progress('increment');
-});

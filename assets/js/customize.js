@@ -28,15 +28,6 @@ $('.loading-trigger')
             .dimmer('show');
     });
 
-// copyright
-$('#copyright')
-    .html(
-        function() {
-            var date = new Date();
-            return '&copy; ' + date.getFullYear() + ' TEELAB';
-        }
-    );
-
 // feedback
 $('.feedback')
     .on('click', function() {

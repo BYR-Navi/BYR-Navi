@@ -7,8 +7,8 @@ version:
   font_awesome: 4.7.0
   moment: 2.17.1
   count_up: 1.8.1
-  echarts: 3.4.0
   js_cookie: 2.1.3
+  echarts: 3.4.0
 
 google_analytics_id: UA-33449675-7
 piwik_analytics:
@@ -22,6 +22,7 @@ timezone: Asia/Shanghai
 
 name: 北邮人导航 · BYR-Navi
 author: iROCKBUNNY
+organization: TEELAB
 description: A Navigation Website for BYR
 keywords: 北邮人导航, BYR-Navi, BYR, BUPT, Navi, Navigation
 url: http://story.irockbunny.com
