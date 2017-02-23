@@ -1,47 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {% include meta.html %}
-    {% include semantic_ui_css.html %}
-    {% include font_awesome.html %}
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+    <!-- Site Properties -->
+    {% seo %}
+    <!-- Semantic UI CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/{{ site.version.semantic_ui }}/semantic.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/{{ site.version.font_awesome }}/css/font-awesome.min.css">
     <!-- Customized CSS -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/customize.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/customize-masthead.css">
-    {% include favicons.html %}
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-masthead.css' | relative_url }}">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" type="image/png" href="{{ '/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
     {% include analytics.html %}
 </head>
 <body>
-    <!-- Following Menu -->
-    <div class="ui large top fixed borderless hidden menu">
-        <div class="ui container">
-            <a class="active item loading-trigger" href="./"><i class="yellow star icon"></i>北邮人导航</a>
-            <a class="item loading-trigger" href="./analytics/"><i class="line chart icon"></i>访客分析</a>
-            <a class="item loading-trigger" href="./donate/" title="买雪糕给辛苦滴程序猿和设计师"><i class="heart icon"></i>支持一发</a>
-            <div class="right menu">
-                <a class="item" href="https://github.com/iROCKBUNNY/BYR-Navi" target="_blank"><i class="github icon"></i>GitHub</a>
-            </div>
-        </div>
-    </div>
-    <!-- Sidebar Menu -->
-    <div class="ui vertical inverted sidebar menu">
-        <a class="active item loading-trigger" href="./"><i class="yellow star icon"></i>北邮人导航</a>
-        <a class="item loading-trigger" href="./analytics/"><i class="line chart icon"></i>访客分析</a>
-        <a class="item loading-trigger" href="./donate/" title="买雪糕给辛苦滴程序猿和设计师"><i class="heart icon"></i>支持一发</a>
-        <a class="right item" href="https://github.com/iROCKBUNNY/BYR-Navi" target="_blank"><i class="github icon"></i>GitHub</a>
-    </div>
+    {% include following_menu %}
+    {% include sidebar_menu %}
     <!-- Page Contents -->
     <div class="pusher">
         <div class="ui inverted vertical masthead center aligned segment zoomed">
             <div class="ui container">
-                <div class="ui large secondary inverted pointing menu" style="border: none;">
-                    <a class="toc item"><i class="sidebar icon"></i></a>
-                    <a class="active item loading-trigger" href="./"><i class="yellow star icon"></i>北邮人导航</a>
-                    <a class="item loading-trigger" href="./analytics/"><i class="line chart icon"></i>访客分析</a>
-                    <a class="item loading-trigger" href="./donate/" title="买雪糕给辛苦滴程序猿和设计师"><i class="heart icon"></i>支持一发</a>
-                    <div class="right menu">
-                        <a class="item" href="https://github.com/iROCKBUNNY/BYR-Navi" target="_blank"><i class="github icon"></i>GitHub</a>
-                    </div>
-                </div>
+                {% include menu %}
             </div>
             <div class="ui text container">
                 <h1 class="ui inverted header"><i id="logo" class="fa fa-star"></i></h1>
@@ -81,15 +67,20 @@
         {% include footer.html %}
     </div>
     {% include contacts_dimmer.html %}
-    {% include jquery.html %}
-    {% include semantic_ui_js.html %}
-    {% include moment.html %}
-    {% include count_up.html %}
-    {% include js_cookie.html %}
+    <!-- jQuery -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/{{ site.version.jquery }}/jquery.min.js"></script>
+    <!-- Semantic UI JS -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/{{ site.version.semantic_ui }}/semantic.min.js"></script>
+    <!-- Moment.js -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/{{ site.verison.moment }}/moment.min.js"></script>
+    <!-- CountUp.js -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/countup.js/{{ site.version.count_up }}/countUp.min.js"></script>
+    <!-- JavaScript Cookie -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/js-cookie/{{ site.version.js_cookie }}/js.cookie.min.js"></script>
     <!-- Query Suggestions -->
-    <script type="text/javascript" src="./assets/js/query-suggest.js"></script>
+    <script type="text/javascript" src="{{ '/assets/js/query-suggest.js' | relative_url }}"></script>
     <!-- Cutomized JS -->
-    <script type="text/javascript" src="./assets/js/customize.js"></script>
-    <script type="text/javascript" src="./assets/js/customize-home.js"></script>
+    <script type="text/javascript" src="{{ '/assets/js/customize.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/customize-home.js' | relative_url }}"></script>
 </body>
 </html>
