@@ -1,0 +1,31 @@
+<div class="ui inverted vertical footer segment">
+    <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header">Powered by</h4>
+                <div class="ui inverted link list" id="powered-by"></div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">About</h4>
+                <div class="ui inverted link list">
+                    <a class="item" href="http://irockbunny.com/" target="_blank">iROCKBUNNY</a>
+                    <a class="item" href="http://teelab.net/" target="_blank">TEELAB</a>
+                    <a class="item feedback">Feedback</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">{{ site.name }}</h4>
+                <div class="ui inverted link list">
+                    <div id="copyright" class="item"></div>
+                    <div class="item">Designed and built with all the love and passion in the world by {{ site.author }}.</div>
+                    <a class="item loading-trigger" href="{{ '/analytics' | relative_url }}">
+                        Visits / Page Views:
+                        <span id="today-visits">0</span> / <span id="today-actions">0</span> (Today)
+                        &middot;
+                        <span id="yesterday-visits">0</span> / <span id="yesterday-actions">0</span> (Yesterday)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
