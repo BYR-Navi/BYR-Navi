@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/iROCKBUNNY/BYR-Navi.svg?branch=master)](https://travis-ci.org/iROCKBUNNY/BYR-Navi)
 [![Website](https://img.shields.io/badge/website-up-brightgreen.svg)](http://byr123.irockbunny.com/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-[![Author](https://img.shields.io/badge/author-iROCKBUNNY-red.svg)](http://irockbunny.com/)
-[![Organization](https://img.shields.io/badge/org-TEELAB-blue.svg)](http://teelab.net/)
+[![Author](https://img.shields.io/badge/author-iROCKBUNNY-D02142.svg)](http://irockbunny.com/)
+[![Organization](https://img.shields.io/badge/org-TEELAB-4078C0.svg)](http://teelab.net/)
 
 # [BYR-Navi](http://byr123.irockbunny.com/)
 A Navigation Website for BYR
