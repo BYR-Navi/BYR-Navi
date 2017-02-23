@@ -1,4 +1,7 @@
-![](https://img.shields.io/badge/license-MIT-blue.svg)
+[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://byr123.irockbunny.com/)
+[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star)](https://github.com/iROCKBUNNY/BYR-Navi)
+[![GitHub forks](https://img.shields.io/github/forks/badges/shields.svg?style=social&label=Fork)](https://github.com/iROCKBUNNY/BYR-Navi)
+
 # [BYR-Navi](http://byr123.irockbunny.com/)
 A Navigation Website for BYR
 

@@ -2,5 +2,5 @@ source "https://rubygems.org"
 
 gem "jekyll"
 gem "jekyll-seo-tag"
-gem "ekyll-sitemap"
+gem "jekyll-sitemap"
 gem "html-proofer"
