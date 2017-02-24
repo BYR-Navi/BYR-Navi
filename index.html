@@ -7,11 +7,11 @@ home: true
         {% if forloop.first %}{% include page_loading_progress_bar.html %}{% endif %}
         <div class="ui equal width stackable internally celled grid">
             <div class="center aligned row">
-                {% for category in section.categories %}
+                {% for item in section.categories %}
                     <div class="links column">
-                        <div class="ui header">{{ category.category }}</div>
+                        <div class="ui header">{{ item.category }}</div>
                         <div class="ui labels">
-                            {% for link in category.links %}<a class="ui {{ link.style }} label" href="{{ link.url }}" target="_blank">{% if link.icon %}<i class="{{ link.icon }} icon"></i>{% endif %}{{ link.name }}</a>{% endfor %}
+                            {% for link in item.links %}<a class="ui {{ link.style }} label" href="{{ link.url }}" target="_blank">{% if link.icon %}<i class="{{ link.icon }} icon"></i>{% endif %}{{ link.name }}</a>{% endfor %}
                         </div>
                     </div>
                 {% endfor %}
