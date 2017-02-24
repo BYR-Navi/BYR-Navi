@@ -34,9 +34,11 @@ gems:
 
 exclude:
 - .gitignore
+- .travis.yml
 - LICENSE
 - README.md
 - CNAME
 - Gemfile
+- Gemfile.lock
 - script
 - vendor
