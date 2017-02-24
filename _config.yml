@@ -31,10 +31,10 @@ gems:
 - jekyll-sitemap
 
 exclude:
-- CNAME
 - .gitignore
 - LICENSE
 - README.md
+- CNAME
 - Gemfile
 - script
 - vendor
