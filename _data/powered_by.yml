@@ -19,5 +19,8 @@
 - name: ECharts
   url: http://echarts.baidu.com/
 
+- name: Jekyll
+  url: http://jekyllrb.com/
+
 - name: GitHub Pages
   url: https://pages.github.com/

@@ -17,4 +17,5 @@ A Navigation Website for BYR
 * [ECharts](http://echarts.baidu.com/)
 * [Piwik](https://piwik.org/)
 * [GeoIP](http://www.maxmind.com)
+* [Jekyll](http://jekyllrb.com/)
 * [GitHub Pages](https://pages.github.com/)
