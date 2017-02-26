@@ -20,7 +20,7 @@ $('#page-loading-progress').progress({
 // version
 function updateVersion(updateProgressBar) {
     $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
-        $('#version img').attr('src', 'https://img.shields.io/badge/Updated-' + encodeURIComponent(moment(data.pushed_at).fromNow()) + '-orange.svg');
+        $('#version img').attr('src', 'https://img.shields.io/badge/Update-' + encodeURIComponent(moment(data.pushed_at).fromNow()) + '-brightgreen.svg');
         if (updateProgressBar) {
             $('#page-loading-progress').progress('increment');
         };
