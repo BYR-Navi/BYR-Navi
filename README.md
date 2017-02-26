@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/iROCKBUNNY/BYR-Navi.svg?branch=master)](https://travis-ci.org/iROCKBUNNY/BYR-Navi)
 [![Website](https://img.shields.io/badge/website-up-brightgreen.svg)](http://byr123.irockbunny.com/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![License](https://img.shields.io/github/license/iROCKBUNNY/BYR-Navi.svg)](/LICENSE)
 [![GitHub Forks](https://img.shields.io/github/forks/iROCKBUNNY/BYR-Navi.svg)](https://github.com/iROCKBUNNY/BYR-Navi/network/members)
 [![GitHub Stargazers](https://img.shields.io/github/stars/iROCKBUNNY/BYR-Navi.svg)](https://github.com/iROCKBUNNY/BYR-Navi/stargazers)
 [![Author](https://img.shields.io/badge/author-iROCKBUNNY-D02142.svg)](http://irockbunny.com/)
