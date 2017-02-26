@@ -15,6 +15,7 @@ A Navigation Website for BYR
 * [Semantic UI](http://semantic-ui.com/)
 * [jQuery](http://jquery.com/)
 * [Font Awesome](http://fontawesome.io/)
+* [Shields.io](http://shields.io/)
 * [Moment.js](http://momentjs.com/)
 * [CountUp.js](http://inorganik.github.io/countUp.js/)
 * [JavaScript Cookie](https://github.com/js-cookie/js-cookie)
