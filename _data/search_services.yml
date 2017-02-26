@@ -13,6 +13,11 @@
   url: http://google.hbspy.moe/#q=
   suffix: ''
 
+- id: baidumap
+  name: 百度地图
+  url: http://api.map.baidu.com/geocoder?address=
+  suffix: '&output=html'
+
 - id: ieeexplore
   name: IEEE Xplore
   url: http://ieeexplore.ieee.org/search/searchresult.jsp?queryText=
@@ -67,11 +72,6 @@
   name: 胖次
   url: http://www.panc.cc/s/
   suffix: "/td_0"
-
-- id: gaode
-  name: 高德地图
-  url: http://ditu.amap.com/search?query=
-  suffix: ''
 
 - id: byr
   name: 北邮人论坛
