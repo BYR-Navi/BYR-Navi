@@ -1,11 +1,13 @@
 [![Build Status](https://travis-ci.org/iROCKBUNNY/BYR-Navi.svg)](https://travis-ci.org/iROCKBUNNY/BYR-Navi)
 [![Website](https://img.shields.io/website-up-down-green-red/http/byr123.irockbunny.com.svg)](http://byr123.irockbunny.com/)
 [![License](https://img.shields.io/github/license/iROCKBUNNY/BYR-Navi.svg)](/LICENSE)
-[![Forks](https://img.shields.io/github/forks/iROCKBUNNY/BYR-Navi.svg)](/network)
-[![Stargazers](https://img.shields.io/github/stars/iROCKBUNNY/BYR-Navi.svg)](/stargazers)
 
 [![Closed Issues](https://img.shields.io/github/issues-closed/iROCKBUNNY/BYR-Navi.svg)](/issues)
 [![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed/iROCKBUNNY/BYR-Navi.svg)](/pulls)
+
+[![Watchers](https://img.shields.io/github/watchers/iROCKBUNNY/BYR-Navi.svg?style=social&label=Watch)](/watchers)
+[![Stargazers](https://img.shields.io/github/stars/iROCKBUNNY/BYR-Navi.svg?style=social&label=Star)](/stargazers)
+[![Forks](https://img.shields.io/github/forks/iROCKBUNNY/BYR-Navi.svg?style=social&label=Fork)](/network)
 
 # [BYR-Navi](http://byr123.irockbunny.com/)
 A Navigation Website for BYR
