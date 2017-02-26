@@ -18,9 +18,10 @@ $('#page-loading-progress').progress({
 });
 
 // version
+moment.locale('zh-CN');
 function updateVersion(updateProgressBar) {
     $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
-        $('#version img').attr('src', 'https://img.shields.io/badge/Update-' + encodeURIComponent(moment(data.pushed_at).fromNow()) + '-brightgreen.svg');
+        $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + encodeURIComponent(moment(data.pushed_at).fromNow()) + '-brightgreen.svg');
         if (updateProgressBar) {
             $('#page-loading-progress').progress('increment');
         };
@@ -29,18 +30,9 @@ function updateVersion(updateProgressBar) {
 updateVersion(true);
 setInterval(function() {
     updateVersion(false);
-}, 15000);
+}, 3600000);
 
 // visit
-var countUpOptions = {
-    useEasing: true,
-    useGrouping: true,
-    separator: ',',
-    decimal: '.',
-    prefix: '',
-    suffix: ''
-};
-var visitCountUp = new CountUp('visit', 0, 0, 0, 2.5, countUpOptions);
 function updateVisit(updateProgressBar) {
     $.getJSON(urlPrefix + '/json/analytics_data.json', function(data) {
         $.getJSON(data.analytics.api_url, {
@@ -52,7 +44,7 @@ function updateVisit(updateProgressBar) {
             'format': 'JSON',
             'token_auth': data.analytics.token
         }, function(data) {
-            visitCountUp.update(data.value);
+            $('#visit img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('今日访客') +'-' + encodeURIComponent(data.value) + '-brightgreen.svg');
             if (updateProgressBar) {
                 $('#page-loading-progress').progress('increment');
             };
