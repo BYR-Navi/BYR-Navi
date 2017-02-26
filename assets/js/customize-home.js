@@ -18,7 +18,7 @@ $('#page-loading-progress').progress({
 });
 
 // version
-moment.locale('zh-CN');
+moment.locale('zh-cn');
 $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
     $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + encodeURIComponent(moment(data.pushed_at).fromNow()) + '-brightgreen.svg');
     if (updateProgressBar) {
