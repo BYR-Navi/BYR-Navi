@@ -1,10 +1,11 @@
-[![Build Status](https://travis-ci.org/iROCKBUNNY/BYR-Navi.svg?branch=master)](https://travis-ci.org/iROCKBUNNY/BYR-Navi)
-[![Website](https://img.shields.io/badge/website-up-brightgreen.svg)](http://byr123.irockbunny.com/)
+[![Build Status](https://travis-ci.org/iROCKBUNNY/BYR-Navi.svg)](https://travis-ci.org/iROCKBUNNY/BYR-Navi)
+[![Website](https://img.shields.io/website-up-down-green-red/http/byr123.irockbunny.com.svg)](http://byr123.irockbunny.com/)
 [![License](https://img.shields.io/github/license/iROCKBUNNY/BYR-Navi.svg)](/LICENSE)
-[![GitHub Forks](https://img.shields.io/github/forks/iROCKBUNNY/BYR-Navi.svg)](https://github.com/iROCKBUNNY/BYR-Navi/network/members)
-[![GitHub Stargazers](https://img.shields.io/github/stars/iROCKBUNNY/BYR-Navi.svg)](https://github.com/iROCKBUNNY/BYR-Navi/stargazers)
-[![Author](https://img.shields.io/badge/author-iROCKBUNNY-D02142.svg)](http://irockbunny.com/)
-[![Organization](https://img.shields.io/badge/org-TEELAB-4078C0.svg)](http://teelab.net/)
+[![Forks](https://img.shields.io/github/forks/iROCKBUNNY/BYR-Navi.svg)](/network)
+[![Stargazers](https://img.shields.io/github/stars/iROCKBUNNY/BYR-Navi.svg)](/stargazers)
+
+[![Closed Issues](https://img.shields.io/github/issues-closed/iROCKBUNNY/BYR-Navi.svg)](/issues)
+[![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed/iROCKBUNNY/BYR-Navi.svg)](/pulls)
 
 # [BYR-Navi](http://byr123.irockbunny.com/)
 A Navigation Website for BYR
