@@ -19,18 +19,12 @@ $('#page-loading-progress').progress({
 
 // version
 moment.locale('zh-CN');
-function updateVersion(updateProgressBar) {
-    $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
-        $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + encodeURIComponent(moment(data.pushed_at).fromNow()) + '-brightgreen.svg');
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
-    });
-};
-updateVersion(true);
-setInterval(function() {
-    updateVersion(false);
-}, 3600000);
+$.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
+    $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + encodeURIComponent(moment(data.pushed_at).fromNow()) + '-brightgreen.svg');
+    if (updateProgressBar) {
+        $('#page-loading-progress').progress('increment');
+    };
+});
 
 // visit
 function updateVisit(updateProgressBar) {
