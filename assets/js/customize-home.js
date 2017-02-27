@@ -110,8 +110,12 @@ $(window).keyup(function(event) {
         var query = $('#search-query').val();
         query = encodeURIComponent(query);
         if (query) {
-            Cookies.set('byr_navi_previous_search_service_option', $('#search-services').val(), { expires: 365 });
-            window.open(service.attr('data-url') + query + service.attr('data-suffix'), '_blank');
+            if ($('#search-query:focus').length > 0) {
+                Cookies.set('byr_navi_previous_search_service_option', $('#search-services').val(), { expires: 365 });
+                window.open(service.attr('data-url') + query + service.attr('data-suffix'), '_blank');
+            } else {
+                $('#search-query').focus();
+            };
         } else {
             $('#search-div').addClass('error');
             $('#search-query').attr('placeholder', '请输入搜索内容').focus();
