@@ -30,12 +30,12 @@ $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
 function updateVersion(pushedAt) {
     if (pushedAt !== 'loading') {
         thisMoment = encodeURIComponent(moment(pushedAt).fromNow());
-        if (thisMoment === lastMoment) {
-            $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + thisMoment + '-brightgreen.svg');
-        } else {
-            $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + thisMoment + '-brightgreen.svg').transition('pulse');
-            lastMoment = thisMoment;
-        };
+        $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + thisMoment + '-brightgreen.svg').ready(function() {
+            if (thisMoment !== lastMoment) {
+                $(this).transition('pulse');
+                lastMoment = thisMoment;
+            };
+        });
     };
 };
 updateVersion(pushedAt);
