@@ -32,9 +32,9 @@ function updateVersion(pushedAt) {
         thisMoment = encodeURIComponent(moment(pushedAt).fromNow());
         if (thisMoment === lastMoment) {
             $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + thisMoment + '-brightgreen.svg');
-            lastMoment = thisMoment;
         } else {
             $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + thisMoment + '-brightgreen.svg').transition('pulse');
+            lastMoment = thisMoment;
         };
     };
 };
