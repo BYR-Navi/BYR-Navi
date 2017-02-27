@@ -24,7 +24,6 @@ var lastMoment = '';
 var thisMoment = '';
 $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
     pushedAt = data.pushed_at;
-    lastMoment = encodeURIComponent(moment(pushedAt).fromNow());
     $('#page-loading-progress').progress('increment');
 });
 function updateVersion(pushedAt) {
