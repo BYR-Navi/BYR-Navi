@@ -23,7 +23,7 @@ $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
     $('#version').attr('data-pushed-at', data.pushed_at);
     $('#page-loading-progress').progress('increment');
 });
-function updateVersion(pushedAt) {
+function updateVersion(badgeLink) {
     $('#version img').attr('src', badgeLink);
 };
 var badgeLink = 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + encodeURIComponent(moment($('#version').attr('data-pushed-at')).fromNow()) + '-brightgreen.svg'
