@@ -20,7 +20,7 @@ $('#page-loading-progress').progress({
 // version
 moment.locale('zh-cn');
 $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
-    $('#verison').attr('data-pushed-at', data.pushed_at)
+    $('#version').attr('data-pushed-at', data.pushed_at);
     $('#page-loading-progress').progress('increment');
 });
 function updateVersion(pushedAt) {
