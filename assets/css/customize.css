@@ -1,0 +1,130 @@
+/* customize.css */
+
+/* text colors */
+.text-red {
+    color: #DB2828;
+}
+.text-orange {
+    color: #F2711C;
+}
+.text-yellow {
+    color: #FBBD08;
+}
+.text-olive {
+    color: #B5CC18;
+}
+.text-green {
+    color: #21BA45;
+}
+.text-teal {
+    color: #00B5AD;
+}
+.text-blue {
+    color: #2185D0;
+}
+.text-violet {
+    color: #6435C9;
+}
+.text-purple {
+    color: #A333C8;
+}
+.text-pink {
+    color: #E03997;
+}
+.text-brown {
+    color: #A5673F;
+}
+.text-grey {
+    color: #767676;
+}
+.text-black {
+    color: #1B1C1D;
+}
+.text-white {
+    color: #FFF;
+}
+
+/* text colors inverted */
+.text-red-inverted {
+    color: #FF695E;
+}
+.text-orange-inverted {
+    color: #FF851B;
+}
+.text-yellow-inverted {
+    color: #FFE21F;
+}
+.text-olive-inverted {
+    color: #D9E778;
+}
+.text-green-inverted {
+    color: #2ECC40;
+}
+.text-teal-inverted {
+    color: #6DFFFF;
+}
+.text-blue-inverted {
+    color: #54C8FF;
+}
+.text-violet-inverted {
+    color: #A291FB;
+}
+.text-purple-inverted {
+    color: #DC73FF;
+}
+.text-pink-inverted {
+    color: #FF8EDF;
+}
+.text-brown-inverted {
+    color: #D67C1C;
+}
+.text-grey-inverted {
+    color: #DCDDDE;
+}
+.text-black-inverted {
+    color: #545454;
+}
+
+/* background colors */
+.background-red {
+    background-color: #DB2828;
+}
+.background-orange {
+    background-color: #F2711C;
+}
+.background-yellow {
+    background-color: #FBBD08;
+}
+.background-olive {
+    background-color: #B5CC18;
+}
+.background-green {
+    background-color: #21BA45;
+}
+.background-teal {
+    background-color: #00B5AD;
+}
+.background-blue {
+    background-color: #2185D0;
+}
+.background-violet {
+    background-color: #6435C9;
+}
+.background-purple {
+    background-color: #A333C8;
+}
+.background-pink {
+    background-color: #E03997;
+}
+.background-brown {
+    background-color: #A5673F;
+}
+.background-grey {
+    background-color: #767676;
+}
+.background-black {
+    background-color: #1B1C1D;
+}
+.background-white {
+    background-color: #FFF;
+}
