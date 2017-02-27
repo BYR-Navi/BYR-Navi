@@ -20,13 +20,21 @@ $('#page-loading-progress').progress({
 // version
 moment.locale('zh-cn');
 var pushedAt = 'loading';
+var lastMoment = '';
+var thisMoment = '';
 $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
     pushedAt = data.pushed_at;
+    lastMoment = encodeURIComponent(moment(pushedAt).fromNow());
     $('#page-loading-progress').progress('increment');
 });
 function updateVersion(pushedAt) {
     if (pushedAt !== 'loading') {
-        $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + encodeURIComponent(moment(pushedAt).fromNow()) + '-brightgreen.svg').transition('pulse');
+        thisMoment = encodeURIComponent(moment(pushedAt).fromNow());
+        $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + thisMoment + '-brightgreen.svg');
+        if (thisMoment !== lastMoment) {
+            $('#version img').transition('pulse');
+            lastMoment = thisMoment;
+        };
     };
 };
 updateVersion(pushedAt);
