@@ -32,7 +32,7 @@ function updateVersion(pushedAt) {
 updateVersion(pushedAt);
 setInterval(function() {
     updateVersion(pushedAt);
-}, 5000);
+}, 15000);
 
 // visit
 function updateVisit(updateProgressBar) {
