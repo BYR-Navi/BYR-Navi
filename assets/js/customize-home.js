@@ -26,7 +26,7 @@ $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
 });
 function updateVersion(pushedAt) {
     if (pushedAt !== 'loading') {
-        $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + encodeURIComponent(moment(pushedAt).fromNow()) + '-brightgreen.svg');
+        $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + encodeURIComponent(moment(pushedAt).fromNow()) + '-brightgreen.svg').transition('pulse');
     };
 };
 updateVersion(pushedAt);
