@@ -114,7 +114,7 @@ $(window).keyup(function(event) {
                 Cookies.set('byr_navi_previous_search_service_option', $('#search-services').val(), { expires: 365 });
                 window.open(service.attr('data-url') + query + service.attr('data-suffix'), '_blank');
             } else {
-                $('#search-query').focus();
+                $('#search-query').focus().select();
             };
         } else {
             $('#search-div').addClass('error');
