@@ -30,7 +30,7 @@ pushedAt = $('#version').attr('data-pushed-at');
 updateVersion(pushedAt);
 setInterval(function() {
     updateVersion(pushedAt);
-}, 3600000);
+}, 5000);
 
 
 // visit
