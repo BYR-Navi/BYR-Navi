@@ -26,7 +26,7 @@ $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
 function updateVersion(pushedAt) {
     $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + encodeURIComponent(moment(pushedAt).fromNow()) + '-brightgreen.svg');
 };
-pushedAt = $('#version').attr('data-pushed-at');
+var pushedAt = $('#version').attr('data-pushed-at');
 updateVersion(pushedAt);
 setInterval(function() {
     updateVersion(pushedAt);
