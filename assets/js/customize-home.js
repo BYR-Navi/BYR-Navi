@@ -37,7 +37,7 @@ $.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
 });
 function updateVersion(timestamp) {
     if (timestamp !== 'loading') {
-        $('#version img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('更新') + '-' + encodeURIComponent(moment(timestamp).fromNow()) + '-brightgreen.svg');
+        $('#version img').attr('src', 'https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-' + encodeURIComponent(moment(timestamp).fromNow()) + '-brightgreen.svg');
     };
 };
 updateVersion(pushedAt);
@@ -57,7 +57,7 @@ function updateVisit(updateProgressBar) {
             'format': 'JSON',
             'token_auth': data.analytics.token
         }, function(data) {
-            $('#visit img').attr('src', 'https://img.shields.io/badge/' + encodeURIComponent('今日访客') +'-' + encodeURIComponent(data.value) + '-brightgreen.svg');
+            $('#visit img').attr('src', 'https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-' + encodeURIComponent(data.value) + '-brightgreen.svg');
             if (updateProgressBar) {
                 $('#page-loading-progress').progress('increment');
             };
