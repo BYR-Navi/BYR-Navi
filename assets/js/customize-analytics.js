@@ -26,54 +26,54 @@ var todayVisitCountUp = new CountUp('visit', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
-$.getJSON(urlPrefix + '/json/analytics_data.json', function(data) {
-    $.getJSON(data.analytics.api_url, {
+$.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+    $.getJSON(data.api.url, {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': '1',
         'period': 'day',
         'date': 'yesterday',
         'format': 'JSON',
-        'token_auth': data.analytics.token
+        'token_auth': data.api.token
     }, function(data) {
         yesterdayVisitorsCountUp.update(data.value);
         $('#page-loading-progress').progress('increment');
     });
-    $.getJSON(data.analytics.api_url, {
+    $.getJSON(data.api.url, {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
         'idSite': '1',
         'period': 'day',
         'date': 'yesterday',
         'format': 'JSON',
-        'token_auth': data.analytics.token
+        'token_auth': data.api.token
     }, function(data) {
         yesterdayVisitsCountUp.update(data.value);
         $('#page-loading-progress').progress('increment');
     });
-    $.getJSON(data.analytics.api_url, {
+    $.getJSON(data.api.url, {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
         'idSite': '1',
         'period': 'day',
         'date': 'yesterday',
         'format': 'JSON',
-        'token_auth': data.analytics.token
+        'token_auth': data.api.token
     }, function(data) {
         yesterdayActionsCountUp.update(data.value);
         $('#page-loading-progress').progress('increment');
     });
 });
 function updateVisit(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics_data.json', function(data) {
-        $.getJSON(data.analytics.api_url, {
+    $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+        $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitsSummary.getUniqueVisitors',
             'idSite': '1',
             'period': 'day',
             'date': 'today',
             'format': 'JSON',
-            'token_auth': data.analytics.token
+            'token_auth': data.api.token
         }, function(data) {
             todayVisitCountUp.update(data.value);
             todayVisitorsCountUp.update(data.value);
@@ -81,28 +81,28 @@ function updateVisit(updateProgressBar) {
                 $('#page-loading-progress').progress('increment');
             };
         });
-        $.getJSON(data.analytics.api_url, {
+        $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitsSummary.getVisits',
             'idSite': '1',
             'period': 'day',
             'date': 'today',
             'format': 'JSON',
-            'token_auth': data.analytics.token
+            'token_auth': data.api.token
         }, function(data) {
             todayVisitsCountUp.update(data.value);
             if (updateProgressBar) {
                 $('#page-loading-progress').progress('increment');
             };
         });
-        $.getJSON(data.analytics.api_url, {
+        $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitsSummary.getActions',
             'idSite': '1',
             'period': 'day',
             'date': 'today',
             'format': 'JSON',
-            'token_auth': data.analytics.token
+            'token_auth': data.api.token
         }, function(data) {
             todayActionsCountUp.update(data.value);
             if (updateProgressBar) {
@@ -215,15 +215,15 @@ visitSummaryChart.setOption({
 });
 visitSummaryChart.showLoading();
 function updateVisitSummaryChart(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics_data.json', function(data) {
-        $.getJSON(data.analytics.api_url, {
+    $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+        $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitsSummary.getUniqueVisitors',
             'idSite': '1',
             'period': 'day',
             'date': 'last90',
             'format': 'JSON',
-            'token_auth': data.analytics.token
+            'token_auth': data.api.token
         }, function(data) {
             var days = [];
             var visitors = [];
@@ -244,14 +244,14 @@ function updateVisitSummaryChart(updateProgressBar) {
                 $('#page-loading-progress').progress('increment');
             };
         });
-        $.getJSON(data.analytics.api_url, {
+        $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitsSummary.getVisits',
             'idSite': '1',
             'period': 'day',
             'date': 'last90',
             'format': 'JSON',
-            'token_auth': data.analytics.token
+            'token_auth': data.api.token
         }, function(data) {
             var visits = [];
             for (var i in data) {
@@ -267,14 +267,14 @@ function updateVisitSummaryChart(updateProgressBar) {
                 $('#page-loading-progress').progress('increment');
             };
         });
-        $.getJSON(data.analytics.api_url, {
+        $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitsSummary.getActions',
             'idSite': '1',
             'period': 'day',
             'date': 'last90',
             'format': 'JSON',
-            'token_auth': data.analytics.token
+            'token_auth': data.api.token
         }, function(data) {
             var actions = [];
             for (var i in data) {
@@ -417,15 +417,15 @@ function normalizeSymbolSize(val, data, resize) {
     };
 };
 function updateVisitHourlyChart(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics_data.json', function(data) {
-        $.getJSON(data.analytics.api_url, {
+    $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+        $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitTime.getVisitInformationPerServerTime',
             'idSite': '1',
             'period': 'day',
             'date': 'last7',
             'format': 'JSON',
-            'token_auth': data.analytics.token
+            'token_auth': data.api.token
         }, function(data) {
             var days = [];
             var visitors = [];
@@ -606,15 +606,15 @@ visitMapChart.setOption({
     }]
 });
 function updateVisitMapChart(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics_data.json', function(data) {
-        $.getJSON(data.analytics.api_url, {
+    $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+        $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'UserCountry.getCountry',
             'idSite': '1',
             'period': 'month',
             'date': 'today',
             'format': 'JSON',
-            'token_auth': data.analytics.token
+            'token_auth': data.api.token
         }, function(data) {
             var visitors = [];
             var visits = [];

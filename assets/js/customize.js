@@ -42,51 +42,51 @@ $('.ui.inverted.masthead.segment').addClass('bg' + Math.ceil(Math.random() * 14)
 var urlPrefix = 'http://byr123.irockbunny.com';
 
 // analytics
-$.getJSON(urlPrefix + '/json/analytics_data.json', function(data) {
-    $.getJSON(data.analytics.api_url, {
+$.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+    $.getJSON(data.api.url, {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
         'idSite': '1',
         'period': 'day',
         'date': 'yesterday',
         'format': 'JSON',
-        'token_auth': data.analytics.token
+        'token_auth': data.api.token
     }, function(data) {
         $('#yesterday-visits').text(data.value);
     });
-    $.getJSON(data.analytics.api_url, {
+    $.getJSON(data.api.url, {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
         'idSite': '1',
         'period': 'day',
         'date': 'yesterday',
         'format': 'JSON',
-        'token_auth': data.analytics.token
+        'token_auth': data.api.token
     }, function(data) {
         $('#yesterday-actions').text(data.value);
     });
 });
 function updateAnalytics() {
-    $.getJSON(urlPrefix + '/json/analytics_data.json', function(data) {
-        $.getJSON(data.analytics.api_url, {
+    $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+        $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitsSummary.getVisits',
             'idSite': '1',
             'period': 'day',
             'date': 'today',
             'format': 'JSON',
-            'token_auth': data.analytics.token
+            'token_auth': data.api.token
         }, function(data) {
             $('#today-visits').text(data.value);
         });
-        $.getJSON(data.analytics.api_url, {
+        $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitsSummary.getActions',
             'idSite': '1',
             'period': 'day',
             'date': 'today',
             'format': 'JSON',
-            'token_auth': data.analytics.token
+            'token_auth': data.api.token
         }, function(data) {
             $('#today-actions').text(data.value);
         });
