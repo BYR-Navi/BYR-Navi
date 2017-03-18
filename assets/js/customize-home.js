@@ -105,7 +105,7 @@ $(window).keyup(function(event) {
     var searchBoxTop = $('#search-div').offset().top;
     var searchBoxHeight = $('#search-div').innerHeight();
     var searchBoxBottom = searchBoxTop + searchBoxHeight;
-    if (event.key == 'Enter' && searchBoxBottom > windowTop && searchBoxTop < windowBottom) {
+    if (event.key === 'Enter' && searchBoxBottom > windowTop && searchBoxTop < windowBottom) {
         var service = $('#' + $('#search-services').val());
         var query = $('#search-query').val();
         query = encodeURIComponent(query);
