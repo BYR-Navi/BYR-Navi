@@ -1,17 +1,17 @@
 // customize-home.js
 
 // logo spin
-$('#logo').hover(function(){
+$('#logo').hover(function () {
     $(this).addClass('fa-spin text-yellow-inverted');
-}, function(){
+}, function () {
     $(this).removeClass('fa-spin text-yellow-inverted');
 });
 
 // progress bar
 $('#page-loading-progress').progress({
     total: 2,
-    onSuccess: function() {
-        $('#page-loading-progress').fadeOut(1000, function() {
+    onSuccess: function () {
+        $('#page-loading-progress').fadeOut(1000, function () {
             $('#page-loading-progress').remove();
         });
     }
@@ -24,14 +24,14 @@ function updateGitHub() {
     $('#github-fork img').attr('src', 'https://img.shields.io/github/forks/iROCKBUNNY/BYR-Navi.svg?style=social&label=Fork');
 };
 updateGitHub();
-setInterval(function() {
+setInterval(function () {
     updateGitHub();
 }, 15000);
 
 // version
 moment.locale('zh-cn');
 var pushedAt = 'loading';
-$.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function(data) {
+$.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function (data) {
     pushedAt = data.pushed_at;
     $('#page-loading-progress').progress('increment');
 });
@@ -41,13 +41,13 @@ function updateVersion(timestamp) {
     };
 };
 updateVersion(pushedAt);
-setInterval(function() {
+setInterval(function () {
     updateVersion(pushedAt);
 }, 15000);
 
 // visit
 function updateVisit(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
         $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitsSummary.getUniqueVisitors',
@@ -56,7 +56,7 @@ function updateVisit(updateProgressBar) {
             'date': 'today',
             'format': 'JSON',
             'token_auth': data.api.token
-        }, function(data) {
+        }, function (data) {
             $('#visit img').attr('src', 'https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-' + encodeURIComponent(data.value) + '-brightgreen.svg');
             if (updateProgressBar) {
                 $('#page-loading-progress').progress('increment');
@@ -65,7 +65,7 @@ function updateVisit(updateProgressBar) {
     });
 };
 updateVisit(true);
-setInterval(function() {
+setInterval(function () {
     updateVisit(false);
 }, 15000);
 
@@ -77,7 +77,7 @@ if (Cookies.get('byr_navi_previous_search_service_option') == undefined || $('#'
     $('#search-services').dropdown('set selected', Cookies.get('byr_navi_previous_search_service_option'));
 };
 
-$('#search-button').click(function() {
+$('#search-button').click(function () {
     var service = $('#' + $('#search-services').val());
     var query = $('#search-query').val();
     query = encodeURIComponent(query);
@@ -90,11 +90,11 @@ $('#search-button').click(function() {
     };
 });
 
-$('#search-query').click(function() {
+$('#search-query').click(function () {
     $(this).select();
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('#search-query').focus();
 });
 

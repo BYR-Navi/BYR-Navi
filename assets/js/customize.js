@@ -1,16 +1,16 @@
 // customize.js
 
 $(document)
-    .ready(function() {
+    .ready(function () {
 
         // fix menu when passed
         $('.masthead')
             .visibility({
                 once: false,
-                onBottomPassed: function() {
+                onBottomPassed: function () {
                     $('.fixed.menu').transition('fade in');
                 },
-                onBottomPassedReverse: function() {
+                onBottomPassedReverse: function () {
                     $('.fixed.menu').transition('fade out');
                 }
             });
@@ -23,14 +23,14 @@ $(document)
 
 // loading dimmer
 $('.loading-trigger')
-    .on('click', function() {
+    .on('click', function () {
         $('#loading-dimmer')
             .dimmer('show');
     });
 
 // feedback
 $('.feedback')
-    .on('click', function() {
+    .on('click', function () {
         $('#contacts-dimmer')
             .dimmer('show');
     });
@@ -39,7 +39,7 @@ $('.feedback')
 $('.ui.inverted.masthead.segment').addClass('bg' + Math.ceil(Math.random() * 14)).removeClass('zoomed');
 
 // analytics
-$.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+$.getJSON(urlPrefix + '/json/analytics.json', function (data) {
     $.getJSON(data.api.url, {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
@@ -48,7 +48,7 @@ $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
         'date': 'yesterday',
         'format': 'JSON',
         'token_auth': data.api.token
-    }, function(data) {
+    }, function (data) {
         $('#yesterday-visits').text(data.value);
     });
     $.getJSON(data.api.url, {
@@ -59,12 +59,12 @@ $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
         'date': 'yesterday',
         'format': 'JSON',
         'token_auth': data.api.token
-    }, function(data) {
+    }, function (data) {
         $('#yesterday-actions').text(data.value);
     });
 });
 function updateAnalytics() {
-    $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
         $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitsSummary.getVisits',
@@ -73,7 +73,7 @@ function updateAnalytics() {
             'date': 'today',
             'format': 'JSON',
             'token_auth': data.api.token
-        }, function(data) {
+        }, function (data) {
             $('#today-visits').text(data.value);
         });
         $.getJSON(data.api.url, {
@@ -84,12 +84,12 @@ function updateAnalytics() {
             'date': 'today',
             'format': 'JSON',
             'token_auth': data.api.token
-        }, function(data) {
+        }, function (data) {
             $('#today-actions').text(data.value);
         });
     });
 };
 updateAnalytics();
-setInterval(function() {
+setInterval(function () {
     updateAnalytics();
 }, 15000);

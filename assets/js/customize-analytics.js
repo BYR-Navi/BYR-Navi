@@ -3,8 +3,8 @@
 // progress bar
 $('#page-loading-progress').progress({
     total: 11,
-    onSuccess: function() {
-        $('#page-loading-progress').fadeOut(1000, function() {
+    onSuccess: function () {
+        $('#page-loading-progress').fadeOut(1000, function () {
             $('#page-loading-progress').remove();
         });
     }
@@ -26,7 +26,7 @@ var todayVisitCountUp = new CountUp('visit', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
-$.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+$.getJSON(urlPrefix + '/json/analytics.json', function (data) {
     $.getJSON(data.api.url, {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
@@ -35,7 +35,7 @@ $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
         'date': 'yesterday',
         'format': 'JSON',
         'token_auth': data.api.token
-    }, function(data) {
+    }, function (data) {
         yesterdayVisitorsCountUp.update(data.value);
         $('#page-loading-progress').progress('increment');
     });
@@ -47,7 +47,7 @@ $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
         'date': 'yesterday',
         'format': 'JSON',
         'token_auth': data.api.token
-    }, function(data) {
+    }, function (data) {
         yesterdayVisitsCountUp.update(data.value);
         $('#page-loading-progress').progress('increment');
     });
@@ -59,13 +59,13 @@ $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
         'date': 'yesterday',
         'format': 'JSON',
         'token_auth': data.api.token
-    }, function(data) {
+    }, function (data) {
         yesterdayActionsCountUp.update(data.value);
         $('#page-loading-progress').progress('increment');
     });
 });
 function updateVisit(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
         $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitsSummary.getUniqueVisitors',
@@ -74,7 +74,7 @@ function updateVisit(updateProgressBar) {
             'date': 'today',
             'format': 'JSON',
             'token_auth': data.api.token
-        }, function(data) {
+        }, function (data) {
             todayVisitCountUp.update(data.value);
             todayVisitorsCountUp.update(data.value);
             if (updateProgressBar) {
@@ -89,7 +89,7 @@ function updateVisit(updateProgressBar) {
             'date': 'today',
             'format': 'JSON',
             'token_auth': data.api.token
-        }, function(data) {
+        }, function (data) {
             todayVisitsCountUp.update(data.value);
             if (updateProgressBar) {
                 $('#page-loading-progress').progress('increment');
@@ -103,7 +103,7 @@ function updateVisit(updateProgressBar) {
             'date': 'today',
             'format': 'JSON',
             'token_auth': data.api.token
-        }, function(data) {
+        }, function (data) {
             todayActionsCountUp.update(data.value);
             if (updateProgressBar) {
                 $('#page-loading-progress').progress('increment');
@@ -112,7 +112,7 @@ function updateVisit(updateProgressBar) {
     });
 };
 updateVisit(true);
-setInterval(function() {
+setInterval(function () {
     updateVisit(false);
 }, 15000);
 
@@ -215,7 +215,7 @@ visitSummaryChart.setOption({
 });
 visitSummaryChart.showLoading();
 function updateVisitSummaryChart(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
         $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitsSummary.getUniqueVisitors',
@@ -224,7 +224,7 @@ function updateVisitSummaryChart(updateProgressBar) {
             'date': 'last90',
             'format': 'JSON',
             'token_auth': data.api.token
-        }, function(data) {
+        }, function (data) {
             var days = [];
             var visitors = [];
             for (var i in data) {
@@ -252,7 +252,7 @@ function updateVisitSummaryChart(updateProgressBar) {
             'date': 'last90',
             'format': 'JSON',
             'token_auth': data.api.token
-        }, function(data) {
+        }, function (data) {
             var visits = [];
             for (var i in data) {
                 visits.push(data[i]);
@@ -275,7 +275,7 @@ function updateVisitSummaryChart(updateProgressBar) {
             'date': 'last90',
             'format': 'JSON',
             'token_auth': data.api.token
-        }, function(data) {
+        }, function (data) {
             var actions = [];
             for (var i in data) {
                 actions.push(data[i]);
@@ -294,7 +294,7 @@ function updateVisitSummaryChart(updateProgressBar) {
 };
 updateVisitSummaryChart(true);
 visitSummaryChart.hideLoading();
-setInterval(function() {
+setInterval(function () {
     updateVisitSummaryChart(false);
 }, 15000);
 
@@ -417,7 +417,7 @@ function normalizeSymbolSize(val, data, resize) {
     };
 };
 function updateVisitHourlyChart(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
         $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'VisitTime.getVisitInformationPerServerTime',
@@ -426,7 +426,7 @@ function updateVisitHourlyChart(updateProgressBar) {
             'date': 'last7',
             'format': 'JSON',
             'token_auth': data.api.token
-        }, function(data) {
+        }, function (data) {
             var days = [];
             var visitors = [];
             var visits = [];
@@ -503,7 +503,7 @@ function updateVisitHourlyChart(updateProgressBar) {
 };
 updateVisitHourlyChart(true);
 visitHourlyChart.hideLoading();
-setInterval(function() {
+setInterval(function () {
     updateVisitHourlyChart(false);
 }, 15000);
 
@@ -606,7 +606,7 @@ visitMapChart.setOption({
     }]
 });
 function updateVisitMapChart(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics.json', function(data) {
+    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
         $.getJSON(data.api.url, {
             'module': 'API',
             'method': 'UserCountry.getCountry',
@@ -615,7 +615,7 @@ function updateVisitMapChart(updateProgressBar) {
             'date': 'today',
             'format': 'JSON',
             'token_auth': data.api.token
-        }, function(data) {
+        }, function (data) {
             var visitors = [];
             var visits = [];
             var actions = [];
@@ -687,6 +687,6 @@ function updateVisitMapChart(updateProgressBar) {
     });
 };
 updateVisitMapChart(true);
-setInterval(function() {
+setInterval(function () {
     updateVisitMapChart(false);
 }, 15000);
