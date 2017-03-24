@@ -1,12 +1,3 @@
-version:
-  jquery: 3.2.1
-  semantic_ui: 2.2.9
-  font_awesome: 4.7.0
-  moment: 2.18.1
-  count_up: 1.8.2
-  js_cookie: 2.1.3
-  echarts: 3.4.0
-
 google_analytics_id: UA-33449675-7
 piwik_analytics_site_id: 1
 
