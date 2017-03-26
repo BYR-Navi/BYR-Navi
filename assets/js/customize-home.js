@@ -9,7 +9,7 @@ $('#logo').hover(function () {
 
 // progress bar
 $('#page-loading-progress').progress({
-    total: 2,
+    total: 1,
     onSuccess: function () {
         $('#page-loading-progress').fadeOut(1000, function () {
             $('#page-loading-progress').remove();
@@ -30,19 +30,13 @@ setInterval(function () {
 
 // version
 moment.locale('zh-cn');
-var pushedAt = 'loading';
-$.getJSON('https://api.github.com/repos/iROCKBUNNY/BYR-Navi', function (data) {
-    pushedAt = data.pushed_at;
-    $('#page-loading-progress').progress('increment');
-});
 function updateVersion(timestamp) {
-    if (timestamp !== 'loading') {
-        $('#version img').attr('src', 'https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-' + encodeURIComponent(moment(timestamp).fromNow()) + '-brightgreen.svg');
-    };
+    $('#version img').attr('src', 'https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-' + encodeURIComponent(moment(timestamp).fromNow()) + '-brightgreen.svg');
 };
-updateVersion(pushedAt);
+var updateAt = $('#version').attr('data-update-at');
+updateVersion(updateAt);
 setInterval(function () {
-    updateVersion(pushedAt);
+    updateVersion(updateAt);
 }, 15000);
 
 // visit
