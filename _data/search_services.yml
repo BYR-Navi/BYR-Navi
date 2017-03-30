@@ -68,11 +68,6 @@
   url: http://www.xiami.com/search?key=
   suffix: ''
 
-- id: music
-  name: 音乐
-  url: http://music.hao123.com/search?key=
-  suffix: ''
-
 - id: panci
   name: 胖次
   url: http://www.panc.cc/s/
