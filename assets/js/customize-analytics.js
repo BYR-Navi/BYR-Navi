@@ -641,15 +641,15 @@ function updateVisitMapChart(updateProgressBar) {
                     var actionsChina = actionsChina + data[i]['nb_actions'];
                 } else {
                     visitors.push({
-                        'name': data[i]['label'].replace('United States', 'United States of America'),
+                        'name': data[i]['label'],
                         'value': data[i]['sum_daily_nb_uniq_visitors']
                     });
                     visits.push({
-                        'name': data[i]['label'].replace('United States', 'United States of America'),
+                        'name': data[i]['label'],
                         'value': data[i]['nb_visits']
                     });
                     actions.push({
-                        'name': data[i]['label'].replace('United States', 'United States of America'),
+                        'name': data[i]['label'],
                         'value': data[i]['nb_actions']
                     });
                 };
