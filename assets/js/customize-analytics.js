@@ -721,10 +721,10 @@ visitCalendarChart.setOption({
         },
         visualMap: {
             min: 0,
-            max: 1000,
+            max: 2000,
             calculable: true,
             inRange: {
-                color: ['white', 'orangered']
+                color: ['lightskyblue', 'yellow', 'orangered']
             },
             orient: 'horizontal',
             top: 'top',
