@@ -720,8 +720,8 @@ visitCalendarChart.setOption({
             }
         },
         visualMap: {
-            min: 0,
-            max: 500,
+            min: 400,
+            max: 700,
             calculable: true,
             inRange: {
                 color: ['#F6EFA6', '#BF444C']
