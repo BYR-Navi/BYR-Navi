@@ -545,7 +545,7 @@ visitMapChart.setOption({
             text:['High','Low'],
             calculable: true,
             inRange: {
-                color: ['lightskyblue','yellow', 'orangered']
+                color: ['lightskyblue', 'yellow', 'orangered']
             }
         },
         series: [{
@@ -691,7 +691,7 @@ setInterval(function () {
     updateVisitMapChart(false);
 }, 15000);
 
-var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'));
+var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'macarons');
 var firstDay = new Date('2016-10-01');
 var firstYear = firstDay.getFullYear();
 var today = new Date();
@@ -723,6 +723,9 @@ visitCalendarChart.setOption({
             min: 0,
             max: 1000,
             calculable: true,
+            inRange: {
+                color: ['white', 'orangered']
+            },
             orient: 'horizontal',
             top: 'top',
             left: 0
