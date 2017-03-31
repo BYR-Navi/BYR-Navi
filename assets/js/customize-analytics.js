@@ -713,7 +713,6 @@ visitCalendarChart.setOption({
         toolbox: {
             showTitle: false,
             feature: {
-                restore: {},
                 saveAsImage: {
                     excludeComponents: ['toolbox']
                 }
