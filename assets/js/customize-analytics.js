@@ -541,7 +541,7 @@ visitMapChart.setOption({
         },
         visualMap: {
             min: 0,
-            max: 3000,
+            max: 5000,
             text:['High','Low'],
             calculable: true,
             inRange: {
