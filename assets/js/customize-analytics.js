@@ -541,11 +541,10 @@ visitMapChart.setOption({
         },
         visualMap: {
             min: 0,
-            max: 20000,
+            max: 5000,
             text:['High','Low'],
             calculable: true,
             inRange: {
-                // color: ['lightskyblue', 'yellow', 'orangered']
                 color: ['#F6EFA6', '#BF444C']
             }
         },
@@ -722,7 +721,7 @@ visitCalendarChart.setOption({
         },
         visualMap: {
             min: 0,
-            max: 2000,
+            max: 1000,
             calculable: true,
             inRange: {
                 color: ['#F6EFA6', '#BF444C']
