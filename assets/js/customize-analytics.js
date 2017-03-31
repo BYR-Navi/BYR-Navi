@@ -704,7 +704,11 @@ visitCalendarChart.setOption({
             left: 'center'
         },
         tooltip: {
-            position: 'top'
+            position: 'top',
+            formatter: function (p) {
+                var format = echarts.format.formatTime('YYYY年M月D日', p.data[0]);
+                return format + ' 浏览次数：' + p.data[1];
+            }
         },
         toolbox: {
             showTitle: false,
@@ -744,6 +748,26 @@ visitCalendarChart.setOption({
         }]
     },
     media: [{
+        query: {
+            maxWidth: 767
+        },
+        option: {
+            toolbox: {
+                show: false
+            },
+            visualMap: {
+                orient: 'vertical'
+            },
+            calendar: [{
+                orient: 'vertical',
+                left: 'center',
+                top: 90
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 1220
+            }]
+        }
     }]
 });
 function updateVisitCalendarChart(updateProgressBar) {
@@ -776,7 +800,7 @@ function updateVisitCalendarChart(updateProgressBar) {
                     continue;
                 };
                 series[cursorYear - firstYear].data.push([
-                    echarts.format.formatTime('yyyy-MM-dd', i),
+                    echarts.format.formatTime('YYYY-MM-DD', i),
                     data[i]
                 ]);
             };
