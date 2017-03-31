@@ -90,6 +90,9 @@
 #visit-map.echart-container {
     height: 600px;
 }
+#visit-calendar.echart-container {
+    height: 400px;
+}
 
 
 @media only screen and (max-width: 767px) {
@@ -128,6 +131,9 @@
     }
     #visit-map.echart-container {
         height: 400px;
+    }
+    #visit-calendar.echart-container {
+        height: 300px;
     }
     #contacts-dimmer div.item {
         font-size: 1em;

@@ -39,7 +39,8 @@
     {% if page.home %}<script type="text/javascript" src="//unpkg.com/js-cookie"></script>{% endif %}
     {% if page.home %}<script type="text/javascript" src="{{ '/assets/js/query-suggest.js' | relative_url }}"></script>{% endif %}
     <script type="text/javascript">
-        var urlPrefix = '{{ site.url }}';
+        // var urlPrefix = '{{ site.url }}';
+        var urlPrefix = 'http://127.0.0.1:4000';
     </script>
     <script type="text/javascript" src="{{ '/assets/js/customize.js' | relative_url }}"></script>
     {% if page.home %}<script type="text/javascript" src="{{ '/assets/js/customize-home.js' | relative_url }}"></script>{% endif %}

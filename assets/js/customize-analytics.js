@@ -2,7 +2,7 @@
 
 // progress bar
 $('#page-loading-progress').progress({
-    total: 11,
+    total: 12,
     onSuccess: function () {
         $('#page-loading-progress').fadeOut(1000, function () {
             $('#page-loading-progress').remove();
@@ -689,4 +689,107 @@ function updateVisitMapChart(updateProgressBar) {
 updateVisitMapChart(true);
 setInterval(function () {
     updateVisitMapChart(false);
+}, 15000);
+
+var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'));
+var firstDay = new Date('2016-10-01');
+var firstYear = firstDay.getFullYear();
+var today = new Date();
+var currentYear = today.getFullYear();
+var maxYear = 2017;
+visitCalendarChart.setOption({
+    baseOption: {
+        title: {
+            text: '历年浏览数据',
+            left: 'center'
+        },
+        tooltip: {
+            position: 'top'
+        },
+        toolbox: {
+            showTitle: false,
+            feature: {
+                restore: {},
+                saveAsImage: {
+                    excludeComponents: ['toolbox']
+                }
+            }
+        },
+        visualMap: {
+            min: 0,
+            max: 1000,
+            calculable: true,
+            orient: 'horizontal',
+            top: 'top',
+            left: 0
+        },
+        calendar: [{
+            range: 2016,
+            right: 5
+        }, {
+            range: 2017,
+            right: 5,
+            top: 240
+        }],
+        series: [{
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 0,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 1,
+            data: []
+        }]
+    },
+    media: [{
+    }]
+});
+function updateVisitCalendarChart(updateProgressBar) {
+    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
+        $.getJSON(data.api.url, {
+            'module': 'API',
+            'method': 'VisitsSummary.getActions',
+            'idSite': '1',
+            'period': 'day',
+            'date': function () {
+                return 'last' + Math.floor((today - firstDay) / 86400000 + 1);
+            },
+            'format': 'JSON',
+            'token_auth': data.api.token
+        }, function (data) {
+            var cursorYear = firstYear;
+            var series = [{
+                calendarIndex: cursorYear - firstYear,
+                data: []
+            }];
+            for (var i in data) {
+                year = Number(i.slice(0, 4));
+                if (year > cursorYear && year <= maxYear) {
+                    cursorYear = year;
+                    series.push({
+                        calendarIndex: cursorYear - firstYear,
+                        data: []
+                    });
+                } else if (year < firstYear || year > maxYear) {
+                    continue;
+                };
+                series[cursorYear - firstYear].data.push([
+                    echarts.format.formatTime('yyyy-MM-dd', i),
+                    data[i]
+                ]);
+            };
+            visitCalendarChart.setOption({
+                series: series
+            });
+            if (updateProgressBar) {
+                $('#page-loading-progress').progress('increment');
+            };
+        });
+    });
+};
+updateVisitCalendarChart(true);
+setInterval(function () {
+    updateVisitCalendarChart(false);
 }, 15000);
