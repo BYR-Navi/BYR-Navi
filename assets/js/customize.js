@@ -20,11 +20,6 @@ $('.loading-trigger').on('click', function () {
     $('#loading-dimmer').dimmer('show');
 });
 
-// feedback
-$('.feedback').on('click', function () {
-    $('#contacts-dimmer').dimmer('show');
-});
-
 // masthead background
 $('.ui.inverted.masthead.segment').addClass('bg' + Math.ceil(Math.random() * 14)).removeClass('zoomed');
 
