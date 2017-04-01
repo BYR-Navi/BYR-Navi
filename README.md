@@ -8,6 +8,8 @@
 [![Closed Issues](https://img.shields.io/github/issues-closed/iROCKBUNNY/BYR-Navi.svg)](https://github.com/iROCKBUNNY/BYR-Navi/issues)
 [![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed/iROCKBUNNY/BYR-Navi.svg)](https://github.com/iROCKBUNNY/BYR-Navi/pulls)
 
+[![Say Thanks](https://img.shields.io/badge/Say%20Thanks!-🐰-1EAEDB.svg)](https://saythanks.io/to/iROCKBUNNY)
+
 # [BYR-Navi](http://byr123.irockbunny.com/)
 A Navigation Website for BYR
 
