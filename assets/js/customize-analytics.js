@@ -706,7 +706,7 @@ visitCalendarChart.setOption({
         tooltip: {
             position: 'top',
             formatter: function (p) {
-                var format = echarts.format.formatTime('YYYY年M月D日', p.data[0]);
+                var format = echarts.format.formatTime('YYYY-MM-DD', p.data[0]);
                 return format + ' 浏览次数：' + p.data[1];
             }
         },
