@@ -41,21 +41,19 @@ setInterval(function () {
 
 // visit
 function updateVisit(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
-        $.getJSON(data.api.url, {
-            'module': 'API',
-            'method': 'VisitsSummary.getUniqueVisitors',
-            'idSite': '1',
-            'period': 'day',
-            'date': 'today',
-            'format': 'JSON',
-            'token_auth': data.api.token
-        }, function (data) {
-            $('#visit img').attr('src', 'https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-' + encodeURIComponent(data.value) + '-brightgreen.svg');
-            if (updateProgressBar) {
-                $('#page-loading-progress').progress('increment');
-            };
-        });
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitsSummary.getUniqueVisitors',
+        'idSite': analyticsAPI.id,
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        $('#visit img').attr('src', 'https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-' + encodeURIComponent(data.value) + '-brightgreen.svg');
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
     });
 };
 updateVisit(true);

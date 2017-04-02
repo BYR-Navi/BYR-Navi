@@ -1,5 +1,11 @@
-google_analytics_id: UA-33449675-7
-piwik_analytics_site_id: 1
+analytics:
+  google:
+    id: UA-33449675-7
+  piwik:
+    id: 1
+    api:
+      url: https://vps.irockbunny.com/analytics/?callback=?
+      token: 7979b0bd7ed9c5d2353d3e35f62a219c
 
 repository: https://github.com/iROCKBUNNY/BYR-Navi
 

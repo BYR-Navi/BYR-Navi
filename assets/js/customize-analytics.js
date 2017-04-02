@@ -26,89 +26,85 @@ var todayVisitCountUp = new CountUp('visit', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
-$.getJSON(urlPrefix + '/json/analytics.json', function (data) {
-    $.getJSON(data.api.url, {
-        'module': 'API',
-        'method': 'VisitsSummary.getUniqueVisitors',
-        'idSite': '1',
-        'period': 'day',
-        'date': 'yesterday',
-        'format': 'JSON',
-        'token_auth': data.api.token
-    }, function (data) {
-        yesterdayVisitorsCountUp.update(data.value);
-        $('#page-loading-progress').progress('increment');
-    });
-    $.getJSON(data.api.url, {
-        'module': 'API',
-        'method': 'VisitsSummary.getVisits',
-        'idSite': '1',
-        'period': 'day',
-        'date': 'yesterday',
-        'format': 'JSON',
-        'token_auth': data.api.token
-    }, function (data) {
-        yesterdayVisitsCountUp.update(data.value);
-        $('#page-loading-progress').progress('increment');
-    });
-    $.getJSON(data.api.url, {
-        'module': 'API',
-        'method': 'VisitsSummary.getActions',
-        'idSite': '1',
-        'period': 'day',
-        'date': 'yesterday',
-        'format': 'JSON',
-        'token_auth': data.api.token
-    }, function (data) {
-        yesterdayActionsCountUp.update(data.value);
-        $('#page-loading-progress').progress('increment');
-    });
+$.getJSON(analyticsAPI.url, {
+    'module': 'API',
+    'method': 'VisitsSummary.getUniqueVisitors',
+    'idSite': analyticsAPI.id,
+    'period': 'day',
+    'date': 'yesterday',
+    'format': 'JSON',
+    'token_auth': analyticsAPI.token
+}, function (data) {
+    yesterdayVisitorsCountUp.update(data.value);
+    $('#page-loading-progress').progress('increment');
+});
+$.getJSON(analyticsAPI.url, {
+    'module': 'API',
+    'method': 'VisitsSummary.getVisits',
+    'idSite': analyticsAPI.id,
+    'period': 'day',
+    'date': 'yesterday',
+    'format': 'JSON',
+    'token_auth': analyticsAPI.token
+}, function (data) {
+    yesterdayVisitsCountUp.update(data.value);
+    $('#page-loading-progress').progress('increment');
+});
+$.getJSON(analyticsAPI.url, {
+    'module': 'API',
+    'method': 'VisitsSummary.getActions',
+    'idSite': analyticsAPI.id,
+    'period': 'day',
+    'date': 'yesterday',
+    'format': 'JSON',
+    'token_auth': analyticsAPI.token
+}, function (data) {
+    yesterdayActionsCountUp.update(data.value);
+    $('#page-loading-progress').progress('increment');
 });
 function updateVisit(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
-        $.getJSON(data.api.url, {
-            'module': 'API',
-            'method': 'VisitsSummary.getUniqueVisitors',
-            'idSite': '1',
-            'period': 'day',
-            'date': 'today',
-            'format': 'JSON',
-            'token_auth': data.api.token
-        }, function (data) {
-            todayVisitCountUp.update(data.value);
-            todayVisitorsCountUp.update(data.value);
-            if (updateProgressBar) {
-                $('#page-loading-progress').progress('increment');
-            };
-        });
-        $.getJSON(data.api.url, {
-            'module': 'API',
-            'method': 'VisitsSummary.getVisits',
-            'idSite': '1',
-            'period': 'day',
-            'date': 'today',
-            'format': 'JSON',
-            'token_auth': data.api.token
-        }, function (data) {
-            todayVisitsCountUp.update(data.value);
-            if (updateProgressBar) {
-                $('#page-loading-progress').progress('increment');
-            };
-        });
-        $.getJSON(data.api.url, {
-            'module': 'API',
-            'method': 'VisitsSummary.getActions',
-            'idSite': '1',
-            'period': 'day',
-            'date': 'today',
-            'format': 'JSON',
-            'token_auth': data.api.token
-        }, function (data) {
-            todayActionsCountUp.update(data.value);
-            if (updateProgressBar) {
-                $('#page-loading-progress').progress('increment');
-            };
-        });
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitsSummary.getUniqueVisitors',
+        'idSite': analyticsAPI.id,
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        todayVisitCountUp.update(data.value);
+        todayVisitorsCountUp.update(data.value);
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
+    });
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitsSummary.getVisits',
+        'idSite': analyticsAPI.id,
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        todayVisitsCountUp.update(data.value);
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
+    });
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitsSummary.getActions',
+        'idSite': analyticsAPI.id,
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        todayActionsCountUp.update(data.value);
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
     });
 };
 updateVisit(true);
@@ -215,81 +211,79 @@ visitSummaryChart.setOption({
 });
 visitSummaryChart.showLoading();
 function updateVisitSummaryChart(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
-        $.getJSON(data.api.url, {
-            'module': 'API',
-            'method': 'VisitsSummary.getUniqueVisitors',
-            'idSite': '1',
-            'period': 'day',
-            'date': 'last90',
-            'format': 'JSON',
-            'token_auth': data.api.token
-        }, function (data) {
-            var days = [];
-            var visitors = [];
-            for (var i in data) {
-                days.push(i);
-                visitors.push(data[i]);
-            };
-            visitSummaryChart.setOption({
-                xAxis: {
-                    data: days
-                },
-                series: [{
-                    name: '访客数',
-                    data: visitors
-                }]
-            });
-            if (updateProgressBar) {
-                $('#page-loading-progress').progress('increment');
-            };
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitsSummary.getUniqueVisitors',
+        'idSite': analyticsAPI.id,
+        'period': 'day',
+        'date': 'last90',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        var days = [];
+        var visitors = [];
+        for (var i in data) {
+            days.push(i);
+            visitors.push(data[i]);
+        };
+        visitSummaryChart.setOption({
+            xAxis: {
+                data: days
+            },
+            series: [{
+                name: '访客数',
+                data: visitors
+            }]
         });
-        $.getJSON(data.api.url, {
-            'module': 'API',
-            'method': 'VisitsSummary.getVisits',
-            'idSite': '1',
-            'period': 'day',
-            'date': 'last90',
-            'format': 'JSON',
-            'token_auth': data.api.token
-        }, function (data) {
-            var visits = [];
-            for (var i in data) {
-                visits.push(data[i]);
-            };
-            visitSummaryChart.setOption({
-                series: [{
-                    name: '访问次数',
-                    data: visits
-                }]
-            });
-            if (updateProgressBar) {
-                $('#page-loading-progress').progress('increment');
-            };
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
+    });
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitsSummary.getVisits',
+        'idSite': analyticsAPI.id,
+        'period': 'day',
+        'date': 'last90',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        var visits = [];
+        for (var i in data) {
+            visits.push(data[i]);
+        };
+        visitSummaryChart.setOption({
+            series: [{
+                name: '访问次数',
+                data: visits
+            }]
         });
-        $.getJSON(data.api.url, {
-            'module': 'API',
-            'method': 'VisitsSummary.getActions',
-            'idSite': '1',
-            'period': 'day',
-            'date': 'last90',
-            'format': 'JSON',
-            'token_auth': data.api.token
-        }, function (data) {
-            var actions = [];
-            for (var i in data) {
-                actions.push(data[i]);
-            };
-            visitSummaryChart.setOption({
-                series: [{
-                    name: '浏览次数',
-                    data: actions
-                }]
-            });
-            if (updateProgressBar) {
-                $('#page-loading-progress').progress('increment');
-            };
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
+    });
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitsSummary.getActions',
+        'idSite': analyticsAPI.id,
+        'period': 'day',
+        'date': 'last90',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        var actions = [];
+        for (var i in data) {
+            actions.push(data[i]);
+        };
+        visitSummaryChart.setOption({
+            series: [{
+                name: '浏览次数',
+                data: actions
+            }]
         });
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
     });
 };
 updateVisitSummaryChart(true);
@@ -417,88 +411,86 @@ function normalizeSymbolSize(val, data, resize) {
     };
 };
 function updateVisitHourlyChart(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
-        $.getJSON(data.api.url, {
-            'module': 'API',
-            'method': 'VisitTime.getVisitInformationPerServerTime',
-            'idSite': '1',
-            'period': 'day',
-            'date': 'last7',
-            'format': 'JSON',
-            'token_auth': data.api.token
-        }, function (data) {
-            var days = [];
-            var visitors = [];
-            var visits = [];
-            var actions = [];
-            for (var day in data) {
-                days.unshift(day);
-                for (var hourNum in data[day]) {
-                    visitors.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_uniq_visitors']]);
-                    visits.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_visits']]);
-                    actions.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_actions']]);
-                };
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitTime.getVisitInformationPerServerTime',
+        'idSite': analyticsAPI.id,
+        'period': 'day',
+        'date': 'last7',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        var days = [];
+        var visitors = [];
+        var visits = [];
+        var actions = [];
+        for (var day in data) {
+            days.unshift(day);
+            for (var hourNum in data[day]) {
+                visitors.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_uniq_visitors']]);
+                visits.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_visits']]);
+                actions.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_actions']]);
             };
-            visitHourlyChart.setOption({
-                baseOption: {
-                    yAxis: {
-                        data: days
-                    },
+        };
+        visitHourlyChart.setOption({
+            baseOption: {
+                yAxis: {
+                    data: days
+                },
+                series: [{
+                    name: '访客数',
+                    data: visitors,
+                    symbolSize: function (val) {
+                        return normalizeSymbolSize(val[2], visitors, false);
+                    }
+                },
+                {
+                    name: '访问次数',
+                    data: visits,
+                    symbolSize: function (val) {
+                        return normalizeSymbolSize(val[2], visits, false);
+                    }
+                },
+                {
+                    name: '浏览次数',
+                    data: actions,
+                    symbolSize: function (val) {
+                        return normalizeSymbolSize(val[2], actions, false);
+                    }
+                }]
+            },
+            media: [{
+                query: {
+                    maxWidth: 767
+                },
+                option: {
                     series: [{
                         name: '访客数',
                         data: visitors,
                         symbolSize: function (val) {
-                            return normalizeSymbolSize(val[2], visitors, false);
+                            return normalizeSymbolSize(val[2], visitors, true);
                         }
                     },
                     {
                         name: '访问次数',
                         data: visits,
                         symbolSize: function (val) {
-                            return normalizeSymbolSize(val[2], visits, false);
+                            return normalizeSymbolSize(val[2], visits, true);
                         }
                     },
                     {
                         name: '浏览次数',
                         data: actions,
                         symbolSize: function (val) {
-                            return normalizeSymbolSize(val[2], actions, false);
+                            return normalizeSymbolSize(val[2], actions, true);
                         }
                     }]
-                },
-                media: [{
-                    query: {
-                        maxWidth: 767
-                    },
-                    option: {
-                        series: [{
-                            name: '访客数',
-                            data: visitors,
-                            symbolSize: function (val) {
-                                return normalizeSymbolSize(val[2], visitors, true);
-                            }
-                        },
-                        {
-                            name: '访问次数',
-                            data: visits,
-                            symbolSize: function (val) {
-                                return normalizeSymbolSize(val[2], visits, true);
-                            }
-                        },
-                        {
-                            name: '浏览次数',
-                            data: actions,
-                            symbolSize: function (val) {
-                                return normalizeSymbolSize(val[2], actions, true);
-                            }
-                        }]
-                    }
-                }]
-            });
-            if (updateProgressBar) {
-                $('#page-loading-progress').progress('increment');
-            };
+                }
+            }]
         });
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
     });
 };
 updateVisitHourlyChart(true);
@@ -606,84 +598,82 @@ visitMapChart.setOption({
     }]
 });
 function updateVisitMapChart(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
-        $.getJSON(data.api.url, {
-            'module': 'API',
-            'method': 'UserCountry.getCountry',
-            'idSite': '1',
-            'period': 'month',
-            'date': 'today',
-            'format': 'JSON',
-            'token_auth': data.api.token
-        }, function (data) {
-            var visitors = [];
-            var visits = [];
-            var actions = [];
-            var visitorsChina = 0;
-            var visitsChina = 0;
-            var actionsChina = 0;
-            for (var i in data) {
-                if (data[i]['label'] == 'China') {
-                    var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
-                    var visitsChina = visitsChina + data[i]['nb_visits'];
-                    var actionsChina = actionsChina + data[i]['nb_actions'];
-                } else if (data[i]['label'] == 'Hong Kong SAR China') {
-                    var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
-                    var visitsChina = visitsChina + data[i]['nb_visits'];
-                    var actionsChina = actionsChina + data[i]['nb_actions'];
-                } else if (data[i]['label'] == 'Taiwan') {
-                    var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
-                    var visitsChina = visitsChina + data[i]['nb_visits'];
-                    var actionsChina = actionsChina + data[i]['nb_actions'];
-                } else if (data[i]['label'] == 'Unknown') {
-                    var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
-                    var visitsChina = visitsChina + data[i]['nb_visits'];
-                    var actionsChina = actionsChina + data[i]['nb_actions'];
-                } else {
-                    visitors.push({
-                        'name': data[i]['label'],
-                        'value': data[i]['sum_daily_nb_uniq_visitors']
-                    });
-                    visits.push({
-                        'name': data[i]['label'],
-                        'value': data[i]['nb_visits']
-                    });
-                    actions.push({
-                        'name': data[i]['label'],
-                        'value': data[i]['nb_actions']
-                    });
-                };
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'UserCountry.getCountry',
+        'idSite': analyticsAPI.id,
+        'period': 'month',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        var visitors = [];
+        var visits = [];
+        var actions = [];
+        var visitorsChina = 0;
+        var visitsChina = 0;
+        var actionsChina = 0;
+        for (var i in data) {
+            if (data[i]['label'] == 'China') {
+                var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
+                var visitsChina = visitsChina + data[i]['nb_visits'];
+                var actionsChina = actionsChina + data[i]['nb_actions'];
+            } else if (data[i]['label'] == 'Hong Kong SAR China') {
+                var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
+                var visitsChina = visitsChina + data[i]['nb_visits'];
+                var actionsChina = actionsChina + data[i]['nb_actions'];
+            } else if (data[i]['label'] == 'Taiwan') {
+                var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
+                var visitsChina = visitsChina + data[i]['nb_visits'];
+                var actionsChina = actionsChina + data[i]['nb_actions'];
+            } else if (data[i]['label'] == 'Unknown') {
+                var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
+                var visitsChina = visitsChina + data[i]['nb_visits'];
+                var actionsChina = actionsChina + data[i]['nb_actions'];
+            } else {
+                visitors.push({
+                    'name': data[i]['label'],
+                    'value': data[i]['sum_daily_nb_uniq_visitors']
+                });
+                visits.push({
+                    'name': data[i]['label'],
+                    'value': data[i]['nb_visits']
+                });
+                actions.push({
+                    'name': data[i]['label'],
+                    'value': data[i]['nb_actions']
+                });
             };
-            visitors.push({
-                'name': 'China',
-                'value': visitorsChina
-            });
-            visits.push({
-                'name': 'China',
-                'value': visitsChina
-            });
-            actions.push({
-                'name': 'China',
-                'value': actionsChina
-            });
-            visitMapChart.setOption({
-                series: [{
-                    name: '访客数',
-                    data: visitors
-                },
-                {
-                    name: '访问次数',
-                    data: visits
-                },
-                {
-                    name: '浏览次数',
-                    data: actions
-                }]
-            });
-            if (updateProgressBar) {
-                $('#page-loading-progress').progress('increment');
-            };
+        };
+        visitors.push({
+            'name': 'China',
+            'value': visitorsChina
         });
+        visits.push({
+            'name': 'China',
+            'value': visitsChina
+        });
+        actions.push({
+            'name': 'China',
+            'value': actionsChina
+        });
+        visitMapChart.setOption({
+            series: [{
+                name: '访客数',
+                data: visitors
+            },
+            {
+                name: '访问次数',
+                data: visits
+            },
+            {
+                name: '浏览次数',
+                data: actions
+            }]
+        });
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
     });
 };
 updateVisitMapChart(true);
@@ -774,46 +764,44 @@ visitCalendarChart.setOption({
     }]
 });
 function updateVisitCalendarChart(updateProgressBar) {
-    $.getJSON(urlPrefix + '/json/analytics.json', function (data) {
-        $.getJSON(data.api.url, {
-            'module': 'API',
-            'method': 'VisitsSummary.getActions',
-            'idSite': '1',
-            'period': 'day',
-            'date': function () {
-                return 'last' + Math.floor((today - firstDay) / 86400000 + 1);
-            },
-            'format': 'JSON',
-            'token_auth': data.api.token
-        }, function (data) {
-            var cursorYear = firstYear;
-            var series = [{
-                calendarIndex: cursorYear - firstYear,
-                data: []
-            }];
-            for (var i in data) {
-                year = Number(i.slice(0, 4));
-                if (year > cursorYear && year <= maxYear) {
-                    cursorYear = year;
-                    series.push({
-                        calendarIndex: cursorYear - firstYear,
-                        data: []
-                    });
-                } else if (year < firstYear || year > maxYear) {
-                    continue;
-                };
-                series[cursorYear - firstYear].data.push([
-                    echarts.format.formatTime('YYYY-MM-DD', i),
-                    data[i]
-                ]);
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitsSummary.getActions',
+        'idSite': analyticsAPI.id,
+        'period': 'day',
+        'date': function () {
+            return 'last' + Math.floor((today - firstDay) / 86400000 + 1);
+        },
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        var cursorYear = firstYear;
+        var series = [{
+            calendarIndex: cursorYear - firstYear,
+            data: []
+        }];
+        for (var i in data) {
+            year = Number(i.slice(0, 4));
+            if (year > cursorYear && year <= maxYear) {
+                cursorYear = year;
+                series.push({
+                    calendarIndex: cursorYear - firstYear,
+                    data: []
+                });
+            } else if (year < firstYear || year > maxYear) {
+                continue;
             };
-            visitCalendarChart.setOption({
-                series: series
-            });
-            if (updateProgressBar) {
-                $('#page-loading-progress').progress('increment');
-            };
+            series[cursorYear - firstYear].data.push([
+                echarts.format.formatTime('YYYY-MM-DD', i),
+                data[i]
+            ]);
+        };
+        visitCalendarChart.setOption({
+            series: series
         });
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
     });
 };
 updateVisitCalendarChart(true);

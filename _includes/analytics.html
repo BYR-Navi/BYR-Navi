@@ -4,7 +4,7 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics_id }}', 'auto');
+        ga('create', '{{ site.analytics.google.id }}', 'auto');
         ga('send', 'pageview');
     </script>
 {% endif %}
@@ -16,14 +16,14 @@
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
-        var u = "//vps.irockbunny.com/analytics/";
+        var u = "https//vps.irockbunny.com/analytics/";
         _paq.push(['setTrackerUrl', u + 'piwik.php']);
-        _paq.push(['setSiteId', '{{ site.piwik_analytics_site_id }}']);
+        _paq.push(['setSiteId', '{{ site.analytics.piwik.id }}']);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
     })();
     </script>
     <noscript>
-        <p><img src="//vps.irockbunny.com/analytics/piwik.php?idsite={{ site.piwik_analytics_site_id }}&rec=1" style="border:0;" alt="Piwik Analytics" /></p>
+        <p><img src="//vps.irockbunny.com/analytics/piwik.php?idsite={{ site.analytics.piwik.id }}&rec=1" style="border:0;" alt="Piwik Analytics" /></p>
     </noscript>
 {% endif %}
