@@ -10,8 +10,7 @@
             <div class="three wide column">
                 <h4 class="ui inverted header">Forked by</h4>
                 <div class="ui inverted link list">
-                    <a class="item" href="http://falin.xyz/" target="_blank">法林导航</a>
-                    <a class="item" href="http://www.ejinbu.com/" target="_blank">进步英语</a>
+                    {% for item in site.data.forked_by %}<a class="item" href="{{ item.url }}" target="_blank">{{ item.name }}</a>{% endfor %}
                 </div>
             </div>
             <div class="three wide column">
