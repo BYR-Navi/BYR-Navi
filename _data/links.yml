@@ -235,17 +235,13 @@
       style: basic
       url: http://www.tucao.tv/
 
-    - name: 虾米
-      style: basic
-      url: http://www.xiami.com/
-
     - name: 多瑙影院
       style: basic
       url: http://www.dnvod.eu/
 
-    - name: Library
+    - name: 虾米
       style: basic
-      url: http://www.javlibrary.com/
+      url: http://www.xiami.com/
 
 - section: byr
   categories:
