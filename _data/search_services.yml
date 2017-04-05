@@ -6,12 +6,10 @@
 - id: google
   name: 谷歌
   url: http://www.google.com/search?q=
-  suffix: ''
 
 - id: googlemirror
   name: 谷歌镜像
   url: http://google.hbspy.moe/#q=
-  suffix: ''
 
 - id: baidumap
   name: 百度地图
@@ -21,17 +19,26 @@
 - id: ieeexplore
   name: IEEE Xplore
   url: http://ieeexplore.ieee.org/search/searchresult.jsp?queryText=
-  suffix: ''
 
 - id: baiduxueshu
   name: 百度学术
   url: http://xueshu.baidu.com/s?wd=
-  suffix: ''
 
 - id: googlescholar
   name: 谷歌学术
   url: http://scholar.google.com/scholar?q=
-  suffix: ''
+
+- id: etymonline
+  name: Etymonline
+  url: http://www.etymonline.com/index.php?search=
+
+- id: mw
+  name: Merriam-Webster
+  url: https://www.merriam-webster.com/dictionary/
+
+- id: github
+  name: GitHub
+  url: http://github.com/search?q=
 
 - id: jd
   name: 京东
@@ -41,32 +48,26 @@
 - id: taobao
   name: 淘宝
   url: https://s.taobao.com/search?q=
-  suffix: ''
 
 - id: wechat
   name: 微信
   url: http://weixin.sogou.com/weixin?query=
-  suffix: ''
 
 - id: zhihu
   name: 知乎
   url: http://www.zhihu.com/search?q=
-  suffix: ''
 
 - id: weibo
   name: 微博
   url: http://s.weibo.com/weibo/
-  suffix: ''
 
 - id: douban
   name: 豆瓣
   url: http://www.douban.com/search?q=
-  suffix: ''
 
 - id: xiami
   name: 虾米
   url: http://www.xiami.com/search?key=
-  suffix: ''
 
 - id: panci
   name: 胖次
@@ -76,19 +77,11 @@
 - id: byr
   name: 北邮人论坛
   url: http://search.icybee.cn/bbs/?key=
-  suffix: ''
 
 - id: byrauthor
   name: 北邮人论坛用户
   url: http://search.lovezxp.com/?type=author&text=
-  suffix: ''
 
 - id: byrarticle
   name: 北邮人论坛文章
   url: http://search.lovezxp.com/?type=article&text=
-  suffix: ''
-
-- id: github
-  name: GitHub
-  url: http://github.com/search?q=
-  suffix: ''

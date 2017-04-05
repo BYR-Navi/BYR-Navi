@@ -31,6 +31,14 @@
       style: basic
       url: http://you.163.com/
 
+    - name: 无印良品
+      style: basic
+      url: http://www.muji.com.cn/
+
+    - name: IKEA
+      style: basic
+      url: http://www.ikea.com/
+
   - category: 工具
     links:
 
@@ -45,7 +53,7 @@
 
     - name: 大众点评
       style: basic
-      url: http://www.dianping.com/beijing
+      url: http://www.dianping.com/
 
     - name: QQ邮箱
       icon: qq black
@@ -59,11 +67,25 @@
     - name: Gmail
       icon: google red
       style: basic
-      url: http://mail.google.com
+      url: http://mail.google.com/
 
-    - name: 有道翻译
+    - name: Etymonline
       style: basic
-      url: http://fanyi.youdao.com/
+      url: http://www.etymonline.com/
+
+    - name: Merriam-Webster
+      style: basic
+      url: https://www.merriam-webster.com/
+
+    - name: 谷歌翻译
+      icon: translate blue
+      style: basic
+      url: https://translate.google.com/
+
+    - name: 百度翻译
+      icon: paw blue
+      style: basic
+      url: http://fanyi.baidu.com/
 
     - name: 快递查询
       style: basic
@@ -93,7 +115,7 @@
     - name: Quora
       icon: quora red
       style: basic
-      url: http://www.quora.com
+      url: http://www.quora.com/
 
     - name: Facebook
       icon: facebook blue
@@ -113,13 +135,26 @@
     - name: Instagram
       icon: instagram pink
       style: basic
-      url: http://www.instagram.com
+      url: http://www.instagram.com/
+
+    - name: GitHub
+      icon: github black
+      style: basic
+      url: http://github.com/
 
   - category: 学习
     links:
-    - name: CSDN
+    - name: Coursera
       style: basic
-      url: http://www.csdn.net/
+      url: https://www.coursera.org/
+
+    - name: MOOC
+      style: basic
+      url: http://mooc.org/
+
+    - name: 网易公开课
+      style: basic
+      url: http://open.163.com/
 
     - name: W3School
       style: basic
@@ -130,15 +165,6 @@
       style: basic
       url: http://stackoverflow.com/
 
-    - name: GitHub
-      icon: github black
-      style: basic
-      url: http://github.com/
-
-    - name: V2EX
-      style: basic
-      url: http://www.v2ex.com/
-
     - name: SegmentFault
       style: basic
       url: http://segmentfault.com/
@@ -146,10 +172,6 @@
     - name: 掘金
       style: basic
       url: http://gold.xitu.io/
-
-    - name: 网易公开课
-      style: basic
-      url: http://open.163.com/
 
   - category: 求职
     links:
@@ -220,10 +242,6 @@
     - name: 虾米
       style: basic
       url: http://www.xiami.com/
-
-    - name: 热歌榜
-      style: basic
-      url: http://music.163.com/#/playlist?id=3778678
 
 - section: byr
   categories:
