@@ -80,11 +80,6 @@
     padding-bottom: 5em;
 }
 
-.ui.stackable.celled.grid .row .column {
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
 .footer.segment {
     padding: 5em 0em;
 }
