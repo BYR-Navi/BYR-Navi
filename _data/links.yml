@@ -69,14 +69,6 @@
       style: basic
       url: http://mail.google.com/
 
-    - name: Etymonline
-      style: basic
-      url: http://www.etymonline.com/
-
-    - name: M-W
-      style: basic
-      url: https://www.merriam-webster.com/
-
     - name: 谷歌翻译
       icon: translate blue
       style: basic
@@ -169,9 +161,17 @@
       style: basic
       url: http://segmentfault.com/
 
-    - name: 掘金
+    - name: Tutorials Point
       style: basic
-      url: http://gold.xitu.io/
+      url: https://www.tutorialspoint.com/
+
+    - name: Merriam-Webster
+      style: basic
+      url: https://www.merriam-webster.com/
+
+    - name: Etymonline
+      style: basic
+      url: http://www.etymonline.com/
 
   - category: 求职
     links:
