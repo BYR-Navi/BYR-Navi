@@ -80,6 +80,10 @@
     padding-bottom: 5em;
 }
 
+.ui.stackable.celled.grid .row .links.column .ui.top.attached.label {
+    border-radius: 0;
+}
+
 .footer.segment {
     padding: 5em 0em;
 }
