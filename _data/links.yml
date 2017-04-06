@@ -31,6 +31,10 @@
       style: basic
       url: http://you.163.com/
 
+    - name: 优衣库
+      style: basic
+      url: http://www.uniqlo.cn/
+
     - name: 无印良品
       style: basic
       url: http://www.muji.com.cn/
@@ -78,6 +82,14 @@
       icon: paw blue
       style: basic
       url: http://fanyi.baidu.com/
+
+    - name: Merriam-Webster
+      style: basic
+      url: https://www.merriam-webster.com/
+
+    - name: Etymonline
+      style: basic
+      url: http://www.etymonline.com/
 
     - name: 快递查询
       style: basic
@@ -165,13 +177,10 @@
       style: basic
       url: https://www.tutorialspoint.com/
 
-    - name: Merriam-Webster
+    - name: Google Open Source
+      icon: code blue
       style: basic
-      url: https://www.merriam-webster.com/
-
-    - name: Etymonline
-      style: basic
-      url: http://www.etymonline.com/
+      url: https://opensource.google.com/
 
   - category: 求职
     links:
