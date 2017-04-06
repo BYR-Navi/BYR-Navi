@@ -320,11 +320,11 @@
     links:
     - name: 北邮人论坛
       style: basic
-      url: http://bbs.byr.cn/#!default
+      url: http://bbs.byr.cn/
 
     - name: 游客版论坛
       style: basic
-      url: http://bbs.cloud.icybee.cn
+      url: http://bbs.cloud.icybee.cn/
 
     - name: 检索用户回复
       style: basic
