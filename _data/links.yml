@@ -83,17 +83,17 @@
       style: basic
       url: http://fanyi.baidu.com/
 
-    - name: Merriam-Webster
+    - name: 快递查询
       style: basic
-      url: https://www.merriam-webster.com/
+      url: http://www.kuaidi100.com/
 
     - name: Etymonline
       style: basic
       url: http://www.etymonline.com/
 
-    - name: 快递查询
+    - name: Merriam-Webster
       style: basic
-      url: http://www.kuaidi100.com/
+      url: https://www.merriam-webster.com/
 
   - category: 社交
     links:
