@@ -51,6 +51,11 @@
       style: basic
       url: http://www.12306.cn/
 
+    - name: 快递查询
+      icon: shipping olive
+      style: basic
+      url: http://www.kuaidi100.com/
+
     - name: 大众点评
       icon: food orange
       style: basic
@@ -70,11 +75,6 @@
       icon: google red
       style: basic
       url: http://mail.google.com/
-
-    - name: 快递查询
-      icon: shipping olive
-      style: basic
-      url: http://www.kuaidi100.com/
 
     - name: 谷歌翻译
       icon: translate blue
