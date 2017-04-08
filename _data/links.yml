@@ -47,31 +47,34 @@
     links:
 
     - name: '12306'
+      icon: train red
       style: basic
       url: http://www.12306.cn/
 
-    - name: 百度地图
-      icon: marker red
-      style: basic
-      url: http://map.baidu.com/
-
     - name: 大众点评
+      icon: food orange
       style: basic
       url: http://www.dianping.com/
+
+    - name: 网易邮箱
+      icon: mail red
+      style: basic
+      url: http://email.163.com/
 
     - name: QQ邮箱
       icon: qq black
       style: basic
       url: http://mail.qq.com/
 
-    - name: 网易邮箱
-      style: basic
-      url: http://email.163.com/
-
     - name: Gmail
       icon: google red
       style: basic
       url: http://mail.google.com/
+
+    - name: 快递查询
+      icon: shipping olive
+      style: basic
+      url: http://www.kuaidi100.com/
 
     - name: 谷歌翻译
       icon: translate blue
@@ -82,18 +85,6 @@
       icon: paw blue
       style: basic
       url: http://fanyi.baidu.com/
-
-    - name: 快递查询
-      style: basic
-      url: http://www.kuaidi100.com/
-
-    - name: Etymonline
-      style: basic
-      url: http://www.etymonline.com/
-
-    - name: Merriam-Webster
-      style: basic
-      url: https://www.merriam-webster.com/
 
   - category: 社交
     links:
