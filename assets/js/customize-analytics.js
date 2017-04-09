@@ -1,8 +1,14 @@
 // customize-analytics.js
 
+var firstDay = new Date('2016-10-01');
+function lastDays() {
+    var today = new Date();
+    return 'last' + Math.floor((today - firstDay) / 86400000 + 1);
+};
+
 // progress bar
 $('#page-loading-progress').progress({
-    total: 12,
+    total: 13,
     onSuccess: function () {
         $('#page-loading-progress').fadeOut(1000, function () {
             $('#page-loading-progress').remove();
@@ -22,7 +28,7 @@ var countUpOptions = {
 var yesterdayVisitorsCountUp = new CountUp('yesterday-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayVisitsCountUp = new CountUp('yesterday-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayActionsCountUp = new CountUp('yesterday-actions-stat', 0, 0, 0, 2.5, countUpOptions);
-var todayVisitCountUp = new CountUp('visit', 0, 0, 0, 2.5, countUpOptions);
+var totalActionsCountUp = new CountUp('total-actions', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
@@ -65,6 +71,20 @@ $.getJSON(analyticsAPI.url, {
 function updateVisit(updateProgressBar) {
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
+        'method': 'VisitsSummary.getActions',
+        'idSite': analyticsAPI.id,
+        'period': 'range',
+        'date': lastDays(),
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        totalActionsCountUp.update(data.value);
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
+    });
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': analyticsAPI.id,
         'period': 'day',
@@ -72,7 +92,6 @@ function updateVisit(updateProgressBar) {
         'format': 'JSON',
         'token_auth': analyticsAPI.token
     }, function (data) {
-        todayVisitCountUp.update(data.value);
         todayVisitorsCountUp.update(data.value);
         if (updateProgressBar) {
             $('#page-loading-progress').progress('increment');
@@ -682,10 +701,7 @@ setInterval(function () {
 }, 15000);
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'macarons');
-var firstDay = new Date('2016-10-01');
 var firstYear = firstDay.getFullYear();
-var today = new Date();
-var currentYear = today.getFullYear();
 var maxYear = 2017;
 visitCalendarChart.setOption({
     baseOption: {
@@ -769,9 +785,7 @@ function updateVisitCalendarChart(updateProgressBar) {
         'method': 'VisitsSummary.getActions',
         'idSite': analyticsAPI.id,
         'period': 'day',
-        'date': function () {
-            return 'last' + Math.floor((today - firstDay) / 86400000 + 1);
-        },
+        'date': lastDays(),
         'format': 'JSON',
         'token_auth': analyticsAPI.token
     }, function (data) {
