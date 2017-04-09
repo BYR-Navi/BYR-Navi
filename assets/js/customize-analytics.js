@@ -3,7 +3,7 @@
 var firstDay = new Date('2016-10-01');
 function siteSinceDays() {
     var today = new Date();
-    return Math.floor((today - firstDay) / 86400000 + 1);
+    return Math.floor((today - firstDay) / 86400000 + 2);
 };
 
 // progress bar
@@ -797,20 +797,22 @@ function updateVisitCalendarChart(updateProgressBar) {
             data: []
         }];
         for (var i in data) {
-            year = Number(i.slice(0, 4));
-            if (year > cursorYear && year <= maxYear) {
-                cursorYear = year;
-                series.push({
-                    calendarIndex: cursorYear - firstYear,
-                    data: []
-                });
-            } else if (year < firstYear || year > maxYear) {
-                continue;
+            if (data[i] !== 0) {
+                year = Number(i.slice(0, 4));
+                if (year > cursorYear && year <= maxYear) {
+                    cursorYear = year;
+                    series.push({
+                        calendarIndex: cursorYear - firstYear,
+                        data: []
+                    });
+                } else if (year < firstYear || year > maxYear) {
+                    continue;
+                };
+                series[cursorYear - firstYear].data.push([
+                    echarts.format.formatTime('YYYY-MM-DD', i),
+                    data[i]
+                ]);
             };
-            series[cursorYear - firstYear].data.push([
-                echarts.format.formatTime('YYYY-MM-DD', i),
-                data[i]
-            ]);
         };
         visitCalendarChart.setOption({
             series: series
