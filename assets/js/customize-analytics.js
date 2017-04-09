@@ -3,7 +3,7 @@
 var firstDay = new Date('2016-10-01');
 function lastDays() {
     var today = new Date();
-    return 'last' + Math.floor((today - firstDay) / 86400000 + 1);
+    return String(Math.floor((today - firstDay) / 86400000 + 1));
 };
 
 // progress bar
@@ -74,7 +74,7 @@ function updateVisit(updateProgressBar) {
         'method': 'VisitsSummary.getActions',
         'idSite': analyticsAPI.id,
         'period': 'range',
-        'date': lastDays(),
+        'date': 'last' + lastDays(),
         'format': 'JSON',
         'token_auth': analyticsAPI.token
     }, function (data) {
@@ -785,7 +785,7 @@ function updateVisitCalendarChart(updateProgressBar) {
         'method': 'VisitsSummary.getActions',
         'idSite': analyticsAPI.id,
         'period': 'day',
-        'date': lastDays(),
+        'date': 'last' + lastDays(),
         'format': 'JSON',
         'token_auth': analyticsAPI.token
     }, function (data) {
