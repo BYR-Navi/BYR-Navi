@@ -1,9 +1,9 @@
 // customize-analytics.js
 
 var firstDay = new Date('2016-10-01');
-function lastDays() {
+function siteSinceDays() {
     var today = new Date();
-    return String(Math.floor((today - firstDay) / 86400000 + 1));
+    return Math.floor((today - firstDay) / 86400000 + 1);
 };
 
 // progress bar
@@ -25,6 +25,7 @@ var countUpOptions = {
     prefix: '',
     suffix: ''
 };
+var siteSinceDaysCountUp = new CountUp('site-since-days', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayVisitorsCountUp = new CountUp('yesterday-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayVisitsCountUp = new CountUp('yesterday-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayActionsCountUp = new CountUp('yesterday-actions-stat', 0, 0, 0, 2.5, countUpOptions);
@@ -32,6 +33,7 @@ var totalActionsCountUp = new CountUp('total-actions', 0, 0, 0, 2.5, countUpOpti
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
+siteSinceDaysCountUp.update(siteSinceDays());
 $.getJSON(analyticsAPI.url, {
     'module': 'API',
     'method': 'VisitsSummary.getUniqueVisitors',
@@ -74,7 +76,7 @@ function updateVisit(updateProgressBar) {
         'method': 'VisitsSummary.getActions',
         'idSite': analyticsAPI.id,
         'period': 'range',
-        'date': 'last' + lastDays(),
+        'date': 'last' + siteSinceDays(),
         'format': 'JSON',
         'token_auth': analyticsAPI.token
     }, function (data) {
@@ -785,7 +787,7 @@ function updateVisitCalendarChart(updateProgressBar) {
         'method': 'VisitsSummary.getActions',
         'idSite': analyticsAPI.id,
         'period': 'day',
-        'date': 'last' + lastDays(),
+        'date': 'last' + siteSinceDays(),
         'format': 'JSON',
         'token_auth': analyticsAPI.token
     }, function (data) {
