@@ -74,7 +74,7 @@ $('#search-button').click(function () {
     var query = $('#search-query').val();
     query = encodeURIComponent(query);
     if (query) {
-        Cookies.set('byr_navi_previous_search_service_option', $('#search-services').val(), { expires: 365 });
+        Cookies.set('byr_navi_previous_search_service_option', service.val(), { expires: 365 });
         window.open(service.attr('data-url') + query + service.attr('data-suffix'), '_blank');
     } else {
         $('#search-div').addClass('error');
@@ -90,7 +90,7 @@ $(document).ready(function () {
     $('#search-query').focus();
 });
 
-$(window).keyup(function(event) {
+$(window).keyup(function (event) {
     var windowTop = $(window).scrollTop();
     var windowHeight = $(window).innerHeight();
     var windowBottom = windowTop + windowHeight;
@@ -103,7 +103,7 @@ $(window).keyup(function(event) {
         query = encodeURIComponent(query);
         if (query) {
             if ($('#search-query:focus').length > 0) {
-                Cookies.set('byr_navi_previous_search_service_option', $('#search-services').val(), { expires: 365 });
+                Cookies.set('byr_navi_previous_search_service_option', service.val(), { expires: 365 });
                 window.open(service.attr('data-url') + query + service.attr('data-suffix'), '_blank');
             } else {
                 $('#search-query').focus().select();
@@ -115,13 +115,29 @@ $(window).keyup(function(event) {
     };
 });
 
-$('#search-query').keyup(function(event) {
+$('#search-query').keyup(function (event) {
     if (event.key) {
         if ($('#search-query').val()) {
             $('#search-div').removeClass('error');
             $('#search-query').attr('placeholder', '立即搜索');
         };
     };
+});
+
+$('.shortcuts .ui.label').each(function () {
+    $(this).click(function () {
+        var service = $('#' + $(this).attr('data-search-service-id'));
+        var query = $('#search-query').val();
+        query = encodeURIComponent(query);
+        if (query) {
+            Cookies.set('byr_navi_previous_search_service_option', service.val(), { expires: 365 });
+            $('#search-services').dropdown('set selected', service.val());
+            window.open(service.attr('data-url') + query + service.attr('data-suffix'), '_blank');
+        } else {
+            $('#search-div').addClass('error');
+            $('#search-query').attr('placeholder', '请输入搜索内容');
+        };
+    });
 });
 
 // query suggestions

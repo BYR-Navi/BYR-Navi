@@ -9,6 +9,9 @@
         </select>
         <div id="search-button" type="submit" class="ui icon button">Go</div>
     </div>
+    <div class="ui labels shortcuts">
+        {% for item in site.data.search_services %}{% if item.shortcut %}<a class="ui {{ item.style }} label" data-search-service-id="{{ item.id }}">{% if item.icon %}<i class="{{ item.icon }} icon"></i>{% endif %}{{ item.shortcut }}</a>{% endif %}{% endfor %}
+    </div>
     <div class="badges">
         <a id="github-watch" href="{{ site.repository }}/watchers" target="_blank"><img src="https://img.shields.io/github/watchers/iROCKBUNNY/BYR-Navi.svg?style=social&label=Watch" alt="GitHub Watchers"></a>
         <a id="github-star" href="{{ site.repository }}/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/iROCKBUNNY/BYR-Navi.svg?style=social&label=Star" alt="GitHub Stargazers"></a>
