@@ -277,7 +277,7 @@
       url: http://bbs.byr.cn/
 
     - name: 北邮人BT
-      style: basic
+      style: blue
       url: http://bt.byr.cn/
 
     - name: 北邮IPTV
@@ -315,7 +315,7 @@
   - category: 论坛相关
     links:
     - name: 北邮人论坛
-      style: basic
+      style: teal
       url: http://bbs.byr.cn/
 
     - name: 游客版论坛
