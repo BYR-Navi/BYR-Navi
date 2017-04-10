@@ -3,7 +3,8 @@
 // date range
 var firstDay = new Date('2016-10-01');
 function siteSinceDays() {
-    var today = new Date(new Date().toISOString().slice(0, 10));
+    var d = new Date();
+    var today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
     return Math.floor((today - firstDay) / 86400000 + 1);
 };
 
