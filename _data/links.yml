@@ -86,6 +86,11 @@
       style: basic
       url: http://fanyi.baidu.com/
 
+    - name: Shadowsocks
+      icon: paper plane green
+      style: basic
+      url: https://github.com/shadowsocks
+
   - category: 社交
     links:
     - name: 微博
