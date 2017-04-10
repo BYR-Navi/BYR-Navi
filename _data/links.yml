@@ -94,8 +94,8 @@
   - category: 社交
     links:
     - name: 微博
-      icon: weibo
-      style: red
+      icon: weibo red
+      style: basic
       url: http://weibo.com/
 
     - name: 微信网页版
@@ -229,7 +229,7 @@
       url: http://www.mgtv.com/
 
     - name: 哔哩哔哩
-      style: red
+      style: pink
       url: http://www.bilibili.com/
 
     - name: AcFun
