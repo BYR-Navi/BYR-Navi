@@ -50,8 +50,12 @@
   url: https://s.taobao.com/search?q=
 
 - id: wechat
-  name: 微信
+  name: 微信公众号
   url: http://weixin.sogou.com/weixin?query=
+
+- id: minapp
+  name: 微信小程序
+  url: https://minapp.com/miniapp/search/?query=
 
 - id: zhihu
   name: 知乎
