@@ -2,8 +2,8 @@
 
 var firstDay = new Date('2016-10-01');
 function siteSinceDays() {
-    var today = new Date();
-    return Math.floor((today - firstDay) / 86400000 + 2);
+    var today = new Date(new Date().toISOString().slice(0, 10));
+    return Math.floor((today - firstDay) / 86400000 + 1);
 };
 
 // progress bar
