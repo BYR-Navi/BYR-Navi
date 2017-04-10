@@ -11,7 +11,7 @@
       url: http://www.tmall.com/
 
     - name: 淘宝
-      style: basic
+      style: orange
       url: http://www.taobao.com/
 
     - name: 亚马逊
@@ -94,8 +94,8 @@
   - category: 社交
     links:
     - name: 微博
-      icon: weibo red
-      style: basic
+      icon: weibo
+      style: red
       url: http://weibo.com/
 
     - name: 微信网页版
@@ -109,7 +109,7 @@
       url: http://tieba.baidu.com/
 
     - name: 知乎
-      style: basic
+      style: blue
       url: http://www.zhihu.com/
 
     - name: Quora
@@ -229,7 +229,7 @@
       url: http://www.mgtv.com/
 
     - name: 哔哩哔哩
-      style: basic
+      style: red
       url: http://www.bilibili.com/
 
     - name: AcFun
