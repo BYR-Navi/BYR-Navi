@@ -1,5 +1,6 @@
 // customize-analytics.js
 
+// date range
 var firstDay = new Date('2016-10-01');
 function siteSinceDays() {
     var today = new Date(new Date().toISOString().slice(0, 10));
