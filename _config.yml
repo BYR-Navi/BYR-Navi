@@ -1,25 +1,15 @@
-analytics:
-  google:
-    id: UA-33449675-7
-  piwik:
-    id: 1
-    api:
-      url: https://vps.irockbunny.com/analytics/?callback=?
-      token: fbd5dc4d5235a9501ab9a7bf8c6f3945
-
-repository: https://github.com/iROCKBUNNY/BYR-Navi
+repository: https://github.com/cainiuwow/Falin
 
 timezone: Asia/Shanghai
 
-name: 北邮人导航 · BYR-Navi
-author: iROCKBUNNY
-author_url: http://irockbunny.com
-organization: TEELAB
-organization_url: http://teelab.net
-description: A Navigation Website for BYR
-keywords: 北邮人导航, BYR-Navi, BYR, BUPT, Navi, Navigation
-url: http://byr123.irockbunny.com
-contact: contact[at]irockbunny[dot]com
+name: 法林导航 · Falin Navigation
+author: 张明浩
+author_url: http://falin.xyz
+
+description: 专注于提高法律人工作效率
+keywords: 法林导航, Falin-Navi, falin, Navi, Navigation
+url: http://falin.xyz
+contact: i[at]cainiu[dot]de
 
 logo: /images/logo.png
 logo_dark: /images/logo-dark.png
