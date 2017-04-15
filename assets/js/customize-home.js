@@ -29,15 +29,15 @@ setInterval(function () {
 }, 15000);
 
 // version
-moment.locale('zh-cn');
-function updateVersion(timestamp) {
-    $('#version img').attr('src', 'https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-' + encodeURIComponent(moment(timestamp).fromNow()) + '-brightgreen.svg');
-};
-var updateAt = $('#version').attr('data-update-at');
-updateVersion(updateAt);
-setInterval(function () {
-    updateVersion(updateAt);
-}, 15000);
+// moment.locale('zh-cn');
+// function updateVersion(timestamp) {
+//     $('#version img').attr('src', 'https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-' + encodeURIComponent(moment(timestamp).fromNow()) + '-brightgreen.svg');
+// };
+// var updateAt = $('#version').attr('data-update-at');
+// updateVersion(updateAt);
+// setInterval(function () {
+//     updateVersion(updateAt);
+// }, 15000);
 
 // visit
 // function updateVisit(updateProgressBar) {
