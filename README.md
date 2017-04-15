@@ -1,14 +1,14 @@
-[![Build Status](https://travis-ci.org/iROCKBUNNY/BYR-Navi.svg)](https://travis-ci.org/iROCKBUNNY/BYR-Navi)
-[![Website](https://img.shields.io/website-up-down-green-red/http/byr123.irockbunny.com.svg)](http://byr123.irockbunny.com/)
-[![License](https://img.shields.io/github/license/iROCKBUNNY/BYR-Navi.svg)](/LICENSE)
-[![Watchers](https://img.shields.io/github/watchers/iROCKBUNNY/BYR-Navi.svg?style=social&label=Watch)](https://github.com/iROCKBUNNY/BYR-Navi/watchers)
-[![Stargazers](https://img.shields.io/github/stars/iROCKBUNNY/BYR-Navi.svg?style=social&label=Star)](https://github.com/iROCKBUNNY/BYR-Navi/stargazers)
-[![Forks](https://img.shields.io/github/forks/iROCKBUNNY/BYR-Navi.svg?style=social&label=Fork)](https://github.com/iROCKBUNNY/BYR-Navi/network)
+# [法林导航](http://falin.xyz/)
+A Navigation Website for Falin
 
-[![Closed Issues](https://img.shields.io/github/issues-closed/iROCKBUNNY/BYR-Navi.svg)](https://github.com/iROCKBUNNY/BYR-Navi/issues)
-[![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed/iROCKBUNNY/BYR-Navi.svg)](https://github.com/iROCKBUNNY/BYR-Navi/pulls)
+###### 本站使用的是[BYR-Navi](http://byr123.irockbunny.com/)的模板，经过跟作者沟通，已经得到授权，为了提高网站的速度，删除了大部分不常用代码，将js、css拿到本地，现在速度能保证在2秒左右。
 
-[![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)](https://saythanks.io/to/iROCKBUNNY)
+
+######制作本站的目的是为了方便法律人士便捷搜索，集成了常用的大部分网站，如果有其他想加进来的网站，请联系我，如果常用，我将尽快添加进来。
+
+######感谢大家的支持！
+
+
 
 # [BYR-Navi](http://byr123.irockbunny.com/)
 A Navigation Website for BYR
