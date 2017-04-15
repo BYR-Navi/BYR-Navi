@@ -8,7 +8,7 @@
       url: http://wx.qq.com/
 
     - name: 淘宝网
-      style: green
+      style: orange
       url: http://www.taobao.com
  
     - name: 美团网
