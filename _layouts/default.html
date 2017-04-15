@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="generator" content="Jekyll v{{ jekyll.version }}">
     {% seo %}
-    <link rel="stylesheet" type="text/css" href="//github.com/Semantic-Org/Semantic-UI/tree/master/dist/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="//github.com/FortAwesome/Font-Awesome/tree/master/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/semantic-ui/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize.css' | relative_url }}">
     {% if page.home %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-home.css' | relative_url }}">{% endif %}
     {% if page.analytics %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-analytics.css' | relative_url }}">{% endif %}
@@ -34,9 +34,9 @@
     </div>
     {% include dimmer.html %}
     <script type="text/javascript" src="//unpkg.com/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="//github.com/Semantic-Org/Semantic-UI/blob/master/dist/semantic.min.js"></script>
-    {% if page.home %}<script type="text/javascript" src="//github.com/moment/moment/tree/develop/min/moment-with-locales.min.js"></script>{% endif %}
-    {% if page.home %}<script type="text/javascript" src="//github.com/js-cookie/js-cookie"></script>{% endif %}
+    <script type="text/javascript" src="//unpkg.com/semantic-ui/dist/semantic.min.js"></script>
+    {% if page.home %}<script type="text/javascript" src="//unpkg.com/moment/min/moment-with-locales.min.js"></script>{% endif %}
+    {% if page.home %}<script type="text/javascript" src="//unpkg.com/js-cookie"></script>{% endif %}
     {% if page.home %}<script type="text/javascript" src="{{ '/assets/js/query-suggest.js' | relative_url }}"></script>{% endif %}
   <!--   <script type="text/javascript">
         var analyticsAPI = {
