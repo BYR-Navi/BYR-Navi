@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="generator" content="Jekyll v{{ jekyll.version }}">
     {% seo %}
-<!--     <link rel="stylesheet" type="text/css" href="https://unpkg.com/semantic-ui/dist/semantic.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.css"> 
+    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize.css' | relative_url }}">
     {% if page.home %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-home.css' | relative_url }}">{% endif %}
     {% if page.analytics %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-analytics.css' | relative_url }}">{% endif %}
@@ -25,6 +25,7 @@
         <div class="ui inverted vertical masthead center aligned segment zoomed">
             {% include menu.html %}
             {% if page.home %}{% include search.html %}{% endif %}
+  <!--           {% if page.analytics %}{% include analytics_header.html %}{% endif %} -->
             {% if page.donate %}{% include donate_header.html %}{% endif %}
             {% if page.error %}{% include error_header.html %}{% endif %}
         </div>
@@ -32,11 +33,10 @@
         {% include footer.html %}
     </div>
     {% include dimmer.html %}
-    <script type="text/javascript" src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
-    <script type="text/javascript" src="{{ '/assets/js/semantic.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.js"></script>
+    {% if page.home %}<script type="text/javascript" src="//cdn.bootcss.com/moment.js/2.18.1/moment-with-locales.min.js"></script>{% endif %}
     {% if page.home %}<script type="text/javascript" src="//cdn.bootcss.com/js-cookie/2.1.4/js.cookie.js"></script>{% endif %}
     {% if page.home %}<script type="text/javascript" src="{{ '/assets/js/query-suggest.js' | relative_url }}"></script>{% endif %}
-    <script type="text/javascript" src="{{ '/assets/js/customize.js' | relative_url }}"></script>
-    {% if page.home %}<script type="text/javascript" src="{{ '/assets/js/customize-home.js' | relative_url }}"></script>{% endif %}
 </body>
 </html>
