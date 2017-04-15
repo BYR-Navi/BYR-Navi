@@ -14,7 +14,7 @@
 - id: wenku
   name: 百度文库
   url: https://wenku.baidu.com/search?word=
-  suffix: ""
+  suffix: "&ie=utf-8"
   shortcut: 百度文库
   style: basic
 
