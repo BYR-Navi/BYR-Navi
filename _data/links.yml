@@ -6,6 +6,10 @@
       icon: wechat green
       style: basic
       url: http://wx.qq.com/
+
+    - name: 美团网
+      style: green
+      url: http://www.taobao.com
  
     - name: 美团网
       style: green
