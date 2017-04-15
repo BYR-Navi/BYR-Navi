@@ -6,6 +6,46 @@
   icon: paw blue
   style: basic
 
+- id: OpenLaw
+  name: OpenLaw
+  url: http://openlaw.cn/search/judgement/default?type=&typeValue=&keyword=
+  suffix: ''
+
+- id: wenku
+  name: 百度文库
+  url: https://wenku.baidu.com/search?word=
+  suffix: ""
+  shortcut: 百度文库
+  style: basic
+
+- id: wechat
+  name: 搜微信
+  url: http://weixin.sogou.com/weixin?type=2&s_from=input&query=
+  suffix: ''
+  shortcut: 搜微信
+  style: basic
+
+- id: taobao
+  name: 淘宝
+  url: https://s.taobao.com/search?q=
+  shortcut: 淘宝
+  style: basic
+
+- id: susongyangshi
+  name: 文书模板
+  url: http://www.court.gov.cn/susongyangshi-75.html?key=
+  suffix: ''
+
+- id: baidufanyi
+  name: 百度翻译
+  url: http://fanyi.baidu.com/?aldtype=16047#zh/en/
+  suffix: ''
+
+- id: tianyan
+  name: 天眼查
+  url: http://www.tianyancha.com/search?key=
+  suffix: ""
+
 - id: google
   name: 谷歌
   url: http://www.google.com/search?q=
@@ -13,30 +53,11 @@
   icon: google red
   style: basic
 
-
 - id: baidumap
   name: 百度地图
   url: http://api.map.baidu.com/geocoder?address=
   suffix: "&output=html"
-  shortcut: 地图
-  icon: map green
   style: basic
-
-
-
-- id: baiduxueshu
-  name: 百度学术
-  url: http://xueshu.baidu.com/s?wd=
-
-
- 
-
-- id: wechat
-  name: 微信公众号
-  url: http://weixin.sogou.com/weixin?query=
-
-
-
 
 - id: zhihu
   name: 知乎
@@ -57,13 +78,9 @@
   shortcut: 京东
   style: basic
 
-- id: taobao
-  name: 淘宝
-  url: https://s.taobao.com/search?q=
-  shortcut: 淘宝
-  style: basic
-
-
+- id: baiduxueshu
+  name: 百度学术
+  url: http://xueshu.baidu.com/s?wd=
 
 - id: panci
   name: 胖次
