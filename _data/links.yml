@@ -1,113 +1,81 @@
 - section: public
   categories:
-  - category: 购物
+  - category: 生活
     links:
+    - name: 微信网页版
+      icon: wechat green
+      style: basic
+      url: http://wx.qq.com/
+ 
+    - name: 美团网
+      style: darkturquoise
+      url: http://www.meituan.com/
+
     - name: 京东
       style: basic
       url: http://www.jd.com/
 
-    - name: 天猫
+    - name: 微博
+      icon: weibo red
       style: basic
-      url: http://www.tmall.com/
+      url: http://weibo.com/
 
-    - name: 淘宝
-      style: orange
-      url: http://www.taobao.com/
-
-    - name: 亚马逊
-      icon: amazon yellow
+    - name: 爱奇艺
       style: basic
-      url: http://www.amazon.cn/
+      url: http://www.iqiyi.com/
 
-    - name: 一号店
+    - name: 博海拾贝
       style: basic
-      url: http://www.yhd.com/
+      url: https://bohaishibei.com
 
-    - name: 当当
+    - name: 喷嚏网
       style: basic
-      url: http://www.dangdang.com/
-
-    - name: 网易严选
-      style: basic
-      url: http://you.163.com/
-
-    - name: 优衣库
-      style: basic
-      url: http://www.uniqlo.cn/
-
-    - name: 无印良品
-      style: basic
-      url: http://www.muji.com.cn/
-
-    - name: IKEA
-      style: basic
-      url: http://www.ikea.com/
+      url: http://www.dapenti.com/blog/index.asp
 
   - category: 工具
     links:
-
-    - name: '12306'
-      icon: train red
-      style: basic
-      url: http://www.12306.cn/
-
-    - name: 快递查询
-      icon: shipping olive
-      style: basic
-      url: http://www.kuaidi100.com/
-
-    - name: 大众点评
-      icon: food orange
-      style: basic
-      url: http://www.dianping.com/
-
-    - name: 网易邮箱
-      icon: mail red
-      style: basic
-      url: http://email.163.com/
 
     - name: QQ邮箱
       icon: qq black
       style: basic
       url: http://mail.qq.com/
 
+    - name: 网易邮箱
+      style: basic
+      url: http://email.163.com/
+
     - name: Gmail
       icon: google red
       style: basic
-      url: http://mail.google.com/
+      url: http://mail.google.com/      
 
-    - name: 谷歌翻译
-      icon: translate blue
+    - name: 飞猪旅行
+      icon: send green
       style: basic
-      url: https://translate.google.com/
+      url: https://www.alitrip.com
+
+    - name: 百度地图
+      icon: marker red
+      style: basic
+      url: http://map.baidu.com/
 
     - name: 百度翻译
       icon: paw blue
       style: basic
       url: http://fanyi.baidu.com/
 
-    - name: Shadowsocks
-      icon: send green
+    - name: 快递查询
+      icon: shipping olive
       style: basic
-      url: https://github.com/shadowsocks
+      url: http://www.kuaidi100.com/
 
-  - category: 社交
+    - name: LinkedIn
+      icon: linkedin blue
+      style: basic
+      url: http://www.linkedin.com/
+
+  - category: 知识
     links:
-    - name: 微博
-      icon: weibo red
-      style: basic
-      url: http://weibo.com/
-
-    - name: 微信网页版
-      icon: wechat green
-      style: basic
-      url: http://wx.qq.com/
-
-    - name: 百度贴吧
-      icon: paw blue
-      style: basic
-      url: http://tieba.baidu.com/
-
     - name: 知乎
       style: blue
       url: http://www.zhihu.com/
@@ -115,309 +83,160 @@
     - name: Quora
       icon: quora red
       style: basic
-      url: http://www.quora.com/
+      url: http://www.quora.com
 
-    - name: Facebook
-      icon: facebook blue
+    - name: 百度百科
       style: basic
-      url: http://www.facebook.com/
+      url: http://baike.baidu.com/    
 
-    - name: Google+
-      icon: google plus red
+    - name: 司法部
       style: basic
-      url: https://plus.google.com/
+      url: http://www.moj.gov.cn
 
-    - name: Tumblr
-      icon: tumblr blue
+    - name: 注册会计师协会
       style: basic
-      url: http://www.tumblr.com/
+      url: http://www.cicpa.org.cn
 
-    - name: Instagram
-      icon: instagram pink
+    - name: 东奥会计
       style: basic
-      url: http://www.instagram.com/
-
-    - name: GitHub
-      icon: github black
-      style: basic
-      url: http://github.com/
-
-  - category: 学习
-    links:
-    - name: Coursera
-      style: basic
-      url: https://www.coursera.org/
-
-    - name: MOOC
-      style: basic
-      url: http://mooc.org/
+      url: http://www.dongao.com/
 
     - name: 网易公开课
       style: basic
       url: http://open.163.com/
 
-    - name: W3School
+    - name: 大家论坛
       style: basic
-      url: http://www.w3school.com.cn/
+      url: http://club.topsage.com
 
-    - name: Stack Overflow
-      icon: stack overflow orange
+    - name: 视野论坛
       style: basic
-      url: http://stackoverflow.com/
+      url: http://bbs.esnai.com/forum-16-1.html
 
-    - name: SegmentFault
-      style: basic
-      url: http://segmentfault.com/
-
-    - name: Tutorials Point
-      style: basic
-      url: https://www.tutorialspoint.com/
-
-    - name: Google Open Source
-      icon: code blue
-      style: basic
-      url: https://opensource.google.com/
-
-  - category: 求职
+  - category: 法律/案例检索
     links:
-    - name: LinkedIn
-      icon: linkedin blue
+    - name: 无訟案例
       style: basic
-      url: http://www.linkedin.com/
+      url: http://www.itslaw.com/bj
 
-    - name: 大街网
+    - name: 北大法宝
       style: basic
-      url: http://www.dajie.com/
+      url: http://vip.chinalawinfo.com/
 
-    - name: 拉勾网
+    - name: 北京律协
       style: basic
-      url: http://www.lagou.com/
+      url: http://beijinglawyers.chinalawinfo.com
 
-    - name: 智联招聘
+    - name: OpenLaw
       style: basic
-      url: http://zhaopin.com/
+      url: http://openlaw.cn/
 
-    - name: 前程无忧
+    - name: 威科先行
       style: basic
-      url: http://www.51job.com/
+      url: http://law.wkinfo.com.cn/
 
-    - name: 应届生
+    - name: 裁判文书网
       style: basic
-      url: http://www.yingjiesheng.com/
+      url: http://wenshu.court.gov.cn/
 
-  - category: 娱乐
-    links:
-    - name: 优酷
+    - name: CaseShare
       style: basic
-      url: http://www.youku.com/
+      url: http://caseshare.cn
 
-    - name: 土豆
+    - name: 最高院案例
       style: basic
-      url: http://www.tudou.com/
+      url: http://www.chinacourt.org/article/subjectdetail/id/MzAwNEiqNIABAA%3D%3D.shtml
 
-    - name: Youtube
-      icon: youtube red
+    - name: 法律图书馆
       style: basic
-      url: http://www.youtube.com/
+      url: http://www.law-lib.com/
 
-    - name: 爱奇艺
+    - name: 最高院法律文库
       style: basic
-      url: http://www.iqiyi.com/
+      url: http://www.chinacourt.org/law.shtml
 
-    - name: 芒果TV
+    - name: 国务院法规检索
       style: basic
-      url: http://www.mgtv.com/
-
-    - name: 哔哩哔哩
-      style: pink
-      url: http://www.bilibili.com/
-
-    - name: AcFun
-      style: basic
-      url: http://www.acfun.tv/
-
-    - name: 吐槽
-      style: basic
-      url: http://www.tucao.tv/
-
-    - name: 多瑙影院
-      style: basic
-      url: http://www.dnvod.eu/
-
-    - name: 虾米
-      style: basic
-      url: http://www.xiami.com/
+      url: http://search.chinalaw.gov.cn/search2.html
 
 - section: byr
   categories:
-  - category: 北邮校园
+  - category: 企业公示系统
     links:
-    - name: 北邮官网
+    - name: 企业公示系统
       style: basic
-      url: http://www.bupt.edu.cn/
+      url: http://www.gsxt.gov.cn/index.html
 
-    - name: 官方导航
+    - name: 启信宝
       style: basic
-      url: http://dep.bupt.edu.cn/dh/
+      url: http://www.qixin.com
 
-    - name: 本科教务系统
+    - name: 全国中小企业股份转让系统
       style: basic
-      url: http://jwxt.bupt.edu.cn/
+      url: http://www.neeq.com.cn/disclosure/announcement.html
 
-    - name: 研究生教务系统
+    - name: 被执行人信息
       style: basic
-      url: http://yjxt.bupt.edu.cn/
+      url: http://zhixing.court.gov.cn/search/
 
-    - name: 教务处
+    - name: 失信被执行人
       style: basic
-      url: http://jwc.bupt.edu.cn/
+      url: http://shixin.court.gov.cn      
 
-    - name: 北邮人论坛
+    - name: 巨潮资信网
       style: basic
-      url: http://bbs.byr.cn/
+      url: http://www.cninfo.com.cn/cninfo-new/index
 
-    - name: 北邮人BT
-      style: blue
-      url: http://bt.byr.cn/
-
-    - name: 北邮IPTV
+    - name: 社会组织查询
       style: basic
-      url: http://tv.byr.cn/
+      url: http://www.chinanpo.gov.cn/search/searchOrgList.do?action=searchOrgList
 
-    - name: 信息门户
+    - name: 中国证券投资资金协会
       style: basic
-      url: http://my.bupt.edu.cn/
+      url: http://www.amac.org.cn
 
-    - name: 图书馆
+    - name: 香港企业信息
       style: basic
-      url: http://lib.bupt.edu.cn/
+      url: https://www.icris.cr.gov.hk/csci/
 
-    - name: 北邮贴吧
+    - name: 台湾企业信息
       style: basic
-      url: http://tieba.baidu.com/f?kw=%B1%B1%BE%A9%D3%CA%B5%E7%B4%F3%D1%A7
+      url: http://gcis.nat.gov.tw/mainNew/
 
-    - name: 校园网
-      style: basic
-      url: http://nic.bupt.edu.cn/
-
-    - name: 北邮邮箱
-      style: basic
-      url: http://mail.bupt.edu.cn/
-
-    - name: VPN服务
-      style: basic
-      url: http://nic.bupt.edu.cn/list/list.php?p=3_24_1
-
-    - name: 空闲自习室查询
-      style: basic
-      url: http://buptclass.com/
-
-  - category: 论坛相关
+  - category: 行政审批
     links:
-    - name: 北邮人论坛
-      style: teal
-      url: http://bbs.byr.cn/
-
-    - name: 游客版论坛
+    - name: 建筑行业资质查询
       style: basic
-      url: http://bbs.cloud.icybee.cn/
+      url: http://jzsc.mohurd.gov.cn/asite/jsbpp/index
 
-    - name: 检索用户回复
+    - name: 土地市场信息查询
       style: basic
-      url: http://search.icybee.cn/
+      url: http://www.landchina.com/?WebShieldDRSessionVerify=nf0DgYR5uNSUd3vlEt1f
 
-    - name: 检索用户发帖
+    - name: 食品、药品查询
       style: basic
-      url: http://search.lovezxp.com/
+      url: http://app1.sfda.gov.cn/datasearch/face3/dir.html
 
-    - name: 查看每日十大
+    - name: 商标查询
       style: basic
-      url: http://bbss.zhengzi.me/
+      url: http://sbcx.saic.gov.cn:9080/tmois/wscxsy_getIndex.xhtml
 
-    - name: 查看论坛数据
+    - name: 专利查询
       style: basic
-      url: http://bbs.byr.cn/#!elite/path?v=/bbslists
+      url: http://www.pss-system.gov.cn/sipopublicsearch/portal/index.shtml
 
-    - name: 论坛APP
-      icon: apple grey
+    - name: 网站备案查询
       style: basic
-      url: http://itunes.apple.com/cn/app/bei-you-ren-lun-tan-bei-you/id1115232927
+      url: http://www.miitbeian.gov.cn/publish/query/indexFirst.action
 
-    - name: 论坛APP
-      icon: android green
+    - name: 工业产品生产许可证查询
       style: basic
-      url: https://github.com/dss886/BYR-BBS-APP-Release
+      url: http://gyxkz.aqsiq.gov.cn/eiss/zj_hzqy_query?model=00000000000000010194&nid=000261
 
-    - name: 论坛官方微博
+    - name: 中国货币网
       style: basic
-      url: http://weibo.com/byrbbs
+      url: http://www.chinamoney.com.cn/index.html
 
-    - name: 论坛投票区
+    - name: WIPO品牌数据库
       style: basic
-      url: http://bbs.byr.cn/#!vote
-
-    - name: 玩转论坛指南
-      style: basic
-      url: http://bbs.byr.cn/#!article/Talking/5852307
-
-  - category: 其他
-    links:
-    - name: 空余教室查询
-      style: basic
-      url: http://jwc.bupt.edu.cn/content/content.php?p=10_2_235
-
-    - name: 辅修专业
-      style: basic
-      url: http://jwc.bupt.edu.cn/list/list.php?p=7_50_1
-
-    - name: 毕业设计
-      style: basic
-      url: http://jwc.bupt.edu.cn/list/list.php?p=9_38_1
-
-    - name: 学生校际选修
-      style: basic
-      url: http://www.xueyuanlu.cn/
-
-    - name: 创新学分
-      style: basic
-      url: http://jwc.bupt.edu.cn/list/list.php?p=9_39_1
-
-    - name: 课表查询
-      style: basic
-      url: http://jwc.bupt.edu.cn/list/list.php?p=4_34_1
-
-    - name: 考表查询
-      style: basic
-      url: http://jwc.bupt.edu.cn/list/list.php?p=4_35_1
-
-    - name: 出国成绩单办理
-      style: basic
-      url: http://jwc.bupt.edu.cn/content/content.php?p=5_27_65
-
-    - name: 教学事务流程
-      style: basic
-      url: http://jwc.bupt.edu.cn/content/content.php?p=5_68_111
-
-    - name: 创新实践平台
-      style: basic
-      url: http://cslab.bupt.edu.cn/innovation/
-
-    - name: 申请护照通行证
-      style: basic
-      url: http://xsc.bupt.edu.cn/content/content.php?p=27_26_48
-
-    - name: 补办学生证
-      style: basic
-      url: http://xsc.bupt.edu.cn/content/content.php?p=27_26_48
-
-    - name: 校园一卡通
-      style: basic
-      url: http://ecard.bupt.edu.cn/
-
-    - name: 办公电话
-      style: basic
-      url: http://www.bupt.edu.cn/content/content.php?p=6_9_79
-
-    - name: 校历
-      style: basic
-      url: http://www.bupt.edu.cn/content/content.php?p=6_10_80
+      url: http://www.wipo.int/branddb/en/
