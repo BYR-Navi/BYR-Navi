@@ -11,11 +11,6 @@
   url: http://openlaw.cn/search/judgement/default?type=&typeValue=&keyword=
   suffix: ''
 
-- id: 测试
-  name: OpenLaw
-  url: http://www.itslaw.com/search?searchMode=judgements&sortType=1&conditions=searchWord%2B
-  suffix: ''"%2B1%2B"''
-
 - id: wenku
   name: 百度文库
   url: https://wenku.baidu.com/search?word=
