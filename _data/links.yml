@@ -93,6 +93,10 @@
       style: basic
       url: http://www.moj.gov.cn
 
+    - name: 中国庭审公开网
+      style: basic
+      url: http://tingshen.court.gov.cn
+
     - name: 注册会计师协会
       style: basic
       url: http://www.cicpa.org.cn
@@ -158,6 +162,32 @@
     - name: 国务院法规检索
       style: basic
       url: http://search.chinalaw.gov.cn/search2.html
+
+  - category: 律师工具
+    links:
+    - name: 文书样式
+      style: basic
+      url: http://www.court.gov.cn/susongyangshi-75.html
+
+    - name: 诉讼费计算
+      style: basic
+      url: http://www.cnado.com
+
+    - name: 利息计算
+      style: basic
+      url: http://www.iflawyer.com/interest.asp
+
+    - name: 公告查询
+      style: basic
+      url: http://rmfygg.court.gov.cn
+
+    - name: 民事案由
+      style: basic
+      url: http://www.court.gov.cn/fabu-xiangqing-3456.html
+
+    - name: 刑事罪名
+      style: basic
+      url: http://www.zuiming.net/51.html
 
 - section: byr
   categories:
