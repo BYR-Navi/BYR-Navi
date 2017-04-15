@@ -8,12 +8,12 @@
     {% seo %}
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/semantic-ui/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/all.css' | relative_url }}">
-    {% if page.home %}<!-- <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-home.css' | relative_url }}"> -->{% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize.css' | relative_url }}">
+    {% if page.home %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-home.css' | relative_url }}">{% endif %}
     {% if page.analytics %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-analytics.css' | relative_url }}">{% endif %}
-    {% if page.donate %}<!-- <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-donate.css' | relative_url }}"> -->{% endif %}
-    {% if page.error %}<!-- <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-error.css' | relative_url }}"> -->{% endif %}
- <!--    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-masthead.css' | relative_url }}"> -->
+    {% if page.donate %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-donate.css' | relative_url }}">{% endif %}
+    {% if page.error %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-error.css' | relative_url }}">{% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-masthead.css' | relative_url }}">
     <link rel="apple-touch-icon" type="image/png" href="{{ '/apple-touch-icon.png' | relative_url }}">
     <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
     {% include analytics.html %}
