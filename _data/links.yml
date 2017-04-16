@@ -7,7 +7,7 @@
       url: http://www.jd.com/
 
     - name: 天猫
-      style: basic
+      style: red
       url: http://www.tmall.com/
 
     - name: 淘宝
