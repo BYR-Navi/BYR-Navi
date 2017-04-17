@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="generator" content="Jekyll v{{ jekyll.version }}">
     {% seo %}
-<!--     <link rel="stylesheet" type="text/css" href="https://unpkg.com/semantic-ui/dist/semantic.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.css"> 
+    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css>
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize.css' | relative_url }}">
     {% if page.home %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-home.css' | relative_url }}">{% endif %}
-    {% if page.analytics %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-analytics.css' | relative_url }}">{% endif %}
+  <!--   {% if page.analytics %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-analytics.css' | relative_url }}">{% endif %} -->
     {% if page.donate %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-donate.css' | relative_url }}">{% endif %}
     {% if page.error %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-error.css' | relative_url }}">{% endif %}
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-masthead.css' | relative_url }}">
     <link rel="apple-touch-icon" type="image/png" href="{{ '/apple-touch-icon.png' | relative_url }}">
     <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
-    {% include analytics.html %}
+<!--     {% include analytics.html %} -->
 </head>
 <body>
     {% include following_menu.html %}
@@ -25,6 +25,7 @@
         <div class="ui inverted vertical masthead center aligned segment zoomed">
             {% include menu.html %}
             {% if page.home %}{% include search.html %}{% endif %}
+            {% if page.analytics %}{% include analytics_header.html %}{% endif %}
             {% if page.donate %}{% include donate_header.html %}{% endif %}
             {% if page.error %}{% include error_header.html %}{% endif %}
         </div>
@@ -32,11 +33,24 @@
         {% include footer.html %}
     </div>
     {% include dimmer.html %}
-    <script type="text/javascript" src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
-    <script type="text/javascript" src="{{ '/assets/js/semantic.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.js"></script>
+    {% if page.home %}<script type="text/javascript" src="//cdn.bootcss.com/moment.js/2.18.1/moment-with-locales.min.js"></script>{% endif %}
     {% if page.home %}<script type="text/javascript" src="//cdn.bootcss.com/js-cookie/2.1.4/js.cookie.js"></script>{% endif %}
     {% if page.home %}<script type="text/javascript" src="{{ '/assets/js/query-suggest.js' | relative_url }}"></script>{% endif %}
+<!--     <script type="text/javascript">
+        var analyticsAPI = {
+            id: '{{ site.analytics.piwik.id }}',
+            url: '{{ site.analytics.piwik.api.url }}',
+            token: '{{ site.analytics.piwik.api.token }}'
+        };
+    </script> -->
     <script type="text/javascript" src="{{ '/assets/js/customize.js' | relative_url }}"></script>
     {% if page.home %}<script type="text/javascript" src="{{ '/assets/js/customize-home.js' | relative_url }}"></script>{% endif %}
+ <!--    {% if page.analytics %}<script type="text/javascript" src="//unpkg.com/countup"></script>{% endif %}
+    {% if page.analytics %}<script type="text/javascript" src="//unpkg.com/echarts/dist/echarts.min.js"></script>{% endif %}
+    {% if page.analytics %}<script type="text/javascript" src="//unpkg.com/echarts/theme/macarons.js"></script>{% endif %}
+    {% if page.analytics %}<script type="text/javascript" src="//unpkg.com/echarts/map/js/world.js"></script>{% endif %}
+    {% if page.analytics %}<script type="text/javascript" src="{{ '/assets/js/customize-analytics.js' | relative_url }}"></script>{% endif %} -->
 </body>
 </html>

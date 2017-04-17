@@ -29,37 +29,37 @@ setInterval(function () {
 }, 15000);
 
 // version
-// moment.locale('zh-cn');
-// function updateVersion(timestamp) {
-//     $('#version img').attr('src', 'https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-' + encodeURIComponent(moment(timestamp).fromNow()) + '-brightgreen.svg');
-// };
-// var updateAt = $('#version').attr('data-update-at');
-// updateVersion(updateAt);
-// setInterval(function () {
-//     updateVersion(updateAt);
-// }, 15000);
+moment.locale('zh-cn');
+function updateVersion(timestamp) {
+    $('#version img').attr('src', 'https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-' + encodeURIComponent(moment(timestamp).fromNow()) + '-brightgreen.svg');
+};
+var updateAt = $('#version').attr('data-update-at');
+updateVersion(updateAt);
+setInterval(function () {
+    updateVersion(updateAt);
+}, 15000);
 
 // visit
-// function updateVisit(updateProgressBar) {
-//     $.getJSON(analyticsAPI.url, {
-//         'module': 'API',
-//         'method': 'VisitsSummary.getUniqueVisitors',
-//         'idSite': analyticsAPI.id,
-//         'period': 'day',
-//         'date': 'today',
-//         'format': 'JSON',
-//         'token_auth': analyticsAPI.token
-//     }, function (data) {
-//         $('#visit img').attr('src', 'https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-' + encodeURIComponent(data.value) + '-brightgreen.svg');
-//         if (updateProgressBar) {
-//             $('#page-loading-progress').progress('increment');
-//         };
-//     });
-// };
-// updateVisit(true);
-// setInterval(function () {
-//     updateVisit(false);
-// }, 15000);
+function updateVisit(updateProgressBar) {
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitsSummary.getUniqueVisitors',
+        'idSite': analyticsAPI.id,
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        $('#visit img').attr('src', 'https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-' + encodeURIComponent(data.value) + '-brightgreen.svg');
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
+    });
+};
+updateVisit(true);
+setInterval(function () {
+    updateVisit(false);
+}, 15000);
 
 // search
 $('#search-services').dropdown();

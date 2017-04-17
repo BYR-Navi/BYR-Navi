@@ -1,12 +1,3 @@
-//百度统计
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?72e6641dc820f9f3787c7d701f0635cf";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-
 // customize.js
 
 $(document).ready(function () {
@@ -32,3 +23,54 @@ $('.loading-trigger').on('click', function () {
 // masthead background
 $('.ui.inverted.masthead.segment').addClass('bg' + Math.ceil(Math.random() * 14)).removeClass('zoomed');
 
+// analytics
+$.getJSON(analyticsAPI.url, {
+    'module': 'API',
+    'method': 'VisitsSummary.getVisits',
+    'idSite': analyticsAPI.id,
+    'period': 'day',
+    'date': 'yesterday',
+    'format': 'JSON',
+    'token_auth': analyticsAPI.token
+}, function (data) {
+    $('#yesterday-visits').text(data.value);
+});
+$.getJSON(analyticsAPI.url, {
+    'module': 'API',
+    'method': 'VisitsSummary.getActions',
+    'idSite': analyticsAPI.id,
+    'period': 'day',
+    'date': 'yesterday',
+    'format': 'JSON',
+    'token_auth': analyticsAPI.token
+}, function (data) {
+    $('#yesterday-actions').text(data.value);
+});
+function updateAnalytics() {
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitsSummary.getVisits',
+        'idSite': analyticsAPI.id,
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        $('#today-visits').text(data.value);
+    });
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitsSummary.getActions',
+        'idSite': analyticsAPI.id,
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        $('#today-actions').text(data.value);
+    });
+};
+updateAnalytics();
+setInterval(function () {
+    updateAnalytics();
+}, 15000);
