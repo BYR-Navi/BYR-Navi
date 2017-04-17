@@ -11,7 +11,7 @@
   url: http://openlaw.cn/search/judgement/default?type=&typeValue=&keyword=
   suffix: ''
 
-- id: OpenLaw
+- id: fatiao
   name: 法条搜索
   url: http://law1.law-star.com/search?kw=
   suffix: ''
