@@ -30,4 +30,3 @@ A Navigation Website for BYR
 ###### Forked by
 * [法林导航](http://falin.xyz/)
 * [进步英语](http://www.ejinbu.com/)
-* [byrIndex](http://wht.cloud.icybee.cn/) (by [whtis](https://github.com/whtis))
