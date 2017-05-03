@@ -21,6 +21,7 @@ A Navigation Website for BYR
 * [Moment.js](http://momentjs.com/)
 * [CountUp.js](http://inorganik.github.io/countUp.js/)
 * [JavaScript Cookie](https://github.com/js-cookie/js-cookie)
+* [url.js](https://github.com/websanova/js-url)
 * [ECharts](http://echarts.baidu.com/)
 * [Piwik](https://piwik.org/)
 * [GeoIP](http://www.maxmind.com)
