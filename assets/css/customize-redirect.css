@@ -1,4 +1,4 @@
-/* customize-next.css */
+/* customize-redirect.css */
 
 .hidden.menu {
     display: none;
@@ -33,7 +33,7 @@
     padding: 8em 0em;
 }
 
-.ui.vertical.stripe h1.ui.next.header {
+.ui.vertical.stripe h1.ui.redirect.header {
     font-size: 8em;
 }
 
@@ -101,7 +101,7 @@
         margin-bottom: 1em;
         font-size: 1.5em;
     }
-    .ui.vertical.stripe h1.ui.next.header {
+    .ui.vertical.stripe h1.ui.redirect.header {
         font-size: 4em;
     }
     #contacts-dimmer div.item {
