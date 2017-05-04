@@ -730,7 +730,7 @@ visitCalendarChart.setOption({
             }
         },
         visualMap: {
-            min: 300,
+            min: 200,
             max: 1000,
             calculable: true,
             inRange: {
