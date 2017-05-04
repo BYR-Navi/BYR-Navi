@@ -248,6 +248,10 @@
       style: basic
       url: http://www.xiami.com/
 
+    - name: FIX字幕侠
+      style: basic
+      url: http://www.fixsub.com/
+
 - section: byr
   categories:
   - category: 北邮校园
