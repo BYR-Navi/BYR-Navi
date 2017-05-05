@@ -75,7 +75,7 @@ $('#search-button').click(function () {
     query = encodeURIComponent(query);
     if (query) {
         Cookies.set('byr_navi_previous_search_service_option', service.val(), { expires: 365 });
-        window.open('redirect/?service=' + encodeURIComponent(service.text()) + '&query=' + query + '&next=' + encodeURIComponent(service.attr('data-url') + query + service.attr('data-suffix')), '_blank');
+        window.open('search/?service=' + encodeURIComponent(service.text()) + '&query=' + query + '&next=' + encodeURIComponent(service.attr('data-url') + query + service.attr('data-suffix')), '_blank');
     } else {
         $('#search-div').addClass('error');
         $('#search-query').attr('placeholder', '请输入搜索内容');
@@ -104,7 +104,7 @@ $(window).keyup(function (event) {
         if (query) {
             if ($('#search-query:focus').length > 0) {
                 Cookies.set('byr_navi_previous_search_service_option', service.val(), { expires: 365 });
-                window.open('redirect/?service=' + encodeURIComponent(service.text()) + '&query=' + query + '&next=' + encodeURIComponent(service.attr('data-url') + query + service.attr('data-suffix')), '_blank');
+                window.open('search/?service=' + encodeURIComponent(service.text()) + '&query=' + query + '&next=' + encodeURIComponent(service.attr('data-url') + query + service.attr('data-suffix')), '_blank');
             } else {
                 $('#search-query').focus().select();
             };
@@ -132,7 +132,7 @@ $('.shortcuts .ui.label').each(function () {
         if (query) {
             Cookies.set('byr_navi_previous_search_service_option', service.val(), { expires: 365 });
             $('#search-services').dropdown('set selected', service.val());
-            window.open('redirect/?service=' + encodeURIComponent(service.text()) + '&query=' + query + '&next=' + encodeURIComponent(service.attr('data-url') + query + service.attr('data-suffix')), '_blank');
+            window.open('search/?service=' + encodeURIComponent(service.text()) + '&query=' + query + '&next=' + encodeURIComponent(service.attr('data-url') + query + service.attr('data-suffix')), '_blank');
         } else {
             $('#search-div').addClass('error');
             $('#search-query').attr('placeholder', '请输入搜索内容');

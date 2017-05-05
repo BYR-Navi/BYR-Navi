@@ -1,4 +1,4 @@
-/* customize-redirect.css */
+/* customize-search.css */
 
 .hidden.menu {
     display: none;
@@ -33,7 +33,7 @@
     padding: 8em 0em;
 }
 
-.ui.vertical.stripe h1.ui.redirect.header {
+.ui.vertical.stripe h1.ui.search.header {
     font-size: 8em;
 }
 
@@ -101,7 +101,7 @@
         margin-bottom: 1em;
         font-size: 1.5em;
     }
-    .ui.vertical.stripe h1.ui.redirect.header {
+    .ui.vertical.stripe h1.ui.search.header {
         font-size: 4em;
     }
     #contacts-dimmer div.item {
