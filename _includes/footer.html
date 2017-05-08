@@ -8,12 +8,6 @@
                 </div>
             </div>
             <div class="three wide column">
-                <h4 class="ui inverted header">Forked by</h4>
-                <div class="ui inverted link list">
-                    {% for item in site.data.forked_by %}<a class="item" href="{{ item.url }}" target="_blank">{{ item.name }}</a>{% endfor %}
-                </div>
-            </div>
-            <div class="three wide column">
                 <h4 class="ui inverted header">About</h4>
                 <div class="ui inverted link list">
                     <a class="item" href="{{ site.author_url }}" target="_blank">{{ site.author }}</a>
@@ -21,7 +15,7 @@
                     <a class="item" href="https://saythanks.io/to/{{ site.author }}" target="_blank">Say Thanks</a>
                 </div>
             </div>
-            <div class="seven wide column">
+            <div class="ten wide column">
                 <h4 class="ui inverted header">{{ site.name }}</h4>
                 <div class="ui inverted link list">
                     <div class="item">&copy; {{ site.time | date: "%Y" }} {{ site.organization }}</div>
