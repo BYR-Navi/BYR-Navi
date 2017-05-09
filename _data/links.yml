@@ -1,52 +1,5 @@
 - section: public
   categories:
-  - category: 娱乐
-    links:
-    - name: 优酷
-      style: basic
-      url: http://www.youku.com/
-
-    - name: 土豆
-      style: basic
-      url: http://www.tudou.com/
-
-    - name: Youtube
-      icon: youtube red
-      style: basic
-      url: http://www.youtube.com/
-
-    - name: 爱奇艺
-      style: basic
-      url: http://www.iqiyi.com/
-
-    - name: 芒果TV
-      style: basic
-      url: http://www.mgtv.com/
-
-    - name: 哔哩哔哩
-      style: pink
-      url: http://www.bilibili.com/
-
-    - name: AcFun
-      style: basic
-      url: http://www.acfun.tv/
-
-    - name: 吐槽
-      style: basic
-      url: http://www.tucao.tv/
-
-    - name: 多瑙影院
-      style: basic
-      url: http://www.dnvod.eu/
-
-    - name: 虾米
-      style: basic
-      url: http://www.xiami.com/
-
-    - name: FIX字幕侠
-      style: basic
-      url: http://www.fixsub.com/
-
   - category: 购物
     links:
     - name: 京东
@@ -99,57 +52,6 @@
       style: basic
       url: http://www.smartisan.com/
 
-  - category: 社交
-    links:
-    - name: 微博
-      icon: weibo red
-      style: basic
-      url: http://weibo.com/
-
-    - name: 微信网页版
-      icon: wechat green
-      style: basic
-      url: http://wx.qq.com/
-
-    - name: 百度贴吧
-      icon: paw blue
-      style: basic
-      url: http://tieba.baidu.com/
-
-    - name: 知乎
-      style: blue
-      url: http://www.zhihu.com/
-
-    - name: Quora
-      icon: quora red
-      style: basic
-      url: http://www.quora.com/
-
-    - name: Facebook
-      icon: facebook blue
-      style: basic
-      url: http://www.facebook.com/
-
-    - name: Google+
-      icon: google plus red
-      style: basic
-      url: https://plus.google.com/
-
-    - name: Tumblr
-      icon: tumblr blue
-      style: basic
-      url: http://www.tumblr.com/
-
-    - name: Instagram
-      icon: instagram pink
-      style: basic
-      url: http://www.instagram.com/
-
-    - name: GitHub
-      icon: github black
-      style: basic
-      url: http://github.com/
-
   - category: 工具
     links:
     - name: '12306'
@@ -200,6 +102,57 @@
     - name: TinEye
       style: basic
       url: https://www.tineye.com/
+
+  - category: 社交
+    links:
+    - name: 微博
+      icon: weibo red
+      style: basic
+      url: http://weibo.com/
+
+    - name: 微信网页版
+      icon: wechat green
+      style: basic
+      url: http://wx.qq.com/
+
+    - name: 百度贴吧
+      icon: paw blue
+      style: basic
+      url: http://tieba.baidu.com/
+
+    - name: 知乎
+      style: blue
+      url: http://www.zhihu.com/
+
+    - name: Quora
+      icon: quora red
+      style: basic
+      url: http://www.quora.com/
+
+    - name: Facebook
+      icon: facebook blue
+      style: basic
+      url: http://www.facebook.com/
+
+    - name: Google+
+      icon: google plus red
+      style: basic
+      url: https://plus.google.com/
+
+    - name: Tumblr
+      icon: tumblr blue
+      style: basic
+      url: http://www.tumblr.com/
+
+    - name: Instagram
+      icon: instagram pink
+      style: basic
+      url: http://www.instagram.com/
+
+    - name: GitHub
+      icon: github black
+      style: basic
+      url: http://github.com/
 
   - category: 学习
     links:
@@ -263,6 +216,53 @@
     - name: 应届生
       style: basic
       url: http://www.yingjiesheng.com/
+
+  - category: 娱乐
+    links:
+    - name: 优酷
+      style: basic
+      url: http://www.youku.com/
+
+    - name: 土豆
+      style: basic
+      url: http://www.tudou.com/
+
+    - name: Youtube
+      icon: youtube red
+      style: basic
+      url: http://www.youtube.com/
+
+    - name: 爱奇艺
+      style: basic
+      url: http://www.iqiyi.com/
+
+    - name: 芒果TV
+      style: basic
+      url: http://www.mgtv.com/
+
+    - name: 哔哩哔哩
+      style: pink
+      url: http://www.bilibili.com/
+
+    - name: AcFun
+      style: basic
+      url: http://www.acfun.tv/
+
+    - name: 吐槽
+      style: basic
+      url: http://www.tucao.tv/
+
+    - name: 多瑙影院
+      style: basic
+      url: http://www.dnvod.eu/
+
+    - name: 虾米
+      style: basic
+      url: http://www.xiami.com/
+
+    - name: FIX字幕侠
+      style: basic
+      url: http://www.fixsub.com/
 
 - section: byr
   categories:
