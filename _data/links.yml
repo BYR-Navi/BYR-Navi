@@ -99,57 +99,6 @@
       style: basic
       url: http://www.smartisan.com/
 
-  - category: 工具
-    links:
-    - name: '12306'
-      icon: train red
-      style: basic
-      url: http://www.12306.cn/
-
-    - name: 快递查询
-      icon: shipping olive
-      style: basic
-      url: http://www.kuaidi100.com/
-
-    - name: 大众点评
-      icon: food orange
-      style: basic
-      url: http://www.dianping.com/
-
-    - name: 网易邮箱
-      icon: mail red
-      style: basic
-      url: http://email.163.com/
-
-    - name: QQ邮箱
-      icon: qq black
-      style: basic
-      url: http://mail.qq.com/
-
-    - name: Gmail
-      icon: google red
-      style: basic
-      url: http://mail.google.com/
-
-    - name: 谷歌翻译
-      icon: translate blue
-      style: basic
-      url: https://translate.google.com/
-
-    - name: 百度翻译
-      icon: paw blue
-      style: basic
-      url: http://fanyi.baidu.com/
-
-    - name: Shadowsocks
-      icon: send green
-      style: basic
-      url: https://github.com/shadowsocks
-
-    - name: TinEye
-      style: basic
-      url: https://www.tineye.com/
-
   - category: 社交
     links:
     - name: 微博
@@ -200,6 +149,57 @@
       icon: github black
       style: basic
       url: http://github.com/
+
+  - category: 工具
+    links:
+    - name: '12306'
+      icon: train red
+      style: basic
+      url: http://www.12306.cn/
+
+    - name: 快递查询
+      icon: shipping olive
+      style: basic
+      url: http://www.kuaidi100.com/
+
+    - name: 大众点评
+      icon: food orange
+      style: basic
+      url: http://www.dianping.com/
+
+    - name: 网易邮箱
+      icon: mail red
+      style: basic
+      url: http://email.163.com/
+
+    - name: QQ邮箱
+      icon: qq black
+      style: basic
+      url: http://mail.qq.com/
+
+    - name: Gmail
+      icon: google red
+      style: basic
+      url: http://mail.google.com/
+
+    - name: 谷歌翻译
+      icon: translate blue
+      style: basic
+      url: https://translate.google.com/
+
+    - name: 百度翻译
+      icon: paw blue
+      style: basic
+      url: http://fanyi.baidu.com/
+
+    - name: Shadowsocks
+      icon: send green
+      style: basic
+      url: https://github.com/shadowsocks
+
+    - name: TinEye
+      style: basic
+      url: https://www.tineye.com/
 
   - category: 学习
     links:
