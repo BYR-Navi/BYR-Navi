@@ -91,6 +91,10 @@
       style: basic
       url: https://github.com/shadowsocks
 
+    - name: TinEye
+      style: basic
+      url: https://www.tineye.com/
+
   - category: 社交
     links:
     - name: 微博
