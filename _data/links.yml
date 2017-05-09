@@ -190,33 +190,6 @@
       style: basic
       url: https://opensource.google.com/
 
-  - category: 求职
-    links:
-    - name: LinkedIn
-      icon: linkedin blue
-      style: basic
-      url: http://www.linkedin.com/
-
-    - name: 大街网
-      style: basic
-      url: http://www.dajie.com/
-
-    - name: 拉勾网
-      style: basic
-      url: http://www.lagou.com/
-
-    - name: 智联招聘
-      style: basic
-      url: http://zhaopin.com/
-
-    - name: 前程无忧
-      style: basic
-      url: http://www.51job.com/
-
-    - name: 应届生
-      style: basic
-      url: http://www.yingjiesheng.com/
-
   - category: 娱乐
     links:
     - name: 优酷
@@ -263,6 +236,33 @@
     - name: FIX字幕侠
       style: basic
       url: http://www.fixsub.com/
+
+  - category: 求职
+    links:
+    - name: LinkedIn
+      icon: linkedin blue
+      style: basic
+      url: http://www.linkedin.com/
+
+    - name: 大街网
+      style: basic
+      url: http://www.dajie.com/
+
+    - name: 拉勾网
+      style: basic
+      url: http://www.lagou.com/
+
+    - name: 智联招聘
+      style: basic
+      url: http://zhaopin.com/
+
+    - name: 前程无忧
+      style: basic
+      url: http://www.51job.com/
+
+    - name: 应届生
+      style: basic
+      url: http://www.yingjiesheng.com/
 
 - section: byr
   categories:
