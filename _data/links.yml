@@ -19,6 +19,11 @@
       style: basic
       url: http://www.amazon.cn/
 
+    - name: Apple
+      style: basic
+      icon: apple grey
+      url: https://www.apple.com/
+
     - name: 一号店
       style: basic
       url: http://www.yhd.com/
@@ -42,11 +47,6 @@
     - name: IKEA
       style: basic
       url: http://www.ikea.com/
-
-    - name: Apple
-      style: basic
-      icon: apple grey
-      url: https://www.apple.com/
 
     - name: 锤子科技
       style: basic
