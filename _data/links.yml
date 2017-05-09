@@ -1,5 +1,52 @@
 - section: public
   categories:
+  - category: 娱乐
+    links:
+    - name: 优酷
+      style: basic
+      url: http://www.youku.com/
+
+    - name: 土豆
+      style: basic
+      url: http://www.tudou.com/
+
+    - name: Youtube
+      icon: youtube red
+      style: basic
+      url: http://www.youtube.com/
+
+    - name: 爱奇艺
+      style: basic
+      url: http://www.iqiyi.com/
+
+    - name: 芒果TV
+      style: basic
+      url: http://www.mgtv.com/
+
+    - name: 哔哩哔哩
+      style: pink
+      url: http://www.bilibili.com/
+
+    - name: AcFun
+      style: basic
+      url: http://www.acfun.tv/
+
+    - name: 吐槽
+      style: basic
+      url: http://www.tucao.tv/
+
+    - name: 多瑙影院
+      style: basic
+      url: http://www.dnvod.eu/
+
+    - name: 虾米
+      style: basic
+      url: http://www.xiami.com/
+
+    - name: FIX字幕侠
+      style: basic
+      url: http://www.fixsub.com/
+
   - category: 购物
     links:
     - name: 京东
@@ -189,53 +236,6 @@
       icon: code blue
       style: basic
       url: https://opensource.google.com/
-
-  - category: 娱乐
-    links:
-    - name: 优酷
-      style: basic
-      url: http://www.youku.com/
-
-    - name: 土豆
-      style: basic
-      url: http://www.tudou.com/
-
-    - name: Youtube
-      icon: youtube red
-      style: basic
-      url: http://www.youtube.com/
-
-    - name: 爱奇艺
-      style: basic
-      url: http://www.iqiyi.com/
-
-    - name: 芒果TV
-      style: basic
-      url: http://www.mgtv.com/
-
-    - name: 哔哩哔哩
-      style: pink
-      url: http://www.bilibili.com/
-
-    - name: AcFun
-      style: basic
-      url: http://www.acfun.tv/
-
-    - name: 吐槽
-      style: basic
-      url: http://www.tucao.tv/
-
-    - name: 多瑙影院
-      style: basic
-      url: http://www.dnvod.eu/
-
-    - name: 虾米
-      style: basic
-      url: http://www.xiami.com/
-
-    - name: FIX字幕侠
-      style: basic
-      url: http://www.fixsub.com/
 
   - category: 求职
     links:
