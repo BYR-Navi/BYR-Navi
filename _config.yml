@@ -5,7 +5,7 @@ analytics:
     id: 1
     api:
       url: https://vps.irockbunny.com/analytics/?callback=?
-      token: fbd5dc4d5235a9501ab9a7bf8c6f3945
+      token: c5f1aea9fec6f7ff9bd2b86208c4ef85
 
 repository: https://github.com/iROCKBUNNY/BYR-Navi
 
