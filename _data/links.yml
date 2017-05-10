@@ -254,7 +254,7 @@
 
     - name: 多瑙影院
       style: basic
-      url: http://www.dnvod.eu/
+      url: http://www.dnvod.tv/
 
     - name: 虾米
       style: basic
