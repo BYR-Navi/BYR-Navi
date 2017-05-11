@@ -560,7 +560,8 @@ visitMapChart.setOption({
             text:['High','Low'],
             calculable: true,
             inRange: {
-                color: ['lightskyblue', 'yellow', 'orangered']
+                // color: ['lightskyblue', 'yellow', 'orangered']
+                color: ['#F6EFA6', '#D88273', '#BF444C']
             }
         },
         series: [{
