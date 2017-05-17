@@ -10,8 +10,8 @@
 
 [![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)](https://saythanks.io/to/iROCKBUNNY)
 
-# [BYR-Navi](http://byr123.irockbunny.com/)
-A Navigation Website for BYR
+# BYR-Navi
+A Navigation [Website](http://byr123.irockbunny.com/) for BYR
 
 ###### Powered by
 * [Semantic UI](http://semantic-ui.com/)
