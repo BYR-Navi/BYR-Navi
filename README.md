@@ -1,14 +1,14 @@
 [![Build Status](https://travis-ci.org/iROCKBUNNY/BYR-Navi.svg)](https://travis-ci.org/iROCKBUNNY/BYR-Navi)
 [![Website](https://img.shields.io/website-up-down-green-red/http/byr123.irockbunny.com.svg)](http://byr123.irockbunny.com/)
 [![License](https://img.shields.io/github/license/iROCKBUNNY/BYR-Navi.svg)](/LICENSE)
+[![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)](https://saythanks.io/to/iROCKBUNNY)
+
 [![Watchers](https://img.shields.io/github/watchers/iROCKBUNNY/BYR-Navi.svg?style=social&label=Watch)](https://github.com/iROCKBUNNY/BYR-Navi/watchers)
 [![Stargazers](https://img.shields.io/github/stars/iROCKBUNNY/BYR-Navi.svg?style=social&label=Star)](https://github.com/iROCKBUNNY/BYR-Navi/stargazers)
 [![Forks](https://img.shields.io/github/forks/iROCKBUNNY/BYR-Navi.svg?style=social&label=Fork)](https://github.com/iROCKBUNNY/BYR-Navi/network)
 
 [![Closed Issues](https://img.shields.io/github/issues-closed/iROCKBUNNY/BYR-Navi.svg)](https://github.com/iROCKBUNNY/BYR-Navi/issues)
 [![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed/iROCKBUNNY/BYR-Navi.svg)](https://github.com/iROCKBUNNY/BYR-Navi/pulls)
-
-[![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)](https://saythanks.io/to/iROCKBUNNY)
 
 # BYR-Navi
 A Navigation [Website](http://byr123.irockbunny.com/) for BYR
