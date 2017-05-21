@@ -734,7 +734,7 @@ visitCalendarChart.setOption({
             max: 1200,
             calculable: true,
             inRange: {
-                color: ['#F6EFA6', '#D88273', '#BF444C']
+                color: ['#C6E48B', '#7BC96F', '#239A3B', '#196127']
             },
             orient: 'horizontal',
             top: 'top',
