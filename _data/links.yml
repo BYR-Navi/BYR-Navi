@@ -94,11 +94,6 @@
       style: basic
       url: http://fanyi.baidu.com/
 
-    - name: Shadowsocks
-      icon: send green
-      style: basic
-      url: https://github.com/shadowsocks
-
     - name: TinEye
       style: basic
       url: https://www.tineye.com/
