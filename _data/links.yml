@@ -52,6 +52,10 @@
       style: basic
       url: http://www.smartisan.com/
 
+    - name: 小米商城
+      style: basic
+      url: http://www.mi.com/index.html
+
   - category: 工具
     links:
     - name: '12306'
@@ -69,6 +73,11 @@
       style: basic
       url: http://www.dianping.com/
 
+    - name: Gmail
+      icon: google red
+      style: basic
+      url: http://mail.google.com/
+
     - name: 网易邮箱
       icon: mail red
       style: basic
@@ -77,12 +86,11 @@
     - name: QQ邮箱
       icon: qq black
       style: basic
-      url: http://mail.qq.com/
+      url: https://mail.qq.com/
 
-    - name: Gmail
-      icon: google red
+    - name: 新浪邮箱
       style: basic
-      url: http://mail.google.com/
+      url: https://mail.sina.com.cn/
 
     - name: 谷歌翻译
       icon: translate blue
@@ -234,6 +242,10 @@
     - name: 芒果TV
       style: basic
       url: http://www.mgtv.com/
+
+    - name: 腾讯视频
+      style: basic
+      url: https://v.qq.com/
 
     - name: 哔哩哔哩
       style: pink
