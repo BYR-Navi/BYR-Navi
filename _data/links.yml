@@ -73,11 +73,6 @@
       style: basic
       url: http://www.dianping.com/
 
-    - name: Gmail
-      icon: google red
-      style: basic
-      url: http://mail.google.com/
-
     - name: 网易邮箱
       icon: mail red
       style: basic
@@ -91,6 +86,11 @@
     - name: 新浪邮箱
       style: basic
       url: https://mail.sina.com.cn/
+
+    - name: Gmail
+      icon: google red
+      style: basic
+      url: http://mail.google.com/
 
     - name: 谷歌翻译
       icon: translate blue
@@ -259,13 +259,13 @@
       style: basic
       url: http://www.tucao.tv/
 
-    - name: 多瑙影院
-      style: basic
-      url: http://www.dnvod.tv/
-
     - name: 虾米
       style: basic
       url: http://www.xiami.com/
+
+    - name: 多瑙影院
+      style: basic
+      url: http://www.dnvod.tv/
 
     - name: FIX字幕侠
       style: basic
