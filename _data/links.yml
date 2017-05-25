@@ -259,6 +259,10 @@
       style: basic
       url: http://www.tucao.tv/
 
+    - name: 腾讯动漫
+      style: basic
+      url: http://ac.qq.com/
+
     - name: 虾米
       style: basic
       url: http://www.xiami.com/
