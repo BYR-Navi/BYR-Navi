@@ -7,7 +7,6 @@
       style: basic
       url: http://wx.qq.com/
 
-
     - name: 淘宝网
       style: orange
       url: http://www.taobao.com
@@ -122,7 +121,7 @@
       style: basic
       url: http://bbs.esnai.com/forum-16-1.html
 
-    - name: Kindle伴侣
+    - name: 视野论坛
       style: basic
       url: https://kindlefere.com
 
