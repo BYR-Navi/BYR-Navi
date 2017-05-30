@@ -121,6 +121,10 @@
       style: basic
       url: http://bbs.esnai.com/forum-16-1.html
 
+    - name: Kindle伴侣
+      style: basic
+      url: https://kindlefere.com
+
   - category: 法律/案例检索
     links:
     - name: 无訟案例
