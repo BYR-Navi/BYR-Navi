@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/BYR-Navi/BYR-Navi.svg)](https://travis-ci.org/BYR-Navi/BYR-Navi)
 [![Website](https://img.shields.io/website-up-down-green-red/http/byr123.irockbunny.com.svg)](http://byr123.irockbunny.com/)
 [![License](https://img.shields.io/github/license/BYR-Navi/BYR-Navi.svg)](/LICENSE)
-[![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)](https://saythanks.io/to/BYR-Navi)
+[![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)](https://saythanks.io/to/iROCKBUNNY)
 
 [![Watchers](https://img.shields.io/github/watchers/BYR-Navi/BYR-Navi.svg?style=social&label=Watch)](https://github.com/BYR-Navi/BYR-Navi/watchers)
 [![Stargazers](https://img.shields.io/github/stars/BYR-Navi/BYR-Navi.svg?style=social&label=Star)](https://github.com/BYR-Navi/BYR-Navi/stargazers)
