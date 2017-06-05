@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/BYR-Navi/BYR-Navi.svg)](https://travis-ci.org/BYR-Navi/BYR-Navi)
-[![Website](https://img.shields.io/website-up-down-green-red/http/byr123.irockbunny.com.svg)](http://byr123.irockbunny.com/)
+[![Website](https://img.shields.io/website-up-down-green-red/http/byr-navi.com.svg)](http://byr-navi.com/)
 [![License](https://img.shields.io/github/license/BYR-Navi/BYR-Navi.svg)](/LICENSE)
 [![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)](https://saythanks.io/to/iROCKBUNNY)
 
@@ -11,7 +11,7 @@
 [![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed/BYR-Navi/BYR-Navi.svg)](https://github.com/BYR-Navi/BYR-Navi/pulls)
 
 # BYR-Navi
-A Navigation [Website](http://byr123.irockbunny.com/) for BYR
+A Navigation [Website](http://byr-navi.com/) for BYR
 
 ###### Powered by
 * [Semantic UI](http://semantic-ui.com/)
