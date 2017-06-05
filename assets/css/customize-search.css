@@ -75,10 +75,6 @@
     display: none;
 }
 
-#contacts-dimmer div.item {
-    font-size: 2em;
-}
-
 @media only screen and (max-width: 767px) {
     .ui.fixed.menu {
         display: none !important;
@@ -103,8 +99,5 @@
     }
     .ui.vertical.stripe h1.ui.search.header {
         font-size: 4em;
-    }
-    #contacts-dimmer div.item {
-        font-size: 1em;
     }
 }

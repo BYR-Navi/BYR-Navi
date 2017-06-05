@@ -77,10 +77,6 @@
     display: none;
 }
 
-#contacts-dimmer div.item {
-    font-size: 2em;
-}
-
 .echart-container {
     height: 400px;
 }
@@ -134,8 +130,5 @@
     }
     #visit-calendar.echart-container {
         height: 2300px;
-    }
-    #contacts-dimmer div.item {
-        font-size: 1em;
     }
 }
