@@ -16,7 +16,7 @@ $(document).ready(function () {
 });
 
 // loading dimmer
-$('.loading-trigger').on('click', function () {
+$('.loading-trigger').click(function () {
     $('#loading-dimmer').dimmer('show');
 });
 
