@@ -19,9 +19,9 @@ $('#page-loading-progress').progress({
 
 // GitHub
 function updateGitHub() {
-    $('#github-watch img').attr('src', 'https://img.shields.io/github/watchers/iROCKBUNNY/BYR-Navi.svg?style=social&label=Watch');
-    $('#github-star img').attr('src', 'https://img.shields.io/github/stars/iROCKBUNNY/BYR-Navi.svg?style=social&label=Star');
-    $('#github-fork img').attr('src', 'https://img.shields.io/github/forks/iROCKBUNNY/BYR-Navi.svg?style=social&label=Fork');
+    $('#github-watch img').attr('src', 'https://img.shields.io/github/watchers/BYR-Navi/BYR-Navi.svg?style=social&label=Watch');
+    $('#github-star img').attr('src', 'https://img.shields.io/github/stars/BYR-Navi/BYR-Navi.svg?style=social&label=Star');
+    $('#github-fork img').attr('src', 'https://img.shields.io/github/forks/BYR-Navi/BYR-Navi.svg?style=social&label=Fork');
 };
 updateGitHub();
 setInterval(function () {
