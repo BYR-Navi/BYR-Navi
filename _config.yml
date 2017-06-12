@@ -7,7 +7,8 @@ analytics:
       url: https://vps.irockbunny.com/analytics/?callback=?
       token: d02aaf812df43e020db5de7f5b0f15a8
 
-repository: https://github.com/BYR-Navi/BYR-Navi
+repository: BYR-Navi/BYR-Navi
+repository_url: https://github.com/BYR-Navi/BYR-Navi
 
 timezone: Asia/Shanghai
 
