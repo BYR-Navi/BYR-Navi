@@ -47,7 +47,7 @@
             url: '{{ site.analytics.piwik.api.url }}',
             token: '{{ site.analytics.piwik.api.token }}'
         };
-        {{ if page.home }}var repository = '{{ site.repository }}';{% endif %}
+        {% if page.home %}var repository = '{{ site.repository }}';{% endif %}
     </script>
     <script type="text/javascript" src="{{ '/assets/js/customize.js' | relative_url }}"></script>
     {% if page.home %}<script type="text/javascript" src="{{ '/assets/js/customize-home.js' | relative_url }}"></script>{% endif %}
