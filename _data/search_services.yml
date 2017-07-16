@@ -95,6 +95,12 @@
   shortcut: 虾米
   style: basic
 
+- id: fkdy
+  name: 影视
+  url: http://ifkdy.com/?q=
+  shortcut: 影视
+  style: basic
+
 - id: panci
   name: 胖次
   url: http://www.panc.cc/s/
