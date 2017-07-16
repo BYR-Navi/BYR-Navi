@@ -98,8 +98,6 @@
 - id: fkdy
   name: 影视
   url: http://ifkdy.com/?q=
-  shortcut: 影视
-  style: basic
 
 - id: panci
   name: 胖次
