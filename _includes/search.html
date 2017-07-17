@@ -7,7 +7,7 @@
         <select id="search-services" class="ui compact selection dropdown">
             {% for item in site.data.search_services %}<option id="{{ item.id }}" value="{{ item.id }}" data-url="{{ item.url }}" data-suffix="{% if item.suffix %}{{ item.suffix }}{% endif %}">{{ item.name }}</option>{% endfor %}
         </select>
-        <div id="search-button" type="submit" class="ui icon button">Go</div>
+        <div id="search-button" class="ui icon button">Go</div>
     </div>
     <div class="ui labels shortcuts">
         {% for item in site.data.search_services %}{% if item.shortcut %}<a class="ui {{ item.style }} label" data-search-service-id="{{ item.id }}">{% if item.icon %}<i class="{{ item.icon }} icon"></i>{% endif %}{{ item.shortcut }}</a>{% endif %}{% endfor %}
