@@ -13,9 +13,9 @@
   icon: google red
   style: basic
 
-- id: googlemirror
-  name: 谷歌镜像
-  url: http://google.hbspy.moe/#q=
+# - id: googlemirror
+#   name: 谷歌镜像
+#   url: http://google.hbspy.moe/#q=
 
 - id: baidumap
   name: 百度地图
