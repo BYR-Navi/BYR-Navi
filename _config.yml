@@ -26,7 +26,7 @@ logo: /images/logo.png
 logo_dark: /images/logo-dark.png
 logo_white: /images/logo-white.png
 
-gems:
+plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
 
