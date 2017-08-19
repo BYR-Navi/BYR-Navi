@@ -32,3 +32,4 @@ A Navigation [Website](http://byr-navi.com/) for BYR
 - [法林导航](http://falin.xyz/)
 - [进步英语](http://www.ejinbu.com/)
 - [奇货导航](http://fav.qidui.me/)
+- [苏菲导航](https://swufer-home.github.io/swufer-home/)
