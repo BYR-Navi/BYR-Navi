@@ -1,4 +1,4 @@
-// customize-search.js
+// search.js
 
 var service = $.url('?service');
 var query = $.url('?query');

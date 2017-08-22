@@ -1,4 +1,4 @@
-// query-suggest.js
+// suggest-query.js
 
 (function() {
     var A = window.baidu || { version: "1-1-0" };

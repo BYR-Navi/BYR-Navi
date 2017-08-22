@@ -9,13 +9,13 @@
     {% seo %}
     <link rel="stylesheet" type="text/css" href="//unpkg.com/semantic-ui/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize.css' | relative_url }}">
-    {% if page.home %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-home.css' | relative_url }}">{% endif %}
-    {% if page.analytics %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-analytics.css' | relative_url }}">{% endif %}
-    {% if page.donate %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-donate.css' | relative_url }}">{% endif %}
-    {% if page.search %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-search.css' | relative_url }}">{% endif %}
-    {% if page.error %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-error.css' | relative_url }}">{% endif %}
-    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize-masthead.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/common.css' | relative_url }}">
+    {% if page.home %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/home.css' | relative_url }}">{% endif %}
+    {% if page.analytics %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/analytics.css' | relative_url }}">{% endif %}
+    {% if page.donate %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/donate.css' | relative_url }}">{% endif %}
+    {% if page.search %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/search.css' | relative_url }}">{% endif %}
+    {% if page.error %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/error.css' | relative_url }}">{% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/masthead.css' | relative_url }}">
     <link rel="apple-touch-icon" type="image/png" href="{{ '/apple-touch-icon.png' | relative_url }}">
     <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
     {% include analytics.html %}
@@ -49,14 +49,14 @@
         };
         {% if page.home %}var repository = '{{ site.repository }}';{% endif %}
     </script>
-    <script type="text/javascript" src="{{ '/assets/js/customize.js' | relative_url }}"></script>
-    {% if page.home %}<script type="text/javascript" src="{{ '/assets/js/customize-home.js' | relative_url }}"></script>{% endif %}
+    <script type="text/javascript" src="{{ '/assets/js/common.js' | relative_url }}"></script>
+    {% if page.home %}<script type="text/javascript" src="{{ '/assets/js/home.js' | relative_url }}"></script>{% endif %}
     {% if page.analytics %}<script type="text/javascript" src="//unpkg.com/countup"></script>{% endif %}
     {% if page.analytics %}<script type="text/javascript" src="//unpkg.com/echarts/dist/echarts.min.js"></script>{% endif %}
     {% if page.analytics %}<script type="text/javascript" src="//unpkg.com/echarts/theme/macarons.js"></script>{% endif %}
     {% if page.analytics %}<script type="text/javascript" src="//unpkg.com/echarts/map/js/world.js"></script>{% endif %}
-    {% if page.analytics %}<script type="text/javascript" src="{{ '/assets/js/customize-analytics.js' | relative_url }}"></script>{% endif %}
+    {% if page.analytics %}<script type="text/javascript" src="{{ '/assets/js/analytics.js' | relative_url }}"></script>{% endif %}
     {% if page.search %}<script type="text/javascript" src="//unpkg.com/js-url/url.min.js"></script>{% endif %}
-    {% if page.search %}<script type="text/javascript" src="{{ '/assets/js/customize-search.js' | relative_url }}"></script>{% endif %}
+    {% if page.search %}<script type="text/javascript" src="{{ '/assets/js/search.js' | relative_url }}"></script>{% endif %}
 </body>
 </html>

@@ -1,4 +1,4 @@
-// customize-home.js
+// home.js
 
 // logo spin
 $('#logo').hover(function () {

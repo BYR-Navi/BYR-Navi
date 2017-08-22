@@ -1,4 +1,4 @@
-// customize-analytics.js
+// analytics.js
 
 // date range
 var firstDay = new Date(2016, 9, 1);

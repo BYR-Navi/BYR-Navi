@@ -1,17 +1,26 @@
-/* customize-analytics.css */
+/* home.css */
 
 .hidden.menu {
     display: none;
 }
 
 .masthead.segment {
-    min-height: 300px;
+    min-height: 700px;
     padding: 1em 0em;
 }
 
+.masthead .logo.item img {
+    margin-right: 1em;
+}
+
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+
 .masthead h1.ui.header {
-    margin-top: 1.5em;
-    font-size: 3em;
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
     font-weight: normal;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     -moz-transform-style: preserve-3d;
@@ -20,13 +29,20 @@
 }
 
 .masthead h2 {
-    margin-bottom: 1.5em;
     font-size: 1.7em;
     font-weight: normal;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+}
+
+.masthead .shortcuts {
+    margin-top: 0.5rem;
+}
+
+.masthead .ui.link.list {
+    margin-top: 0.5em;
 }
 
 .ui.vertical.stripe {
@@ -54,19 +70,18 @@
     margin: 3em 0em;
 }
 
-.ui.vertical.stripe .ui.statistic .label {
-    font-size: 1.2em;
-}
-
-.stats.stripe.segment,
+.links.stripe.segment,
 .quote.stripe.segment {
     padding: 0em;
 }
 
-.stats.stripe.segment .grid .column,
 .quote.stripe.segment .grid .column {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.ui.stackable.celled.grid .row .links.column .ui.top.attached.label {
+    border-radius: 0;
 }
 
 .footer.segment {
@@ -77,19 +92,9 @@
     display: none;
 }
 
-.echart-container {
-    height: 400px;
+#logo {
+    font-size: 1.5em;
 }
-#visit-hourly.echart-container {
-    height: 600px;
-}
-#visit-map.echart-container {
-    height: 600px;
-}
-#visit-calendar.echart-container {
-    height: 400px;
-}
-
 
 @media only screen and (max-width: 767px) {
     .ui.fixed.menu {
@@ -103,32 +108,14 @@
         display: block;
     }
     .masthead.segment {
-        min-height: 160px;
+        min-height: 350px;
     }
     .masthead h1.ui.header {
-        margin-top: 1em;
-        font-size: 1.8em;
+        font-size: 2em;
+        margin-top: 1.5em;
     }
     .masthead h2 {
-        margin-bottom: 1em;
+        margin-top: 0.5em;
         font-size: 1.5em;
-    }
-    .ui.stripe.segment {
-        padding: 2em 0em;
-    }
-    .stats.stripe.segment {
-        padding: 0em;
-    }
-    .echart-container {
-        height: 300px;
-    }
-    #visit-hourly.echart-container {
-        height: 400px;
-    }
-    #visit-map.echart-container {
-        height: 400px;
-    }
-    #visit-calendar.echart-container {
-        height: 2300px;
     }
 }
