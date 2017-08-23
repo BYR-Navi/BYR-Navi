@@ -716,7 +716,7 @@ visitCalendarChart.setOption({
         tooltip: {
             position: 'top',
             formatter: function (p) {
-                var format = echarts.format.formatTime('YYYY-MM-DD', p.data[0]);
+                var format = echarts.format.formatTime('yyyy-MM-dd', p.data[0]);
                 return format + ' 浏览次数：' + p.data[1];
             }
         },
@@ -811,7 +811,7 @@ function updateVisitCalendarChart(updateProgressBar) {
                     continue;
                 };
                 series[cursorYear - firstYear].data.push([
-                    echarts.format.formatTime('YYYY-MM-DD', i),
+                    echarts.format.formatTime('yyyy-MM-dd', i),
                     data[i]
                 ]);
             };
