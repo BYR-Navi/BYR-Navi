@@ -102,6 +102,11 @@
       style: basic
       url: http://fanyi.baidu.com/
 
+    - name: 维基百科
+      icon: wikipedia black
+      style: basic
+      url: https://wikipedia.org/
+
     - name: TinEye
       style: basic
       url: https://www.tineye.com/
