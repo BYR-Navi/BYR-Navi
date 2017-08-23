@@ -23,7 +23,7 @@
 
 - id: wikipedia
   name: 维基百科
-  url: https://wikipedia.org/wiki/
+  url: https://www.wikipedia.org/wiki/
   shortcut: 维基
   icon: wikipedia black
   style: basic

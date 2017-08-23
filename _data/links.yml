@@ -105,7 +105,7 @@
     - name: 维基百科
       icon: wikipedia black
       style: basic
-      url: https://wikipedia.org/
+      url: https://www.wikipedia.org/
 
     - name: TinEye
       style: basic
