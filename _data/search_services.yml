@@ -21,6 +21,13 @@
   icon: map green
   style: basic
 
+- id: wikipedia
+  name: 维基百科
+  url: https://zh.wikipedia.org/wiki/
+  shortcut: 维基
+  icon: wikipedia black
+  style: basic
+
 - id: ieeexplore
   name: IEEE Xplore
   url: http://ieeexplore.ieee.org/search/searchresult.jsp?queryText=
