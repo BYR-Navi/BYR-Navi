@@ -310,7 +310,7 @@
 
     - name: 北邮人BT
       style: blue
-      url: http://bt.byr.cn/
+      url: http://bt.byr.cn/promotionlink.php?key=63030ce02da245eb152d2e8dc8dd6add
 
     - name: 北邮IPTV
       style: basic
