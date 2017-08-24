@@ -2,7 +2,7 @@ analytics:
   google:
     id: UA-100531691-1
   piwik:
-    id: 1
+    site_id: 1
     api:
       url: https://vps.irockbunny.com/analytics/?callback=?
       token: da5033161dca3573d8d0c2c07458c898
