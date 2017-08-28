@@ -21,9 +21,7 @@ $('.loading-trigger').click(function () {
 });
 
 // masthead background
-// var backgroundID = Math.ceil(Math.random() * 14);
-var backgroundID = 17;
-$('.ui.inverted.masthead.segment').addClass('bg' + String(backgroundID)).removeClass('zoomed');
+$('.ui.inverted.masthead.segment').addClass('bg' + Math.ceil(Math.random() * 14)).removeClass('zoomed');
 
 // analytics
 $.getJSON(analyticsAPI.url, {

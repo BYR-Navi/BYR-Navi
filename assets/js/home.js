@@ -2,9 +2,11 @@
 
 // logo spin
 $('#logo').hover(function () {
-    $(this).addClass('fa-spin text-yellow-inverted');
+    // $(this).addClass('fa-spin text-yellow-inverted');
+    $(this).addClass('text-red-inverted');
 }, function () {
-    $(this).removeClass('fa-spin text-yellow-inverted');
+    // $(this).removeClass('fa-spin text-yellow-inverted');
+    $(this).removeClass('text-red-inverted');
 });
 
 // progress bar
