@@ -11,6 +11,7 @@ repository: BYR-Navi/BYR-Navi
 repository_url: https://github.com/BYR-Navi/BYR-Navi
 
 timezone: Asia/Shanghai
+lang: zh_CN
 
 name: 北邮人导航 · BYR-Navi
 alias: 北邮人导航
