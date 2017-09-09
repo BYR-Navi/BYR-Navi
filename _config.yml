@@ -13,17 +13,19 @@ repository_url: https://github.com/BYR-Navi/BYR-Navi
 timezone: Asia/Shanghai
 lang: zh_CN
 
-name: 北邮人导航 · BYR-Navi
+title: 北邮人导航 · BYR-Navi
 alias: 北邮人导航
+description: A Navigation Website for BYR
+keywords: 北邮人导航, BYR-Navi, BYR, BUPT, Navi, Navigation
+url: http://byr-navi.com
+
 author: iROCKBUNNY
 author_url: http://irockbunny.com
 organization: TEELAB
 organization_url: http://teelab.net
-description: A Navigation Website for BYR
-keywords: 北邮人导航, BYR-Navi, BYR, BUPT, Navi, Navigation
-url: http://byr-navi.com
 contact: contact[at]irockbunny[dot]com
 
+image: /images/logo.png
 logo: /images/logo.png
 logo_dark: /images/logo-dark.png
 logo_white: /images/logo-white.png

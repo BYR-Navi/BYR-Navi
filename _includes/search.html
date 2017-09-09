@@ -1,7 +1,7 @@
 <div class="ui text container">
     {% if site.data.message.show %}<div class="ui {{ site.data.message.color }} pointing below label">{{ site.data.message.content }}</div>{% endif %}
     <h1 class="ui inverted header"><i id="logo" class="fa {% if site.data.message.show and site.data.message.icon %}{{ site.data.message.icon }}{% else %}fa-star{% endif %} fa-fw" aria-hidden="true"></i></h1>
-    <h2>{{ site.name }}</h2>
+    <h2>{{ site.title }}</h2>
     <div class="ui inverted fluid left icon right action input" id="search-div">
         <i class="search icon"></i>
         <input id="search-query" type="text" placeholder="立即搜索" autofocus="autofocus">
