@@ -5,7 +5,6 @@
 }
 
 .masthead.segment {
-    min-height: 700px;
     padding: 1em 0em;
 }
 
@@ -17,8 +16,17 @@
     margin-left: 0.5em;
 }
 
+.masthead .ui.text.container {
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+}
+
+.masthead div.ui.pointing.label {
+    margin-bottom: 2em;
+}
+
 .masthead h1.ui.header {
-    margin-top: 3em;
+    margin-top: 0em;
     margin-bottom: 0em;
     font-size: 4em;
     font-weight: normal;
@@ -107,12 +115,13 @@
     .secondary.pointing.menu .toc.item {
         display: block;
     }
-    .masthead.segment {
-        min-height: 350px;
+    .masthead .ui.text.container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     .masthead h1.ui.header {
+        margin-top: 0em;
         font-size: 2em;
-        margin-top: 1.5em;
     }
     .masthead h2 {
         margin-top: 0.5em;

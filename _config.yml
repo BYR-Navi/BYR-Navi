@@ -5,7 +5,7 @@ analytics:
     site_id: 1
     api:
       url: https://vps.irockbunny.com/analytics/?callback=?
-      token: 1a43153d72133b11dbed92b763142bd0
+      token: 256ce881004efaef37cb5044d57e8475
 
 repository: BYR-Navi/BYR-Navi
 repository_url: https://github.com/BYR-Navi/BYR-Navi
@@ -23,6 +23,8 @@ description: A Navigation Website for BYR
 keywords: 北邮人导航, BYR-Navi, BYR, BUPT, Navi, Navigation
 url: http://byr-navi.com
 contact: contact[at]irockbunny[dot]com
+
+message: '祝各位老师教师节快乐'
 
 logo: /images/logo.png
 logo_dark: /images/logo-dark.png
