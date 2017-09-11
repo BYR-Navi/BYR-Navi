@@ -1,6 +1,6 @@
 <div class="ui text container">
-    {% if site.data.message.show %}<div class="ui {{ site.data.message.color }} pointing below label">{{ site.data.message.content }}</div>{% endif %}
-    <h1 class="ui inverted header"><i id="logo" class="fa {% if site.data.message.show and site.data.message.icon %}{{ site.data.message.icon }}{% else %}fa-star{% endif %} fa-fw" aria-hidden="true"></i></h1>
+    {% if site.data.message.show %}<a class="ui {{ site.data.message.color }} pointing below label">{% if site.data.message.icon %}<i class="{{ site.data.message.icon }} icon"></i>{% endif %}{{ site.data.message.content }}</a>{% endif %}
+    <h1 class="ui inverted header"><i id="logo" class="fa fa-star fa-fw" aria-hidden="true"></i></h1>
     <h2>{{ site.title }}</h2>
     <div class="ui inverted fluid left icon right action input" id="search-div">
         <i class="search icon"></i>
