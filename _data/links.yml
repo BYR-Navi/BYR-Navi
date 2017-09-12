@@ -362,10 +362,6 @@
       style: basic
       url: http://search.lovezxp.com/
 
-    - name: 查看每日十大
-      style: basic
-      url: http://bbss.zhengzi.me/
-
     - name: 查看论坛数据
       style: basic
       url: http://bbs.byr.cn/#!elite/path?v=/bbslists
