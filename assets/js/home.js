@@ -9,7 +9,7 @@ $('#logo').hover(function () {
 
 // progress bar
 $('#page-loading-progress').progress({
-    total: 1,
+    total: 2,
     onSuccess: function () {
         $('#page-loading-progress').fadeOut(1000, function () {
             $('#page-loading-progress').remove();
@@ -51,7 +51,20 @@ function updateVisit(updateProgressBar) {
         'format': 'JSON',
         'token_auth': analyticsAPI.token
     }, function (data) {
-        $('#visit img').attr('src', 'https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-' + encodeURIComponent(data.value) + '-brightgreen.svg');
+        $('#today-visitors img').attr('src', 'https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-' + encodeURIComponent(data.value) + '-brightgreen.svg');
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
+    });
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'Live.getCounters',
+        'idSite': analyticsAPI.id,
+        'lastMinutes': '30',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        $('#live-visitors img').attr('src', 'https://img.shields.io/badge/%E5%BD%93%E5%89%8D%E5%9C%A8%E7%BA%BF-' + encodeURIComponent(data[0].visitors) + '-brightgreen.svg');
         if (updateProgressBar) {
             $('#page-loading-progress').progress('increment');
         };
