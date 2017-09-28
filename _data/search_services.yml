@@ -25,7 +25,7 @@
   name: 维基百科
   url: https://www.wikipedia.org/wiki/
   shortcut: 维基
-  icon: wikipedia black
+  # icon: wikipedia black
   style: basic
 
 - id: ieeexplore
@@ -64,7 +64,7 @@
   name: 微博
   url: http://s.weibo.com/weibo/
   shortcut: 微博
-  icon: weibo red
+  # icon: weibo red
   style: basic
 
 - id: zhihu
@@ -101,13 +101,13 @@
 - id: fkdy
   name: 影视
   url: http://ifkdy.com/?q=
+  shortcut: 影视
+  style: basic
 
 - id: panci
   name: 胖次
   url: http://www.panc.cc/s/
   suffix: "/td_0"
-  shortcut: 胖次
-  style: basic
 
 - id: byr
   name: 北邮人论坛
