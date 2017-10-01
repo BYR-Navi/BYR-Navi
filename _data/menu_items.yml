@@ -1,0 +1,20 @@
+- name: 北邮人导航
+  icon:
+    name: star
+    color: yellow
+  url: /
+  active_key: home
+
+- name: 访客分析
+  icon:
+    name: line chart
+    color: orange
+  url: /analytics/
+  active_key: analytics
+
+- name: 爱心投喂
+  icon:
+    name: coffee icon
+    color: brown
+  url: /donate/
+  active_key: donate
