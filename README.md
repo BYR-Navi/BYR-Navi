@@ -34,6 +34,7 @@ A Navigation [Website](http://byr-navi.com/) for BYR
 - [进步英语](http://www.ejinbu.com/)
 - [奇货导航](http://fav.qidui.me/)
 - [苏菲导航](http://swufer.space/)
+- [扬帆远航](http://navi.dmego.me/)
 
 ## Share the Love
 I've put a lot of time and effort into making **BYR-Navi** awesome. If you love it, you can buy me a coffee. Every cup helps! I promise it will be a good investment.
