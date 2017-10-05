@@ -354,7 +354,7 @@
       style: basic
       url: http://bbs.cloud.icybee.cn/
 
-    - name: 检索用户回复
+    - name: 检索论坛内容
       style: basic
       url: http://search.icybee.cn/
 

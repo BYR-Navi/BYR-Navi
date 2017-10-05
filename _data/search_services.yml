@@ -113,10 +113,6 @@
   name: 北邮人论坛
   url: http://search.icybee.cn/bbs/?key=
 
-- id: byrauthor
-  name: 北邮人论坛用户
-  url: http://search.lovezxp.com/?type=author&text=
-
-- id: byrarticle
-  name: 北邮人论坛文章
-  url: http://search.lovezxp.com/?type=article&text=
+- id: byrbt
+  name: 北邮人BT
+  url: http://bt.byr.cn/torrents.php?search=
