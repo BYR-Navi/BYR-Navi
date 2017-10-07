@@ -10,7 +10,7 @@ function siteSinceDays() {
 
 // progress bar
 $('#page-loading-progress').progress({
-    total: 13,
+    total: 14,
     onSuccess: function () {
         $('#page-loading-progress').fadeOut(1000, function () {
             $('#page-loading-progress').remove();
@@ -35,6 +35,7 @@ var totalActionsCountUp = new CountUp('total-actions', 0, 0, 0, 2.5, countUpOpti
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
+var liveVisitorsCountUp = new CountUp('live-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 siteSinceDaysCountUp.update(siteSinceDays());
 $.getJSON(analyticsAPI.url, {
     'module': 'API',
@@ -125,6 +126,19 @@ function updateVisit(updateProgressBar) {
         'token_auth': analyticsAPI.token
     }, function (data) {
         todayActionsCountUp.update(data.value);
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
+    });
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'Live.getCounters',
+        'idSite': analyticsAPI.id,
+        'lastMinutes': '30',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        liveVisitorsCountUp.update(data.value);
         if (updateProgressBar) {
             $('#page-loading-progress').progress('increment');
         };
