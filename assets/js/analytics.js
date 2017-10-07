@@ -138,7 +138,7 @@ function updateVisit(updateProgressBar) {
         'format': 'JSON',
         'token_auth': analyticsAPI.token
     }, function (data) {
-        liveVisitorsCountUp.update(data.value);
+        liveVisitorsCountUp.update(data[0].visitors);
         if (updateProgressBar) {
             $('#page-loading-progress').progress('increment');
         };
