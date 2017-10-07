@@ -90,6 +90,19 @@ function updateVisit(updateProgressBar) {
     });
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
+        'method': 'Live.getCounters',
+        'idSite': analyticsAPI.id,
+        'lastMinutes': '30',
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        liveVisitorsCountUp.update(data[0].visitors);
+        if (updateProgressBar) {
+            $('#page-loading-progress').progress('increment');
+        };
+    });
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': analyticsAPI.id,
         'period': 'day',
@@ -126,19 +139,6 @@ function updateVisit(updateProgressBar) {
         'token_auth': analyticsAPI.token
     }, function (data) {
         todayActionsCountUp.update(data.value);
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
-    });
-    $.getJSON(analyticsAPI.url, {
-        'module': 'API',
-        'method': 'Live.getCounters',
-        'idSite': analyticsAPI.id,
-        'lastMinutes': '30',
-        'format': 'JSON',
-        'token_auth': analyticsAPI.token
-    }, function (data) {
-        liveVisitorsCountUp.update(data[0].visitors);
         if (updateProgressBar) {
             $('#page-loading-progress').progress('increment');
         };
