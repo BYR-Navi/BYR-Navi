@@ -277,7 +277,7 @@
       url: http://www.dnvod.tv/
 
     - name: FIX字幕侠
-      style: basic
+      style: yellow
       url: http://www.fixsub.com/
 
 - section: byr
