@@ -1,7 +1,7 @@
 <div class="ui inverted vertical masthead center aligned segment zoomed">
     <div class="ui container">
         <div class="ui large secondary inverted pointing menu" style="border: none;">
-            <a class="toc item"><i class="sidebar icon"></i></a>
+            <div class="toc link item"><i class="sidebar icon"></i></div>
             {% include menu_items.html %}
             <div class="right menu">
                 <a class="item" href="{{ site.repository_url }}" target="_blank"><i class="github icon"></i>GitHub</a>
@@ -12,16 +12,11 @@
         {% include search.html %}
     {% else %}
         <div class="ui text container">
+            <h1 class="ui inverted header">{% if page.icon %}<i class="{{ page.icon }} icon"></i>{% endif %}{{ page.title }}</h1>
             {% if page.active_key == 'analytics' %}
-                <h1 class="ui inverted header"><i class="line chart icon"></i>访客分析</h1>
                 <h2>上线 <span id="site-established-days">0</span> 天 &middot; 页面浏览 <span id="total-actions">0</span> 次</h2>
             {% elsif page.active_key == 'donate' %}
-                <h1 class="ui inverted header"><i class="coffee icon"></i>爱心投喂</h1>
                 <h2>请为辛苦滴开发者众筹一杯咖啡</h2>
-            {% elsif page.active_key == 'search' %}
-                <h1 class="ui inverted header"><i class="search icon"></i>正在检索</h1>
-            {% elsif page.active_key == 'error' %}
-                <h1 class="ui inverted header"><i class="frown icon"></i>Page Not Found</h1>
             {% endif %}
         </div>
     {% endif %}
