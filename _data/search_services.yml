@@ -3,15 +3,15 @@
   url: http://baidu.com/s?wd=
   suffix: "&ie=utf-8"
   shortcut: 百度
-  icon: paw blue
-  style: basic
+  icon: paw blue inverted
+  style: black
 
 - id: google
   name: 谷歌
   url: http://google.com/search?q=
   shortcut: 谷歌
-  icon: google red
-  style: basic
+  icon: google red inverted
+  style: black
 
 - id: baidumap
   name: 百度地图
@@ -19,14 +19,13 @@
   suffix: "&output=html"
   shortcut: 地图
   icon: map green
-  style: basic
+  style: black
 
 - id: wikipedia
   name: 维基百科
   url: https://www.wikipedia.org/wiki/
   shortcut: 维基
-  # icon: wikipedia black
-  style: basic
+  style: black
 
 - id: ieeexplore
   name: IEEE Xplore
@@ -64,45 +63,44 @@
   name: 微博
   url: http://s.weibo.com/weibo/
   shortcut: 微博
-  # icon: weibo red
-  style: basic
+  style: black
 
 - id: zhihu
   name: 知乎
   url: http://www.zhihu.com/search?q=
   shortcut: 知乎
-  style: basic
+  style: black
 
 - id: douban
   name: 豆瓣
   url: http://www.douban.com/search?q=
   shortcut: 豆瓣
-  style: basic
+  style: black
 
 - id: jd
   name: 京东
   url: http://search.jd.com/Search?keyword=
   suffix: "&enc=utf-8"
   shortcut: 京东
-  style: basic
+  style: black
 
 - id: taobao
   name: 淘宝
   url: https://s.taobao.com/search?q=
   shortcut: 淘宝
-  style: basic
+  style: black
 
 - id: xiami
   name: 虾米
   url: http://www.xiami.com/search?key=
   shortcut: 虾米
-  style: basic
+  style: black
 
 - id: fkdy
   name: 影视
   url: http://ifkdy.com/?q=
   shortcut: 影视
-  style: basic
+  style: black
 
 - id: panci
   name: 胖次
