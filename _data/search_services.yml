@@ -18,7 +18,7 @@
   url: http://api.map.baidu.com/geocoder?address=
   suffix: "&output=html"
   shortcut: 地图
-  icon: map green
+  icon: map green inverted
   style: black
 
 - id: wikipedia
