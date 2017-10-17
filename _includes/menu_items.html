@@ -1,1 +1,1 @@
-{% for item in site.data.menu_items %}<a class="{% if item.active_key == page.active_key %}active {% endif %}item loading-trigger" href="{{ item.url | relative_url }}"><i class="{% if item.active_key == page.active_key %}{{ item.icon.color }} {% endif %}{{ item.icon.name }} icon"></i>{{ item.name }}</a>{% endfor %}
+{% for item in site.data.menu_items %}<a class="item loading-trigger" href="{{ item.url | relative_url }}"><i class="{% if item.active_key == page.active_key %}{{ item.icon.color }} {% endif %}{{ item.icon.name }} icon"></i>{{ item.name }}</a>{% endfor %}

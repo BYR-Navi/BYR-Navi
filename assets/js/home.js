@@ -1,12 +1,5 @@
 // home.js
 
-// logo spin
-$('#logo').hover(function () {
-    $(this).addClass('fa-spin text-yellow-inverted');
-}, function () {
-    $(this).removeClass('fa-spin text-yellow-inverted');
-});
-
 // progress bar
 $('#page-loading-progress').progress({
     total: 2,

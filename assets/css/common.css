@@ -1,5 +1,123 @@
 /* common.css */
 
+.ui.hidden.menu {
+    display: none;
+}
+
+.logo-image {
+    width: 30px;
+}
+.logo-text {
+    margin-left: 10px;
+    font-size: 1.6em;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ui.masthead.segment {
+    padding: 1em 0em;
+}
+
+.ui.masthead h1.ui.header {
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.ui.masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.ui.vertical.stripe {
+    padding: 8em 0em;
+}
+
+.ui.vertical.stripe h3 {
+    font-size: 2em;
+}
+
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+    margin-top: 3em;
+}
+
+.ui.vertical.stripe .floated.image {
+    clear: both;
+}
+
+.ui.vertical.stripe p {
+    font-size: 1.33em;
+}
+
+.ui.vertical.stripe .horizontal.divider {
+    margin: 3em 0em;
+}
+
+.ui.links.stripe.segment,
+.ui.stats.stripe.segment,
+.ui.quote.stripe.segment {
+    padding: 0em;
+}
+
+.ui.stats.stripe.segment .grid .column,
+.ui.quote.stripe.segment .grid .column {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.ui.stackable.celled.grid .row .links.column .ui.top.attached.label {
+    border-radius: 0;
+}
+
+.ui.footer.segment {
+    padding: 5em 0em;
+}
+
+.ui.borderless.inverted.menu .toc.item {
+    display: none;
+}
+.ui.borderless.inverted.menu .toc.item:active,
+.ui.borderless.inverted.menu .toc.item:hover,
+.ui.borderless.inverted.menu .toc.item:focus {
+    background: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .ui.borderless.inverted.menu .item,
+    .ui.borderless.inverted.menu .menu {
+        display: none;
+    }
+    .ui.borderless.inverted.menu .toc.item {
+        display: block;
+    }
+    .ui.masthead h1.ui.header {
+        margin-top: 1em;
+        font-size: 1.8em;
+    }
+    .ui.masthead h2 {
+        margin-bottom: 1em;
+        font-size: 1.5em;
+    }
+    .ui.stripe.segment {
+        padding: 2em 0em;
+    }
+    .ui.stats.stripe.segment {
+        padding: 0em;
+    }
+}
+
 /* text colors */
 .text-red {
     color: #DB2828;

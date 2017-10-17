@@ -1,6 +1,6 @@
-- name: 北邮人导航
+- name: 首页
   icon:
-    name: star
+    name: home
     color: yellow
   url: /
   active_key: home
