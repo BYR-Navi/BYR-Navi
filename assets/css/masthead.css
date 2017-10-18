@@ -118,7 +118,7 @@
 .pusher .ui.inverted.menu {
     background: none;
 }
-.ui.masthead h1.ui.header {
+.ui.masthead h1.ui.header:not(.logo) {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
