@@ -22,6 +22,11 @@
     margin-bottom: 0em;
 }
 
+.ui.masthead h1.ui.logo.header .ui.centered.image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .ui.masthead .shortcuts {
     margin-top: 0.5rem;
 }
