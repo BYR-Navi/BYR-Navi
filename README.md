@@ -14,7 +14,7 @@
 # BYR-Navi
 A Navigation [Website](http://byr-navi.com/) for BYR
 
-###### Powered by
+### Powered by
 - [Semantic UI](http://semantic-ui.com/)
 - [jQuery](http://jquery.com/)
 - [Font Awesome](http://fontawesome.io/)
@@ -29,7 +29,7 @@ A Navigation [Website](http://byr-navi.com/) for BYR
 - [Jekyll](http://jekyllrb.com/)
 - [GitHub Pages](https://pages.github.com/)
 
-###### Forked by
+### Forked by
 - [法林导航](http://falin.xyz/)
 - [进步英语](http://www.ejinbu.com/)
 - [奇货导航](http://fav.qidui.me/)
