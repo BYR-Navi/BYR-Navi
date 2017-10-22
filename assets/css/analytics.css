@@ -12,6 +12,10 @@
     margin-bottom: 1.5em;
 }
 
+.ui.vertical.stripe .ui.statistic .label {
+    font-size: 1.2em;
+}
+
 .echart-container {
     height: 400px;
 }

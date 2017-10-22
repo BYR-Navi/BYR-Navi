@@ -60,7 +60,10 @@
     padding: 0em;
 }
 
-.ui.stats.stripe.segment .grid .column,
+.ui.stats.stripe.segment .grid .column {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
 .ui.quote.stripe.segment .grid .column {
     padding-top: 5em;
     padding-bottom: 5em;
