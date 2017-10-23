@@ -1,5 +1,7 @@
 show: true
-content: 中国共产党第十九次全国代表大会开幕会
+content: 中国共产党第十九次全国代表大会
+detail: 动态
 color: black
-icon: record
-link: http://www.xinhuanet.com/video/2017-10/18/c_129722360.htm
+icon: false
+image: /images/messages/cpc.jpg
+link: http://19th.cpcnews.cn/
