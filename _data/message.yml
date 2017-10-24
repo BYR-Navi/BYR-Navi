@@ -1,7 +1,7 @@
 show: true
-content: 中国共产党第十九次全国代表大会
-detail: 10.18-10.24
+content: 1024程序员节
+detail: 10.24
 color: black
-icon: false
-image: /images/messages/cpc.jpg
-link: http://19th.cpcnews.cn/
+icon: code
+image: false
+link: https://zh.wikipedia.org/wiki/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%8A%82
