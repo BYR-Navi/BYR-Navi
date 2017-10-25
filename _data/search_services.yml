@@ -21,6 +21,12 @@
   icon: map green inverted
   style: black
 
+- id: bing
+  name: 必应
+  url: http://cn.bing.com/search?q=
+  shortcut: 必应
+  style: black
+
 - id: wikipedia
   name: 维基百科
   url: https://www.wikipedia.org/wiki/
