@@ -19,8 +19,8 @@ contact: contact[at]irockbunny[dot]com
 
 image: /images/logo.png
 logo: /images/logo.png
-logo_dark: /images/logo-dark.png
-logo_white: /images/logo-white.png
+logo_dark: /images/logo-dark.svg
+logo_white: /images/logo-white.svg
 
 plugins:
 - jekyll-seo-tag
