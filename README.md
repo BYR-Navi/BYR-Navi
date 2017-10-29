@@ -1,42 +1,81 @@
-[![Build Status](https://travis-ci.org/BYR-Navi/BYR-Navi.svg)](https://travis-ci.org/BYR-Navi/BYR-Navi)
-[![Website](https://img.shields.io/website-up-down-green-red/http/byr-navi.com.svg)](http://byr-navi.com/)
-[![License](https://img.shields.io/github/license/BYR-Navi/BYR-Navi.svg)](/LICENSE)
-[![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)](https://saythanks.io/to/iROCKBUNNY)
-[![Donate](https://img.shields.io/badge/Donate-Coffee-A5673F.svg)](http://byr-navi.com/donate/)
+[![Build Status](https://travis-ci.org/BYR-Navi/BYR-Navi.svg)][travis-ci]
+[![Website](https://img.shields.io/website-up-down-green-red/http/byr-navi.com.svg)][website]
+[![License](https://img.shields.io/github/license/BYR-Navi/BYR-Navi.svg)][license]
+[![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)][saythanks]
+[![Donate](https://img.shields.io/badge/Donate-Coffee-A5673F.svg)][donate]
 
-[![Watchers](https://img.shields.io/github/watchers/BYR-Navi/BYR-Navi.svg?style=social&label=Watch)](https://github.com/BYR-Navi/BYR-Navi/watchers)
-[![Stargazers](https://img.shields.io/github/stars/BYR-Navi/BYR-Navi.svg?style=social&label=Star)](https://github.com/BYR-Navi/BYR-Navi/stargazers)
-[![Forks](https://img.shields.io/github/forks/BYR-Navi/BYR-Navi.svg?style=social&label=Fork)](https://github.com/BYR-Navi/BYR-Navi/network)
+[![Watchers](https://img.shields.io/github/watchers/BYR-Navi/BYR-Navi.svg?style=social&label=Watch)][watch]
+[![Stargazers](https://img.shields.io/github/stars/BYR-Navi/BYR-Navi.svg?style=social&label=Star)][star]
+[![Forks](https://img.shields.io/github/forks/BYR-Navi/BYR-Navi.svg?style=social&label=Fork)][fork]
 
-[![Closed Issues](https://img.shields.io/github/issues-closed/BYR-Navi/BYR-Navi.svg)](https://github.com/BYR-Navi/BYR-Navi/issues)
-[![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed/BYR-Navi/BYR-Navi.svg)](https://github.com/BYR-Navi/BYR-Navi/pulls)
+[![Closed Issues](https://img.shields.io/github/issues-closed/BYR-Navi/BYR-Navi.svg)][issue]
+[![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed/BYR-Navi/BYR-Navi.svg)][pull]
 
 # BYR-Navi
-A Navigation [Website](http://byr-navi.com/) for BYR
+A Navigation [Website][website] for BYR
 
-#### Powered by
-- [Semantic UI](http://semantic-ui.com/)
-- [jQuery](http://jquery.com/)
-- [Font Awesome](http://fontawesome.io/)
-- [Shields.io](http://shields.io/)
-- [Moment.js](http://momentjs.com/)
-- [CountUp.js](http://inorganik.github.io/countUp.js/)
-- [JavaScript Cookie](https://github.com/js-cookie/js-cookie)
-- [url.js](https://github.com/websanova/js-url)
-- [ECharts](http://echarts.baidu.com/)
-- [Piwik](https://piwik.org/)
-- [GeoIP](http://www.maxmind.com)
-- [Jekyll](http://jekyllrb.com/)
-- [GitHub Pages](https://pages.github.com/)
+## Design Philosophy
+This project is built based on [Jekyll][jekyll] and [Semantic UI][semantic] web framework.
 
-#### Forked by
-- [法林导航](http://falin.xyz/)
-- [进步英语](http://www.ejinbu.com/)
-- [奇货导航](http://fav.qidui.me/)
-- [苏菲导航](http://swufer.space/)
-- [扬帆远航](http://navi.dmego.me/)
+The whole project is designed with high configuration and customization flexibility.
+
+You can either configure it by modifying the `_config.yml` file or customize it by replacing the content of the `*.yml` files in the `_data` folder with your own data.
+
+## A Tiny Tutorial
+There is no easy way for beginners without essential background knowledge. To be efficient, the best way to understand this project is to start with the Jekyll's [docs][jekyll-doc] and Semantic UI's [docs][semantic-doc].
+
+Before you start, you should have some basic understanding of the following:
+
+- HTML
+- CSS
+- JavaScript
+- jQuery
+- YAML format
+- UNIX/Linux Shell Script
 
 ## Share the Love
 I've put a lot of time and effort into making **BYR-Navi** awesome. If you love it, you can buy me a coffee. Every cup helps! I promise it will be a good investment.
 
-Donate [here](http://byr-navi.com/donate/).
+Donate [here][donate].
+
+#### Powered by
+- [Semantic UI][semantic]
+- [jQuery][jquery]
+- [Font Awesome][fa]
+- [Shields.io][shields]
+- [Moment.js][moment]:
+- [CountUp.js][countup]
+- [JavaScript Cookie][js-cookie]
+- [url.js][js-url]
+- [ECharts][echarts]
+- [Piwik][piwik]
+- [GeoIP][geoip]
+- [Jekyll][jekyll]
+- [GitHub Pages][github-page]
+
+[travis-ci]: https://travis-ci.org/BYR-Navi/BYR-Navi "Travis CI"
+[website]: http://byr-navi.com/ "Website"
+[license]: https://github.com/BYR-Navi/BYR-Navi/LICENSE "License"
+[saythanks]: https://saythanks.io/to/iROCKBUNNY "Say Thanks"
+[donate]: http://byr-navi.com/donate/ "Donate"
+[watch]: https://github.com/BYR-Navi/BYR-Navi/watchers "Watchers"
+[star]: https://github.com/BYR-Navi/BYR-Navi/stargazers "Stargazers"
+[fork]: https://github.com/BYR-Navi/BYR-Navi/network "Forks"
+[issue]: https://github.com/BYR-Navi/BYR-Navi/issues "Issues"
+[pull]: https://github.com/BYR-Navi/BYR-Navi/pulls "Pull Requests"
+
+[semantic]: http://semantic-ui.com/ "Semantic UI"
+[semantic-doc]: https://semantic-ui.com/introduction/getting-started.html "Semantic UI Docs"
+[jquery]: http://jquery.com/ "jQuery"
+[fa]: http://fontawesome.io/ "Font Awesome"
+[shields]: http://shields.io/ "Shields.io"
+[moment]: http://momentjs.com/ "Moment.js"
+[countup]: http://inorganik.github.io/countUp.js/ "CountUp.js"
+[js-cookie]: https://github.com/js-cookie/js-cookie "JavaScript Cookie"
+[js-url]: https://github.com/websanova/js-url "url.js"
+[echarts]: http://echarts.baidu.com/ "ECharts"
+[piwik]: https://piwik.org/ "Piwik"
+[geoip]: http://www.maxmind.com/ "GeoIP"
+[jekyll]: http://jekyllrb.com/ "Jekyll"
+[jekyll-doc]: https://jekyllrb.com/docs/home/ "Jekyll Docs"
+[github-page]: https://pages.github.com/ "GitHub Pages"
