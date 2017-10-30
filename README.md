@@ -43,7 +43,7 @@ Donate [here][donate].
 - [jQuery][jquery]
 - [Font Awesome][fa]
 - [Shields.io][shields]
-- [Moment.js][moment]:
+- [Moment.js][moment]
 - [CountUp.js][countup]
 - [JavaScript Cookie][js-cookie]
 - [url.js][js-url]
