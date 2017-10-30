@@ -18,11 +18,11 @@ A Navigation [Website][website] for BYR
 This project is a [Jekyll][jekyll]-powered website, which is built based on [Semantic UI][semantic] web framework, and deployed using [GitHub Pages][github-pages].
 
 The whole project is designed and built with high configuration and customization flexibility.
-
 You can either configure it by modifying the `_config.yml` file or customize it by replacing the content of the `*.yml` files in the `_data` folder with your own data.
 
 ## A Tiny Tutorial
-There is no easy way for beginners without essential background knowledge. To be efficient, the best way to understand this project is to start with the Jekyll's [docs][jekyll-doc] and Semantic UI's [docs][semantic-doc].
+There is **no easy way for beginners** without essential background knowledge.
+To be efficient, the best way to understand this project is to start with the Jekyll's [docs][jekyll-doc] and Semantic UI's [docs][semantic-doc].
 
 Before you start, you should have some basic understanding of the following:
 
@@ -34,7 +34,10 @@ Before you start, you should have some basic understanding of the following:
 - UNIX/Linux Shell Script
 
 ## Share the Love
-I've put a lot of time and effort into making **BYR-Navi** awesome. If you love it, you can buy me a coffee. Every cup helps! I promise it will be a good investment.
+I've put a lot of time and effort into making **BYR-Navi** awesome.
+If you love it, you can buy me a coffee.
+Every cup helps!
+I promise it will be a good investment.
 
 Donate [here][donate].
 
