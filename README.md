@@ -15,9 +15,9 @@
 A Navigation [Website][website] for BYR
 
 ## Design Philosophy
-This project is built based on [Jekyll][jekyll] and [Semantic UI][semantic] web framework.
+This project is a [Jekyll][jekyll]-powered website, which is built based on [Semantic UI][semantic] web framework, and deployed using [GitHub Pages][github-pages].
 
-The whole project is designed with high configuration and customization flexibility.
+The whole project is designed and built with high configuration and customization flexibility.
 
 You can either configure it by modifying the `_config.yml` file or customize it by replacing the content of the `*.yml` files in the `_data` folder with your own data.
 
@@ -51,7 +51,7 @@ Donate [here][donate].
 - [Piwik][piwik]
 - [GeoIP][geoip]
 - [Jekyll][jekyll]
-- [GitHub Pages][github-page]
+- [GitHub Pages][github-pages]
 
 [travis-ci]: https://travis-ci.org/BYR-Navi/BYR-Navi "Travis CI"
 [website]: http://byr-navi.com/ "Website"
@@ -78,4 +78,4 @@ Donate [here][donate].
 [geoip]: http://www.maxmind.com/ "GeoIP"
 [jekyll]: http://jekyllrb.com/ "Jekyll"
 [jekyll-doc]: https://jekyllrb.com/docs/home/ "Jekyll Docs"
-[github-page]: https://pages.github.com/ "GitHub Pages"
+[github-pages]: https://pages.github.com/ "GitHub Pages"
