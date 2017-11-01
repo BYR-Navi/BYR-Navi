@@ -77,13 +77,13 @@
     padding: 5em 0em;
 }
 
+.ui.borderless.inverted.menu {
+    border-radius: 0;
+}
+
 .ui.borderless.inverted.menu .toc.item {
     display: none;
-}
-.ui.borderless.inverted.menu .toc.item:active,
-.ui.borderless.inverted.menu .toc.item:hover,
-.ui.borderless.inverted.menu .toc.item:focus {
-    background: none;
+    border-radius: 0;
 }
 
 @media only screen and (max-width: 767px) {
