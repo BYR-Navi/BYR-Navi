@@ -280,6 +280,10 @@
       style: yellow
       url: http://www.fixsub.com/
 
+    - name: FIX字幕侠2
+      style: basic
+      url: http://www.610213.net/
+
 - section: byr
   categories:
   - category: 北邮校园
