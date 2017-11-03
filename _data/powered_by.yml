@@ -22,6 +22,9 @@
 - name: url.js
   url: https://github.com/websanova/js-url
 
+- name: Hitokoto
+  url: http://hitokoto.cn/api
+
 - name: ECharts
   url: http://echarts.baidu.com/
 

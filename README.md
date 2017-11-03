@@ -50,6 +50,7 @@ Donate [here][donate].
 - [CountUp.js][countup]
 - [JavaScript Cookie][js-cookie]
 - [url.js][js-url]
+- [Hitokoto][hitokoto]
 - [ECharts][echarts]
 - [Piwik][piwik]
 - [GeoIP][geoip]
@@ -76,6 +77,7 @@ Donate [here][donate].
 [countup]: http://inorganik.github.io/countUp.js/ "CountUp.js"
 [js-cookie]: https://github.com/js-cookie/js-cookie "JavaScript Cookie"
 [js-url]: https://github.com/websanova/js-url "url.js"
+[hitokoto]: http://hitokoto.cn/api "Hitokoto"
 [echarts]: http://echarts.baidu.com/ "ECharts"
 [piwik]: https://piwik.org/ "Piwik"
 [geoip]: http://www.maxmind.com/ "GeoIP"

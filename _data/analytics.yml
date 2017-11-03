@@ -5,4 +5,4 @@ piwik:
   site_id: 1
   api:
     url: https://vps.irockbunny.com/analytics/?callback=?
-    token: df458189417697e3b6990a8a05e74ad5
+    token: b2e014ea21f5935fc3b2ff4939b623c5
