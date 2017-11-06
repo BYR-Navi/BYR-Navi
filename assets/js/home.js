@@ -20,7 +20,7 @@ var repository = $('meta[name=repository]').attr('content');
 updateGitHub(repository);
 setInterval(function () {
     updateGitHub(repository);
-}, 15000);
+}, 60000);
 
 // version
 moment.locale('zh-cn');
@@ -31,7 +31,7 @@ var updateAt = $('meta[name=updated_at]').attr('content');
 updateVersion(updateAt);
 setInterval(function () {
     updateVersion(updateAt);
-}, 15000);
+}, 60000);
 
 // visit
 function updateVisit(updateProgressBar) {
@@ -66,7 +66,7 @@ function updateVisit(updateProgressBar) {
 updateVisit(true);
 setInterval(function () {
     updateVisit(false);
-}, 15000);
+}, 60000);
 
 // search
 $('#search-services').dropdown();

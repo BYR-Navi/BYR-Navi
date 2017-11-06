@@ -147,7 +147,7 @@ function updateVisit(updateProgressBar) {
 updateVisit(true);
 setInterval(function () {
     updateVisit(false);
-}, 15000);
+}, 60000);
 
 // chart
 var visitSummaryChart = echarts.init(document.getElementById('visit-summary'), 'macarons');
@@ -327,7 +327,7 @@ updateVisitSummaryChart(true);
 visitSummaryChart.hideLoading();
 setInterval(function () {
     updateVisitSummaryChart(false);
-}, 15000);
+}, 60000);
 
 var visitHourlyChart = echarts.init(document.getElementById('visit-hourly'), 'macarons');
 visitHourlyChart.setOption({
@@ -534,7 +534,7 @@ updateVisitHourlyChart(true);
 visitHourlyChart.hideLoading();
 setInterval(function () {
     updateVisitHourlyChart(false);
-}, 15000);
+}, 60000);
 
 var visitMapChart = echarts.init(document.getElementById('visit-map'), 'macarons');
 visitMapChart.setOption({
@@ -716,7 +716,7 @@ function updateVisitMapChart(updateProgressBar) {
 updateVisitMapChart(true);
 setInterval(function () {
     updateVisitMapChart(false);
-}, 15000);
+}, 60000);
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'macarons');
 var firstYear = firstDay.getFullYear();
@@ -841,4 +841,4 @@ function updateVisitCalendarChart(updateProgressBar) {
 updateVisitCalendarChart(true);
 setInterval(function () {
     updateVisitCalendarChart(false);
-}, 15000);
+}, 60000);

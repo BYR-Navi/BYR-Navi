@@ -73,4 +73,4 @@ function updateAnalytics() {
 updateAnalytics();
 setInterval(function () {
     updateAnalytics();
-}, 15000);
+}, 60000);
