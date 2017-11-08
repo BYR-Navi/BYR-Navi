@@ -1,8 +1,8 @@
 show: true
-hitokoto: true
-content: Happy Halloween!
+hitokoto: false
+content: 北邮人第11代冬装坛服发售
 detail: false
 color: black
-icon: false
-image: /images/messages/pumpkin_halloween.jpg
-link: https://en.wikipedia.org/wiki/Halloween
+icon: shop
+image: false
+link: https://bbs.byr.cn/#!article/Tshirt/88163
