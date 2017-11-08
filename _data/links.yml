@@ -48,6 +48,10 @@
       style: basic
       url: http://www.ikea.com/
 
+    - name: 造作
+      style: black
+      url: https://zaozuo.com/
+
     - name: 锤子科技
       style: basic
       url: http://www.smartisan.com/
