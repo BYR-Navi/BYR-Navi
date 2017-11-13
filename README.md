@@ -17,7 +17,7 @@ A Navigation [Website][website] for BYR
 ## Design Philosophy
 This project is a [Jekyll][jekyll]-powered website, which is built based on [Semantic UI][semantic] web framework, and deployed using [GitHub Pages][github-pages].
 
-The whole project is designed and built with high configuration and customization flexibility.
+The whole project is designed and built with high flexibility of configuration and customization.
 You can either configure it by modifying the `_config.yml` file or customize it by replacing the content of the `*.yml` files in the `_data` folder with your own data.
 
 ## A Tiny Tutorial
