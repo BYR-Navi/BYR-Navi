@@ -18,6 +18,16 @@ $('#page-loading-progress').progress({
     }
 });
 
+// clock
+var establishedAt = moment.tz("2016-10-01 00:00", "Asia/Shanghai");
+$('#established-at').countdown(establishedAt.toDate(), {
+    elapse: true
+}).on('update.countdown', function (event) {
+    if (event.elapsed) {
+        $(this).html(event.strftime('<div class="ui label"><i class="rocket icon"></i>已上线</div><div class="ui label">%D<div class="detail">天</div></div><div class="ui label">%-H<div class="detail">小时</div></div><div class="ui label">%-M<div class="detail">分</div></div><div class="ui label">%-S<div class="detail">秒</div></div>'));
+    };
+});
+
 // visit
 var countUpOptions = {
     useEasing: true,
@@ -27,7 +37,6 @@ var countUpOptions = {
     prefix: '',
     suffix: ''
 };
-var siteEstablishedDaysCountUp = new CountUp('site-established-days', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayVisitorsCountUp = new CountUp('yesterday-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayVisitsCountUp = new CountUp('yesterday-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayActionsCountUp = new CountUp('yesterday-actions-stat', 0, 0, 0, 2.5, countUpOptions);
@@ -36,7 +45,6 @@ var liveVisitorsCountUp = new CountUp('live-visitors-stat', 0, 0, 0, 2.5, countU
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
-siteEstablishedDaysCountUp.update(siteEstablishedDays());
 $.getJSON(analyticsAPI.url, {
     'module': 'API',
     'method': 'VisitsSummary.getUniqueVisitors',

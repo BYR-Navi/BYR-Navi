@@ -24,30 +24,13 @@
     font-weight: normal;
 }
 
-.ui.masthead h2 {
+.ui.masthead h2.ui.header {
     font-size: 1.7em;
     font-weight: normal;
 }
 
 .ui.vertical.stripe {
     padding: 8em 0em;
-}
-
-.ui.vertical.stripe h3 {
-    font-size: 2em;
-}
-
-.ui.vertical.stripe .button + h3,
-.ui.vertical.stripe p + h3 {
-    margin-top: 3em;
-}
-
-.ui.vertical.stripe .floated.image {
-    clear: both;
-}
-
-.ui.vertical.stripe p {
-    font-size: 1.33em;
 }
 
 .ui.vertical.stripe .horizontal.divider {
@@ -101,7 +84,7 @@
         margin-top: 1em;
         font-size: 1.8em;
     }
-    .ui.masthead h2 {
+    .ui.masthead h2.ui.header {
         margin-bottom: 1em;
         font-size: 1.5em;
     }

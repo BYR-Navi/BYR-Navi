@@ -32,12 +32,14 @@
     {% include dimmer.html %}
     <script type="text/javascript" src="//unpkg.com/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="//unpkg.com/semantic-ui/dist/semantic.min.js"></script>
-    {% if page.active_key == 'home' %}<script type="text/javascript" src="//unpkg.com/moment/min/moment-with-locales.min.js"></script>{% endif %}
+    {% if page.active_key == 'home' or page.active_key == 'analytics' %}<script type="text/javascript" src="//unpkg.com/moment/min/moment-with-locales.min.js"></script>{% endif %}
     {% if page.active_key == 'home' %}<script type="text/javascript" src="//unpkg.com/js-cookie"></script>{% endif %}
     {% if page.active_key == 'home' %}<script type="text/javascript" src="{{ '/assets/js/suggest-query.js' | relative_url }}"></script>{% endif %}
     {% if page.active_key == 'home' and site.data.message.hitokoto %}<script type="text/javascript" src="{{ '/assets/js/hitokoto.js' | relative_url }}"></script>{% endif %}
     <script type="text/javascript" src="{{ '/assets/js/common.js' | relative_url }}"></script>
     {% if page.active_key == 'home' %}<script type="text/javascript" src="{{ '/assets/js/home.js' | relative_url }}"></script>{% endif %}
+    {% if page.active_key == 'analytics' %}<script type="text/javascript" src="//unpkg.com/moment-timezone/builds/moment-timezone-with-data.min.js"></script>{% endif %}
+    {% if page.active_key == 'analytics' %}<script type="text/javascript" src="//unpkg.com/jquery-countdown/dist/jquery.countdown.min.js"></script>{% endif %}
     {% if page.active_key == 'analytics' %}<script type="text/javascript" src="//unpkg.com/countup/dist/countUp.min.js"></script>{% endif %}
     {% if page.active_key == 'analytics' %}<script type="text/javascript" src="//unpkg.com/echarts/dist/echarts.min.js"></script>{% endif %}
     {% if page.active_key == 'analytics' %}<script type="text/javascript" src="//unpkg.com/echarts/theme/macarons.js"></script>{% endif %}
