@@ -4,29 +4,11 @@
 - name: jQuery
   url: http://jquery.com/
 
-- name: Font Awesome
-  url: http://fontawesome.io/
-
 - name: Shields.io
   url: http://shields.io/
 
-- name: Moment.js
-  url: http://momentjs.com/
-
-- name: CountUp.js
-  url: http://inorganik.github.io/countUp.js/
-
-- name: JavaScript Cookie
-  url: https://github.com/js-cookie/js-cookie
-
-- name: url.js
-  url: https://github.com/websanova/js-url
-
 - name: Hitokoto
   url: http://hitokoto.cn/api
-
-- name: ECharts
-  url: http://echarts.baidu.com/
 
 - name: Jekyll
   url: http://jekyllrb.com/
