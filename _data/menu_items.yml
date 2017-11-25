@@ -8,7 +8,7 @@
   url: /analytics/
   active_key: analytics
 
-- name: 爱心投喂
-  icon: coffee
+- name: 扫码捐赠
+  icon: qrcode
   url: /donate/
   active_key: donate

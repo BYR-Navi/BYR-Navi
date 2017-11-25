@@ -20,6 +20,11 @@
     font-size: 1.33em;
 }
 
+.ui.centered.card .qrcode.image {
+    padding: 1em;
+    background: none;
+}
+
 @media only screen and (max-width: 767px) {
     .ui.masthead.segment {
         min-height: 160px;
