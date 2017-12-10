@@ -1,6 +1,3 @@
-- name: Font Awesome
-  url: http://fontawesome.io/
-
 - name: Moment.js
   url: http://momentjs.com/
 

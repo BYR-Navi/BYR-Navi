@@ -44,7 +44,6 @@ Donate [here][donate].
 #### Powered by
 - [Semantic UI][semantic]
 - [jQuery][jquery]
-- [Font Awesome][fa]
 - [Shields.io][shields]
 - [Moment.js][moment]
 - [CountUp.js][countup]
@@ -71,7 +70,6 @@ Donate [here][donate].
 [semantic]: http://semantic-ui.com/ "Semantic UI"
 [semantic-doc]: https://semantic-ui.com/introduction/getting-started.html "Semantic UI Docs"
 [jquery]: http://jquery.com/ "jQuery"
-[fa]: http://fontawesome.io/ "Font Awesome"
 [shields]: http://shields.io/ "Shields.io"
 [moment]: http://momentjs.com/ "Moment.js"
 [countup]: http://inorganik.github.io/countUp.js/ "CountUp.js"
