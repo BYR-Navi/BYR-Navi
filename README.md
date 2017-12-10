@@ -59,7 +59,7 @@ Donate [here][donate].
 
 [travis-ci]: https://travis-ci.org/BYR-Navi/BYR-Navi "Travis CI"
 [website]: http://byr-navi.com/ "Website"
-[license]: https://github.com/BYR-Navi/BYR-Navi/LICENSE "License"
+[license]: https://github.com/BYR-Navi/BYR-Navi/blob/master/LICENSE "License"
 [saythanks]: https://saythanks.io/to/iROCKBUNNY "Say Thanks"
 [donate]: http://byr-navi.com/donate/ "Donate"
 [watch]: https://github.com/BYR-Navi/BYR-Navi/watchers "Watchers"
