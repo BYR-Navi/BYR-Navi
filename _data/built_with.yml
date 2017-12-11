@@ -1,3 +1,9 @@
+- name: Semantic UI
+  url: http://semantic-ui.com/
+
+- name: jQuery
+  url: http://jquery.com/
+
 - name: Moment.js
   url: http://momentjs.com/
 

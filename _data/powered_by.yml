@@ -1,8 +1,8 @@
-- name: Semantic UI
-  url: http://semantic-ui.com/
+- name: Jekyll
+  url: http://jekyllrb.com/
 
-- name: jQuery
-  url: http://jquery.com/
+- name: GitHub Pages
+  url: https://pages.github.com/
 
 - name: Shields.io
   url: http://shields.io/
@@ -10,8 +10,5 @@
 - name: Hitokoto
   url: http://hitokoto.cn/api
 
-- name: Jekyll
-  url: http://jekyllrb.com/
-
-- name: GitHub Pages
-  url: https://pages.github.com/
+- name: Piwik
+  url: https://piwik.org/
