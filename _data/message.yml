@@ -1,8 +1,8 @@
 show: true
-hitokoto: true
-content: 北邮人第11代冬装坛服发售
+hitokoto: false
+content: Merry X'mas!
 detail: false
 color: black
-icon: shop
+icon: tree
 image: false
-link: https://bbs.byr.cn/#!article/Tshirt/88163
+link: false
