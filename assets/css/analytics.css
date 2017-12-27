@@ -26,7 +26,7 @@
     height: 600px;
 }
 #visit-calendar.echart-container {
-    height: 400px;
+    height: 580px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -43,6 +43,6 @@
         height: 400px;
     }
     #visit-calendar.echart-container {
-        height: 2300px;
+        height: 3450px;
     }
 }

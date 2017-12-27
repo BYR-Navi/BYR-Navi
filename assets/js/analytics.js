@@ -728,7 +728,7 @@ setInterval(function () {
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'macarons');
 var firstYear = firstDay.getFullYear();
-var maxYear = 2017;
+var maxYear = 2018;
 visitCalendarChart.setOption({
     baseOption: {
         title: {
@@ -753,7 +753,7 @@ visitCalendarChart.setOption({
         },
         visualMap: {
             min: 50,
-            max: 1200,
+            max: 1000,
             calculable: true,
             inRange: {
                 color: ['#F6EFA6', '#D88273', '#BF444C']
@@ -769,6 +769,10 @@ visitCalendarChart.setOption({
             range: 2017,
             right: 5,
             top: 240
+        }, {
+            range: 2018,
+            right: 5,
+            top: 420
         }],
         series: [{
             type: 'heatmap',
@@ -779,6 +783,11 @@ visitCalendarChart.setOption({
             type: 'heatmap',
             coordinateSystem: 'calendar',
             calendarIndex: 1,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 2,
             data: []
         }]
     },
@@ -801,6 +810,10 @@ visitCalendarChart.setOption({
                 orient: 'vertical',
                 left: 'center',
                 top: 1220
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 2350
             }]
         }
     }]
