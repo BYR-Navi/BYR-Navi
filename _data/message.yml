@@ -1,8 +1,8 @@
 show: true
-hitokoto: true
-content: Merry X'mas!
+hitokoto: false
+content: Happy New Year!
 detail: false
 color: black
-icon: tree
+icon: smile
 image: false
 link: false
