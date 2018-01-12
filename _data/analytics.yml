@@ -1,7 +1,7 @@
 google:
   id: UA-100531691-1
 
-piwik:
+matomo:
   site_id: 1
   api:
     url: https://vps.irockbunny.com/analytics/?callback=?

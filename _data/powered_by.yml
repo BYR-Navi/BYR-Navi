@@ -10,5 +10,5 @@
 - name: Hitokoto
   url: http://hitokoto.cn/api
 
-- name: Piwik
-  url: https://piwik.org/
+- name: Matomo
+  url: https://matomo.org/

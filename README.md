@@ -51,7 +51,7 @@ Donate [here][donate].
 - [url.js][js-url]
 - [Hitokoto][hitokoto]
 - [ECharts][echarts]
-- [Piwik][piwik]
+- [Matomo][matomo]
 - [GeoIP][geoip]
 - [Jekyll][jekyll]
 - [GitHub Pages][github-pages]
@@ -77,7 +77,7 @@ Donate [here][donate].
 [js-url]: https://github.com/websanova/js-url "url.js"
 [hitokoto]: http://hitokoto.cn/api "Hitokoto"
 [echarts]: http://echarts.baidu.com/ "ECharts"
-[piwik]: https://piwik.org/ "Piwik"
+[matomo]: https://matomo.org/ "Matomo"
 [geoip]: http://www.maxmind.com/ "GeoIP"
 [jekyll]: http://jekyllrb.com/ "Jekyll"
 [jekyll-doc]: https://jekyllrb.com/docs/home/ "Jekyll Docs"
