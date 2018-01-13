@@ -1,6 +1,6 @@
 - id: baidu
   name: 百度
-  url: http://baidu.com/s?wd=
+  url: https://baidu.com/s?wd=
   suffix: "&ie=utf-8"
   shortcut: 百度
   icon: paw blue inverted
@@ -8,14 +8,14 @@
 
 - id: google
   name: 谷歌
-  url: http://google.com/search?q=
+  url: https://google.com/search?q=
   shortcut: 谷歌
   icon: google red inverted
   style: black
 
 - id: baidumap
   name: 百度地图
-  url: http://api.map.baidu.com/geocoder?address=
+  url: https://api.map.baidu.com/geocoder?address=
   suffix: "&output=html"
   shortcut: 地图
   icon: map green inverted
@@ -23,7 +23,7 @@
 
 - id: bing
   name: 必应
-  url: http://cn.bing.com/search?q=
+  url: https://cn.bing.com/search?q=
   shortcut: 必应
   style: black
 
@@ -39,15 +39,15 @@
 
 - id: baiduxueshu
   name: 百度学术
-  url: http://xueshu.baidu.com/s?wd=
+  url: https://xueshu.baidu.com/s?wd=
 
 - id: googlescholar
   name: 谷歌学术
-  url: http://scholar.google.com/scholar?q=
+  url: https://scholar.google.com/scholar?q=
 
 - id: etymonline
   name: Etymonline
-  url: http://www.etymonline.com/index.php?search=
+  url: https://www.etymonline.com/index.php?search=
 
 - id: mw
   name: Merriam-Webster
@@ -55,7 +55,7 @@
 
 - id: github
   name: GitHub
-  url: http://github.com/search?q=
+  url: https://github.com/search?q=
 
 - id: wechat
   name: 微信公众号
@@ -67,19 +67,19 @@
 
 - id: weibo
   name: 微博
-  url: http://s.weibo.com/weibo/
+  url: https://s.weibo.com/weibo/
   shortcut: 微博
   style: black
 
 - id: zhihu
   name: 知乎
-  url: http://www.zhihu.com/search?q=
+  url: https://www.zhihu.com/search?q=
   shortcut: 知乎
   style: black
 
 - id: douban
   name: 豆瓣
-  url: http://www.douban.com/search?q=
+  url: https://www.douban.com/search?q=
   shortcut: 豆瓣
   style: black
 
@@ -108,9 +108,9 @@
   shortcut: 影视
   style: black
 
-- id: panci
+- id: panc
   name: 胖次
-  url: http://www.panc.cc/s/
+  url: https://www.panc.cc/s/
   suffix: "/td_0"
 
 - id: byr
@@ -119,4 +119,4 @@
 
 - id: byrbt
   name: 北邮人BT
-  url: http://bt.byr.cn/torrents.php?search=
+  url: https://bt.byr.cn/torrents.php?search=

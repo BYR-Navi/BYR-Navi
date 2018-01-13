@@ -4,20 +4,20 @@
     links:
     - name: 京东
       style: basic
-      url: http://www.jd.com/
+      url: https://www.jd.com/
 
     - name: 天猫
       style: red
-      url: http://www.tmall.com/
+      url: https://www.tmall.com/
 
     - name: 淘宝
       style: orange
-      url: http://www.taobao.com/
+      url: https://www.taobao.com/
 
     - name: 亚马逊
       icon: amazon yellow
       style: basic
-      url: http://www.amazon.cn/
+      url: https://www.amazon.cn/
 
     - name: Apple
       style: basic
@@ -26,7 +26,7 @@
 
     - name: 一号店
       style: basic
-      url: http://www.yhd.com/
+      url: https://www.yhd.com/
 
     - name: 当当
       style: basic
@@ -46,7 +46,7 @@
 
     - name: IKEA
       style: basic
-      url: http://www.ikea.com/
+      url: https://www.ikea.cn/
 
     - name: 造作
       style: black
@@ -58,7 +58,7 @@
 
     - name: 小米商城
       style: basic
-      url: http://www.mi.com/index.html
+      url: https://www.mi.com/
 
   - category: 工具
     links:
@@ -94,7 +94,7 @@
     - name: Gmail
       icon: google red
       style: basic
-      url: http://mail.google.com/
+      url: https://mail.google.com/
 
     - name: 谷歌翻译
       icon: translate blue
@@ -104,7 +104,7 @@
     - name: 百度翻译
       icon: paw blue
       style: basic
-      url: http://fanyi.baidu.com/
+      url: https://fanyi.baidu.com/
 
     - name: 维基百科
       icon: wikipedia black
@@ -120,31 +120,31 @@
     - name: 微博
       icon: weibo red
       style: basic
-      url: http://weibo.com/
+      url: https://weibo.com/
 
     - name: 微信网页版
       icon: wechat green
       style: basic
-      url: http://wx.qq.com/
+      url: https://wx.qq.com/
 
     - name: 百度贴吧
       icon: paw blue
       style: basic
-      url: http://tieba.baidu.com/
+      url: https://tieba.baidu.com/
 
     - name: 知乎
       style: blue
-      url: http://www.zhihu.com/
+      url: https://www.zhihu.com/
 
     - name: Quora
       icon: quora red
       style: basic
-      url: http://www.quora.com/
+      url: https://www.quora.com/
 
     - name: Facebook
       icon: facebook blue
       style: basic
-      url: http://www.facebook.com/
+      url: https://www.facebook.com/
 
     - name: Google+
       icon: google plus red
@@ -154,17 +154,17 @@
     - name: Tumblr
       icon: tumblr blue
       style: basic
-      url: http://www.tumblr.com/
+      url: https://www.tumblr.com/
 
     - name: Instagram
       icon: instagram pink
       style: basic
-      url: http://www.instagram.com/
+      url: https://www.instagram.com/
 
     - name: GitHub
       icon: github black
       style: basic
-      url: http://github.com/
+      url: https://github.com/
 
   - category: 学习
     links:
@@ -187,7 +187,7 @@
     - name: Stack Overflow
       icon: stack overflow orange
       style: basic
-      url: http://stackoverflow.com/
+      url: https://stackoverflow.com/
 
     - name: SegmentFault
       style: basic
@@ -207,7 +207,7 @@
     - name: LinkedIn
       icon: linkedin blue
       style: basic
-      url: http://www.linkedin.com/
+      url: https://www.linkedin.com/
 
     - name: 大街网
       style: basic
@@ -258,7 +258,7 @@
 
     - name: 哔哩哔哩
       style: pink
-      url: http://www.bilibili.com/
+      url: https://www.bilibili.com/
 
     - name: AcFun
       style: basic
@@ -310,11 +310,11 @@
 
     - name: 北邮人论坛
       style: basic
-      url: http://bbs.byr.cn/
+      url: https://bbs.byr.cn/
 
     - name: 北邮人BT
       style: blue
-      url: http://bt.byr.cn/promotionlink.php?key=63030ce02da245eb152d2e8dc8dd6add
+      url: https://bt.byr.cn/promotionlink.php?key=63030ce02da245eb152d2e8dc8dd6add
 
     - name: 北邮IPTV
       style: basic
