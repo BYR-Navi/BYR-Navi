@@ -202,6 +202,10 @@
       style: basic
       url: https://opensource.google.com/
 
+    - name: CSDN
+      style: basic
+      url: https://edu.csdn.net/
+
   - category: 求职
     links:
     - name: LinkedIn
