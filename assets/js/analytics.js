@@ -560,11 +560,11 @@ visitMapChart.setOption({
         tooltip: {
             trigger: 'item',
             formatter: function (params) {
-                var value = params.value
+                var value = params.value;
                 if (!value) {
-                    value = 0
+                    value = 0;
                 };
-                return params.name + ': ' + value;
+                return params.seriesName + ': ' + value;
             }
         },
         toolbox: {
