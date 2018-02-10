@@ -5,4 +5,4 @@ matomo:
   site_id: 1
   api:
     url: https://vps.irockbunny.com/analytics/?callback=?
-    token: 69f6697fb264375c23f6940c4790fe8e
+    token: dfc787daa12c811126f6b66e5e407ea5
