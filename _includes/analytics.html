@@ -11,24 +11,24 @@
 
 {% if site.data.analytics.matomo.site_id %}
     <script type="text/javascript">
-    var analyticsAPI = {
-        id: '{{ site.data.analytics.matomo.site_id }}',
-        url: '{{ site.data.analytics.matomo.api.url }}',
-        token: '{{ site.data.analytics.matomo.api.token }}'
-    };
-    var _paq = _paq || [];
-    _paq.push(["setDomains", ["*.irockbunny.com"]]);
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-        var u = "https://vps.irockbunny.com/analytics/";
-        _paq.push(['setTrackerUrl', u + 'piwik.php']);
-        _paq.push(['setSiteId', '{{ site.data.analytics.matomo.site_id }}']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-    })();
+        var analyticsAPI = {
+            id: '{{ site.data.analytics.matomo.site_id }}',
+            url: '{{ site.data.analytics.matomo.url }}?callback=?',
+            token: '{{ site.data.analytics.matomo.token }}'
+        };
+        var _paq = _paq || [];
+        _paq.push(["setDomains", [{% for domain in site.data.analytics.domains %}"{{ domain }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u = "{{ site.data.analytics.matomo.url }}";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', '{{ site.data.analytics.matomo.site_id }}']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
     </script>
     <noscript>
-        <p><img src="https://vps.irockbunny.com/analytics/piwik.php?idsite={{ site.data.analytics.matomo.site_id }}&rec=1" style="border:0;" alt="Matomo Analytics" /></p>
+        <p><img src="{{ site.data.analytics.matomo.url }}piwik.php?idsite={{ site.data.analytics.matomo.site_id }}&rec=1" style="border:0;" alt="Matomo Analytics" /></p>
     </noscript>
 {% endif %}
