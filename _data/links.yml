@@ -288,6 +288,10 @@
       style: yellow
       url: http://www.zimuxia.cn/
 
+    - name: 斗鱼
+      style: basic
+      url: https://www.douyu.com/
+
 - section: byr
   categories:
   - category: 北邮校园
