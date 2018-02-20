@@ -49,7 +49,7 @@
       url: https://www.ikea.cn/
 
     - name: 造作
-      style: black
+      style: basic
       url: https://zaozuo.com/
 
     - name: 锤子科技
@@ -379,7 +379,7 @@
       url: http://bbs.byr.cn/#!elite/path?v=/bbslists
 
     - name: 论坛APP
-      icon: app store ios
+      icon: app store
       style: black
       url: http://itunes.apple.com/cn/app/bei-you-ren-lun-tan-bei-you/id1115232927
 
