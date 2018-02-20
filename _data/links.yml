@@ -68,12 +68,12 @@
       url: http://www.12306.cn/
 
     - name: 快递查询
-      icon: shipping olive
+      icon: truck olive
       style: basic
       url: http://www.kuaidi100.com/
 
     - name: 大众点评
-      icon: food orange
+      icon: utensils orange
       style: basic
       url: http://www.dianping.com/
 
