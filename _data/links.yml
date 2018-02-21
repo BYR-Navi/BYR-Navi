@@ -78,7 +78,7 @@
       url: http://www.dianping.com/
 
     - name: 网易邮箱
-      icon: mail red
+      icon: envelope red
       style: basic
       url: http://email.163.com/
 
@@ -123,7 +123,7 @@
       url: https://weibo.com/
 
     - name: 微信网页版
-      icon: wechat green
+      icon: weixin green
       style: basic
       url: https://wx.qq.com/
 
