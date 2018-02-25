@@ -1,11 +1,11 @@
 // analytics.js
 
 // date range
-var firstDay = new Date(2016, 9, 1);
+var establishedAt = new Date($('meta[name=established_at]').attr('content'));
 function siteEstablishedDays() {
     var d = new Date();
     var today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
-    return Math.floor((today - firstDay) / 86400000 + 1);
+    return Math.floor((today - establishedAt) / 86400000 + 1);
 };
 
 // progress bar
@@ -19,8 +19,7 @@ $('#page-loading-progress').progress({
 });
 
 // clock
-var establishedAt = moment.tz("2016-10-01 00:00", "Asia/Shanghai");
-$('#established-at').countdown(establishedAt.toDate(), {
+$('#established-at').countdown(establishedAt, {
     elapse: true
 }).on('update.countdown', function (event) {
     if (event.elapsed) {
@@ -727,7 +726,7 @@ setInterval(function () {
 }, 60000);
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'macarons');
-var firstYear = firstDay.getFullYear();
+var firstYear = establishedAt.getFullYear();
 var maxYear = 2018;
 visitCalendarChart.setOption({
     baseOption: {
