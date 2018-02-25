@@ -30,8 +30,8 @@
 - id: wikipedia
   name: 维基百科
   url: https://www.wikipedia.org/wiki/
-  shortcut: 维基
-  style: black
+  # shortcut: 维基
+  # style: black
 
 - id: ieeexplore
   name: IEEE Xplore
@@ -83,17 +83,17 @@
   shortcut: 豆瓣
   style: black
 
+- id: taobao
+  name: 淘宝
+  url: https://s.taobao.com/search?q=
+  shortcut: 淘宝
+  style: black
+
 - id: jd
   name: 京东
   url: http://search.jd.com/Search?keyword=
   suffix: "&enc=utf-8"
   shortcut: 京东
-  style: black
-
-- id: taobao
-  name: 淘宝
-  url: https://s.taobao.com/search?q=
-  shortcut: 淘宝
   style: black
 
 - id: xiami
@@ -112,6 +112,13 @@
   name: 胖次
   url: https://www.panc.cc/s/
   suffix: "/td_0"
+
+- id: lime
+  name: Lime Torrents
+  url: https://www.limetorrents.cc/search/all/
+  suffix: "/"
+  shortcut: PT
+  style: black
 
 - id: byr
   name: 北邮人论坛

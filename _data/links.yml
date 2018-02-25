@@ -2,17 +2,17 @@
   categories:
   - category: 购物
     links:
-    - name: 京东
-      style: basic
-      url: https://www.jd.com/
+    - name: 淘宝
+      style: orange
+      url: https://www.taobao.com/
 
     - name: 天猫
       style: red
       url: https://www.tmall.com/
 
-    - name: 淘宝
-      style: orange
-      url: https://www.taobao.com/
+    - name: 京东
+      style: basic
+      url: https://www.jd.com/
 
     - name: 亚马逊
       icon: amazon yellow
