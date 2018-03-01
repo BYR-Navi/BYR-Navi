@@ -99,13 +99,19 @@
 - id: xiami
   name: 虾米
   url: http://www.xiami.com/search?key=
-  shortcut: 虾米
-  style: black
+  # shortcut: 虾米
+  # style: black
 
 - id: fkdy
   name: 影视
   url: http://ifkdy.com/?q=
   shortcut: 影视
+  style: black
+
+- id: fix
+  name: FIX字幕侠
+  url: http://www.zimuxia.cn/?s=
+  shortcut: FIX
   style: black
 
 - id: panc
