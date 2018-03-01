@@ -47,6 +47,7 @@ Donate [here][donate].
 - [Shields.io][shields]
 - [Moment.js][moment]
 - [CountUp.js][countup]
+- [The Final Countdown plugin for jQuery][countdown]
 - [JavaScript Cookie][js-cookie]
 - [url.js][js-url]
 - [Hitokoto][hitokoto]
@@ -73,6 +74,7 @@ Donate [here][donate].
 [shields]: http://shields.io/ "Shields.io"
 [moment]: http://momentjs.com/ "Moment.js"
 [countup]: http://inorganik.github.io/countUp.js/ "CountUp.js"
+[countdown]: http://hilios.github.io/jQuery.countdown/ "The Final Countdown plugin for jQuery"
 [js-cookie]: https://github.com/js-cookie/js-cookie "JavaScript Cookie"
 [js-url]: https://github.com/websanova/js-url "url.js"
 [hitokoto]: http://hitokoto.cn/api "Hitokoto"
