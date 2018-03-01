@@ -10,6 +10,9 @@
 - name: CountUp.js
   url: http://inorganik.github.io/countUp.js/
 
+- name: jQuery.countdown
+  url: http://hilios.github.io/jQuery.countdown/
+
 - name: JavaScript Cookie
   url: https://github.com/js-cookie/js-cookie
 

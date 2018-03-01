@@ -47,7 +47,7 @@ Donate [here][donate].
 - [Shields.io][shields]
 - [Moment.js][moment]
 - [CountUp.js][countup]
-- [The Final Countdown plugin for jQuery][countdown]
+- [jQuery.countdown][countdown]
 - [JavaScript Cookie][js-cookie]
 - [url.js][js-url]
 - [Hitokoto][hitokoto]
