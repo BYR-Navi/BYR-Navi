@@ -1,8 +1,8 @@
 show: true
-hitokoto: true
-content: 恭贺新禧 万事如意
+hitokoto: false
+content: 喜乐团圆 元宵快乐
 detail: false
 color: black
-icon: smile
+icon: heart
 image: false
 link: false
