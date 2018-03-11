@@ -57,9 +57,15 @@
   name: GitHub
   url: https://github.com/search?q=
 
-- id: wechat
+- id: weixin1
   name: 微信公众号
-  url: http://weixin.sogou.com/weixin?query=
+  url: http://weixin.sogou.com/weixin?type=1&query=
+  suffix: "&ie=utf8"
+
+- id: weixin2
+  name: 微信文章
+  url: http://weixin.sogou.com/weixin?type=2&query=
+  suffix: "&ie=utf8"
 
 - id: minapp
   name: 微信小程序
