@@ -1,8 +1,8 @@
 show: true
-hitokoto: true
-content: 喜乐团圆 元宵快乐
+hitokoto: false
+content: 巨星陨落 RIP Stephen Hawking
 detail: false
 color: black
 icon: heart
 image: false
-link: false
+link: http://www.bbc.co.uk/news/uk-43396008
