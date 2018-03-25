@@ -111,7 +111,6 @@
 - id: fkdy
   name: 影视
   url: http://ifkdy.com/?q=
-  shortcut: 影视
   style: black
 
 - id: fix
@@ -128,6 +127,8 @@
 - id: pniao
   name: 胖鸟
   url: http://www.pniao.com/Mov/so/
+  shortcut: 胖鸟
+  style: black
 
 - id: lime
   name: Lime Torrents
