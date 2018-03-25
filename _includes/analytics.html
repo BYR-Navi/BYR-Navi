@@ -1,4 +1,4 @@
-{% if site.data.analytics.google.id %}
+{%- if site.data.analytics.google.id -%}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.data.analytics.google.id }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -6,9 +6,9 @@
       gtag('js', new Date());
       gtag('config', '{{ site.data.analytics.google.id }}');
     </script>
-{% endif %}
+{%- endif -%}
 
-{% if site.data.analytics.matomo.site_id %}
+{%- if site.data.analytics.matomo.site_id -%}
     <script type="text/javascript">
         var analyticsAPI = {
             id: '{{ site.data.analytics.matomo.site_id }}',
@@ -30,4 +30,4 @@
     <noscript>
         <p><img src="{{ site.data.analytics.matomo.url }}piwik.php?idsite={{ site.data.analytics.matomo.site_id }}&rec=1" style="border:0;" alt="Matomo Analytics" /></p>
     </noscript>
-{% endif %}
+{%- endif -%}
