@@ -125,6 +125,10 @@
   url: https://www.panc.cc/s/
   suffix: "/td_0"
 
+- id: pniao
+  name: 胖鸟
+  url: http://www.pniao.com/Mov/so/
+
 - id: lime
   name: Lime Torrents
   url: https://www.limetorrents.cc/search/all/
