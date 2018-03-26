@@ -107,7 +107,7 @@
       url: https://fanyi.baidu.com/
 
     - name: 维基百科
-      icon: wikipedia black
+      icon: wikipedia w black
       style: basic
       url: https://www.wikipedia.org/
 
