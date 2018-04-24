@@ -206,6 +206,10 @@
       style: basic
       url: https://edu.csdn.net/
 
+    - name: 云英语
+      style: black
+      url: http://y-english.org/
+
   - category: 求职
     links:
     - name: LinkedIn
