@@ -119,10 +119,14 @@
   shortcut: FIX
   style: black
 
-- id: panc
-  name: 胖次
-  url: https://www.panc.cc/s/
-  suffix: "/td_0"
+- id: wangpan
+  name: 网盘
+  url: http://www.58wangpan.com/search/kw
+
+# - id: panc
+#   name: 胖次
+#   url: https://www.panc.cc/s/
+#   suffix: "/td_0"
 
 - id: pniao
   name: 胖鸟
