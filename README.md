@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/BYR-Navi/BYR-Navi.svg)][travis-ci]
-[![Website](https://img.shields.io/website-up-down-green-red/http/byr-navi.com.svg)][website]
+[![Website](https://img.shields.io/website-up-down-green-red/https/byr-navi.com.svg)][website]
 [![License](https://img.shields.io/github/license/BYR-Navi/BYR-Navi.svg)][license]
 [![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)][saythanks]
 [![Donate](https://img.shields.io/badge/Donate-Coffee-A5673F.svg)][donate]
@@ -58,10 +58,10 @@ Donate [here][donate].
 - [GitHub Pages][github-pages]
 
 [travis-ci]: https://travis-ci.org/BYR-Navi/BYR-Navi "Travis CI"
-[website]: http://byr-navi.com/ "Website"
+[website]: https://byr-navi.com/ "Website"
 [license]: https://github.com/BYR-Navi/BYR-Navi/blob/master/LICENSE "License"
 [saythanks]: https://saythanks.io/to/iROCKBUNNY "Say Thanks"
-[donate]: http://byr-navi.com/donate/ "Donate"
+[donate]: https://byr-navi.com/donate/ "Donate"
 [watch]: https://github.com/BYR-Navi/BYR-Navi/watchers "Watchers"
 [star]: https://github.com/BYR-Navi/BYR-Navi/stargazers "Stargazers"
 [fork]: https://github.com/BYR-Navi/BYR-Navi/network "Forks"
