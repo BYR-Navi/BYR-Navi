@@ -398,7 +398,7 @@ var BaiduSuggestion = (function() {
                     if (W) { document.body.removeChild(W) }
                     var T = O("script");
                     T.setAttribute("charset", "gbk");
-                    T.src = "http://unionsug.baidu.com/su?wd=" + encodeURIComponent(U) + "&p=3&cb=BaiduSuggestion.callbacks.give" + S + "&t=" + V;
+                    T.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" + encodeURIComponent(U) + "&p=3&cb=BaiduSuggestion.callbacks.give" + S + "&t=" + V;
                     T.id = "bdSug_script";
                     document.body.appendChild(T) }, append_html: "", apd_body: true } }, createSugCallback: function(P) {
             return function(R) {

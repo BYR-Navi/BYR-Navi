@@ -1,14 +1,14 @@
 - name: Jekyll
-  url: http://jekyllrb.com/
+  url: https://jekyllrb.com/
 
 - name: GitHub Pages
   url: https://pages.github.com/
 
 - name: Shields.io
-  url: http://shields.io/
+  url: https://shields.io/
 
 - name: Hitokoto
-  url: http://hitokoto.cn/api
+  url: https://hitokoto.cn/api
 
 - name: Matomo
   url: https://matomo.org/

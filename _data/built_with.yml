@@ -1,17 +1,17 @@
 - name: Semantic UI
-  url: http://semantic-ui.com/
+  url: https://semantic-ui.com/
 
 - name: jQuery
-  url: http://jquery.com/
+  url: https://jquery.com/
 
 - name: Moment.js
-  url: http://momentjs.com/
+  url: https://momentjs.com/
 
 - name: CountUp.js
-  url: http://inorganik.github.io/countUp.js/
+  url: https://inorganik.github.io/countUp.js/
 
 - name: jQuery.countdown
-  url: http://hilios.github.io/jQuery.countdown/
+  url: https://hilios.github.io/jQuery.countdown/
 
 - name: JavaScript Cookie
   url: https://github.com/js-cookie/js-cookie
