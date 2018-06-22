@@ -8,7 +8,7 @@
     <meta name="updated_at" content="{{ site.time | date_to_xmlschema }}">
     <meta name="established_at" content="{{ site.established_at }}">
     {% seo %}
-    <link rel="stylesheet" type="text/css" href="//unpkg.com/semantic-ui/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/fomantic-ui/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/common.css' | relative_url }}">
     {% if page.active_key == 'home' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/home.css' | relative_url }}">{% endif %}
     {% if page.active_key == 'analytics' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/analytics.css' | relative_url }}">{% endif %}
@@ -30,7 +30,7 @@
     </div>
     {% include dimmer.html %}
     <script type="text/javascript" src="//unpkg.com/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="//unpkg.com/semantic-ui/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="//unpkg.com/fomantic-ui/dist/semantic.min.js"></script>
     <script type="text/javascript" src="{{ '/assets/js/common.js' | relative_url }}"></script>
     {% if page.active_key == 'home' or page.active_key == 'analytics' %}<script type="text/javascript" src="//unpkg.com/moment/min/moment-with-locales.min.js"></script>{% endif %}
     {% if page.active_key == 'home' %}<script type="text/javascript" src="//unpkg.com/js-cookie/src/js.cookie.js"></script>{% endif %}

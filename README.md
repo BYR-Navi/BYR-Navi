@@ -15,14 +15,14 @@
 A Navigation [Website][website] for BYR
 
 ## Design Philosophy
-This project is a [Jekyll][jekyll]-powered website, which is built based on [Semantic UI][semantic] web framework, and deployed using [GitHub Pages][github-pages].
+This project is a [Jekyll][jekyll]-powered website, which is built based on [Fomantic UI][fomantic] web framework, and deployed using [GitHub Pages][github-pages].
 
 The whole project is designed and built with high flexibility of configuration and customization.
 You can either configure it by modifying the `_config.yml` file or customize it by replacing the content of the `*.yml` files in the `_data` folder with your own data.
 
 ## A Tiny Tutorial
 There is **no easy way for beginners** without essential background knowledge.
-To be efficient, the best way to understand this project is to start with the Jekyll's [docs][jekyll-doc] and Semantic UI's [docs][semantic-doc].
+To be efficient, the best way to understand this project is to start with the Jekyll's [docs][jekyll-doc] and Fomantic UI's [docs][fomantic-doc].
 
 Before you start, you should have some basic understanding of the following:
 
@@ -42,7 +42,7 @@ I promise it will be a good investment.
 Donate [here][donate].
 
 #### Powered by
-- [Semantic UI][semantic]
+- [Fomantic UI][fomantic]
 - [jQuery][jquery]
 - [Shields.io][shields]
 - [Moment.js][moment]
@@ -68,8 +68,8 @@ Donate [here][donate].
 [issue]: https://github.com/BYR-Navi/BYR-Navi/issues "Issues"
 [pull]: https://github.com/BYR-Navi/BYR-Navi/pulls "Pull Requests"
 
-[semantic]: https://semantic-ui.com/ "Semantic UI"
-[semantic-doc]: https://semantic-ui.com/introduction/getting-started.html "Semantic UI Docs"
+[fomantic]: https://fomantic-ui.com/ "Fomantic UI"
+[fomantic-doc]: https://fomantic-ui.com/introduction/getting-started.html "Fomantic UI Docs"
 [jquery]: https://jquery.com/ "jQuery"
 [shields]: https://shields.io/ "Shields.io"
 [moment]: https://momentjs.com/ "Moment.js"
