@@ -213,7 +213,7 @@
   - category: 求职
     links:
     - name: LinkedIn
-      icon: linkedin in blue
+      icon: linkedin alternate blue
       style: basic
       url: https://www.linkedin.com/
 
