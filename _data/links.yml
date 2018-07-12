@@ -111,10 +111,6 @@
       style: basic
       url: https://www.wikipedia.org/
 
-    - name: TinEye
-      style: basic
-      url: https://www.tineye.com/
-
   - category: 社交
     links:
     - name: 微博
