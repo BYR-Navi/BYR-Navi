@@ -112,7 +112,7 @@
       url: https://www.wikipedia.org/
 
     - name: 彩云天气
-      icon: cloud
+      icon: cloud olive
       style: basic
       url: http://caiyunapp.com/map
 
