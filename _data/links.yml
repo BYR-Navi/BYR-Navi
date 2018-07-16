@@ -111,6 +111,11 @@
       style: basic
       url: https://www.wikipedia.org/
 
+    - name: 彩云天气
+      icon: cloud
+      style: basic
+      url: http://caiyunapp.com/map
+
   - category: 社交
     links:
     - name: 微博
