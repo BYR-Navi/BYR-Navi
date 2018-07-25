@@ -1,9 +1,6 @@
 - name: Jekyll
   url: https://jekyllrb.com/
 
-- name: GitHub Pages
-  url: https://pages.github.com/
-
 - name: Shields.io
   url: https://shields.io/
 
@@ -12,3 +9,6 @@
 
 - name: Matomo
   url: https://matomo.org/
+
+- name: Linode
+  url: https://www.linode.com/
