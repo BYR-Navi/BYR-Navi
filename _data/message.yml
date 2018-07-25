@@ -1,8 +1,8 @@
 show: true
-hitokoto: true
-content: 各位爸爸节日快乐！
-detail: 查看
+hitokoto: false
+content: We moved our website to Linode
+detail: to gain more page speed!
 color: black
-icon: heart
+icon: rocket
 image: false
 link: https://byr-navi.com/donate/
