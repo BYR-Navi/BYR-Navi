@@ -14,13 +14,13 @@
 # BYR-Navi
 A Navigation [Website][website] for BYR
 
-## Design Philosophy :triangular_ruler:
+## :triangular_ruler: Design Philosophy
 This project is a [Jekyll][jekyll]-powered website, which is built based on [Fomantic UI][fomantic] web framework, and deployed **previously** using [GitHub Pages][github-pages] (while currently running on a [Linode][linode] VPS).
 
 The whole project is designed and built with high flexibility of configuration and customization.
 You can either configure it by modifying the `_config.yml` file or customize it by replacing the content of the `*.yml` files in the `_data` folder with your own data.
 
-## A Tiny Tutorial :memo:
+## :memo: A Tiny Tutorial
 There is **no easy way for beginners** without essential background knowledge.
 To be efficient, the best way to understand this project is to start with the Jekyll's [docs][jekyll-doc] and Fomantic UI's [docs][fomantic-doc].
 
@@ -33,7 +33,7 @@ Before you start, you should have some basic understanding of the following:
 - YAML format
 - UNIX/Linux Shell Script
 
-## Share the Love :hearts:
+## :hearts: Share the Love
 I've put a lot of time and effort into making **BYR-Navi** awesome.
 If you love it, you can buy me a coffee.
 Every cup helps!
@@ -41,7 +41,7 @@ I promise it will be a good investment.
 
 Donate [here][donate].
 
-## Powered by :rocket:
+## :rocket: Powered by
 - [Fomantic UI][fomantic]
 - [jQuery][jquery]
 - [Shields.io][shields]
