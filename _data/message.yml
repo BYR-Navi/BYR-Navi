@@ -1,8 +1,8 @@
 show: true
 hitokoto: false
 content: We moved our website to Linode!
-detail: Therefore, faster page speed!
+detail: You can access it via IPv6!
 color: black
-icon: rocket
+icon: linode
 image: false
 link: https://byr-navi.com/donate/
