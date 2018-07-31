@@ -1,5 +1,5 @@
 show: true
-hitokoto: false
+hitokoto: true
 content: BYR-Navi is hosted on Linode!
 detail: You can access our website via IPv6!
 color: black
