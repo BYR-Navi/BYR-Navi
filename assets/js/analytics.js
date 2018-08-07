@@ -157,7 +157,7 @@ setInterval(function () {
 }, 60000);
 
 // chart
-var visitSummaryChart = echarts.init(document.getElementById('visit-summary'), 'macarons');
+var visitSummaryChart = echarts.init(document.getElementById('visit-summary'), 'light');
 visitSummaryChart.setOption({
     baseOption: {
         title: {
@@ -336,7 +336,7 @@ setInterval(function () {
     updateVisitSummaryChart(false);
 }, 60000);
 
-var visitHourlyChart = echarts.init(document.getElementById('visit-hourly'), 'macarons');
+var visitHourlyChart = echarts.init(document.getElementById('visit-hourly'), 'light');
 visitHourlyChart.setOption({
     baseOption: {
         title: {
@@ -543,7 +543,7 @@ setInterval(function () {
     updateVisitHourlyChart(false);
 }, 60000);
 
-var visitMapChart = echarts.init(document.getElementById('visit-map'), 'macarons');
+var visitMapChart = echarts.init(document.getElementById('visit-map'), 'light');
 visitMapChart.setOption({
     baseOption: {
         title: {
@@ -579,10 +579,7 @@ visitMapChart.setOption({
             min: 0,
             max: 5000,
             text:['High','Low'],
-            calculable: true,
-            inRange: {
-                color: ['#F6EFA6', '#D88273', '#BF444C']
-            }
+            calculable: true
         },
         series: [{
             name: '访客数',
@@ -725,7 +722,7 @@ setInterval(function () {
     updateVisitMapChart(false);
 }, 60000);
 
-var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'macarons');
+var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
 var firstYear = establishedAt.getFullYear();
 var maxYear = 2018;
 visitCalendarChart.setOption({
@@ -754,9 +751,6 @@ visitCalendarChart.setOption({
             min: 50,
             max: 1000,
             calculable: true,
-            inRange: {
-                color: ['#F6EFA6', '#D88273', '#BF444C']
-            },
             orient: 'horizontal',
             top: 'top',
             left: 0
