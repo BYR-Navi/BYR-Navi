@@ -45,7 +45,7 @@ Donate [here][donate].
 - [Fomantic UI][fomantic]
 - [jQuery][jquery]
 - [Shields.io][shields]
-- [Moment.js][moment]
+- [Day.js][day]
 - [CountUp.js][countup]
 - [jQuery.countdown][countdown]
 - [JavaScript Cookie][js-cookie]
@@ -72,7 +72,7 @@ Donate [here][donate].
 [fomantic-doc]: https://fomantic-ui.com/introduction/getting-started.html "Fomantic UI Docs"
 [jquery]: https://jquery.com/ "jQuery"
 [shields]: https://shields.io/ "Shields.io"
-[moment]: https://momentjs.com/ "Moment.js"
+[day]: https://github.com/iamkun/dayjs "Day.js"
 [countup]: https://inorganik.github.io/countUp.js/ "CountUp.js"
 [countdown]: https://hilios.github.io/jQuery.countdown/ "The Final Countdown plugin for jQuery"
 [js-cookie]: https://github.com/js-cookie/js-cookie "JavaScript Cookie"

@@ -23,9 +23,10 @@ setInterval(function () {
 }, 60000);
 
 // version
-moment.locale('zh-cn');
+dayjs.locale('zh-cn');
+dayjs.extend(dayjs_plugin_relativeTime);
 function updateVersion(timestamp) {
-    $('#version img').attr('src', 'https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-' + encodeURIComponent(moment(timestamp).fromNow()) + '-brightgreen.svg');
+    $('#version img').attr('src', 'https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-' + encodeURIComponent(dayjs(timestamp).fromNow()) + '-brightgreen.svg');
 };
 var updateAt = $('meta[name=updated_at]').attr('content');
 updateVersion(updateAt);

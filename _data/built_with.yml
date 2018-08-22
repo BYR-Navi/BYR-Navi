@@ -4,8 +4,8 @@
 - name: jQuery
   url: https://jquery.com/
 
-- name: Moment.js
-  url: https://momentjs.com/
+- name: Day.js
+  url: https://github.com/iamkun/dayjs
 
 - name: CountUp.js
   url: https://inorganik.github.io/countUp.js/
