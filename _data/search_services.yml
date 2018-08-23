@@ -1,7 +1,6 @@
 - id: baidu
   name: 百度
-  url: https://baidu.com/s?wd=
-  suffix: "&ie=utf-8"
+  url: https://baidu.com/s?ie=utf-8&wd=
   shortcut: 百度
   icon: paw blue inverted
   style: black
@@ -13,6 +12,13 @@
   icon: google red inverted
   style: black
 
+- id: bing
+  name: 必应
+  url: https://cn.bing.com/search?q=
+  shortcut: 必应
+  icon: search orange inverted
+  style: black
+
 - id: baidumap
   name: 百度地图
   url: https://api.map.baidu.com/geocoder?address=
@@ -21,61 +27,19 @@
   icon: map green inverted
   style: black
 
-- id: bing
-  name: 必应
-  url: https://cn.bing.com/search?q=
-  shortcut: 必应
+- id: baidunews
+  name: 百度资讯
+  url: https://www.baidu.com/s?ie=utf-8&tn=news&word=
+  shortcut: 资讯
+  icon: newspaper blue inverted
   style: black
 
 - id: wikipedia
   name: 维基百科
   url: https://www.wikipedia.org/wiki/
   # shortcut: 维基
+  # icon: wikipedia w
   # style: black
-
-- id: ieeexplore
-  name: IEEE Xplore
-  url: http://ieeexplore.ieee.org/search/searchresult.jsp?queryText=
-
-- id: baiduxueshu
-  name: 百度学术
-  url: https://xueshu.baidu.com/s?wd=
-
-- id: googlescholar
-  name: 谷歌学术
-  url: https://scholar.google.com/scholar?q=
-
-- id: etymonline
-  name: Etymonline
-  url: https://www.etymonline.com/index.php?search=
-
-- id: mw
-  name: Merriam-Webster
-  url: https://www.merriam-webster.com/dictionary/
-
-- id: github
-  name: GitHub
-  url: https://github.com/search?q=
-
-- id: weixin1
-  name: 微信公众号
-  url: http://weixin.sogou.com/weixin?type=1&query=
-  suffix: "&ie=utf8"
-
-- id: weixin2
-  name: 微信文章
-  url: http://weixin.sogou.com/weixin?type=2&query=
-  suffix: "&ie=utf8"
-
-- id: minapp
-  name: 微信小程序
-  url: https://minapp.com/miniapp/search/?query=
-
-- id: weibo
-  name: 微博
-  url: https://s.weibo.com/weibo/
-  shortcut: 微博
-  style: black
 
 - id: zhihu
   name: 知乎
@@ -88,6 +52,10 @@
   url: https://www.douban.com/search?q=
   shortcut: 豆瓣
   style: black
+
+- id: weibo
+  name: 微博
+  url: https://s.weibo.com/weibo/
 
 - id: taobao
   name: 淘宝
@@ -105,28 +73,30 @@
 - id: xiami
   name: 虾米
   url: http://www.xiami.com/search?key=
-  # shortcut: 虾米
-  # style: black
+
+- id: bilibili
+  name: 哔哩哔哩
+  url: https://search.bilibili.com/all?keyword=
 
 - id: fkdy
   name: 影视
   url: http://ifkdy.com/?q=
   style: black
 
-- id: fix
+- id: wangpan
+  name: 网盘
+  url: http://www.58wangpan.com/search/kw
+
+- id: fixzimuxia
   name: FIX字幕侠
   url: http://www.zimuxia.cn/?s=
   shortcut: FIX
   style: black
 
-- id: wangpan
-  name: 网盘
-  url: http://www.58wangpan.com/search/kw
-
 - id: pniao
-  name: 胖鸟
+  name: 胖鸟电影
   url: http://www.pniao.com/Mov/so/
-  shortcut: 胖鸟
+  shortcut: PN
   style: black
 
 - id: lime
@@ -135,6 +105,44 @@
   suffix: "/"
   shortcut: PT
   style: black
+
+- id: github
+  name: GitHub
+  url: https://github.com/search?q=
+
+- id: baiduxueshu
+  name: 百度学术
+  url: https://xueshu.baidu.com/s?wd=
+
+- id: googlescholar
+  name: 谷歌学术
+  url: https://scholar.google.com/scholar?q=
+
+- id: ieeexplore
+  name: IEEE Xplore
+  url: http://ieeexplore.ieee.org/search/searchresult.jsp?queryText=
+
+- id: etymonline
+  name: Etymonline
+  url: https://www.etymonline.com/index.php?search=
+
+- id: mw
+  name: Merriam-Webster
+  url: https://www.merriam-webster.com/dictionary/
+
+- id: weixinmp
+  name: 微信公众号
+  url: http://weixin.sogou.com/weixin?type=1&query=
+  suffix: "&ie=utf8"
+
+- id: weixinarticle
+  name: 微信文章
+  url: http://weixin.sogou.com/weixin?type=2&query=
+  suffix: "&ie=utf8"
+
+- id: minapp
+  name: 微信小程序
+  url: https://minapp.com/miniapp/search/?query=
 
 - id: byr
   name: 北邮人论坛
