@@ -130,6 +130,10 @@
   name: Merriam-Webster
   url: https://www.merriam-webster.com/dictionary/
 
+- id: tianyancha
+  name: 天眼查
+  url: https://www.tianyancha.com/search?key=
+
 - id: weixinmp
   name: 微信公众号
   url: http://weixin.sogou.com/weixin?type=1&query=

@@ -116,6 +116,10 @@
       style: basic
       url: http://caiyunapp.com/map
 
+    - name: 天眼查
+      style: basic
+      url: https://www.tianyancha.com/
+
   - category: 社交
     links:
     - name: 微博
@@ -209,7 +213,7 @@
 
     - name: 云英语
       style: black
-      url: http://y-english.org/
+      url: http://www.y-english.org/
 
   - category: 求职
     links:
@@ -237,6 +241,14 @@
     - name: 应届生
       style: basic
       url: http://www.yingjiesheng.com/
+
+    - name: BOSS直聘
+      style: basic
+      url: https://www.zhipin.com/
+
+    - name: 猎聘
+      style: basic
+      url: https://www.liepin.com/
 
   - category: 娱乐
     links:
@@ -405,7 +417,7 @@
       style: basic
       url: http://bbs.byr.cn/#!article/Talking/5852307
 
-  - category: 其他
+  - category: 校园助手
     links:
     - name: 空余教室查询
       style: basic
@@ -466,3 +478,77 @@
     - name: 校历
       style: basic
       url: http://www.bupt.edu.cn/content/content.php?p=6_10_80
+
+  - category: 马拉松
+    links:
+    - name: 中国马拉松
+      style: basic
+      url: http://www.runchina.org.cn/
+
+    - name: 北京马拉松
+      style: basic
+      url: http://www.beijing-marathon.com/
+
+    - name: 厦门马拉松
+      style: basic
+      url: http://www.xmim.org/
+
+    - name: 上海马拉松
+      style: basic
+      url: http://www.shmarathon.com/home.dhtml
+
+    - name: 扬州半程马拉松
+      style: basic
+      url: http://www.yzmls.com/
+
+    - name: 黄河口马拉松
+      style: basic
+      url: http://www.hhkgjmls.net/
+
+    - name: 重庆马拉松
+      style: basic
+      url: http://www.cqmarathon.com/
+
+    - name: 兰州马拉松
+      style: basic
+      url: http://www.lzmarathon.com/
+
+    - name: 广州马拉松
+      style: basic
+      url: http://www.guangzhou-marathon.com/
+
+    - name: 杭州马拉松
+      style: basic
+      url: http://www.hzim.org/
+
+    - name: 太原马拉松
+      style: basic
+      url: http://www.tymarathon.org/
+
+    - name: 郑州马拉松
+      style: basic
+      url: http://zzmarathon.com/
+
+    - name: 郑开马拉松
+      style: basic
+      url: http://www.zkmarathon.com/
+
+    - name: 秦皇岛马拉松
+      style: basic
+      url: http://www.qhdmarathon.com/index.php
+
+    - name: 西安马拉松
+      style: basic
+      url: http://www.xianmarathon.org/
+
+    - name: 长沙马拉松
+      style: basic
+      url: http://www.changsha-marathon.com/
+
+    - name: 成都马拉松
+      style: basic
+      url: http://www.chengdu-marathon.org/
+
+    - name: 香港马拉松
+      style: basic
+      url: https://www.hkmarathon.com/
