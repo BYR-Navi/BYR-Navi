@@ -373,50 +373,6 @@
       style: basic
       url: http://buptclass.com/
 
-  - category: 论坛相关
-    links:
-    - name: 北邮人论坛
-      style: teal
-      url: http://bbs.byr.cn/
-
-    - name: 游客版论坛
-      style: basic
-      url: http://bbs.cloud.icybee.cn/
-
-    - name: 检索论坛内容
-      style: basic
-      url: http://search.icybee.cn/
-
-    - name: 检索用户发帖
-      style: basic
-      url: http://search.lovezxp.com/
-
-    - name: 查看论坛数据
-      style: basic
-      url: http://bbs.byr.cn/#!elite/path?v=/bbslists
-
-    - name: 论坛APP
-      icon: app store
-      style: black
-      url: http://itunes.apple.com/cn/app/bei-you-ren-lun-tan-bei-you/id1115232927
-
-    - name: 论坛APP
-      icon: google play
-      style: black
-      url: https://github.com/dss886/BYR-BBS-APP-Release
-
-    - name: 论坛官方微博
-      style: basic
-      url: http://weibo.com/byrbbs
-
-    - name: 论坛投票区
-      style: basic
-      url: http://bbs.byr.cn/#!vote
-
-    - name: 玩转论坛指南
-      style: basic
-      url: http://bbs.byr.cn/#!article/Talking/5852307
-
   - category: 校园助手
     links:
     - name: 空余教室查询
@@ -479,10 +435,54 @@
       style: basic
       url: http://www.bupt.edu.cn/content/content.php?p=6_10_80
 
+  - category: 论坛相关
+    links:
+    - name: 北邮人论坛
+      style: teal
+      url: http://bbs.byr.cn/
+
+    - name: 游客版论坛
+      style: basic
+      url: http://bbs.cloud.icybee.cn/
+
+    - name: 检索论坛内容
+      style: basic
+      url: http://search.icybee.cn/
+
+    - name: 检索用户发帖
+      style: basic
+      url: http://search.lovezxp.com/
+
+    - name: 查看论坛数据
+      style: basic
+      url: http://bbs.byr.cn/#!elite/path?v=/bbslists
+
+    - name: 论坛APP
+      icon: app store
+      style: black
+      url: http://itunes.apple.com/cn/app/bei-you-ren-lun-tan-bei-you/id1115232927
+
+    - name: 论坛APP
+      icon: google play
+      style: black
+      url: https://github.com/dss886/BYR-BBS-APP-Release
+
+    - name: 论坛官方微博
+      style: basic
+      url: http://weibo.com/byrbbs
+
+    - name: 论坛投票区
+      style: basic
+      url: http://bbs.byr.cn/#!vote
+
+    - name: 玩转论坛指南
+      style: basic
+      url: http://bbs.byr.cn/#!article/Talking/5852307
+
   - category: 马拉松
     links:
     - name: 中国马拉松
-      style: basic
+      style: red
       url: http://www.runchina.org.cn/
 
     - name: 北京马拉松
@@ -550,5 +550,5 @@
       url: http://www.chengdu-marathon.org/
 
     - name: 香港马拉松
-      style: basic
+      style: blue
       url: https://www.hkmarathon.com/
