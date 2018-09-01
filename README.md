@@ -85,3 +85,6 @@ Donate [here][donate].
 [jekyll-doc]: https://jekyllrb.com/docs/home/ "Jekyll Docs"
 [github-pages]: https://pages.github.com/ "GitHub Pages"
 [linode]: https://www.linode.com/ "Linode"
+
+## :copyright: License
+[MIT License](https://github.com/BYR-Navi/BYR-Navi/blob/master/LICENSE)
