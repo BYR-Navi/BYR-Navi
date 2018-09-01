@@ -57,6 +57,9 @@ Donate [here][donate].
 - [Jekyll][jekyll]
 - [Linode][linode]
 
+## :copyright: License
+[MIT License][license]
+
 [travis-ci]: https://travis-ci.org/BYR-Navi/BYR-Navi "Travis CI"
 [website]: https://byr-navi.com/ "Website"
 [license]: https://github.com/BYR-Navi/BYR-Navi/blob/master/LICENSE "License"
@@ -85,6 +88,3 @@ Donate [here][donate].
 [jekyll-doc]: https://jekyllrb.com/docs/home/ "Jekyll Docs"
 [github-pages]: https://pages.github.com/ "GitHub Pages"
 [linode]: https://www.linode.com/ "Linode"
-
-## :copyright: License
-[MIT License](https://github.com/BYR-Navi/BYR-Navi/blob/master/LICENSE)
