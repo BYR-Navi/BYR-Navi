@@ -487,33 +487,33 @@
       style: basic
       url: http://www.beijing-marathon.com/
 
-    - name: 厦门马拉松
-      style: basic
-      url: http://www.xmim.org/
-
     - name: 上海马拉松
       style: basic
       url: http://www.shmarathon.com/home.dhtml
 
-    - name: 扬州半程马拉松
+    - name: 广州马拉松
       style: basic
-      url: http://www.yzmls.com/
-
-    - name: 黄河口马拉松
-      style: basic
-      url: http://www.hhkgjmls.net/
+      url: http://www.guangzhou-marathon.com/
 
     - name: 重庆马拉松
       style: basic
       url: http://www.cqmarathon.com/
 
+    - name: 厦门马拉松
+      style: basic
+      url: http://www.xmim.org/
+
     - name: 兰州马拉松
       style: basic
       url: http://www.lzmarathon.com/
 
-    - name: 广州马拉松
+    - name: 黄河口马拉松
       style: basic
-      url: http://www.guangzhou-marathon.com/
+      url: http://www.hhkgjmls.net/
+
+    - name: 扬州半程马拉松
+      style: basic
+      url: http://www.yzmls.com/
 
     - name: 杭州马拉松
       style: basic
@@ -523,6 +523,14 @@
       style: basic
       url: http://www.tymarathon.org/
 
+    - name: 长沙马拉松
+      style: basic
+      url: http://www.changsha-marathon.com/
+
+    - name: 秦皇岛马拉松
+      style: yellow
+      url: http://www.qhdmarathon.com/index.php
+
     - name: 郑州马拉松
       style: basic
       url: http://zzmarathon.com/
@@ -531,17 +539,9 @@
       style: basic
       url: http://www.zkmarathon.com/
 
-    - name: 秦皇岛马拉松
-      style: basic
-      url: http://www.qhdmarathon.com/index.php
-
     - name: 西安马拉松
       style: basic
       url: http://www.xian42195.com/
-
-    - name: 长沙马拉松
-      style: basic
-      url: http://www.changsha-marathon.com/
 
     - name: 成都马拉松
       style: basic
