@@ -1,6 +1,5 @@
-- section: public
-  categories:
-  - category: 购物
+- categories:
+  - name: 购物
     links:
     - name: 淘宝
       style: orange
@@ -60,7 +59,7 @@
       style: basic
       url: https://www.mi.com/
 
-  - category: 工具
+  - name: 工具
     links:
     - name: '12306'
       icon: train red
@@ -120,7 +119,7 @@
       style: basic
       url: https://www.tianyancha.com/
 
-  - category: 社交
+  - name: 社交
     links:
     - name: 微博
       icon: weibo red
@@ -171,7 +170,7 @@
       style: basic
       url: https://github.com/
 
-  - category: 学习
+  - name: 学习
     links:
     - name: Coursera
       style: basic
@@ -215,7 +214,7 @@
       style: black
       url: http://www.y-english.org/
 
-  - category: 求职
+  - name: 求职
     links:
     - name: LinkedIn
       icon: linkedin alternate blue
@@ -250,7 +249,7 @@
       style: basic
       url: https://www.liepin.com/
 
-  - category: 娱乐
+  - name: 娱乐
     links:
     - name: 优酷
       style: basic
@@ -309,9 +308,8 @@
       style: orange
       url: https://www.douyu.com/
 
-- section: byr
-  categories:
-  - category: 北邮校园
+- categories:
+  - name: 北邮校园
     links:
     - name: 北邮官网
       style: basic
@@ -373,7 +371,7 @@
       style: basic
       url: http://buptclass.com/
 
-  - category: 校园助手
+  - name: 校园助手
     links:
     - name: 空余教室查询
       style: basic
@@ -435,7 +433,7 @@
       style: basic
       url: http://www.bupt.edu.cn/content/content.php?p=6_10_80
 
-  - category: 论坛相关
+  - name: 论坛相关
     links:
     - name: 北邮人论坛
       style: teal
@@ -479,7 +477,7 @@
       style: basic
       url: http://bbs.byr.cn/#!article/Talking/5852307
 
-  - category: 马拉松赛事
+  - name: 马拉松赛事
     links:
     - name: 中国马拉松
       style: red
