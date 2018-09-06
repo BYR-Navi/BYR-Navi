@@ -24,7 +24,7 @@
   url: https://api.map.baidu.com/geocoder?address=
   suffix: "&output=html"
   shortcut: 地图
-  icon: map green inverted
+  icon: map marked alternate green inverted
   style: black
 
 - id: baidunews
@@ -45,6 +45,7 @@
   name: 知乎
   url: https://www.zhihu.com/search?q=
   shortcut: 知乎
+  # icon: zhihu
   style: black
 
 - id: douban
@@ -56,6 +57,7 @@
 - id: weibo
   name: 微博
   url: https://s.weibo.com/weibo/
+  # icon: weibo
 
 - id: taobao
   name: 淘宝

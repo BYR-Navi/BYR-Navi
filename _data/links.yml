@@ -137,7 +137,8 @@
       url: https://tieba.baidu.com/
 
     - name: 知乎
-      style: blue
+      icon: zhihu blue
+      style: basic
       url: https://www.zhihu.com/
 
     - name: Quora
