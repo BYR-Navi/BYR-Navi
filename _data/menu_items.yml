@@ -9,6 +9,6 @@
   active_key: analytics
 
 - name: 扫码捐赠
-  icon: qrcode
+  icon: donate
   url: /donate/
   active_key: donate
