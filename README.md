@@ -10,6 +10,8 @@
 
 [![Closed Issues](https://img.shields.io/github/issues-closed/BYR-Navi/BYR-Navi.svg)][issue]
 [![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed/BYR-Navi/BYR-Navi.svg)][pull]
+[![Last Commit](https://img.shields.io/github/last-commit/Y-Lab/Y-Player.svg)][commit]
+
 
 # BYR-Navi
 A Navigation [Website][website] for BYR
@@ -70,6 +72,7 @@ Donate [here][donate].
 [fork]: https://github.com/BYR-Navi/BYR-Navi/network "Forks"
 [issue]: https://github.com/BYR-Navi/BYR-Navi/issues "Issues"
 [pull]: https://github.com/BYR-Navi/BYR-Navi/pulls "Pull Requests"
+[commit]: https://github.com/Y-Lab/Y-Player/commits/master "Last Commit"
 
 [fomantic]: https://fomantic-ui.com/ "Fomantic UI"
 [fomantic-doc]: https://fomantic-ui.com/introduction/getting-started.html "Fomantic UI Docs"
