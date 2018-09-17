@@ -171,6 +171,11 @@
       style: basic
       url: https://github.com/
 
+    - name: LinkedIn
+      icon: linkedin alternate blue
+      style: basic
+      url: https://www.linkedin.com/
+
   - name: 学习
     links:
     - name: Coursera
@@ -214,41 +219,6 @@
     - name: 云英语
       style: black
       url: http://www.y-english.org/
-
-  - name: 求职
-    links:
-    - name: LinkedIn
-      icon: linkedin alternate blue
-      style: basic
-      url: https://www.linkedin.com/
-
-    - name: 大街网
-      style: basic
-      url: http://www.dajie.com/
-
-    - name: 拉勾网
-      style: basic
-      url: http://www.lagou.com/
-
-    - name: 智联招聘
-      style: basic
-      url: http://zhaopin.com/
-
-    - name: 前程无忧
-      style: basic
-      url: http://www.51job.com/
-
-    - name: 应届生
-      style: basic
-      url: http://www.yingjiesheng.com/
-
-    - name: BOSS直聘
-      style: basic
-      url: https://www.zhipin.com/
-
-    - name: 猎聘
-      style: basic
-      url: https://www.liepin.com/
 
   - name: 娱乐
     links:
