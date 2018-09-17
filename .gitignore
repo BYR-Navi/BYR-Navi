@@ -7,9 +7,6 @@ _site/
 # Ruby
 Gemfile.lock
 
-# Analytics ID/token
-_data/analytics.yml
-
 # macOS
 .DS_Store
 
