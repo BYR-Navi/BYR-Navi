@@ -108,6 +108,10 @@
   shortcut: PT
   style: black
 
+- id: onejav
+  name: OneJav
+  url: https://onejav.com/search/
+
 - id: github
   name: GitHub
   url: https://github.com/search?q=
