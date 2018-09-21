@@ -4,7 +4,7 @@
   active_key: home
 
 - name: 访客分析
-  icon: chart line
+  icon: chart bar
   url: /analytics/
   active_key: analytics
 
