@@ -454,13 +454,13 @@
       style: red
       url: http://www.runchina.org.cn/
 
+    - name: 中国马拉松大满贯
+      style: red
+      url: https://www.chinamarathonmajors.com.cn/
+
     - name: 北京马拉松
       style: basic
       url: http://www.beijing-marathon.com/
-
-    - name: 上海马拉松
-      style: basic
-      url: http://www.shmarathon.com/home.dhtml
 
     - name: 广州马拉松
       style: basic
@@ -469,6 +469,14 @@
     - name: 重庆马拉松
       style: basic
       url: http://www.cqmarathon.com/
+
+    - name: 武汉马拉松
+      style: basic
+      url: http://www.wuhanmarathon.org/
+
+    - name: 上海马拉松
+      style: basic
+      url: http://www.shmarathon.com/
 
     - name: 厦门马拉松
       style: basic
@@ -500,7 +508,7 @@
 
     - name: 秦皇岛马拉松
       style: yellow
-      url: http://www.qhdmarathon.com/index.php
+      url: http://www.qhdmarathon.com/
 
     - name: 郑州马拉松
       style: basic
