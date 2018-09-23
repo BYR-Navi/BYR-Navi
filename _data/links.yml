@@ -251,6 +251,10 @@
       style: pink
       url: https://www.bilibili.com/
 
+    - name: 华农兄弟
+      style: yellow
+      url: https://space.bilibili.com/250858633/#/video
+
     - name: AcFun
       style: basic
       url: http://www.acfun.tv/
