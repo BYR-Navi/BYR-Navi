@@ -252,7 +252,7 @@
       url: https://www.bilibili.com/
 
     - name: 华农兄弟
-      style: yellow
+      style: basic
       url: https://space.bilibili.com/250858633/#/video
 
     - name: AcFun
@@ -529,6 +529,10 @@
     - name: 成都马拉松
       style: basic
       url: http://www.chengdu-marathon.org/
+
+    - name: 大连马拉松
+      style: basic
+      url: http://www.dlmls.org/
 
     - name: 香港马拉松
       style: blue
