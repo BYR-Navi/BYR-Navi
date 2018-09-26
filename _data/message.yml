@@ -1,8 +1,8 @@
 show: true
-hitokoto: true
-content: BYR-Navi is hosted on Linode!
-detail: You can access our website via IPv6!
+hitokoto: false
+content: BYR-Navi is now powered by Ubuntu 18.04 LTS!
+detail: System Operator
 color: black
-icon: linode
+icon: rocket
 image: false
 link: https://byr-navi.com/donate/
