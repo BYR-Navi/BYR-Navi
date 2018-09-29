@@ -80,7 +80,7 @@ if (Cookies.get('byr_navi_previous_search_service_option') === undefined || Cook
 $('#search-button').click(function () {
     var service = $('#' + $('#search-services').val());
     var query = $('#search-query').val();
-    query = encodeURIComponent(query);
+    query = encodeURIComponent(query).replace(service.attr('data-transcode-from'), service.attr('data-transcode-to'));
     if (query) {
         Cookies.set('byr_navi_previous_search_service_option', service.val(), { expires: 365 });
         window.open('search/?service=' + encodeURIComponent(service.text()) + '&query=' + query + '&next=' + encodeURIComponent(service.attr('data-url') + query + service.attr('data-suffix')), '_blank');

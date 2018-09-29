@@ -101,6 +101,14 @@
   shortcut: PN
   style: black
 
+- id: painku
+  name: 片库
+  url: https://www.pianku.tv/s/
+  suffix: .html
+  transcode:
+    from: '%'
+    to: '_'
+
 - id: lime
   name: Lime Torrents
   url: https://www.limetorrents.cc/search/all/
