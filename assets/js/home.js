@@ -80,10 +80,10 @@ if (Cookies.get('byr_navi_previous_search_service_option') === undefined || Cook
 $('#search-button').click(function () {
     var service = $('#' + $('#search-services').val());
     var query = $('#search-query').val();
-    query = encodeURIComponent(query).replace(new RegExp(service.attr('data-transcode-from'), 'g'), service.attr('data-transcode-to'));
+    query = encodeURIComponent(query);
     if (query) {
         Cookies.set('byr_navi_previous_search_service_option', service.val(), { expires: 365 });
-        window.open('search/?service=' + encodeURIComponent(service.text()) + '&query=' + query + '&next=' + encodeURIComponent(service.attr('data-url') + query + service.attr('data-suffix')), '_blank');
+        window.open('search/?service=' + encodeURIComponent(service.text()) + '&query=' + query + '&next=' + encodeURIComponent(service.attr('data-url') + query.replace(new RegExp(service.attr('data-transcode-from'), 'g'), service.attr('data-transcode-to')) + service.attr('data-suffix')), '_blank');
     } else {
         $('#search-div').addClass('error');
         $('#search-query').attr('placeholder', '请输入搜索内容');
