@@ -63,7 +63,7 @@ cd BYR-Navi
 bundle install
 ```
 
-6. Build the site and make it available on a local server
+6. Build the site and make it available on a local server.
 
 ```sh
 bundle exec jekyll serve
