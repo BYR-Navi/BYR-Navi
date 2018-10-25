@@ -71,7 +71,7 @@ bundle exec jekyll serve
 
 7. Now browse to [http://localhost:4000][localhost-4000].
 
-## :construction: Deploy
+## :construction: Deployment
 
 ### GitHub Pages (Recommended)
 Sites on GitHub Pages are powered by Jekyll behind the scenes, so if you're looking for a zero-hassle, zero-cost solution, GitHub Pages are a great way to [host your Jekyll-powered website for free][jekyll-gihub-pages].
