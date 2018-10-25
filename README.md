@@ -35,6 +35,50 @@ Before you start, you should have some basic understanding of the following:
 - YAML format
 - UNIX/Linux Shell Script
 
+### Quick Start
+
+1. Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/).
+
+2. Install Jekyll and [bundler](https://jekyllrb.com/docs/ruby-101/#bundler) [gems](https://jekyllrb.com/docs/ruby-101/#gems).
+
+```sh
+gem install jekyll bundler
+```
+
+3. Clone the project from GitHub.
+
+```sh
+git clone https://github.com/BYR-Navi/BYR-Navi.git
+```
+
+4. Change into the project directory.
+
+```sh
+cd BYR-Navi
+```
+
+5. Install required gems in the `Gemfile` using Bundler.
+
+```sh
+bundle install
+```
+
+6. Build the site and make it available on a local server
+
+```sh
+bundle exec jekyll serve
+```
+
+7. Now browse to `http://localhost:4000`.
+
+## :construction: Deployment
+
+### GitHub Pages (Recommended)
+Sites on GitHub Pages are powered by Jekyll behind the scenes, so if you're looking for a zero-hassle, zero-cost solution, GitHub Pages are a great way to [host your Jekyll-powered website for free](https://jekyllrb.com/docs/github-pages/).
+
+### Manual Deployment
+Jekyll generates your static site to the `_site` directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live. [Here](https://jekyllrb.com/docs/deployment/manual/) are some manual ways of achieving this.
+
 ## :hearts: Share the Love
 I've put a lot of time and effort into making **BYR-Navi** awesome.
 If you love it, you can buy me a coffee.
