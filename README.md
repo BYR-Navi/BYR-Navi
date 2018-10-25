@@ -37,9 +37,9 @@ Before you start, you should have some basic understanding of the following:
 
 ### Quick Start
 
-1. Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/).
+1. Install a full [Ruby development environment][jekyll-installation].
 
-2. Install Jekyll and [bundler](https://jekyllrb.com/docs/ruby-101/#bundler) [gems](https://jekyllrb.com/docs/ruby-101/#gems).
+2. Install Jekyll and [bundler][jekyll-ruby-101-bundler] [gems][jekyll-ruby-101-gems].
 
 ```sh
 gem install jekyll bundler
@@ -69,15 +69,15 @@ bundle install
 bundle exec jekyll serve
 ```
 
-7. Now browse to `http://localhost:4000`.
+7. Now browse to [http://localhost:4000][localhost-4000].
 
-## :construction: Deployment
+## :construction: Deploy
 
 ### GitHub Pages (Recommended)
-Sites on GitHub Pages are powered by Jekyll behind the scenes, so if you're looking for a zero-hassle, zero-cost solution, GitHub Pages are a great way to [host your Jekyll-powered website for free](https://jekyllrb.com/docs/github-pages/).
+Sites on GitHub Pages are powered by Jekyll behind the scenes, so if you're looking for a zero-hassle, zero-cost solution, GitHub Pages are a great way to [host your Jekyll-powered website for free][jekyll-gihub-pages].
 
 ### Manual Deployment
-Jekyll generates your static site to the `_site` directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live. [Here](https://jekyllrb.com/docs/deployment/manual/) are some manual ways of achieving this.
+Jekyll generates your static site to the `_site` directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live. [Here][jekyll-manual-deployment] are some manual ways of achieving this.
 
 ## :hearts: Share the Love
 I've put a lot of time and effort into making **BYR-Navi** awesome.
@@ -133,5 +133,11 @@ Donate [here][donate].
 [geoip]: https://www.maxmind.com/ "GeoIP"
 [jekyll]: https://jekyllrb.com/ "Jekyll"
 [jekyll-doc]: https://jekyllrb.com/docs/home/ "Jekyll Docs"
+[jekyll-installation]: https://jekyllrb.com/docs/installation/ "Jekyll Installation"
+[jekyll-gihub-pages]: https://jekyllrb.com/docs/github-pages/ "Jekyll GitHub Pages"
+[jekyll-manual-deployment]: https://jekyllrb.com/docs/deployment/manual/ "Jekyll Manual Deployment"
+[jekyll-ruby-101-gems]: https://jekyllrb.com/docs/ruby-101/#gems "Jekyll Ruby 101 Gems"
+[jekyll-ruby-101-bundler]: https://jekyllrb.com/docs/ruby-101/#bundler "Jekyll Ruby 101 Bundler"
+[localhost-4000]: http://localhost:4000 "Local Host (Port: 4000)"
 [github-pages]: https://pages.github.com/ "GitHub Pages"
 [linode]: https://www.linode.com/ "Linode"
