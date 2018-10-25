@@ -22,7 +22,7 @@ This project is a [Jekyll][jekyll]-powered website, which is built based on [Fom
 The whole project is designed and built with high flexibility of configuration and customization.
 You can either configure it by modifying the `_config.yml` file or customize it by replacing the content of the `*.yml` files in the `_data` folder with your own data.
 
-## :memo: A Tiny Tutorial
+## :book: A Tiny Tutorial
 There is **no easy way for beginners** without essential background knowledge.
 To be efficient, the best way to understand this project is to start with the Jekyll's [docs][jekyll-doc] and Fomantic UI's [docs][fomantic-doc].
 
