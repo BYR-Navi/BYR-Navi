@@ -35,6 +35,10 @@
     margin-top: 0.5em;
 }
 
+.ui.masthead .ui.selection.link.list {
+    margin-top: 0;
+}
+
 @media only screen and (max-width: 767px) {
     .ui.masthead .ui.text.container {
         margin-top: 2rem;
