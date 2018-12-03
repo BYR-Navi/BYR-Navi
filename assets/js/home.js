@@ -19,7 +19,7 @@ function updateGitHub(repository) {
 var repository = $('meta[name=repository]').attr('content');
 updateGitHub(repository);
 setInterval(function () {
-    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+    if (!(typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined")) {
         updateGitHub(repository);
     };
 }, 60000);
@@ -33,7 +33,7 @@ function updateVersion(timestamp) {
 var updateAt = $('meta[name=updated_at]').attr('content');
 updateVersion(updateAt);
 setInterval(function () {
-    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+    if (!(typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined")) {
         updateVersion(updateAt);
     };
 }, 60000);
@@ -70,7 +70,7 @@ function updateVisit(updateProgressBar) {
 };
 updateVisit(true);
 setInterval(function () {
-    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+    if (!(typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined")) {
         updateVisit(false);
     };
 }, 60000);

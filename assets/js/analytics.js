@@ -153,7 +153,7 @@ function updateVisit(updateProgressBar) {
 };
 updateVisit(true);
 setInterval(function () {
-    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+    if (!(typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined")) {
         updateVisit(false);
     };
 }, 60000);
@@ -335,7 +335,7 @@ function updateVisitSummaryChart(updateProgressBar) {
 updateVisitSummaryChart(true);
 visitSummaryChart.hideLoading();
 setInterval(function () {
-    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+    if (!(typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined")) {
         updateVisitSummaryChart(false);
     };
 }, 60000);
@@ -544,7 +544,7 @@ function updateVisitHourlyChart(updateProgressBar) {
 updateVisitHourlyChart(true);
 visitHourlyChart.hideLoading();
 setInterval(function () {
-    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+    if (!(typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined")) {
         updateVisitHourlyChart(false);
     };
 }, 60000);
@@ -725,7 +725,7 @@ function updateVisitMapChart(updateProgressBar) {
 };
 updateVisitMapChart(true);
 setInterval(function () {
-    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+    if (!(typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined")) {
         updateVisitMapChart(false);
     };
 }, 60000);
@@ -862,7 +862,7 @@ function updateVisitCalendarChart(updateProgressBar) {
 };
 updateVisitCalendarChart(true);
 setInterval(function () {
-    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+    if (!(typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined")) {
         updateVisitCalendarChart(false);
     };
 }, 60000);
