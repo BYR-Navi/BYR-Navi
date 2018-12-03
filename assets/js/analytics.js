@@ -153,7 +153,9 @@ function updateVisit(updateProgressBar) {
 };
 updateVisit(true);
 setInterval(function () {
-    updateVisit(false);
+    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+        updateVisit(false);
+    };
 }, 60000);
 
 // chart
@@ -333,7 +335,9 @@ function updateVisitSummaryChart(updateProgressBar) {
 updateVisitSummaryChart(true);
 visitSummaryChart.hideLoading();
 setInterval(function () {
-    updateVisitSummaryChart(false);
+    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+        updateVisitSummaryChart(false);
+    };
 }, 60000);
 
 var visitHourlyChart = echarts.init(document.getElementById('visit-hourly'), 'light');
@@ -540,7 +544,9 @@ function updateVisitHourlyChart(updateProgressBar) {
 updateVisitHourlyChart(true);
 visitHourlyChart.hideLoading();
 setInterval(function () {
-    updateVisitHourlyChart(false);
+    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+        updateVisitHourlyChart(false);
+    };
 }, 60000);
 
 var visitMapChart = echarts.init(document.getElementById('visit-map'), 'light');
@@ -719,7 +725,9 @@ function updateVisitMapChart(updateProgressBar) {
 };
 updateVisitMapChart(true);
 setInterval(function () {
-    updateVisitMapChart(false);
+    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+        updateVisitMapChart(false);
+    };
 }, 60000);
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
@@ -854,5 +862,7 @@ function updateVisitCalendarChart(updateProgressBar) {
 };
 updateVisitCalendarChart(true);
 setInterval(function () {
-    updateVisitCalendarChart(false);
+    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+        updateVisitCalendarChart(false);
+    };
 }, 60000);

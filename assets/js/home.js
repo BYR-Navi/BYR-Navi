@@ -19,7 +19,9 @@ function updateGitHub(repository) {
 var repository = $('meta[name=repository]').attr('content');
 updateGitHub(repository);
 setInterval(function () {
-    updateGitHub(repository);
+    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+        updateGitHub(repository);
+    };
 }, 60000);
 
 // version
@@ -31,7 +33,9 @@ function updateVersion(timestamp) {
 var updateAt = $('meta[name=updated_at]').attr('content');
 updateVersion(updateAt);
 setInterval(function () {
-    updateVersion(updateAt);
+    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+        updateVersion(updateAt);
+    };
 }, 60000);
 
 // visit
@@ -66,7 +70,9 @@ function updateVisit(updateProgressBar) {
 };
 updateVisit(true);
 setInterval(function () {
-    updateVisit(false);
+    if (typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined") {
+        updateVisit(false);
+    };
 }, 60000);
 
 // search
