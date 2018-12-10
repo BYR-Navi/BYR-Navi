@@ -72,7 +72,7 @@ function updateAnalytics() {
 };
 updateAnalytics();
 setInterval(function () {
-    if (!(typeof document.hidden !== "undefined" || typeof document.msHidden !== "undefined" || typeof document.webkitHidden !== "undefined")) {
+    if (!document.hidden) {
         updateAnalytics();
     };
 }, 60000);
