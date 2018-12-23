@@ -732,7 +732,7 @@ setInterval(function () {
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
 var firstYear = establishedAt.getFullYear();
-var maxYear = 2018;
+var maxYear = 2019;
 visitCalendarChart.setOption({
     baseOption: {
         title: {
@@ -774,6 +774,10 @@ visitCalendarChart.setOption({
             range: 2018,
             right: 5,
             top: 420
+        }, {
+            range: 2019,
+            right: 5,
+            top: 600
         }],
         series: [{
             type: 'heatmap',
@@ -789,6 +793,11 @@ visitCalendarChart.setOption({
             type: 'heatmap',
             coordinateSystem: 'calendar',
             calendarIndex: 2,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 3,
             data: []
         }]
     },
@@ -815,6 +824,10 @@ visitCalendarChart.setOption({
                 orient: 'vertical',
                 left: 'center',
                 top: 2350
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 3480
             }]
         }
     }]
