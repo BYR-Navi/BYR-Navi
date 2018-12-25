@@ -275,17 +275,22 @@
       style: basic
       url: http://www.xiami.com/
 
-    - name: 多瑙影院
-      style: basic
-      url: http://www.dnvod.tv/
-
     - name: FIX作品
       style: yellow
       url: http://www.zimuxia.cn/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BD%9C%E5%93%81
 
+    - name: 豆瓣电影
+      icon: film blue
+      style: basic
+      url: https://movie.douban.com/
+
     - name: 斗鱼
       style: orange
       url: https://www.douyu.com/
+
+    - name: 多瑙影院
+      style: basic
+      url: http://www.dnvod.tv/
 
 - categories:
   - name: 北邮校园
