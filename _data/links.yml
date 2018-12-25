@@ -288,9 +288,9 @@
       style: orange
       url: https://www.douyu.com/
 
-    - name: 多瑙影院
-      style: basic
-      url: http://www.dnvod.tv/
+    # - name: 多瑙影院
+    #   style: basic
+    #   url: http://www.dnvod.tv/
 
 - categories:
   - name: 北邮校园
