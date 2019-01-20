@@ -39,15 +39,16 @@
 
 .ui.links.stripe.segment,
 .ui.stats.stripe.segment,
-.ui.quote.stripe.segment {
+.ui.qrcode.stripe.segment {
     padding: 0em;
+    z-index: -1;
 }
 
 .ui.stats.stripe.segment .grid .column {
     padding-top: 3em;
     padding-bottom: 3em;
 }
-.ui.quote.stripe.segment .grid .column {
+.ui.qrcode.stripe.segment .grid .column {
     padding-top: 5em;
     padding-bottom: 5em;
 }
