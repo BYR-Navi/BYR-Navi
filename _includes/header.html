@@ -27,4 +27,5 @@
             {%- endif -%}
         </div>
     {%- endif -%}
+    {% if page.active_key == 'home' or page.active_key == 'analytics' %}{% include page_loading_progress_bar.html %}{% endif %}
 </div>
