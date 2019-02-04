@@ -263,10 +263,6 @@
       style: basic
       url: http://www.acfun.cn/
 
-    - name: 吐槽
-      style: basic
-      url: http://www.tucao.tv/
-
     - name: 腾讯动漫
       style: basic
       url: http://ac.qq.com/
