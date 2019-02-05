@@ -36,7 +36,7 @@
       url: http://you.163.com/
 
     - name: 优衣库
-      style: basic
+      style: red
       url: http://www.uniqlo.cn/
 
     - name: 无印良品
@@ -44,7 +44,7 @@
       url: http://www.muji.com.cn/
 
     - name: IKEA
-      style: basic
+      style: yellow
       url: https://www.ikea.cn/
 
     - name: 造作
@@ -56,7 +56,7 @@
       url: http://www.smartisan.com/
 
     - name: 小米商城
-      style: basic
+      style: orange
       url: https://www.mi.com/
 
   - name: 工具
