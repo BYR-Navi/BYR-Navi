@@ -109,6 +109,10 @@
     from: '%'
     to: '_'
 
+- id: cilimao
+  name: 磁力猫
+  url: https://www.cilimao.cc/search?word=
+
 - id: lime
   name: Lime Torrents
   url: https://www.limetorrents.cc/search/all/
