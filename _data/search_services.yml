@@ -95,11 +95,11 @@
   shortcut: FIX
   style: black
 
-- id: pniao
-  name: 胖鸟电影
-  url: http://www.pniao.com/Mov/so/
-  shortcut: PN
-  style: black
+# - id: pniao
+#   name: 胖鸟电影
+#   url: http://www.pniao.com/Mov/so/
+#   shortcut: PN
+#   style: black
 
 - id: painku
   name: 片库
