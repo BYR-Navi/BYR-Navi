@@ -1,17 +1,9 @@
 [![Build Status](https://travis-ci.org/BYR-Navi/BYR-Navi.svg)][travis-ci]
 [![Website](https://img.shields.io/website-up-down-green-red/https/byr-navi.com.svg)][website]
 [![License](https://img.shields.io/github/license/BYR-Navi/BYR-Navi.svg)][license]
+[![Last Commit](https://img.shields.io/github/last-commit/BYR-Navi/BYR-Navi.svg)][commit]
 [![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)][saythanks]
 [![Donate](https://img.shields.io/badge/Donate-Coffee-A5673F.svg)][donate]
-
-[![Watchers](https://img.shields.io/github/watchers/BYR-Navi/BYR-Navi.svg?style=social&label=Watch)][watch]
-[![Stargazers](https://img.shields.io/github/stars/BYR-Navi/BYR-Navi.svg?style=social&label=Star)][star]
-[![Forks](https://img.shields.io/github/forks/BYR-Navi/BYR-Navi.svg?style=social&label=Fork)][fork]
-
-[![Closed Issues](https://img.shields.io/github/issues-closed/BYR-Navi/BYR-Navi.svg)][issue]
-[![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed/BYR-Navi/BYR-Navi.svg)][pull]
-[![Last Commit](https://img.shields.io/github/last-commit/BYR-Navi/BYR-Navi.svg)][commit]
-
 
 # BYR-Navi
 A Navigation [Website][website] for BYR
@@ -110,14 +102,9 @@ Donate [here][donate].
 [travis-ci]: https://travis-ci.org/BYR-Navi/BYR-Navi "Travis CI"
 [website]: https://byr-navi.com/ "Website"
 [license]: https://github.com/BYR-Navi/BYR-Navi/blob/master/LICENSE "License"
+[commit]: https://github.com/BYR-Navi/BYR-Navi/commits/master "Last Commit"
 [saythanks]: https://saythanks.io/to/iROCKBUNNY "Say Thanks"
 [donate]: https://byr-navi.com/donate/ "Donate"
-[watch]: https://github.com/BYR-Navi/BYR-Navi/watchers "Watchers"
-[star]: https://github.com/BYR-Navi/BYR-Navi/stargazers "Stargazers"
-[fork]: https://github.com/BYR-Navi/BYR-Navi/network "Forks"
-[issue]: https://github.com/BYR-Navi/BYR-Navi/issues "Issues"
-[pull]: https://github.com/BYR-Navi/BYR-Navi/pulls "Pull Requests"
-[commit]: https://github.com/BYR-Navi/BYR-Navi/commits/master "Last Commit"
 
 [fomantic]: https://fomantic-ui.com/ "Fomantic UI"
 [fomantic-doc]: https://fomantic-ui.com/introduction/getting-started.html "Fomantic UI Docs"
