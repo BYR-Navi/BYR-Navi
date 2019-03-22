@@ -31,6 +31,10 @@
     margin-top: 0.5rem;
 }
 
+.ui.masthead .shortcuts .label:first-child {
+    margin-left: 0.5em;
+}
+
 .ui.masthead .ui.link.list {
     margin-top: 0.5em;
 }

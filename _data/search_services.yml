@@ -44,8 +44,15 @@
 - id: github
   name: GitHub
   url: https://github.com/search?q=
+  # shortcut:
+  #   icon: github
+  #   style: black
+
+- id: stackoverflow
+  name: Stack Overflow
+  url: https://stackoverflow.com/search?q=
   shortcut:
-    icon: github
+    icon: stack overflow orange inverted
     style: black
 
 - id: zhihu
@@ -128,9 +135,9 @@
 - id: xiami
   name: 虾米音乐
   url: http://www.xiami.com/search?key=
-  shortcut:
-    icon: music orange inverted
-    style: black
+  # shortcut:
+  #   icon: music orange inverted
+  #   style: black
 
 - id: bilibili
   name: 哔哩哔哩
