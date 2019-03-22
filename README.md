@@ -117,7 +117,7 @@ Donate [here][donate].
 [fork]: https://github.com/BYR-Navi/BYR-Navi/network "Forks"
 [issue]: https://github.com/BYR-Navi/BYR-Navi/issues "Issues"
 [pull]: https://github.com/BYR-Navi/BYR-Navi/pulls "Pull Requests"
-[commit]: https://github.com/Y-Lab/Y-Player/commits/master "Last Commit"
+[commit]: https://github.com/BYR-Navi/BYR-Navi/commits/master "Last Commit"
 
 [fomantic]: https://fomantic-ui.com/ "Fomantic UI"
 [fomantic-doc]: https://fomantic-ui.com/introduction/getting-started.html "Fomantic UI Docs"
