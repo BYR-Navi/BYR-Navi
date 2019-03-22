@@ -24,7 +24,7 @@
   url: https://api.map.baidu.com/geocoder?address=
   suffix: "&output=html"
   shortcut:
-    icon: map marked alternate green inverted
+    icon: map marked alternate yellow inverted
     style: black
 
 - id: baidunews
