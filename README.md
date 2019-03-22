@@ -10,7 +10,7 @@
 
 [![Closed Issues](https://img.shields.io/github/issues-closed/BYR-Navi/BYR-Navi.svg)][issue]
 [![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed/BYR-Navi/BYR-Navi.svg)][pull]
-[![Last Commit](https://img.shields.io/github/last-commit/Y-Lab/Y-Player.svg)][commit]
+[![Last Commit](https://img.shields.io/github/last-commit/BYR-Navi/BYR-Navi.svg)][commit]
 
 
 # BYR-Navi
@@ -77,7 +77,7 @@ bundle exec jekyll serve
 Sites on GitHub Pages are powered by Jekyll behind the scenes, so if you're looking for a zero-hassle, zero-cost solution, GitHub Pages are a great way to [host your Jekyll-powered website for free][jekyll-gihub-pages].
 
 ### Manual Deployment
-Jekyll generates your static site to the `_site` directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live. 
+Jekyll generates your static site to the `_site` directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live.
 [Here][jekyll-manual-deployment] are some manual ways of achieving this.
 
 ## :hearts: Share the Love
