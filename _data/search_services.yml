@@ -146,6 +146,13 @@
     icon: tv pink inverted
     style: black
 
+- id: fixzimuxia
+  name: FIX字幕侠
+  url: http://www.zimuxia.cn/?s=
+  shortcut:
+    icon: closed captioning yellow inverted
+    style: black
+
 - id: fkdy
   name: 影视
   url: http://ifkdy.com/?q=
@@ -154,13 +161,6 @@
 - id: wangpan
   name: 网盘
   url: http://www.58wangpan.com/search/kw
-
-- id: fixzimuxia
-  name: FIX字幕侠
-  url: http://www.zimuxia.cn/?s=
-  shortcut:
-    icon: closed captioning yellow inverted
-    style: black
 
 - id: painku
   name: 片库
