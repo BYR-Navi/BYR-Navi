@@ -31,16 +31,17 @@
     margin-top: 0.5rem;
 }
 
-.ui.masthead .shortcuts .label:first-child {
-    margin-left: 0.5em;
-}
-
 .ui.masthead .ui.link.list {
     margin-top: 0.5em;
 }
 
 .ui.masthead .ui.selection.link.list {
-    margin-top: 0;
+    margin-top: 0em;
+}
+
+.ui.labels .ui.label {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
 }
 
 @media only screen and (max-width: 767px) {
