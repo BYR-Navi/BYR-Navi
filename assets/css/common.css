@@ -17,6 +17,7 @@
 
 .ui.masthead.segment {
     padding: 1em 0em;
+    z-index: 1;
 }
 
 .ui.masthead h1.ui.header {
@@ -41,7 +42,6 @@
 .ui.stats.stripe.segment,
 .ui.qrcode.stripe.segment {
     padding: 0em;
-    z-index: -1;
 }
 
 .ui.stats.stripe.segment .grid .column {
