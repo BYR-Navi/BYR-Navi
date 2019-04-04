@@ -251,13 +251,21 @@
       style: pink
       url: https://www.bilibili.com/
 
-    - name: 华农兄弟
+    - name: 华农
       style: basic
       url: https://space.bilibili.com/250858633/video
 
-    - name: 美食作家王刚
+    - name: 王刚
       style: basic
       url: https://space.bilibili.com/290526283/video
+
+    - name: 郭杰瑞
+      style: basic
+      url: https://space.bilibili.com/176037767/video
+
+    - name: 阿烽
+      style: basic
+      url: https://space.bilibili.com/374716732/video
 
     - name: AcFun
       style: basic
