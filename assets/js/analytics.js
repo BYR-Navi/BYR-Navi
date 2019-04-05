@@ -8,16 +8,6 @@ function siteEstablishedDays() {
     return Math.floor((today - establishedAt) / 86400000 + 1);
 };
 
-// progress bar
-$('#page-loading-progress').progress({
-    total: 14,
-    onSuccess: function () {
-        $('#page-loading-progress').fadeOut(1000, function () {
-            $('#page-loading-progress').remove();
-        });
-    }
-});
-
 // clock
 $('#established-at').countdown(establishedAt, {
     elapse: true
@@ -54,7 +44,6 @@ $.getJSON(analyticsAPI.url, {
     'token_auth': analyticsAPI.token
 }, function (data) {
     yesterdayVisitorsCountUp.update(data.value);
-    $('#page-loading-progress').progress('increment');
 });
 $.getJSON(analyticsAPI.url, {
     'module': 'API',
@@ -66,7 +55,6 @@ $.getJSON(analyticsAPI.url, {
     'token_auth': analyticsAPI.token
 }, function (data) {
     yesterdayVisitsCountUp.update(data.value);
-    $('#page-loading-progress').progress('increment');
 });
 $.getJSON(analyticsAPI.url, {
     'module': 'API',
@@ -78,9 +66,8 @@ $.getJSON(analyticsAPI.url, {
     'token_auth': analyticsAPI.token
 }, function (data) {
     yesterdayActionsCountUp.update(data.value);
-    $('#page-loading-progress').progress('increment');
 });
-function updateVisit(updateProgressBar) {
+function updateVisit() {
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
@@ -91,9 +78,6 @@ function updateVisit(updateProgressBar) {
         'token_auth': analyticsAPI.token
     }, function (data) {
         totalActionsCountUp.update(data.value);
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
     });
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
@@ -104,9 +88,6 @@ function updateVisit(updateProgressBar) {
         'token_auth': analyticsAPI.token
     }, function (data) {
         liveVisitorsCountUp.update(data[0].visitors);
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
     });
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
@@ -118,9 +99,6 @@ function updateVisit(updateProgressBar) {
         'token_auth': analyticsAPI.token
     }, function (data) {
         todayVisitorsCountUp.update(data.value);
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
     });
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
@@ -132,9 +110,6 @@ function updateVisit(updateProgressBar) {
         'token_auth': analyticsAPI.token
     }, function (data) {
         todayVisitsCountUp.update(data.value);
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
     });
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
@@ -146,15 +121,12 @@ function updateVisit(updateProgressBar) {
         'token_auth': analyticsAPI.token
     }, function (data) {
         todayActionsCountUp.update(data.value);
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
     });
 };
-updateVisit(true);
+updateVisit();
 setInterval(function () {
     if (!document.hidden) {
-        updateVisit(false);
+        updateVisit();
     };
 }, 60000);
 
@@ -256,7 +228,7 @@ visitSummaryChart.setOption({
     }]
 });
 visitSummaryChart.showLoading();
-function updateVisitSummaryChart(updateProgressBar) {
+function updateVisitSummaryChart() {
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
@@ -281,9 +253,6 @@ function updateVisitSummaryChart(updateProgressBar) {
                 data: visitors
             }]
         });
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
     });
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
@@ -304,9 +273,6 @@ function updateVisitSummaryChart(updateProgressBar) {
                 data: visits
             }]
         });
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
     });
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
@@ -327,16 +293,13 @@ function updateVisitSummaryChart(updateProgressBar) {
                 data: actions
             }]
         });
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
     });
 };
-updateVisitSummaryChart(true);
+updateVisitSummaryChart();
 visitSummaryChart.hideLoading();
 setInterval(function () {
     if (!document.hidden) {
-        updateVisitSummaryChart(false);
+        updateVisitSummaryChart();
     };
 }, 60000);
 
@@ -458,7 +421,7 @@ function normalizeSymbolSize(val, data, resize) {
         };
     };
 };
-function updateVisitHourlyChart(updateProgressBar) {
+function updateVisitHourlyChart() {
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'VisitTime.getVisitInformationPerServerTime',
@@ -536,16 +499,13 @@ function updateVisitHourlyChart(updateProgressBar) {
                 }
             }]
         });
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
     });
 };
-updateVisitHourlyChart(true);
+updateVisitHourlyChart();
 visitHourlyChart.hideLoading();
 setInterval(function () {
     if (!document.hidden) {
-        updateVisitHourlyChart(false);
+        updateVisitHourlyChart();
     };
 }, 60000);
 
@@ -644,7 +604,7 @@ visitMapChart.setOption({
         }
     }]
 });
-function updateVisitMapChart(updateProgressBar) {
+function updateVisitMapChart() {
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'UserCountry.getCountry',
@@ -718,15 +678,12 @@ function updateVisitMapChart(updateProgressBar) {
                 data: actions
             }]
         });
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
     });
 };
-updateVisitMapChart(true);
+updateVisitMapChart();
 setInterval(function () {
     if (!document.hidden) {
-        updateVisitMapChart(false);
+        updateVisitMapChart();
     };
 }, 60000);
 
@@ -832,7 +789,7 @@ visitCalendarChart.setOption({
         }
     }]
 });
-function updateVisitCalendarChart(updateProgressBar) {
+function updateVisitCalendarChart() {
     $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
@@ -868,14 +825,11 @@ function updateVisitCalendarChart(updateProgressBar) {
         visitCalendarChart.setOption({
             series: series
         });
-        if (updateProgressBar) {
-            $('#page-loading-progress').progress('increment');
-        };
     });
 };
-updateVisitCalendarChart(true);
+updateVisitCalendarChart();
 setInterval(function () {
     if (!document.hidden) {
-        updateVisitCalendarChart(false);
+        updateVisitCalendarChart();
     };
 }, 60000);

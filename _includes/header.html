@@ -2,7 +2,7 @@
     <div class="ui container">
         <div class="ui large borderless inverted menu" style="border: none;">
             <div class="toc link icon item"><i class="sidebar icon"></i></div>
-            <a class="header item loading-trigger" href="{{ '/' | relative_url }}">
+            <a class="header item" href="{{ '/' | relative_url }}">
                 <div class="ui middle aligned image">
                     <img class="logo-image" src="{{ site.logo_white }}" alt="Logo">
                 </div>
@@ -27,5 +27,4 @@
             {%- endif -%}
         </div>
     {%- endif -%}
-    {% if page.active_key == 'home' or page.active_key == 'analytics' %}{% include page_loading_progress_bar.html %}{% endif %}
 </div>

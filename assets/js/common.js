@@ -1,5 +1,6 @@
 // common.js
 
+// menu
 $(document).ready(function () {
     // fix menu when passed
     $('.masthead').visibility({
@@ -13,11 +14,6 @@ $(document).ready(function () {
     });
     // create sidebar and attach to menu open
     $('.ui.sidebar').sidebar('attach events', '.toc.item');
-});
-
-// loading dimmer
-$('.loading-trigger').click(function () {
-    $('#loading-dimmer').dimmer('show');
 });
 
 // masthead background
