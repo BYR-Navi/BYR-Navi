@@ -16,6 +16,7 @@
     {% if page.active_key == 'search' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/search.css' | relative_url }}">{% endif %}
     {% if page.active_key == 'error' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/error.css' | relative_url }}">{% endif %}
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/masthead.css' | relative_url }}">
+    {% if site.grayscale %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/grayscale.css' | relative_url }}">{% endif %}
     <link rel="apple-touch-icon" type="image/png" href="{{ '/apple-touch-icon.png' | relative_url }}">
     <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
     {% include analytics.html %}
