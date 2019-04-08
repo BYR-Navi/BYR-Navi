@@ -1,12 +1,12 @@
 <div class="ui text container">
-    {%- if site.data.message.show -%}
-        {%- if site.data.message.hitokoto -%}
-            <a id="hitokoto" class="ui {{ site.data.message.color }} pointing below label"><i class="quote left icon"></i></a>
+    {%- if site.data.banner.show -%}
+        {%- if site.data.banner.hitokoto -%}
+            <a id="hitokoto" class="ui {{ site.data.banner.color }} pointing below label"><i class="quote left icon"></i></a>
         {%- else -%}
-            {%- if site.data.message.link -%}
-                <a class="ui {{ site.data.message.color }} pointing below {% unless site.data.message.icon %}{% if site.data.message.image %}image {% endif %}{% endunless %}label" href="{{ site.data.message.link }}" target="_blank">{% if site.data.message.icon %}<i class="{{ site.data.message.icon }} icon"></i>{% elsif site.data.message.image %}<img src="{{ site.data.message.image }}" alt="Message Image">{% endif %}{{ site.data.message.content }}{% if site.data.message.detail %}<div class="detail">{{ site.data.message.detail }}</div>{% endif %}</a>
+            {%- if site.data.banner.link -%}
+                <a class="ui {{ site.data.banner.color }} pointing below {% unless site.data.banner.icon %}{% if site.data.banner.image %}image {% endif %}{% endunless %}label" href="{{ site.data.banner.link }}" target="_blank">{% if site.data.banner.icon %}<i class="{{ site.data.banner.icon }} icon"></i>{% elsif site.data.banner.image %}<img src="{{ site.data.banner.image }}" alt="Message Image">{% endif %}{{ site.data.banner.content }}{% if site.data.banner.detail %}<div class="detail">{{ site.data.banner.detail }}</div>{% endif %}</a>
             {%- else -%}
-                <div class="ui {{ site.data.message.color }} pointing below {% unless site.data.message.icon %}{% if site.data.message.image %}image {% endif %}{% endunless %}label">{% if site.data.message.icon %}<i class="{{ site.data.message.icon }} icon"></i>{% elsif site.data.message.image %}<img src="{{ site.data.message.image }}" alt="Message Image">{% endif %}{{ site.data.message.content }}{% if site.data.message.detail %}<div class="detail">{{ site.data.message.detail }}</div>{% endif %}</div>
+                <div class="ui {{ site.data.banner.color }} pointing below {% unless site.data.banner.icon %}{% if site.data.banner.image %}image {% endif %}{% endunless %}label">{% if site.data.banner.icon %}<i class="{{ site.data.banner.icon }} icon"></i>{% elsif site.data.banner.image %}<img src="{{ site.data.banner.image }}" alt="Message Image">{% endif %}{{ site.data.banner.content }}{% if site.data.banner.detail %}<div class="detail">{{ site.data.banner.detail }}</div>{% endif %}</div>
             {%- endif -%}
         {%- endif -%}
     {%- endif -%}
