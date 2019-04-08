@@ -271,9 +271,9 @@
       style: basic
       url: https://space.bilibili.com/280793434/video
 
-    - name: AcFun
-      style: basic
-      url: http://www.acfun.cn/
+    # - name: AcFun
+    #   style: basic
+    #   url: http://www.acfun.cn/
 
     - name: 腾讯动漫
       style: basic
