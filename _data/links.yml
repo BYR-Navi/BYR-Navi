@@ -239,7 +239,7 @@
       style: basic
       url: http://www.iqiyi.com/
 
-    - name: 芒果TV
+    - name: 芒果
       style: basic
       url: http://www.mgtv.com/
 
@@ -247,7 +247,7 @@
       style: basic
       url: https://v.qq.com/
 
-    - name: 哔哩哔哩
+    - name: B站
       style: pink
       url: https://www.bilibili.com/
 
@@ -267,6 +267,10 @@
       style: basic
       url: https://space.bilibili.com/374716732/video
 
+    - name: 呆子
+      style: basic
+      url: https://space.bilibili.com/84830087/video
+
     # - name: 手工耿
     #   style: basic
     #   url: https://space.bilibili.com/280793434/video
@@ -283,11 +287,11 @@
       style: basic
       url: http://www.xiami.com/
 
-    - name: FIX作品
+    - name: FIX
       style: yellow
       url: http://www.zimuxia.cn/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BD%9C%E5%93%81
 
-    - name: 人人影视
+    - name: 人人
       style: basic
       url: http://www.yyetss.com/
 
