@@ -59,6 +59,10 @@
       style: orange
       url: https://www.mi.com/
 
+    - name: 小米有品
+      style: basic
+      url: https://www.xiaomiyoupin.com/
+
   - name: 工具
     links:
     - name: '12306'
