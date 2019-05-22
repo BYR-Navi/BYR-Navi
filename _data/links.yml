@@ -296,8 +296,12 @@
       url: http://www.zimuxia.cn/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BD%9C%E5%93%81
 
     - name: 人人
-      style: basic
-      url: http://www.yyetss.com/
+      style: blue
+      url: http://www.yyets.com/
+
+    - name: 猪猪
+      style: purple
+      url: http://www.zzrbl.com/
 
     # - name: 豆瓣电影
     #   icon: film blue
