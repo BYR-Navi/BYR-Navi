@@ -1,9 +1,9 @@
 show: true
 memorial: false
-hitokoto: true
-content: 向四川凉山木里森林火灾牺牲烈士致敬
+hitokoto: false
+content: BYR-Navi host has been migrated to a new data center!
 detail: System Operator
 color: black
-icon: heart
+icon: shipping fast
 image: false
 link: https://byr-navi.com/donate/
