@@ -1,0 +1,23 @@
+/* customize.css */
+
+.ui.masthead.segment {
+    min-height: 300px;
+}
+
+.ui.masthead h1.ui.header {
+    margin-top: 1.5em;
+}
+
+.ui.masthead h2.ui.header {
+    margin-bottom: 1.5em;
+}
+
+.ui.vertical.stripe .ui.statistic .label {
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 767px) {
+    .ui.masthead.segment {
+        min-height: 160px;
+    }
+}

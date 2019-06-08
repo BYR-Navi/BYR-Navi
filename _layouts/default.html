@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="//unpkg.com/fomantic-ui/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/common.css' | relative_url }}">
     {% if page.active_key == 'home' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/home.css' | relative_url }}">{% endif %}
+    {% if page.active_key == 'customize' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize.css' | relative_url }}">{% endif %}
     {% if page.active_key == 'analytics' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/analytics.css' | relative_url }}">{% endif %}
     {% if page.active_key == 'donate' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/donate.css' | relative_url }}">{% endif %}
     {% if page.active_key == 'search' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/search.css' | relative_url }}">{% endif %}
@@ -39,6 +40,8 @@
     {% if page.active_key == 'home' %}<script type="text/javascript" src="{{ '/assets/js/suggest-query.min.js' | relative_url }}"></script>{% endif %}
     {% if page.active_key == 'home' and site.data.banner.hitokoto %}<script type="text/javascript" src="{{ '/assets/js/hitokoto.js' | relative_url }}"></script>{% endif %}
     {% if page.active_key == 'home' %}<script type="text/javascript" src="{{ '/assets/js/home.js' | relative_url }}"></script>{% endif %}
+    {% if page.active_key == 'customize' %}<script type="text/javascript" src="//unpkg.com/js-cookie/src/js.cookie.js"></script>{% endif %}
+    {% if page.active_key == 'customize' %}<script type="text/javascript" src="{{ '/assets/js/customize.js' | relative_url }}"></script>{% endif %}
     {% if page.active_key == 'analytics' %}<script type="text/javascript" src="//unpkg.com/jquery-countdown/dist/jquery.countdown.min.js"></script>{% endif %}
     {% if page.active_key == 'analytics' %}<script type="text/javascript" src="//unpkg.com/countup.js@1.9.3/dist/countUp.min.js"></script>{% endif %}
     {% if page.active_key == 'analytics' %}<script type="text/javascript" src="//unpkg.com/echarts/dist/echarts.min.js"></script>{% endif %}

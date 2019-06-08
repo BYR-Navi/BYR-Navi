@@ -3,6 +3,11 @@
   url: /
   active_key: home
 
+- name: 定制化
+  icon: tools
+  url: /customize/
+  active_key: customize
+
 - name: 访客分析
   icon: chart bar
   url: /analytics/
