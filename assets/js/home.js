@@ -61,10 +61,14 @@ setInterval(function () {
 
 // search
 $('#search-services').dropdown();
-if (Cookies.get('byr_navi_previous_search_service_option') === undefined || Cookies.get('byr_navi_previous_search_service_option') === '' || $('#' + Cookies.get('byr_navi_previous_search_service_option')).length === 0) {
-    Cookies.set('byr_navi_previous_search_service_option', $('#search-services').val(), { expires: 365 });
+if (Cookies.get('byr_navi_previous_used_search_service') === undefined || Cookies.get('byr_navi_previous_used_search_service') === '' || $('#' + Cookies.get('byr_navi_previous_used_search_service')).length === 0) {
+    Cookies.set('byr_navi_previous_used_search_service', $('#search-services').val(), {
+        expires: 365,
+        domain: '.byr-navi.com',
+        secure: true
+    });
 } else {
-    $('#search-services').dropdown('set selected', Cookies.get('byr_navi_previous_search_service_option'));
+    $('#search-services').dropdown('set selected', Cookies.get('byr_navi_previous_used_search_service'));
 };
 
 $('#search-button').click(function () {
@@ -72,7 +76,11 @@ $('#search-button').click(function () {
     var query = $('#search-query').val();
     query = encodeURIComponent(query);
     if (query) {
-        Cookies.set('byr_navi_previous_search_service_option', service.val(), { expires: 365 });
+        Cookies.set('byr_navi_previous_used_search_service', service.val(), {
+            expires: 365,
+            domain: '.byr-navi.com',
+            secure: true
+        });
         window.open('search/?service=' + encodeURIComponent(service.text()) + '&query=' + query + '&next=' + encodeURIComponent(service.attr('data-url') + query.replace(new RegExp(service.attr('data-transcode-from'), 'g'), service.attr('data-transcode-to')) + service.attr('data-suffix')), '_blank');
     } else {
         $('#search-div').addClass('error');
@@ -101,7 +109,11 @@ $(window).keyup(function (event) {
         query = encodeURIComponent(query);
         if (query) {
             if ($('#search-query:focus').length > 0) {
-                Cookies.set('byr_navi_previous_search_service_option', service.val(), { expires: 365 });
+                Cookies.set('byr_navi_previous_used_search_service', service.val(), {
+                    expires: 365,
+                    domain: '.byr-navi.com',
+                    secure: true
+                });
                 window.open('search/?service=' + encodeURIComponent(service.text()) + '&query=' + query + '&next=' + encodeURIComponent(service.attr('data-url') + query + service.attr('data-suffix')), '_blank');
             } else {
                 $('#search-query').focus().select();
@@ -128,7 +140,11 @@ $('.shortcuts .ui.label').each(function () {
         var query = $('#search-query').val();
         query = encodeURIComponent(query);
         if (query) {
-            Cookies.set('byr_navi_previous_search_service_option', service.val(), { expires: 365 });
+            Cookies.set('byr_navi_previous_used_search_service', service.val(), {
+                expires: 365,
+                domain: '.byr-navi.com',
+                secure: true
+            });
             $('#search-services').dropdown('set selected', service.val());
             window.open('search/?service=' + encodeURIComponent(service.text()) + '&query=' + query + '&next=' + encodeURIComponent(service.attr('data-url') + query + service.attr('data-suffix')), '_blank');
         } else {
