@@ -31,7 +31,7 @@
       style: basic
       url: http://www.dangdang.com/
 
-    - name: 网易严选
+    - name: 严选
       style: basic
       url: http://you.163.com/
 
@@ -39,7 +39,7 @@
       style: red
       url: http://www.uniqlo.cn/
 
-    - name: 无印良品
+    - name: MUJI
       style: basic
       url: http://www.muji.com.cn/
 
@@ -51,15 +51,19 @@
       style: basic
       url: https://zaozuo.com/
 
-    - name: 锤子科技
+    - name: 锤子
       style: basic
       url: http://www.smartisan.com/
 
-    - name: 小米商城
+    - name: 大疆
+      style: black
+      url: https://www.dji.com/
+
+    - name: 小米
       style: orange
       url: https://www.mi.com/
 
-    - name: 小米有品
+    - name: 有品
       style: basic
       url: https://www.xiaomiyoupin.com/
 
