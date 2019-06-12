@@ -263,13 +263,17 @@
       style: basic
       url: https://space.bilibili.com/290526283/video
 
-    - name: 郭杰瑞
-      style: basic
-      url: https://space.bilibili.com/176037767/video
+    # - name: 郭杰瑞
+    #   style: basic
+    #   url: https://space.bilibili.com/176037767/video
 
     - name: 阿烽
       style: basic
       url: https://space.bilibili.com/374716732/video
+
+    - name: 何同学
+      style: basic
+      url: https://space.bilibili.com/163637592/video
 
     - name: 呆子
       style: basic
