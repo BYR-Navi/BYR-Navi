@@ -1,9 +1,9 @@
 show: true
-memorial: false
-hitokoto: true
-content: BYR-Navi host has been migrated to a new data center!
-detail: System Operator
+memorial: true
+hitokoto: false
+content: 祈福四川宜宾长宁
+detail: BYR-Navi
 color: black
-icon: shipping fast
+icon: heartbeat
 image: false
-link: https://byr-navi.com/donate/
+link: https://byr-navi.com/search/?service=%E7%99%BE%E5%BA%A6%E8%B5%84%E8%AE%AF&query=%E5%9B%9B%E5%B7%9D%E5%AE%9C%E5%AE%BE%E9%95%BF%E5%AE%81%E5%9C%B0%E9%9C%87&next=https%3A%2F%2Fwww.baidu.com%2Fs%3Fie%3Dutf-8%26tn%3Dnews%26rtt%3D1%26bsst%3D1%26cl%3D2%26word%3D%25E5%259B%259B%25E5%25B7%259D%25E5%25AE%259C%25E5%25AE%25BE%25E9%2595%25BF%25E5%25AE%2581%25E5%259C%25B0%25E9%259C%2587
