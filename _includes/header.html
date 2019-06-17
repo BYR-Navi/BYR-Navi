@@ -18,7 +18,7 @@
         {% include search.html %}
     {%- else -%}
         <div class="ui text container">
-            {% assign page_icon = '' %}
+            {% assign page_icon = nil %}
             {%- for item in site.data.menu_items -%}
                 {%- if item.active_key == page.active_key -%}
                     {% assign page_icon = item.icon %}
