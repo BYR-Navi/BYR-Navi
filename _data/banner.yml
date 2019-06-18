@@ -1,9 +1,9 @@
 show: true
-memorial: true
+memorial: false
 hitokoto: false
-content: 祈福四川宜宾长宁
-detail: 直击现场
+content: BYR-Navi&rsquo;s host is currently safe!
+detail: More about &ldquo;TCP SACK PANIC&rdquo;
 color: black
-icon: heartbeat
+icon: shield alternate
 image: false
-link: http://d.news.ifeng.com/pc/special/360213/index.shtml
+link: https://mp.weixin.qq.com/s/EY7WlS6Dhk45OvlY7WrVeA
