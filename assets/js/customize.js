@@ -31,6 +31,7 @@ if (Cookies.get('byr_navi_search_shortcuts') === undefined || Cookies.get('byr_n
                 'data-show': 'false',
                 'data-tooltip': '标记“隐藏”'
             });
+            $(`#${$(this).attr('id')} .shortcut-toggle-show .icon`).removeClass('slash');
         } else {
             $(`#${$(this).attr('id')} .shortcut-toggle-show`).data('show', false);
             $(`#${$(this).attr('id')} .shortcut-visibility`).removeClass('active').text('隐藏');
@@ -38,6 +39,7 @@ if (Cookies.get('byr_navi_search_shortcuts') === undefined || Cookies.get('byr_n
                 'data-show': 'false',
                 'data-tooltip': '标记“显示”'
             });
+            $(`#${$(this).attr('id')} .shortcut-toggle-show .icon`).addClass('slash');
         };
     });
 };
@@ -52,6 +54,7 @@ $('.ui.button.shortcut-toggle-show').each(function () {
                 'data-show': 'false',
                 'data-tooltip': '标记“显示”'
             });
+            $(`#${$(this).data('search-service-id')} .shortcut-toggle-show .icon`).addClass('slash');
             updateCookie('byr_navi_search_shortcuts', $(this).data('search-service-id'), false);
             $('body').toast({
                 class: 'red',
@@ -66,6 +69,7 @@ $('.ui.button.shortcut-toggle-show').each(function () {
                 'data-show': 'true',
                 'data-tooltip': '标记“隐藏”'
             });
+            $(`#${$(this).data('search-service-id')} .shortcut-toggle-show .icon`).removeClass('slash');
             updateCookie('byr_navi_search_shortcuts', $(this).data('search-service-id'), true);
             $('body').toast({
                 class: 'green',
