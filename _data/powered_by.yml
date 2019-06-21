@@ -10,5 +10,8 @@
 - name: Matomo
   url: https://matomo.org/
 
+- name: Let&rsquo;s Encrypt
+  url: https://letsencrypt.org/
+
 - name: Linode
   url: https://www.linode.com/
