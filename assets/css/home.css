@@ -27,8 +27,11 @@
     margin-right: auto;
 }
 
-.ui.masthead .shortcuts {
+.ui.masthead #search-shortcuts {
     margin-top: 0.5rem;
+}
+.ui.masthead #search-shortcuts .ui.hidden.label {
+    display: none;
 }
 
 .ui.masthead .ui.link.list {

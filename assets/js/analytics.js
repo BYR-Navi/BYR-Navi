@@ -3,8 +3,8 @@
 // date range
 var establishedAt = new Date($('meta[name=established_at]').attr('content'));
 function siteEstablishedDays() {
-    var d = new Date();
-    var today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+    let d = new Date();
+    let today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
     return Math.floor((today - establishedAt) / 86400000 + 1);
 };
 
@@ -73,7 +73,7 @@ function updateVisit() {
         'method': 'VisitsSummary.getActions',
         'idSite': analyticsAPI.id,
         'period': 'range',
-        'date': 'last' + siteEstablishedDays(),
+        'date': `last${siteEstablishedDays()}`,
         'format': 'JSON',
         'token_auth': analyticsAPI.token
     }, function (data) {
@@ -319,7 +319,7 @@ visitHourlyChart.setOption({
         tooltip: {
             position: 'top',
             formatter: function (params) {
-                return params.value[1] + ' ' + params.value[0] + '<br />' + params.seriesName + ': ' + params.value[2];
+                return `${params.value[1]} ${params.value[0]}<br>${params.seriesName}: ${params.value[2]}`;
             }
         },
         toolbox: {
@@ -529,7 +529,7 @@ visitMapChart.setOption({
                 if (!value) {
                     value = 0;
                 };
-                return params.seriesName + ': ' + value;
+                return `${params.seriesName}: ${value}`;
             }
         },
         toolbox: {
@@ -699,8 +699,7 @@ visitCalendarChart.setOption({
         tooltip: {
             position: 'top',
             formatter: function (p) {
-                var format = echarts.format.formatTime('yyyy-MM-dd', p.data[0]);
-                return format + ' 浏览次数：' + p.data[1];
+                return `${echarts.format.formatTime('yyyy-MM-dd', p.data[0])} 浏览次数：${p.data[1]}`;
             }
         },
         toolbox: {
@@ -795,7 +794,7 @@ function updateVisitCalendarChart() {
         'method': 'VisitsSummary.getActions',
         'idSite': analyticsAPI.id,
         'period': 'day',
-        'date': 'last' + siteEstablishedDays(),
+        'date': `last${siteEstablishedDays()}`,
         'format': 'JSON',
         'token_auth': analyticsAPI.token
     }, function (data) {

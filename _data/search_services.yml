@@ -4,6 +4,7 @@
   shortcut:
     icon: paw blue inverted
     style: black
+    show: true
 
 - id: google
   name: 谷歌
@@ -11,6 +12,7 @@
   shortcut:
     icon: google red inverted
     style: black
+    show: true
 
 - id: bing
   name: 必应
@@ -18,6 +20,7 @@
   shortcut:
     icon: microsoft teal inverted
     style: black
+    show: true
 
 - id: baidumap
   name: 百度地图
@@ -26,6 +29,7 @@
   shortcut:
     icon: map marked alternate yellow inverted
     style: black
+    show: true
 
 - id: baidunews
   name: 百度资讯
@@ -33,6 +37,7 @@
   shortcut:
     icon: newspaper blue inverted
     style: black
+    show: true
 
 - id: wikipedia
   name: 维基百科
@@ -40,13 +45,15 @@
   shortcut:
     icon: wikipedia w
     style: black
+    show: true
 
 - id: github
   name: GitHub
   url: https://github.com/search?q=
-  # shortcut:
-  #   icon: github
-  #   style: black
+  shortcut:
+    icon: github
+    style: black
+    show: false
 
 - id: stackoverflow
   name: Stack Overflow
@@ -54,6 +61,7 @@
   shortcut:
     icon: stack overflow orange inverted
     style: black
+    show: true
 
 - id: zhihu
   name: 知乎
@@ -61,6 +69,7 @@
   shortcut:
     icon: zhihu blue inverted
     style: black
+    show: true
 
 - id: douban
   name: 豆瓣
@@ -68,6 +77,7 @@
   shortcut:
     icon: seedling green inverted
     style: black
+    show: true
 
 - id: weibo
   name: 微博
@@ -75,6 +85,7 @@
   shortcut:
     icon: weibo red inverted
     style: black
+    show: true
 
 - id: weixinmp
   name: 微信公众号
@@ -88,6 +99,7 @@
   shortcut:
     icon: weixin green inverted
     style: black
+    show: true
 
 - id: minapp
   name: 微信小程序
@@ -123,6 +135,7 @@
   shortcut:
     icon: shopping cart orange inverted
     style: black
+    show: true
 
 - id: jd
   name: 京东
@@ -131,13 +144,23 @@
   shortcut:
     icon: shopping cart red inverted
     style: black
+    show: true
+
+- id: music163
+  name: 网易云音乐
+  url: https://music.163.com/#/search/m/?s=
+  shortcut:
+    icon: music red inverted
+    style: black
+    show: false
 
 - id: xiami
   name: 虾米音乐
   url: http://www.xiami.com/search?key=
-  # shortcut:
-  #   icon: music orange inverted
-  #   style: black
+  shortcut:
+    icon: music orange inverted
+    style: black
+    show: false
 
 - id: bilibili
   name: 哔哩哔哩
@@ -145,6 +168,7 @@
   shortcut:
     icon: tv pink inverted
     style: black
+    show: true
 
 - id: fixzimuxia
   name: FIX字幕侠
@@ -152,15 +176,23 @@
   shortcut:
     icon: closed captioning yellow inverted
     style: black
+    show: true
 
 - id: fkdy
   name: 影视
   url: http://ifkdy.com/?q=
-  style: black
+  shortcut:
+    icon: film orange inverted
+    style: black
+    show: false
 
 - id: wangpan
   name: 网盘
   url: http://www.58wangpan.com/search/kw
+  shortcut:
+    icon: cloud green inverted
+    style: black
+    show: false
 
 - id: painku
   name: 片库
@@ -169,6 +201,10 @@
   transcode:
     from: '%'
     to: '_'
+  shortcut:
+    icon: film blue inverted
+    style: black
+    show: false
 
 - id: cilimao
   name: 磁力猫
@@ -176,6 +212,7 @@
   shortcut:
     icon: magnet red inverted
     style: black
+    show: true
 
 - id: lime
   name: Lime Torrents
@@ -184,6 +221,7 @@
   shortcut:
     icon: lemon green inverted
     style: black
+    show: true
 
 - id: onejav
   name: OneJav
