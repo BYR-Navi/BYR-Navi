@@ -16,7 +16,7 @@ You can either configure it by modifying the `_config.yml` file or customize it 
 
 ## :book: A Tiny Tutorial
 There is **no easy way for beginners** without essential background knowledge.
-To be efficient, the best way to understand this project is to start with the Jekyll's [docs][jekyll-doc] and Fomantic UI's [docs][fomantic-doc].
+To be efficient, the best way to understand this project is to start with the Jekyll&rsquo;s [docs][jekyll-doc] and Fomantic UI&rsquo;s [docs][fomantic-doc].
 
 Before you start, you should have some basic understanding of the following:
 
@@ -66,14 +66,14 @@ bundle exec jekyll serve
 ## :construction: Deployment
 
 ### GitHub Pages (Recommended)
-Sites on GitHub Pages are powered by Jekyll behind the scenes, so if you're looking for a zero-hassle, zero-cost solution, GitHub Pages are a great way to [host your Jekyll-powered website for free][jekyll-gihub-pages].
+Sites on GitHub Pages are powered by Jekyll behind the scenes, so if you&rsquo;re looking for a zero-hassle, zero-cost solution, GitHub Pages are a great way to [host your Jekyll-powered website for free][jekyll-gihub-pages].
 
 ### Manual Deployment
 Jekyll generates your static site to the `_site` directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live.
 [Here][jekyll-manual-deployment] are some manual ways of achieving this.
 
 ## :hearts: Share the Love
-I've put a lot of time and effort into making **BYR-Navi** awesome.
+I&rsquo;ve put a lot of time and effort into making **BYR-Navi** awesome.
 If you love it, you can buy me a coffee.
 Every cup helps!
 I promise it will be a good investment.
@@ -94,6 +94,7 @@ Donate [here][donate].
 - [Matomo][matomo]
 - [GeoIP][geoip]
 - [Jekyll][jekyll]
+- [Let&rsquo;s Encrypt][letsencrypt]
 - [Linode][linode]
 
 ## :copyright: License
@@ -128,4 +129,5 @@ Donate [here][donate].
 [jekyll-ruby-101-bundler]: https://jekyllrb.com/docs/ruby-101/#bundler "Jekyll Ruby 101 Bundler"
 [localhost-4000]: http://localhost:4000 "Local Host (Port: 4000)"
 [github-pages]: https://pages.github.com/ "GitHub Pages"
+[letsencrypt]: https://letsencrypt.org/ "Let&rsquo;s Encrypt"
 [linode]: https://www.linode.com/ "Linode"
