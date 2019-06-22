@@ -25,6 +25,8 @@ Before you start, you should have some basic understanding of the following:
 - JavaScript
 - jQuery
 - YAML format
+- Liquid (Template Engine)
+- Ruby
 - UNIX/Linux Shell Script
 
 ### Quick Start
