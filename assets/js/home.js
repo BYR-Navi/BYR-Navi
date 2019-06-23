@@ -69,7 +69,7 @@ function setCookie(name, value) {
 };
 
 function redirect(service, query) {
-    if (service.data('transcode-from')) {
+    if (service.data('transcode')) {
         query = query.replace(new RegExp(service.data('transcode-from'), 'g'), service.data('transcode-to'));
     };
     window.open(`search/?service=${encodeURIComponent(service.text())}&query=${query}&next=${encodeURIComponent(service.data('url').replace('{query}', query))}`, '_blank');
