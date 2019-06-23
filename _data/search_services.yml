@@ -1,6 +1,6 @@
 - id: baidu
   name: 百度
-  url: https://baidu.com/s?ie=utf-8&wd=
+  url: https://baidu.com/s?ie=utf-8&wd={query}
   shortcut:
     icon: paw blue inverted
     style: black
@@ -8,7 +8,7 @@
 
 - id: google
   name: 谷歌
-  url: https://google.com/search?q=
+  url: https://google.com/search?q={query}
   shortcut:
     icon: google red inverted
     style: black
@@ -16,7 +16,7 @@
 
 - id: bing
   name: 必应
-  url: https://cn.bing.com/search?q=
+  url: https://cn.bing.com/search?q={query}
   shortcut:
     icon: microsoft teal inverted
     style: black
@@ -24,8 +24,7 @@
 
 - id: baidumap
   name: 百度地图
-  url: https://api.map.baidu.com/geocoder?address=
-  suffix: "&output=html"
+  url: https://api.map.baidu.com/geocoder?address={query}&output=html
   shortcut:
     icon: map marked alternate yellow inverted
     style: black
@@ -33,7 +32,7 @@
 
 - id: baidunews
   name: 百度资讯
-  url: https://www.baidu.com/s?ie=utf-8&tn=news&rtt=1&bsst=1&cl=2&word=
+  url: https://www.baidu.com/s?ie=utf-8&tn=news&rtt=1&bsst=1&cl=2&word={query}
   shortcut:
     icon: newspaper blue inverted
     style: black
@@ -41,7 +40,7 @@
 
 - id: wikipedia
   name: 维基百科
-  url: https://www.wikipedia.org/wiki/
+  url: https://www.wikipedia.org/wiki/{query}
   shortcut:
     icon: wikipedia w
     style: black
@@ -49,7 +48,7 @@
 
 - id: github
   name: GitHub
-  url: https://github.com/search?q=
+  url: https://github.com/search?q={query}
   shortcut:
     icon: github
     style: black
@@ -57,7 +56,7 @@
 
 - id: stackoverflow
   name: Stack Overflow
-  url: https://stackoverflow.com/search?q=
+  url: https://stackoverflow.com/search?q={query}
   shortcut:
     icon: stack overflow orange inverted
     style: black
@@ -65,7 +64,7 @@
 
 - id: zhihu
   name: 知乎
-  url: https://www.zhihu.com/search?q=
+  url: https://www.zhihu.com/search?q={query}
   shortcut:
     icon: zhihu blue inverted
     style: black
@@ -73,7 +72,7 @@
 
 - id: douban
   name: 豆瓣
-  url: https://www.douban.com/search?q=
+  url: https://www.douban.com/search?q={query}
   shortcut:
     icon: seedling green inverted
     style: black
@@ -81,7 +80,7 @@
 
 - id: weibo
   name: 微博
-  url: https://s.weibo.com/weibo/
+  url: https://s.weibo.com/weibo/{query}
   shortcut:
     icon: weibo red inverted
     style: black
@@ -89,13 +88,11 @@
 
 - id: weixinmp
   name: 微信公众号
-  url: http://weixin.sogou.com/weixin?type=1&query=
-  suffix: "&ie=utf8"
+  url: http://weixin.sogou.com/weixin?type=1&query={query}&ie=utf8
 
 - id: weixinarticle
   name: 微信文章
-  url: http://weixin.sogou.com/weixin?type=2&query=
-  suffix: "&ie=utf8"
+  url: http://weixin.sogou.com/weixin?type=2&query={query}&ie=utf8
   shortcut:
     icon: weixin green inverted
     style: black
@@ -103,35 +100,35 @@
 
 - id: minapp
   name: 微信小程序
-  url: https://minapp.com/miniapp/search/?query=
+  url: https://minapp.com/miniapp/search/?query={query}
 
 - id: baiduxueshu
   name: 百度学术
-  url: https://xueshu.baidu.com/s?wd=
+  url: https://xueshu.baidu.com/s?wd={query}
 
 - id: googlescholar
   name: 谷歌学术
-  url: https://scholar.google.com/scholar?q=
+  url: https://scholar.google.com/scholar?q={query}
 
 - id: ieeexplore
   name: IEEE Xplore
-  url: http://ieeexplore.ieee.org/search/searchresult.jsp?queryText=
+  url: http://ieeexplore.ieee.org/search/searchresult.jsp?queryText={query}
 
 - id: etymonline
   name: Etymonline
-  url: https://www.etymonline.com/index.php?search=
+  url: https://www.etymonline.com/index.php?search={query}
 
 - id: mw
   name: Merriam-Webster
-  url: https://www.merriam-webster.com/dictionary/
+  url: https://www.merriam-webster.com/dictionary/{query}
 
 - id: tianyancha
   name: 天眼查
-  url: https://www.tianyancha.com/search?key=
+  url: https://www.tianyancha.com/search?key={query}
 
 - id: taobao
   name: 淘宝
-  url: https://s.taobao.com/search?q=
+  url: https://s.taobao.com/search?q={query}
   shortcut:
     icon: shopping cart orange inverted
     style: black
@@ -139,8 +136,7 @@
 
 - id: jd
   name: 京东
-  url: http://search.jd.com/Search?keyword=
-  suffix: "&enc=utf-8"
+  url: http://search.jd.com/Search?keyword={query}&enc=utf-8
   shortcut:
     icon: shopping cart red inverted
     style: black
@@ -148,7 +144,7 @@
 
 - id: music163
   name: 网易云音乐
-  url: https://music.163.com/#/search/m/?s=
+  url: https://music.163.com/#/search/m/?s={query}
   shortcut:
     icon: music red inverted
     style: black
@@ -156,7 +152,7 @@
 
 - id: xiami
   name: 虾米音乐
-  url: http://www.xiami.com/search?key=
+  url: http://www.xiami.com/search?key={query}
   shortcut:
     icon: music orange inverted
     style: black
@@ -164,7 +160,7 @@
 
 - id: bilibili
   name: 哔哩哔哩
-  url: https://search.bilibili.com/all?keyword=
+  url: https://search.bilibili.com/all?keyword={query}
   shortcut:
     icon: tv pink inverted
     style: black
@@ -172,7 +168,7 @@
 
 - id: fixzimuxia
   name: FIX字幕侠
-  url: http://www.zimuxia.cn/?s=
+  url: http://www.zimuxia.cn/?s={query}
   shortcut:
     icon: closed captioning yellow inverted
     style: black
@@ -180,7 +176,7 @@
 
 - id: fkdy
   name: 影视
-  url: http://ifkdy.com/?q=
+  url: http://ifkdy.com/?q={query}
   shortcut:
     icon: film orange inverted
     style: black
@@ -188,7 +184,7 @@
 
 - id: wangpan
   name: 网盘
-  url: http://www.58wangpan.com/search/kw
+  url: http://www.58wangpan.com/search/kw{query}
   shortcut:
     icon: cloud green inverted
     style: black
@@ -196,8 +192,7 @@
 
 - id: painku
   name: 片库
-  url: https://www.pianku.tv/s/
-  suffix: .html
+  url: https://www.pianku.tv/s/{query}.html
   transcode:
     from: '%'
     to: '_'
@@ -208,7 +203,7 @@
 
 - id: cilimao
   name: 磁力猫
-  url: https://www.cilimao.cc/search?word=
+  url: https://www.cilimao.cc/search?word={query}
   shortcut:
     icon: magnet red inverted
     style: black
@@ -216,8 +211,7 @@
 
 - id: lime
   name: Lime Torrents
-  url: https://www.limetorrents.cc/search/all/
-  suffix: "/"
+  url: https://www.limetorrents.cc/search/all/{query}/
   shortcut:
     icon: lemon green inverted
     style: black
@@ -225,12 +219,12 @@
 
 - id: onejav
   name: OneJav
-  url: https://onejav.com/search/
+  url: https://onejav.com/search/{query}
 
 - id: byr
   name: 北邮人论坛
-  url: http://search.icybee.cn/bbs/?key=
+  url: http://search.icybee.cn/bbs/?key={query}
 
 - id: byrbt
   name: 北邮人BT
-  url: https://bt.byr.cn/torrents.php?search=
+  url: https://bt.byr.cn/torrents.php?search={query}

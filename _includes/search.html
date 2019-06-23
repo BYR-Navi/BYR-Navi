@@ -18,7 +18,7 @@
         <i class="search icon"></i>
         <input id="search-query" type="text" placeholder="立即搜索" autofocus="autofocus">
         <select id="search-services" class="ui compact selection dropdown">
-            {% for item in site.data.search_services %}<option id="{{ item.id }}" value="{{ item.id }}" data-url="{{ item.url }}" data-suffix="{% if item.suffix %}{{ item.suffix }}{% endif %}" data-transcode-from="{% if item.transcode %}{{ item.transcode.from }}{% endif %}" data-transcode-to="{% if item.transcode %}{{ item.transcode.to }}{% endif %}">{{ item.name }}</option>{% endfor %}
+            {% for item in site.data.search_services %}<option id="{{ item.id }}" value="{{ item.id }}" data-url="{{ item.url }}" {% if item.transcode %}data-transcode="true" data-transcode-from="{{ item.transcode.from }}" data-transcode-to="{{ item.transcode.to }}"{% else %}data-transcode="false"{% endif %}>{{ item.name }}</option>{% endfor %}
         </select>
         <div id="search-button" class="ui black icon button">Go</div>
     </div>
