@@ -14,6 +14,9 @@
         <img class="ui centered image" src="{{ site.logo_white }}" alt="Logo">
     </h1>
     <h2 class="ui inverted header">{{ site.title }}</h2>
+    <div id="search-shortcuts" class="ui labels">
+        {% for item in site.data.search_services %}{% if item.shortcut %}<a class="ui {{ item.shortcut.style }} label{% unless item.shortcut.show %} hidden{% endunless %}" data-search-service-id="{{ item.id }}" data-tooltip="{{ item.name }}" data-variation="mini basic" data-position="top center" data-inverted=""><i class="{{ item.shortcut.icon }} fitted icon"></i></a>{% endif %}{% endfor %}
+    </div>
     <div class="ui inverted fluid left icon right action input" id="search-div">
         <i class="search icon"></i>
         <input id="search-query" type="text" placeholder="立即搜索" autofocus="autofocus">
@@ -22,10 +25,7 @@
         </select>
         <div id="search-button" class="ui black icon button">Go</div>
     </div>
-    <div id="search-shortcuts" class="ui labels">
-        {% for item in site.data.search_services %}{% if item.shortcut %}<a class="ui {{ item.shortcut.style }} label{% unless item.shortcut.show %} hidden{% endunless %}" data-search-service-id="{{ item.id }}" data-tooltip="{{ item.name }}" data-variation="mini basic" data-position="top center" data-inverted=""><i class="{{ item.shortcut.icon }} fitted icon"></i></a>{% endif %}{% endfor %}
-    </div>
-    <div class="badges">
+    <div id="badges">
         <a id="github-watch" href="{{ site.repository_url }}/watchers" target="_blank"><img src="https://img.shields.io/github/watchers/{{ site.repository }}.svg?style=social&label=Watch" alt="GitHub Watchers"></a>
         <a id="github-star" href="{{ site.repository_url }}/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/{{ site.repository }}.svg?style=social&label=Star" alt="GitHub Stargazers"></a>
         <a id="github-fork" href="{{ site.repository_url }}/network/members" target="_blank"><img src="https://img.shields.io/github/forks/{{ site.repository }}.svg?style=social&label=Fork" alt="GitHub Forks"></a>
