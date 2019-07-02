@@ -60,6 +60,12 @@ setInterval(function () {
 }, 60000);
 
 // search
+$('#search-services').dropdown();
+
+function updateDropdown() {
+    $('#search-services').dropdown('set selected', Cookies.get('byr_navi_previous_used_search_service'));
+};
+
 function setCookie(name, value) {
     Cookies.set(name, value, {
         expires: 365,
@@ -75,14 +81,11 @@ function redirect(service, query) {
     window.open(`search/?service=${encodeURIComponent(service.text())}&query=${query}&next=${encodeURIComponent(service.data('url').replace('{query}', query))}`, '_blank');
 };
 
-// initialize dropdown
-$('#search-services').dropdown();
-
 // initialize previous used search service
 if (Cookies.get('byr_navi_previous_used_search_service') === undefined || Cookies.get('byr_navi_previous_used_search_service') === '' || $(`#${Cookies.get('byr_navi_previous_used_search_service')}`).length === 0) {
     setCookie('byr_navi_previous_used_search_service', $('#search-services').val());
 } else {
-    $('#search-services').dropdown('set selected', Cookies.get('byr_navi_previous_used_search_service'));
+    updateDropdown();
 };
 
 // search button
@@ -169,6 +172,7 @@ $('#search-shortcuts .ui.label').each(function () {
         query = encodeURIComponent(query);
         if (query) {
             setCookie('byr_navi_previous_used_search_service', service.val());
+            updateDropdown();
             redirect(service, query);
         } else {
             $('#search-div').addClass('error');
