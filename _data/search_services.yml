@@ -174,19 +174,27 @@
     style: black
     show: true
 
+- id: pansoso
+  name: 盘搜搜
+  url: http://www.pansoso.com/zh/{query}
+  shortcut:
+    icon: cloud blue inverted
+    style: black
+    show: false
+
+- id: wangpan
+  name: 58网盘
+  url: http://www.58wangpan.com/search/kw{query}
+  shortcut:
+    icon: cloud green inverted
+    style: black
+    show: false
+
 - id: fkdy
   name: 影视
   url: http://ifkdy.com/?q={query}
   shortcut:
     icon: film orange inverted
-    style: black
-    show: false
-
-- id: wangpan
-  name: 网盘
-  url: http://www.58wangpan.com/search/kw{query}
-  shortcut:
-    icon: cloud green inverted
     style: black
     show: false
 
