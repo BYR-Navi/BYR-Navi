@@ -203,7 +203,7 @@
 
 - id: cilimao
   name: 磁力猫
-  url: https://www.cilimao.cc/search?word={query}
+  url: https://www.cilimao.us/search?word={query}
   shortcut:
     icon: magnet red inverted
     style: black
