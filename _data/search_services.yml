@@ -32,7 +32,7 @@
 
 - id: baidunews
   name: 百度资讯
-  url: https://www.baidu.com/s?ie=utf-8&tn=news&rtt=1&bsst=1&cl=2&word={query}
+  url: https://baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&word={query}
   shortcut:
     icon: newspaper blue inverted
     style: black
