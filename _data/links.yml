@@ -275,6 +275,10 @@
       style: basic
       url: https://space.bilibili.com/374716732/video
 
+    - name: 暴走
+      style: basic
+      url: https://space.bilibili.com/883968/video
+
     - name: 手工耿
       style: basic
       url: https://space.bilibili.com/280793434/video
@@ -291,9 +295,9 @@
     #   style: basic
     #   url: http://www.acfun.cn/
 
-    - name: 腾讯动漫
-      style: basic
-      url: http://ac.qq.com/
+    # - name: 腾讯动漫
+    #   style: basic
+    #   url: http://ac.qq.com/
 
     - name: 虾米
       style: basic
