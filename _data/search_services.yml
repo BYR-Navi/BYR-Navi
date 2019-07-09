@@ -198,13 +198,21 @@
     style: black
     show: true
 
+- id: youtube
+  name: YouTube
+  url: https://www.youtube.com/results?search_query={query}
+  shortcut:
+    icon: youtube red inverted
+    style: black
+    show: true
+
 - id: fixzimuxia
   name: FIX字幕侠
   url: http://www.zimuxia.cn/?s={query}
   shortcut:
     icon: closed captioning yellow inverted
     style: black
-    show: true
+    show: false
 
 - id: pansoso
   name: 盘搜搜
