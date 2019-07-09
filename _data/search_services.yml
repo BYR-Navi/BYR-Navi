@@ -134,13 +134,45 @@
     style: black
     show: true
 
+- id: tmall
+  name: 天猫
+  url: https://list.tmall.com/search_product.htm?q={query}
+  shortcut:
+    icon: shopping bag red inverted
+    style: black
+    show: false
+
 - id: jd
   name: 京东
-  url: http://search.jd.com/Search?keyword={query}&enc=utf-8
+  url: https://search.jd.com/Search?keyword={query}&enc=utf-8
   shortcut:
     icon: shopping cart red inverted
     style: black
     show: true
+
+- id: yhd
+  name: 1号店
+  url: https://search.yhd.com/c0-0/k{query}/
+  shortcut:
+    icon: store red inverted
+    style: black
+    show: false
+
+- id: amazon
+  name: 亚马逊
+  url: https://www.amazon.cn/s?k={query}
+  shortcut:
+    icon: amazon yellow inverted
+    style: black
+    show: false
+
+- id: dangdang
+  name: 当当
+  url: http://search.dangdang.com/?key={query}
+  shortcut:
+    icon: shopping basket red inverted
+    style: black
+    show: false
 
 - id: music163
   name: 网易云音乐
