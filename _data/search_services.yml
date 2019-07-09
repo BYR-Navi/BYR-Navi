@@ -40,7 +40,7 @@
 
 - id: wikipedia
   name: 维基百科
-  url: https://www.wikipedia.org/wiki/{query}
+  url: https://wikipedia.org/wiki/{query}
   shortcut:
     icon: wikipedia w
     style: black
@@ -64,7 +64,7 @@
 
 - id: zhihu
   name: 知乎
-  url: https://www.zhihu.com/search?q={query}
+  url: https://zhihu.com/search?q={query}
   shortcut:
     icon: zhihu blue inverted
     style: black
@@ -72,7 +72,7 @@
 
 - id: douban
   name: 豆瓣
-  url: https://www.douban.com/search?q={query}
+  url: https://douban.com/search?q={query}
   shortcut:
     icon: seedling green inverted
     style: black
@@ -89,6 +89,10 @@
 - id: weixinmp
   name: 微信公众号
   url: http://weixin.sogou.com/weixin?type=1&query={query}&ie=utf8
+  shortcut:
+    icon: weixin green inverted
+    style: black
+    show: false
 
 - id: weixinarticle
   name: 微信文章
@@ -101,30 +105,58 @@
 - id: minapp
   name: 微信小程序
   url: https://minapp.com/miniapp/search/?query={query}
+  shortcut:
+    icon: weixin green inverted
+    style: black
+    show: false
 
 - id: baiduxueshu
   name: 百度学术
   url: https://xueshu.baidu.com/s?wd={query}
+  shortcut:
+    icon: atom blue inverted
+    style: black
+    show: false
 
 - id: googlescholar
   name: 谷歌学术
   url: https://scholar.google.com/scholar?q={query}
+  shortcut:
+    icon: atom red inverted
+    style: black
+    show: false
 
 - id: ieeexplore
   name: IEEE Xplore
   url: http://ieeexplore.ieee.org/search/searchresult.jsp?queryText={query}
+  shortcut:
+    icon: archive blue inverted
+    style: black
+    show: false
 
 - id: etymonline
   name: Etymonline
-  url: https://www.etymonline.com/index.php?search={query}
+  url: https://etymonline.com/index.php?search={query}
+  shortcut:
+    icon: language brown inverted
+    style: black
+    show: false
 
 - id: mw
   name: Merriam-Webster
-  url: https://www.merriam-webster.com/dictionary/{query}
+  url: https://merriam-webster.com/dictionary/{query}
+  shortcut:
+    icon: language red inverted
+    style: black
+    show: false
 
 - id: tianyancha
   name: 天眼查
-  url: https://www.tianyancha.com/search?key={query}
+  url: https://tianyancha.com/search?key={query}
+  shortcut:
+    icon: crosschairs blue inverted
+    style: black
+    show: false
 
 - id: taobao
   name: 淘宝
@@ -160,7 +192,7 @@
 
 - id: amazon
   name: 亚马逊
-  url: https://www.amazon.cn/s?k={query}
+  url: https://amazon.cn/s?k={query}
   shortcut:
     icon: amazon yellow inverted
     style: black
@@ -184,7 +216,7 @@
 
 - id: xiami
   name: 虾米音乐
-  url: http://www.xiami.com/search?key={query}
+  url: https://xiami.com/search?key={query}
   shortcut:
     icon: music orange inverted
     style: black
@@ -200,7 +232,7 @@
 
 - id: youtube
   name: YouTube
-  url: https://www.youtube.com/results?search_query={query}
+  url: https://youtube.com/results?search_query={query}
   shortcut:
     icon: youtube red inverted
     style: black
@@ -208,7 +240,7 @@
 
 - id: fixzimuxia
   name: FIX字幕侠
-  url: http://www.zimuxia.cn/?s={query}
+  url: http://zimuxia.cn/?s={query}
   shortcut:
     icon: closed captioning yellow inverted
     style: black
@@ -216,17 +248,17 @@
 
 - id: pansoso
   name: 盘搜搜
-  url: http://www.pansoso.com/zh/{query}
+  url: http://pansoso.com/zh/{query}
   shortcut:
-    icon: cloud blue inverted
+    icon: cloud download alternate blue inverted
     style: black
     show: false
 
 - id: wangpan
   name: 58网盘
-  url: http://www.58wangpan.com/search/kw{query}
+  url: http://58wangpan.com/search/kw{query}
   shortcut:
-    icon: cloud green inverted
+    icon: cloud download alternate green inverted
     style: black
     show: false
 
@@ -240,7 +272,7 @@
 
 - id: painku
   name: 片库
-  url: https://www.pianku.tv/s/{query}.html
+  url: https://pianku.tv/s/{query}.html
   transcode:
     from: '%'
     to: '_'
@@ -251,7 +283,7 @@
 
 - id: cilimao
   name: 磁力猫
-  url: https://www.cilimao.io/search?word={query}
+  url: https://cilimao.io/search?word={query}
   shortcut:
     icon: magnet yellow inverted
     style: black
@@ -259,7 +291,7 @@
 
 - id: lime
   name: Lime Torrents
-  url: https://www.limetorrents.cc/search/all/{query}/
+  url: https://limetorrents.cc/search/all/{query}/
   shortcut:
     icon: lemon green inverted
     style: black
@@ -268,11 +300,23 @@
 - id: onejav
   name: OneJav
   url: https://onejav.com/search/{query}
+  shortcut:
+    icon: film pink inverted
+    style: black
+    show: false
 
 - id: byr
   name: 北邮人论坛
   url: http://search.icybee.cn/bbs/?key={query}
+  shortcut:
+    icon: comments blue inverted
+    style: black
+    show: false
 
 - id: byrbt
   name: 北邮人BT
   url: https://bt.byr.cn/torrents.php?search={query}
+  shortcut:
+    icon: cloud download alternate teal inverted
+    style: black
+    show: false
