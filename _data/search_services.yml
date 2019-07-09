@@ -251,9 +251,9 @@
 
 - id: cilimao
   name: 磁力猫
-  url: https://www.cilimao.us/search?word={query}
+  url: https://www.cilimao.io/search?word={query}
   shortcut:
-    icon: magnet red inverted
+    icon: magnet yellow inverted
     style: black
     show: true
 
