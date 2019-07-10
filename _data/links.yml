@@ -300,7 +300,7 @@
     #   url: http://ac.qq.com/
 
     - name: 虾米
-      style: basic
+      style: orange
       url: http://www.xiami.com/
 
     - name: FIX
