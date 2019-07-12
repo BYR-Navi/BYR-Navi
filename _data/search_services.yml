@@ -238,6 +238,14 @@
     style: black
     show: true
 
+- id: zimuku
+  name: 字幕库
+  url: http://www.zimuku.la/search?q={query}
+  shortcut:
+    icon: closed captioning blue inverted
+    style: black
+    show: false
+
 - id: fixzimuxia
   name: FIX字幕侠
   url: http://zimuxia.cn/?s={query}
