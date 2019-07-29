@@ -48,6 +48,10 @@
     margin-right: 0.25em;
 }
 
+.links.column .ui.labels {
+    margin-top: 30px;
+}
+
 @media only screen and (max-width: 767px) {
     .ui.masthead .ui.text.container {
         margin-top: 2rem;
