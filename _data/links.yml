@@ -243,17 +243,17 @@
       style: basic
       url: http://www.youtube.com/
 
-    - name: 爱奇艺
-      style: basic
-      url: http://www.iqiyi.com/
+    # - name: 爱奇艺
+    #   style: basic
+    #   url: http://www.iqiyi.com/
 
-    - name: 芒果
-      style: basic
-      url: http://www.mgtv.com/
+    # - name: 芒果
+    #   style: basic
+    #   url: http://www.mgtv.com/
 
-    - name: 腾讯视频
-      style: basic
-      url: https://v.qq.com/
+    # - name: 腾讯视频
+    #   style: basic
+    #   url: https://v.qq.com/
 
     - name: 哔哩哔哩
       style: pink
@@ -267,9 +267,9 @@
       style: basic
       url: https://space.bilibili.com/290526283/video
 
-    # - name: 郭杰瑞
-    #   style: basic
-    #   url: https://space.bilibili.com/176037767/video
+    - name: 郭杰瑞
+      style: basic
+      url: https://space.bilibili.com/176037767/video
 
     - name: 阿烽
       style: basic
@@ -287,9 +287,9 @@
       style: basic
       url: https://space.bilibili.com/84830087/video
 
-    # - name: 何同学
-    #   style: basic
-    #   url: https://space.bilibili.com/163637592/video
+    - name: 何同学
+      style: basic
+      url: https://space.bilibili.com/163637592/video
 
     # - name: AcFun
     #   style: basic
