@@ -13,7 +13,7 @@
       style: basic
       url: https://www.jd.com/
 
-    - name: 亚马逊
+    - name: Amazon
       icon: amazon yellow
       style: basic
       url: https://www.amazon.cn/
@@ -35,7 +35,7 @@
       style: basic
       url: http://you.163.com/
 
-    - name: 优衣库
+    - name: UNIQLO
       style: red
       url: http://www.uniqlo.cn/
 
@@ -46,6 +46,10 @@
     - name: IKEA
       style: yellow
       url: https://www.ikea.cn/
+
+    - name: Decathlon
+      style: blue
+      url: https://www.decathlon.com.cn/
 
     - name: 造作
       style: basic
