@@ -238,9 +238,9 @@
       style: basic
       url: https://youku.com/
 
-    - name: 土豆
-      style: basic
-      url: https://tudou.com/
+    # - name: 土豆
+    #   style: basic
+    #   url: https://tudou.com/
 
     - name: Youtube
       icon: youtube red
@@ -255,17 +255,17 @@
       style: basic
       url: http://mgtv.com/
 
-    - name: 腾讯视频
-      style: basic
-      url: https://v.qq.com/
+    # - name: 腾讯视频
+    #   style: basic
+    #   url: https://v.qq.com/
 
     - name: 哔哩哔哩
       style: pink
       url: https://bilibili.com/
 
-    - name: AcFun
-      style: basic
-      url: https://acfun.cn/
+    # - name: AcFun
+    #   style: basic
+    #   url: https://acfun.cn/
 
     - name: 腾讯动漫
       style: basic
@@ -275,17 +275,15 @@
       style: orange
       url: https://xiami.com/
 
-    - name: 豆瓣电影
-      icon: film blue
-      style: basic
-      url: https://movie.douban.com/
+    # - name: 豆瓣电影
+    #   icon: film blue
+    #   style: basic
+    #   url: https://movie.douban.com/
 
     - name: 斗鱼
       style: orange
       url: https://douyu.com/
 
-  - name: 订阅
-    links:
     - name: FIX
       style: yellow
       url: http://www.zimuxia.cn/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BD%9C%E5%93%81
@@ -305,50 +303,6 @@
     - name: 幻樱
       style: pink
       url: http://www.hysub.net/
-
-    - name: 华农
-      style: basic
-      url: https://space.bilibili.com/250858633/video
-
-    - name: 刘苏良
-      style: basic
-      url: https://space.bilibili.com/367409090/video
-
-    - name: 王刚
-      style: basic
-      url: https://space.bilibili.com/290526283/video
-
-    - name: 郭杰瑞
-      style: basic
-      url: https://space.bilibili.com/176037767/video
-
-    - name: 阿烽
-      style: basic
-      url: https://space.bilibili.com/374716732/video
-
-    - name: 阿雄
-      style: basic
-      url: https://space.bilibili.com/406309142/video
-
-    - name: 老四
-      style: basic
-      url: https://space.bilibili.com/383384638/video
-
-    - name: 暴走
-      style: basic
-      url: https://space.bilibili.com/883968/video
-
-    - name: 手工耿
-      style: basic
-      url: https://space.bilibili.com/280793434/video
-
-    - name: 呆子
-      style: basic
-      url: https://space.bilibili.com/84830087/video
-
-    - name: 何同学
-      style: basic
-      url: https://space.bilibili.com/163637592/video
 
 - categories:
   - name: 北邮校园
