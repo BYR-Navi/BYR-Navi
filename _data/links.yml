@@ -248,16 +248,16 @@
       url: https://youtube.com/
 
     - name: 爱奇艺
-      style: basic
+      style: green
       url: https://iqiyi.com/
 
     - name: 芒果
       style: basic
       url: http://mgtv.com/
 
-    # - name: 腾讯视频
-    #   style: basic
-    #   url: https://v.qq.com/
+    - name: 腾讯视频
+      style: basic
+      url: https://v.qq.com/
 
     - name: 哔哩哔哩
       style: pink
@@ -275,10 +275,10 @@
       style: orange
       url: https://xiami.com/
 
-    # - name: 豆瓣电影
-    #   icon: film blue
-    #   style: basic
-    #   url: https://movie.douban.com/
+    - name: 豆瓣电影
+      icon: film blue
+      style: basic
+      url: https://movie.douban.com/
 
     - name: 斗鱼
       style: orange
