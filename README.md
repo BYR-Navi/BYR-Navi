@@ -119,7 +119,7 @@ Donate [here][donate].
 [js-cookie]: https://github.com/js-cookie/js-cookie "JavaScript Cookie"
 [js-url]: https://github.com/websanova/js-url "url.js"
 [hitokoto]: https://hitokoto.cn/api "Hitokoto"
-[echarts]: http://echarts.baidu.com/ "ECharts"
+[echarts]: https://echarts.apache.org/ "ECharts"
 [matomo]: https://matomo.org/ "Matomo"
 [geoip]: https://www.maxmind.com/ "GeoIP"
 [jekyll]: https://jekyllrb.com/ "Jekyll"
