@@ -17,13 +17,12 @@
     <div id="search-shortcuts" class="ui labels">
         {% for item in site.data.search_services %}{% if item.shortcut %}<a class="ui {{ item.shortcut.style }} label{% unless item.shortcut.show %} hidden{% endunless %}" data-search-service-id="{{ item.id }}" data-tooltip="{{ item.name }}" data-variation="mini basic" data-position="top center" data-inverted=""><i class="{{ item.shortcut.icon }} fitted icon"></i></a>{% endif %}{% endfor %}
     </div>
-    <div class="ui inverted fluid left icon right action input" id="search-div">
-        <i class="search icon"></i>
+    <div class="ui inverted fluid right action input" id="search-div">
         <input id="search-query" type="text" placeholder="立即搜索" autofocus="autofocus">
         <select id="search-services" class="ui compact selection dropdown">
             {% for item in site.data.search_services %}<option id="{{ item.id }}" value="{{ item.id }}" data-url="{{ item.url }}" {% if item.transcode %}data-transcode="true" data-transcode-from="{{ item.transcode.from }}" data-transcode-to="{{ item.transcode.to }}"{% else %}data-transcode="false"{% endif %}>{{ item.name }}</option>{% endfor %}
         </select>
-        <div id="search-button" class="ui black icon button">Go</div>
+        <div id="search-button" class="ui black icon button"><i class="search icon"></i></div>
     </div>
     <div id="badges">
         <a id="github-watch" href="{{ site.repository_url }}/watchers" target="_blank"><img src="https://img.shields.io/github/watchers/{{ site.repository }}.svg?style=social&label=Watch" alt="GitHub Watchers"></a>
