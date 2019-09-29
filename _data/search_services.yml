@@ -254,17 +254,17 @@
     style: black
     show: false
 
-- id: pansoso
-  name: 盘搜搜
-  url: http://pansoso.com/zh/{query}
+- id: dalipan
+  name: 大力盘
+  url: https://www.dalipan.com/search?keyword={query}
   shortcut:
-    icon: cloud download alternate blue inverted
+    icon: cloud download alternate orange inverted
     style: black
     show: false
 
 - id: wangpan
   name: 58网盘
-  url: http://58wangpan.com/search/kw{query}
+  url: https://58wangpan.com/search/kw{query}
   shortcut:
     icon: cloud download alternate green inverted
     style: black
