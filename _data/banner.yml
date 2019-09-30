@@ -1,9 +1,9 @@
 show: true
 memorial: false
-hitokoto: true
-content: 九·一八事变88周年
-detail: 勿忘国耻
-color: black
-icon: bell
+hitokoto: false
+content: 庆祝中华人民共和国成立70周年
+detail: 伟大历程 辉煌成就
+color: red
+icon: flag
 image: false
-link: https://baike.baidu.com/item/%E4%B9%9D%C2%B7%E4%B8%80%E5%85%AB%E4%BA%8B%E5%8F%98/2573930
+link: https://baike.baidu.com/item/%E5%BA%86%E7%A5%9D%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%88%90%E7%AB%8B70%E5%91%A8%E5%B9%B4/23349273
