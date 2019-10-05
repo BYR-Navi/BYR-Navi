@@ -1,17 +1,17 @@
 // customize.js
 
-function setCookie(name, value) {
-    Cookies.set(name, value, {
+function setJSONCookie(name, value) {
+    Cookies.set(name, JSON.stringify(value), {
         expires: 365,
         domain: '.byr-navi.com',
         secure: true
     });
 };
 
-function updateCookie(name, key, value) {
-    let shortcuts = Cookies.getJSON(name);
+function updateJSONCookie(name, key, value) {
+    let shortcuts = JSON.parse(Cookies.get(name));
     shortcuts[key] = value;
-    setCookie(name, shortcuts);
+    setJSONCookie(name, shortcuts);
 };
 
 // initialize cookie
@@ -20,9 +20,9 @@ if (Cookies.get('byr_navi_search_shortcuts') === undefined || Cookies.get('byr_n
     $('.ui.button.shortcut-toggle-show').each(function () {
         shortcuts[$(this).data('search-service-id')] = $(this).data('show');
     });
-    setCookie('byr_navi_search_shortcuts', shortcuts);
+    setJSONCookie('byr_navi_search_shortcuts', shortcuts);
 } else {
-    let shortcuts = Cookies.getJSON('byr_navi_search_shortcuts');
+    let shortcuts = JSON.parse(Cookies.get('byr_navi_search_shortcuts'));
     $('.shortcut').each(function () {
         if (shortcuts[$(this).attr('id')]) {
             $(`#${$(this).attr('id')} .shortcut-visibility`).addClass('active').text('显示');
@@ -55,7 +55,7 @@ $('.ui.button.shortcut-toggle-show').each(function () {
             });
             $(`#${$(this).data('search-service-id')} .shortcut-visibility`).removeClass('active').text('隐藏');
             $(`#${$(this).data('search-service-id')} .shortcut-toggle-show .icon`).addClass('slash');
-            updateCookie('byr_navi_search_shortcuts', $(this).data('search-service-id'), false);
+            updateJSONCookie('byr_navi_search_shortcuts', $(this).data('search-service-id'), false);
             $('body').toast({
                 class: 'red',
                 showIcon: 'eye slash',
@@ -70,7 +70,7 @@ $('.ui.button.shortcut-toggle-show').each(function () {
             });
             $(`#${$(this).data('search-service-id')} .shortcut-visibility`).addClass('active').text('显示');
             $(`#${$(this).data('search-service-id')} .shortcut-toggle-show .icon`).removeClass('slash');
-            updateCookie('byr_navi_search_shortcuts', $(this).data('search-service-id'), true);
+            updateJSONCookie('byr_navi_search_shortcuts', $(this).data('search-service-id'), true);
             $('body').toast({
                 class: 'green',
                 showIcon: 'eye',

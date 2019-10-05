@@ -150,7 +150,7 @@ $('#search-query').keyup(function (event) {
 
 // initialize customized shortcuts
 if (Cookies.get('byr_navi_search_shortcuts')) {
-    let shortcuts = Cookies.getJSON('byr_navi_search_shortcuts');
+    let shortcuts = JSON.parse(Cookies.get('byr_navi_search_shortcuts'));
     $('#search-shortcuts .ui.label').each(function () {
         if (shortcuts[$(this).data('search-service-id')]) {
             if ($(this).hasClass('hidden')) {
