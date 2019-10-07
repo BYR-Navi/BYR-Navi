@@ -1,7 +1,7 @@
 <div class="ui text container">
     {%- if site.data.banner.show -%}
         {%- if site.data.banner.hitokoto -%}
-            <a id="hitokoto" class="ui {{ site.data.banner.color }} pointing below label"><i class="quote left icon"></i></a>
+            <a id="hitokoto" class="ui black pointing below label"><i class="quote left icon"></i></a>
         {%- else -%}
             {%- if site.data.banner.link -%}
                 <a class="ui {{ site.data.banner.color }} pointing below {% unless site.data.banner.icon %}{% if site.data.banner.image %}image {% endif %}{% endunless %}label" href="{{ site.data.banner.link }}" target="_blank">{% if site.data.banner.icon %}<i class="{{ site.data.banner.icon }} icon"></i>{% elsif site.data.banner.image %}<img src="{{ site.data.banner.image }}" alt="Message Image">{% endif %}{{ site.data.banner.content }}{% if site.data.banner.detail %}<div class="detail">{{ site.data.banner.detail }}</div>{% endif %}</a>
