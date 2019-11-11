@@ -68,8 +68,8 @@
       url: https://www.mi.com/
 
     - name: 有品
-      style: basic
-      url: https://www.xiaomiyoupin.com/
+      style: brown
+      url: https://xiaomiyoupin.com/
 
   - name: 工具
     links:
@@ -291,6 +291,10 @@
     - name: 人人
       style: blue
       url: http://www.yyetss.com/
+
+    - name: 电波
+      style: basic
+      url: http://dbfansub.com/
 
     - name: 猪猪
       style: purple
