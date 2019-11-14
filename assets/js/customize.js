@@ -57,7 +57,7 @@ $('.ui.button.shortcut-toggle-show').each(function () {
             $(`#${$(this).data('search-service-id')} .shortcut-toggle-show .icon`).addClass('slash');
             updateJSONCookie('byr_navi_search_shortcuts', $(this).data('search-service-id'), false);
             $('body').toast({
-                class: 'red',
+                class: 'success',
                 showIcon: 'eye slash',
                 title: `隐藏“${$(`#${$(this).data('search-service-id')} .shortcut-preview`).data('tooltip')}”`,
                 message: `已标记快捷搜索项“${$(`#${$(this).data('search-service-id')} .shortcut-preview`).data('tooltip')}”为“隐藏”`
@@ -72,7 +72,7 @@ $('.ui.button.shortcut-toggle-show').each(function () {
             $(`#${$(this).data('search-service-id')} .shortcut-toggle-show .icon`).removeClass('slash');
             updateJSONCookie('byr_navi_search_shortcuts', $(this).data('search-service-id'), true);
             $('body').toast({
-                class: 'green',
+                class: 'success',
                 showIcon: 'eye',
                 title: `显示“${$(`#${$(this).data('search-service-id')} .shortcut-preview`).data('tooltip')}”`,
                 message: `已标记快捷搜索项“${$(`#${$(this).data('search-service-id')} .shortcut-preview`).data('tooltip')}”为“显示”`
