@@ -31,9 +31,9 @@
       style: basic
       url: http://www.dangdang.com/
 
-    - name: 严选
-      style: basic
-      url: http://you.163.com/
+    # - name: 严选
+    #   style: basic
+    #   url: http://you.163.com/
 
     - name: UNIQLO
       style: red
@@ -88,10 +88,10 @@
       style: basic
       url: http://www.dianping.com/
 
-    - name: 网易邮箱
-      icon: envelope red
-      style: basic
-      url: http://email.163.com/
+    # - name: 网易邮箱
+    #   icon: envelope red
+    #   style: basic
+    #   url: http://email.163.com/
 
     - name: QQ邮箱
       icon: qq black
@@ -99,7 +99,7 @@
       url: https://mail.qq.com/
 
     - name: 新浪邮箱
-      style: basic
+      icon: envelope red
       url: https://mail.sina.com.cn/
 
     - name: Gmail
