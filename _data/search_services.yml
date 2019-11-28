@@ -246,27 +246,11 @@
     style: black
     show: false
 
-- id: fixzimuxia
+- id: zimuxia
   name: FIX字幕侠
   url: http://zimuxia.cn/?s={query}
   shortcut:
     icon: closed captioning yellow inverted
-    style: black
-    show: false
-
-- id: dalipan
-  name: 大力盘
-  url: https://www.dalipan.com/search?keyword={query}
-  shortcut:
-    icon: cloud download alternate orange inverted
-    style: black
-    show: false
-
-- id: wangpan
-  name: 58网盘
-  url: https://58wangpan.com/search/kw{query}
-  shortcut:
-    icon: cloud download alternate green inverted
     style: black
     show: false
 
@@ -286,6 +270,30 @@
     to: '_'
   shortcut:
     icon: film blue inverted
+    style: black
+    show: false
+
+- id: yyetss
+  name: 人人影视
+  url: http://www.yyetss.com/Search/index/?s_keys={query}
+  shortcut:
+    icon: film blue inverted
+    style: black
+    show: false
+
+- id: dalipan
+  name: 大力盘
+  url: https://www.dalipan.com/search?keyword={query}
+  shortcut:
+    icon: cloud download alternate orange inverted
+    style: black
+    show: false
+
+- id: wangpan
+  name: 58网盘
+  url: https://58wangpan.com/search/kw{query}
+  shortcut:
+    icon: cloud download alternate green inverted
     style: black
     show: false
 
