@@ -1,9 +1,9 @@
 show: true
-memorial: false
-hitokoto: true
-content: 祈福无锡：312国道
-detail: 逝者永存 伤者安康
+memorial: true
+hitokoto: false
+content: 12.13 国家公祭日 纪念南京大屠杀300,000同胞
+detail: 铭记历史 珍爱和平
 color: black
-icon: heartbeat
+icon: monument
 image: false
-link: http://news.sina.com.cn/o/2019-10-10/doc-iicezzrr1357398.shtml
+link: https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%B1%A0%E6%9D%80/26188
