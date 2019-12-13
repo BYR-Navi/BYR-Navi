@@ -1,6 +1,6 @@
 show: true
-memorial: true
-hitokoto: false
+memorial: false
+hitokoto: true
 content: 12.13 国家公祭日 纪念南京大屠杀300,000同胞
 detail: 铭记历史 珍爱和平
 color: black
