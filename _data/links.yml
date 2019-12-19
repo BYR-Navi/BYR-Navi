@@ -100,6 +100,7 @@
 
     - name: 新浪邮箱
       icon: envelope red
+      style: basic
       url: https://mail.sina.com.cn/
 
     - name: Gmail
