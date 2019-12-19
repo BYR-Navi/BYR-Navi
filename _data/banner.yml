@@ -1,9 +1,9 @@
 show: true
 memorial: false
-hitokoto: true
-content: 12.13 国家公祭日 纪念南京大屠杀300,000同胞
-detail: 铭记历史 珍爱和平
+hitokoto: false
+content: 祝考研顺利，马到成功！
+detail: System Operator
 color: black
-icon: monument
+icon: pen alternate
 image: false
-link: https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%B1%A0%E6%9D%80/26188
+link: https://yzb.bupt.edu.cn/
