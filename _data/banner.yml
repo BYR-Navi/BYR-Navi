@@ -1,9 +1,9 @@
 show: true
 memorial: false
-hitokoto: true
-content: 祝考研顺利，马到成功！
-detail: 12.22-23
-color: black
-icon: pen alternate
+hitokoto: false
+content: Merry Christmas!
+detail: Happy New Year!
+color: red
+icon: gifts
 image: false
-link: https://yzb.bupt.edu.cn/
+link: false
