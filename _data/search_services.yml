@@ -321,8 +321,16 @@
     style: black
     show: false
 
-- id: byr
-  name: 北邮人论坛
+- id: byrsearch
+  name: 北邮人论坛1
+  url: http://123.207.168.11/byrbbs/?key={query}
+  shortcut:
+    icon: comments red inverted
+    style: black
+    show: false
+
+- id: icysearch
+  name: 北邮人论坛2
   url: http://search.icybee.cn/bbs/?key={query}
   shortcut:
     icon: comments blue inverted
