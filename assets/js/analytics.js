@@ -734,6 +734,10 @@ visitCalendarChart.setOption({
             range: 2019,
             right: 5,
             top: 600
+        }, {
+            range: 2020,
+            right: 5,
+            top: 780
         }],
         series: [{
             type: 'heatmap',
@@ -754,6 +758,11 @@ visitCalendarChart.setOption({
             type: 'heatmap',
             coordinateSystem: 'calendar',
             calendarIndex: 3,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 4,
             data: []
         }]
     },
@@ -784,6 +793,10 @@ visitCalendarChart.setOption({
                 orient: 'vertical',
                 left: 'center',
                 top: 3480
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 4610
             }]
         }
     }]
