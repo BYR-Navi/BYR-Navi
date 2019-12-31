@@ -689,7 +689,7 @@ setInterval(function () {
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
 var firstYear = establishedAt.getFullYear();
-var maxYear = 2019;
+var maxYear = 2020;
 visitCalendarChart.setOption({
     baseOption: {
         title: {
