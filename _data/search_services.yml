@@ -30,6 +30,14 @@
     style: black
     show: true
 
+- id: kuaidi100
+  name: 快递100
+  url: https://kuaidi100.com/?nu={query}
+  shortcut:
+    icon: shipping fast green inverted
+    style: black
+    show: true
+
 - id: baidunews
   name: 百度资讯
   url: https://baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&word={query}
