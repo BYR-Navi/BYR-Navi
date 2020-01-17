@@ -31,12 +31,20 @@
     show: true
 
 - id: kuaidi100
-  name: 快递100
+  name: 快递查询
   url: https://kuaidi100.com/?nu={query}
   shortcut:
     icon: shipping fast green inverted
     style: black
     show: true
+
+- id: 17track
+  name: 国际查件
+  url: https://t.17track.net/zh-cn#nums={query}
+  shortcut:
+    icon: shipping fast blue inverted
+    style: black
+    show: false
 
 - id: baidunews
   name: 百度资讯
