@@ -42,7 +42,7 @@
   name: 国际查件
   url: https://t.17track.net/zh-cn#nums={query}
   shortcut:
-    icon: shipping fast blue inverted
+    icon: shipping fast orange inverted
     style: black
     show: false
 
