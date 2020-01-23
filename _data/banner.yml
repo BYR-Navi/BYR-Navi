@@ -1,9 +1,9 @@
 show: true
 memorial: false
-hitokoto: true
-content: 追求梦想，才是人类的生存之道。
-detail: 2020，砥砺前行。
-color: black
-icon: mountain
+hitokoto: false
+content: 武汉新型冠状病毒肺炎
+detail: 疫情地图 实时动态
+color: red
+icon: biohazard
 image: false
-link: https://byr-navi.com/donate/
+link: https://3g.dxy.cn/newh5/view/pneumonia
