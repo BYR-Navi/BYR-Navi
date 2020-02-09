@@ -301,6 +301,10 @@
       style: purple
       url: http://www.zzrbl.com/
 
+    - name: TNH
+      style: basic
+      url: https://www.tokyonothot.com/
+
     - name: 幻樱
       style: pink
       url: http://www.hysub.net/
