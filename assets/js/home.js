@@ -16,7 +16,7 @@ setInterval(function () {
 
 // version
 dayjs.locale('zh-cn');
-dayjs.extend(dayjs_plugin_relativeTime);
+dayjs.extend(window.dayjs_plugin_relativeTime);
 function updateVersion(timestamp) {
     $('#version img').attr('src', `https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-${encodeURIComponent(dayjs(timestamp).fromNow())}-brightgreen.svg`);
 };
