@@ -1,9 +1,15 @@
 show: true
-memorial: false
+memorial: true
 hitokoto: false
-content: COVID-19新型冠状病毒肺炎
-detail: 疫情地图 实时动态
-color: red
-icon: biohazard
+# content: COVID-19新型冠状病毒肺炎
+# detail: 疫情地图 实时动态
+# color: red
+# icon: biohazard
+# image: false
+# link: https://voice.baidu.com/act/newpneumonia/newpneumonia/
+content: 4月4日
+detail: 全国哀悼
+color: black
+icon: heart
 image: false
-link: https://voice.baidu.com/act/newpneumonia/newpneumonia/
+link: false
