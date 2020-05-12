@@ -264,9 +264,9 @@
       style: pink
       url: https://bilibili.com/
 
-    # - name: AcFun
-    #   style: basic
-    #   url: https://acfun.cn/
+    - name: AcFun
+      style: orange
+      url: https://acfun.cn/
 
     - name: 腾讯动漫
       style: basic
