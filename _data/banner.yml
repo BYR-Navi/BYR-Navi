@@ -1,9 +1,9 @@
 show: true
 memorial: false
-hitokoto: true
-content: COVID-19新型冠状病毒肺炎
-detail: 疫情地图 实时动态
-color: red
-icon: biohazard
+hitokoto: false
+content: 端午安康
+detail: 阖家幸福
+color: green
+icon: laptop house
 image: false
-link: https://voice.baidu.com/act/newpneumonia/newpneumonia/
+link: https://baike.baidu.com/item/%E7%AB%AF%E5%8D%88%E8%8A%82/1054
