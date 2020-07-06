@@ -1,9 +1,9 @@
 show: true
 memorial: false
-hitokoto: true
-content: 端午安康
-detail: 阖家幸福
+hitokoto: false
+content: 欢迎报考北京邮电大学
+detail: 高考加油
 color: black
-icon: laptop house
+icon: university
 image: false
-link: https://baike.baidu.com/item/%E7%AB%AF%E5%8D%88%E8%8A%82/1054
+link: https://www.bupt.edu.cn/
