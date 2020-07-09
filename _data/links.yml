@@ -305,6 +305,10 @@
       style: basic
       url: https://www.tokyonothot.com/
 
+    - name: 追新番
+      style: yellow
+      url: http://www.zhuixinfan.com/
+
     - name: 幻樱
       style: pink
       url: http://www.hysub.net/
