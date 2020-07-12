@@ -1,6 +1,6 @@
 <div class="ui text container">
-    {% if site.data.banner.advertisement.show %}<div id="banner-ad">
-            <a class="ui {{ site.data.banner.advertisement.color }} label" href="{{ site.data.banner.advertisement.link }}"><i class="{{ site.data.banner.advertisement.icon }} icon"></i>{{ site.data.banner.advertisement.content }}<div class="detail">{{ site.data.banner.advertisement.detail }}</div></a>
+    {% if site.data.banner.advertisement.show %}<div id="banner-advertisement">
+            <a class="ui {{ site.data.banner.advertisement.color }} label" href="{{ site.data.banner.advertisement.link }}"><i class="{{ site.data.banner.advertisement.icon }} icon"></i><span class="ui grey text">&lt;广告&gt;</span>&nbsp;{{ site.data.banner.advertisement.content }}<div class="detail">{{ site.data.banner.advertisement.detail }}</div></a>
         </div>{% endif %}
     {%- if site.data.banner.message.show -%}
         {%- if site.data.banner.message.hitokoto -%}
