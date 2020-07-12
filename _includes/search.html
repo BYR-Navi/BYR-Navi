@@ -1,5 +1,7 @@
 <div class="ui text container">
-    {% if site.data.banner.advertisement.show %}<a id="banner-ad" class="ui {{ site.data.banner.advertisement.color }} label" href="{{ site.data.banner.advertisement.link }}"><i class="{{ site.data.banner.advertisement.icon }} icon"></i>{{ site.data.banner.advertisement.content }}<div class="detail">{{ site.data.banner.advertisement.detail }}</div></a>{% endif %}
+    {% if site.data.banner.advertisement.show %}<div id="banner-ad">
+            <a class="ui {{ site.data.banner.advertisement.color }} label" href="{{ site.data.banner.advertisement.link }}"><i class="{{ site.data.banner.advertisement.icon }} icon"></i>{{ site.data.banner.advertisement.content }}<div class="detail">{{ site.data.banner.advertisement.detail }}</div></a>
+        </div>{% endif %}
     {%- if site.data.banner.message.show -%}
         {%- if site.data.banner.message.hitokoto -%}
             <a id="hitokoto" class="ui black pointing below label"><i class="quote left icon"></i></a>
