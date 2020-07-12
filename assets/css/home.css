@@ -45,6 +45,10 @@
     margin-right: 0.25em;
 }
 
+.ui.masthead #banner-ad {
+    margin-bottom: 0.5em;
+}
+
 @media only screen and (max-width: 767px) {
     .ui.masthead .ui.text.container {
         margin-top: 2rem;

@@ -1,9 +1,17 @@
-show: true
-memorial: false
-hitokoto: true
-content: 学术精进 出国留学 来云英语
-detail: 不背单词的GRE工程化解决方案
-color: black
-icon: university
-image: false
-link: https://y-english.cn/
+message:
+  show: true
+  hitokoto: true
+  content: 学术精进 出国留学 来云英语
+  detail: 不背单词的GRE工程化解决方案
+  color: black
+  icon: university
+  image: false
+  link: https://y-english.cn/
+
+advertisement:
+  show: true
+  content: 学术精进 出国留学 来云英语
+  detail: 不背单词的GRE工程化解决方案
+  color: black
+  icon: university
+  link: https://y-english.cn/

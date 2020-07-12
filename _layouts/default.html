@@ -17,7 +17,7 @@
     {% if page.active_key == 'search' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/search.css' | relative_url }}">{% endif %}
     {% if page.active_key == 'error' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/error.css' | relative_url }}">{% endif %}
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/masthead.css' | relative_url }}">
-    {% if page.active_key == 'home' and site.data.banner.memorial %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/grayscale.css' | relative_url }}">{% endif %}
+    {% if page.active_key == 'home' and site.data.style.memorial %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/grayscale.css' | relative_url }}">{% endif %}
     <link rel="apple-touch-icon" type="image/png" href="{{ '/apple-touch-icon.png' | relative_url }}">
     <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
     {% include analytics.html %}
@@ -38,7 +38,7 @@
     <script type="text/javascript" src="//unpkg.com/dayjs/plugin/relativeTime.js"></script>
     <script type="text/javascript" src="//unpkg.com/js-cookie/src/js.cookie.js"></script>
     <script type="text/javascript" src="{{ '/assets/js/suggest-query.min.js' | relative_url }}"></script>
-    {% if site.data.banner.hitokoto %}<script type="text/javascript" src="{{ '/assets/js/hitokoto.js' | relative_url }}"></script>{% endif %}
+    {% if site.data.banner.message.hitokoto %}<script type="text/javascript" src="{{ '/assets/js/hitokoto.js' | relative_url }}"></script>{% endif %}
     <script type="text/javascript" src="{{ '/assets/js/home.js' | relative_url }}"></script>{% endif %}
     {% if page.active_key == 'customize' %}<script type="text/javascript" src="//unpkg.com/js-cookie/src/js.cookie.js"></script>
     <script type="text/javascript" src="{{ '/assets/js/customize.js' | relative_url }}"></script>{% endif %}
