@@ -293,9 +293,9 @@
       style: blue
       url: http://www.yyetss.com/
 
-    - name: 电波
-      style: basic
-      url: http://dbfansub.com/
+    # - name: 电波
+    #   style: basic
+    #   url: http://dbfansub.com/
 
     - name: 猪猪
       style: purple
