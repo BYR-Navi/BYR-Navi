@@ -1,8 +1,8 @@
 show: true
 memorial: false
-hitokoto: false
-content: 学术精进 出国留学 考GRE
-detail: 云英语——不背单词搞定GRE
+hitokoto: true
+content: 学术精进 出国留学 来云英语
+detail: 不背单词的GRE工程化解决方案
 color: black
 icon: university
 image: false
