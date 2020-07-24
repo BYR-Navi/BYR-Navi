@@ -321,6 +321,14 @@
     style: black
     show: true
 
+- id: comicat
+  name: 漫猫
+  url: http://www.comicat.org/search.php?keyword={query}
+  shortcut:
+    icon: magnet green inverted
+    style: black
+    show: true
+
 - id: lime
   name: Lime Torrents
   url: https://limetorrents.cc/search/all/{query}/
