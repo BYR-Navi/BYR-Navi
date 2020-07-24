@@ -1,12 +1,12 @@
 message:
   show: true
-  hitokoto: true
-  content: 学术精进 出国留学 来云英语
-  detail: 不背单词的GRE工程化解决方案
-  color: black
+  hitokoto: false
+  content: 北邮2020全国招生宣传咨询方式汇总
+  detail: 北邮欢迎你
+  color: red
   icon: university
   image: false
-  link: https://y-english.cn/
+  link: https://mp.weixin.qq.com/s/PqOvVoFM03hHvakDFRABHw
 
 advertisement:
   show: true
