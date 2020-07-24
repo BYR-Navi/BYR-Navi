@@ -319,7 +319,7 @@
   shortcut:
     icon: magnet yellow inverted
     style: black
-    show: true
+    show: false
 
 - id: comicat
   name: 漫猫
