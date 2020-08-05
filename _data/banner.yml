@@ -1,9 +1,9 @@
 message:
   show: true
-  hitokoto: false
+  hitokoto: true
   content: 北邮2020全国招生宣传咨询方式汇总
   detail: 北邮欢迎你
-  color: red
+  color: black
   icon: university
   image: false
   link: https://mp.weixin.qq.com/s/PqOvVoFM03hHvakDFRABHw
