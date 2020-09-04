@@ -132,6 +132,10 @@
       style: basic
       url: https://www.tianyancha.com/
 
+    - name: 稿定设计
+      style: basic
+      url: https://www.gaoding.com/
+
   - name: 社交
     links:
     - name: 微博
@@ -225,9 +229,17 @@
       style: basic
       url: https://opensource.google.com/
 
-    - name: CSDN
+    - name: EdX
       style: basic
-      url: https://edu.csdn.net/
+      url: https://edx.org/
+
+    - name: 学堂在线
+      style: basic
+      url: https://next.xuetangx.com/
+
+    - name: 优达学城
+      style: basic
+      url: https://cn.udacity.com/
 
     - name: 云英语
       style: black
