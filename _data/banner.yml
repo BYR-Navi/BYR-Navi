@@ -9,9 +9,9 @@ message:
   link: https://mp.weixin.qq.com/s/PqOvVoFM03hHvakDFRABHw
 
 advertisement:
-  show: false
-  content: 学术精进 出国留学 来云英语
-  detail: 不背单词的GRE工程化解决方案
+  show: true
+  content: 学术精进 系统构建20K词汇体系
+  detail: 云英语VB词汇建造师
   color: black
   icon: university
   link: https://y-english.cn/
