@@ -1,12 +1,12 @@
 message:
   show: true
-  hitokoto: true
-  content: 北邮2020全国招生宣传咨询方式汇总
-  detail: 北邮欢迎你
+  hitokoto: false
+  content: 举国同庆 月满中秋
+  detail: System Operator
   color: black
-  icon: university
+  icon: birthday cake
   image: false
-  link: https://mp.weixin.qq.com/s/PqOvVoFM03hHvakDFRABHw
+  link: false
 
 advertisement:
   show: true
