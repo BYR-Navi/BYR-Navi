@@ -1,6 +1,6 @@
 message:
   show: true
-  hitokoto: false
+  hitokoto: true
   content: 举国同庆 月满中秋
   detail: System Operator
   color: black
