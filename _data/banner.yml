@@ -1,15 +1,15 @@
 message:
   show: true
   hitokoto: true
-  content: 举国同庆 月满中秋
+  content: 2020共同走过 2021奋力前行
   detail: System Operator
   color: black
-  icon: birthday cake
+  icon: star
   image: false
   link: false
 
 advertisement:
-  show: true
+  show: false
   content: 学术精进 系统构建20K词汇体系
   detail: 云英语VB词汇建造师
   color: black
