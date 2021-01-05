@@ -1,6 +1,6 @@
 message:
   show: true
-  hitokoto: false
+  hitokoto: true
   content: 2020共同走过 2021奋力前行
   detail: System Operator
   color: black
