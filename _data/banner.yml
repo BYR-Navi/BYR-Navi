@@ -1,10 +1,10 @@
 message:
   show: true
-  hitokoto: true
-  content: 2020共同走过 2021奋力前行
+  hitokoto: false
+  content: Now we are on Ubuntu 20.04 LTS!
   detail: System Operator
   color: black
-  icon: star
+  icon: ubuntu
   image: false
   link: false
 
