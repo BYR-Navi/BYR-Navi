@@ -1,6 +1,6 @@
 message:
   show: true
-  hitokoto: false
+  hitokoto: true
   content: Now we are on Ubuntu 20.04 LTS!
   detail: System Operator
   color: black
