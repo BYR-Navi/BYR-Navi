@@ -321,9 +321,9 @@
       style: yellow
       url: http://www.zhuixinfan.com/
 
-    - name: 幻樱
-      style: pink
-      url: http://www.hysub.net/
+    # - name: 幻樱
+    #   style: pink
+    #   url: http://www.hysub.net/
 
     - name: 斗鱼
       style: orange
@@ -335,10 +335,6 @@
     - name: 北邮官网
       style: basic
       url: https://www.bupt.edu.cn/
-
-    # - name: 官方导航
-    #   style: basic
-    #   url: http://dep.bupt.edu.cn/dh/
 
     - name: 本科教务系统
       style: basic
