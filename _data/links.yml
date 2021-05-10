@@ -386,7 +386,7 @@
 
     - name: VPN服务
       style: basic
-      url: http://nic.bupt.edu.cn/list/list.php?p=3_24_1
+      url: https://nic.bupt.edu.cn/list/list.php?p=5_13_1
 
     - name: 空闲自习室查询
       style: basic
