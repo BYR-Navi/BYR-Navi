@@ -334,15 +334,15 @@
     links:
     - name: 北邮官网
       style: basic
-      url: http://www.bupt.edu.cn/
+      url: https://www.bupt.edu.cn/
 
-    - name: 官方导航
-      style: basic
-      url: http://dep.bupt.edu.cn/dh/
+    # - name: 官方导航
+    #   style: basic
+    #   url: http://dep.bupt.edu.cn/dh/
 
     - name: 本科教务系统
       style: basic
-      url: http://jwxt.bupt.edu.cn/
+      url: https://jwgl.bupt.edu.cn/jsxsd/
 
     - name: 研究生教务系统
       style: basic
@@ -479,12 +479,12 @@
     - name: 论坛APP
       icon: app store
       style: black
-      url: http://itunes.apple.com/cn/app/bei-you-ren-lun-tan-bei-you/id1115232927
+      url: https://apps.apple.com/cn/app/id1115232927
 
     - name: 论坛APP
       icon: google play
       style: black
-      url: https://github.com/dss886/BYR-BBS-APP-Release
+      url: https://github.com/BYR-App-Dev/BYR_App_Android_Release/releases
 
     - name: 论坛官方微博
       style: basic
