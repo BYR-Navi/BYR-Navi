@@ -484,7 +484,7 @@
     - name: 论坛APP
       icon: google play
       style: black
-      url: https://github.com/BYR-App-Dev/BYR_App_Android_Release/releases
+      url: https://github.com/BYR-App-Dev/BYR_App_Android_Release/releases/latest
 
     - name: 论坛官方微博
       style: basic
