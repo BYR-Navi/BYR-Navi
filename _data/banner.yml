@@ -1,12 +1,12 @@
 message:
   show: true
-  hitokoto: true
-  content: Now we are on Ubuntu 20.04 LTS!
-  detail: System Operator
+  hitokoto: false
+  content: 缅怀！国之脊梁
+  detail: 袁隆平逝世
   color: black
-  icon: ubuntu
+  icon: seedling
   image: false
-  link: false
+  link: https://www.baidu.com/s?wd=%E7%BC%85%E6%80%80%E8%A2%81%E9%9A%86%E5%B9%B3
 
 advertisement:
   show: false
