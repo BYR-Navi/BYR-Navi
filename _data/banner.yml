@@ -1,6 +1,6 @@
 message:
   show: true
-  hitokoto: false
+  hitokoto: true
   content: 缅怀！国之脊梁
   detail: 袁隆平逝世
   color: black
