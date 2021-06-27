@@ -1,12 +1,12 @@
 message:
   show: true
-  hitokoto: true
-  content: 缅怀！国之脊梁
-  detail: 袁隆平逝世
-  color: black
-  icon: seedling
-  image: false
-  link: https://www.baidu.com/s?wd=%E7%BC%85%E6%80%80%E8%A2%81%E9%9A%86%E5%B9%B3
+  hitokoto: false
+  content: 庆祝中国共产党成立100周年
+  detail: 奋斗百年路 起航新征程
+  color: red
+  icon: false
+  image: /images/messages/cpc-logo-yellow.svg
+  link: https://www.baidu.com/s?wd=%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4
 
 advertisement:
   show: false
