@@ -1,12 +1,12 @@
 message:
   show: true
-  hitokoto: true
-  content: 庆祝中国共产党成立100周年
-  detail: 奋斗百年路 起航新征程
+  hitokoto: false
+  content: 风雨同舟
+  detail: 河南加油
   color: black
-  icon: false
-  image: /images/messages/cpc-logo-yellow.svg
-  link: https://www.baidu.com/s?wd=%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4
+  icon: swimmer
+  image: false
+  link: https://www.baidu.com/s?wd=%E6%B2%B3%E5%8D%97%E6%9A%B4%E9%9B%A8
 
 advertisement:
   show: false
