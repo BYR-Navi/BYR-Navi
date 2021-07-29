@@ -1,6 +1,6 @@
 message:
   show: true
-  hitokoto: false
+  hitokoto: true
   content: 风雨同舟
   detail: 河南加油
   color: black
