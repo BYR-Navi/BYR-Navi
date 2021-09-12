@@ -363,7 +363,7 @@
 
 - id: byrbt
   name: 北邮人BT
-  url: https://bt.byr.cn/torrents.php?search={query}
+  url: https://byr.pt/torrents.php?search={query}
   shortcut:
     icon: cloud download alternate teal inverted
     style: black
