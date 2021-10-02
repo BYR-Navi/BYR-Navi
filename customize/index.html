@@ -30,7 +30,7 @@ active_key: customize
                 {% for item in site.data.search_services %}{% if item.shortcut %}<tr id="{{ item.id }}" class="shortcut">
                     <td>{{ item.name }}</td>
                     <td><code>{{ item.url }}</code></td>
-                    <td class="black"><div class="ui {{ item.shortcut.style }} label shortcut-preview" data-tooltip="{{ item.name }}" data-variation="mini basic" data-position="top center" data-inverted=""><i class="{{ item.shortcut.icon }} fitted icon"></i></div></td>
+                    <td class="black"><div class="ui mini {{ item.shortcut.style }} label shortcut-preview" data-tooltip="{{ item.name }}" data-variation="mini basic" data-position="top center" data-inverted=""><i class="{{ item.shortcut.icon }} fitted icon"></i></div></td>
                     {% if item.shortcut.show %}<td class="active shortcut-visibility">显示</td>{% else %}<td class="shortcut-visibility">隐藏</td>{% endif %}
                     <td>{% if item.shortcut.show %}<a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="{{ item.id }}" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a>{% else %}<a class="ui mini icon button shortcut-toggle-show" data-search-service-id="{{ item.id }}" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a>{% endif %}</td>
                 </tr>{% endif %}{% endfor %}

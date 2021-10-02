@@ -1,10 +1,10 @@
 {% if site.data.banner.advertisement.show %}<div id="banner-advertisement">
-        <a class="ui {{ site.data.banner.advertisement.color }} label" href="{{ site.data.banner.advertisement.link }}" target="_blank"><i class="{{ site.data.banner.advertisement.icon }} icon"></i><span class="ui grey text">&lt;广告&gt;</span>&nbsp;{{ site.data.banner.advertisement.content }}<div class="detail">{{ site.data.banner.advertisement.detail }}</div></a>
+        <a class="ui mini {{ site.data.banner.advertisement.color }} label" href="{{ site.data.banner.advertisement.link }}" target="_blank"><i class="{{ site.data.banner.advertisement.icon }} icon"></i><span class="ui grey text">&lt;广告&gt;</span>&nbsp;{{ site.data.banner.advertisement.content }}<div class="detail">{{ site.data.banner.advertisement.detail }}</div></a>
     </div>{% endif %}
 {%- if site.data.banner.message.show -%}
     {%- if site.data.banner.message.hitokoto -%}
-        <a id="hitokoto" class="ui black pointing below label"><i class="quote left icon"></i></a>
+        <a id="hitokoto" class="ui mini black pointing below label"><i class="quote left icon"></i></a>
     {%- else -%}
-        <a class="ui {{ site.data.banner.message.color }} pointing below {% unless site.data.banner.message.icon %}{% if site.data.banner.message.image %}image {% endif %}{% endunless %}label" href="{% if site.data.banner.message.link %}{{ site.data.banner.message.link }}{% else %}{{ '/donate/' | relative_url }}{% endif %}" target="_blank">{% if site.data.banner.message.icon %}<i class="{{ site.data.banner.message.icon }} icon"></i>{% elsif site.data.banner.message.image %}<img src="{{ site.data.banner.message.image }}" alt="Message Image">{% endif %}{{ site.data.banner.message.content }}{% if site.data.banner.message.detail %}<div class="detail">{{ site.data.banner.message.detail }}</div>{% endif %}</a>
+        <a class="ui mini {{ site.data.banner.message.color }} pointing below {% unless site.data.banner.message.icon %}{% if site.data.banner.message.image %}image {% endif %}{% endunless %}label" href="{% if site.data.banner.message.link %}{{ site.data.banner.message.link }}{% else %}{{ '/donate/' | relative_url }}{% endif %}" target="_blank">{% if site.data.banner.message.icon %}<i class="{{ site.data.banner.message.icon }} icon"></i>{% elsif site.data.banner.message.image %}<img src="{{ site.data.banner.message.image }}" alt="Message Image">{% endif %}{{ site.data.banner.message.content }}{% if site.data.banner.message.detail %}<div class="detail">{{ site.data.banner.message.detail }}</div>{% endif %}</a>
     {%- endif -%}
 {%- endif -%}

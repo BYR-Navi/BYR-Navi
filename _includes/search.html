@@ -4,7 +4,7 @@
         <img class="ui centered image" src="{{ site.logo_white }}" alt="Logo">
     </h1>
     <h2 class="ui inverted header">{{ site.title }}</h2>
-    <div id="search-shortcuts" class="ui labels">
+    <div id="search-shortcuts" class="ui mini labels">
         {% for item in site.data.search_services %}{% if item.shortcut %}<a class="ui {{ item.shortcut.style }} label{% unless item.shortcut.show %} hidden{% endunless %}" data-search-service-id="{{ item.id }}" data-tooltip="{{ item.name }}" data-variation="mini basic" data-position="top center" data-inverted=""><i class="{{ item.shortcut.icon }} fitted icon"></i></a>{% endif %}{% endfor %}
     </div>
     <div class="ui inverted fluid right action input" id="search-div">
@@ -25,5 +25,5 @@
     <div class="ui inverted selection link list">
         <a class="item" href="{{ '/donate/' | relative_url }}">请为辛苦的开发者众筹一杯星冰乐</a>
     </div>
-    <div class="ui black label"><i class="globe icon"></i>支持 IPv6 访问</div>
+    <div class="ui mini black label"><i class="globe icon"></i>支持 IPv6 访问</div>
 </div>
