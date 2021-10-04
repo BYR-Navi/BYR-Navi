@@ -230,13 +230,13 @@
     style: black
     show: false
 
-- id: xiami
-  name: 虾米音乐
-  url: https://xiami.com/search?key={query}
-  shortcut:
-    icon: music orange inverted
-    style: black
-    show: false
+# - id: xiami
+#   name: 虾米音乐
+#   url: https://xiami.com/search?key={query}
+#   shortcut:
+#     icon: music orange inverted
+#     style: black
+#     show: false
 
 - id: bilibili
   name: 哔哩哔哩
@@ -267,6 +267,14 @@
   url: http://zimuxia.cn/?s={query}
   shortcut:
     icon: closed captioning yellow inverted
+    style: black
+    show: false
+
+- id: newzmz
+  name: NEW字幕组
+  url: https://newzmz.com/tvslist.html?keyword={query}
+  shortcut:
+    icon: closed captioning inverted
     style: black
     show: false
 
