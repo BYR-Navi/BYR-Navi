@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/BYR-Navi/BYR-Navi.svg)][travis-ci]
+[![Build Status](https://app.travis-ci.com/BYR-Navi/BYR-Navi.svg)][travis-ci]
 [![Website](https://img.shields.io/website-up-down-green-red/https/byr-navi.com.svg)][website]
 [![License](https://img.shields.io/github/license/BYR-Navi/BYR-Navi.svg)][license]
 [![Last Commit](https://img.shields.io/github/last-commit/BYR-Navi/BYR-Navi.svg)][commit]
@@ -101,7 +101,7 @@ Donate [here][donate].
 ## :copyright: License
 [MIT License][license]
 
-[travis-ci]: https://travis-ci.org/BYR-Navi/BYR-Navi "Travis CI"
+[travis-ci]: https://app.travis-ci.com/BYR-Navi/BYR-Navi "Travis CI"
 [website]: https://byr-navi.com/ "Website"
 [license]: https://github.com/BYR-Navi/BYR-Navi/blob/master/LICENSE "License"
 [commit]: https://github.com/BYR-Navi/BYR-Navi/commits/master "Last Commit"
