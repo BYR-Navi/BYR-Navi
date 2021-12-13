@@ -1,6 +1,6 @@
 message:
   show: true
-  hitokoto: false
+  hitokoto: true
   content: 12-13国家公祭日
   detail: 勿忘国耻
   color: black
