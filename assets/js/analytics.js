@@ -689,7 +689,7 @@ setInterval(function () {
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
 var firstYear = establishedAt.getFullYear();
-var maxYear = 2021;
+var maxYear = 2022;
 visitCalendarChart.setOption({
     baseOption: {
         title: {
@@ -742,6 +742,10 @@ visitCalendarChart.setOption({
             range: 2021,
             right: 5,
             top: 960
+        }, {
+            range: 2022,
+            right: 6,
+            top: 1140
         }],
         series: [{
             type: 'heatmap',
@@ -772,6 +776,11 @@ visitCalendarChart.setOption({
             type: 'heatmap',
             coordinateSystem: 'calendar',
             calendarIndex: 5,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 6,
             data: []
         }]
     },
@@ -810,6 +819,10 @@ visitCalendarChart.setOption({
                 orient: 'vertical',
                 left: 'center',
                 top: 5740
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 6870
             }]
         }
     }]
