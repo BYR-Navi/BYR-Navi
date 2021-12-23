@@ -299,7 +299,8 @@
 
     - name: FIX
       style: yellow
-      url: http://www.zimuxia.cn/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BD%9C%E5%93%81
+      # url: http://www.zimuxia.cn/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BD%9C%E5%93%81
+      url: https://docs.qq.com/sheet/DWm16S2lEdkF2QnNF
 
     - name: NEW
       style: basic
