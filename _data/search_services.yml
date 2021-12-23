@@ -262,13 +262,13 @@
     style: black
     show: false
 
-- id: zimuxia
-  name: FIX字幕侠
-  url: http://zimuxia.cn/?s={query}
-  shortcut:
-    icon: closed captioning yellow inverted
-    style: black
-    show: false
+# - id: zimuxia
+#   name: FIX字幕侠
+#   url: http://zimuxia.cn/?s={query}
+#   shortcut:
+#     icon: closed captioning yellow inverted
+#     style: black
+#     show: false
 
 - id: newzmz
   name: NEW字幕组
