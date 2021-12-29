@@ -1,3 +1,6 @@
+---
+---
+
 // analytics.js
 
 // date range
@@ -17,6 +20,7 @@ $('#established-at').countdown(establishedAt, {
     };
 });
 
+{%- if site.data.analytics.matomo.site_id -%}
 // visit
 var countUpOptions = {
     useEasing: true,
@@ -34,91 +38,91 @@ var liveVisitorsCountUp = new CountUp('live-visitors-stat', 0, 0, 0, 2.5, countU
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
-$.getJSON(analyticsAPI.url, {
+$.getJSON('{{ site.data.analytics.matomo.url }}', {
     'module': 'API',
     'method': 'VisitsSummary.getUniqueVisitors',
-    'idSite': analyticsAPI.id,
+    'idSite': '{{ site.data.analytics.matomo.site_id }}',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': analyticsAPI.token
+    'token_auth': '{{ site.data.analytics.matomo.token }}'
 }, function (data) {
     yesterdayVisitorsCountUp.update(data.value);
 });
-$.getJSON(analyticsAPI.url, {
+$.getJSON('{{ site.data.analytics.matomo.url }}', {
     'module': 'API',
     'method': 'VisitsSummary.getVisits',
-    'idSite': analyticsAPI.id,
+    'idSite': '{{ site.data.analytics.matomo.site_id }}',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': analyticsAPI.token
+    'token_auth': '{{ site.data.analytics.matomo.token }}'
 }, function (data) {
     yesterdayVisitsCountUp.update(data.value);
 });
-$.getJSON(analyticsAPI.url, {
+$.getJSON('{{ site.data.analytics.matomo.url }}', {
     'module': 'API',
     'method': 'VisitsSummary.getActions',
-    'idSite': analyticsAPI.id,
+    'idSite': '{{ site.data.analytics.matomo.site_id }}',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': analyticsAPI.token
+    'token_auth': '{{ site.data.analytics.matomo.token }}'
 }, function (data) {
     yesterdayActionsCountUp.update(data.value);
 });
 function updateVisit() {
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'range',
         'date': `last${siteEstablishedDays()}`,
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         totalActionsCountUp.update(data.value);
     });
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'Live.getCounters',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'lastMinutes': '30',
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         liveVisitorsCountUp.update(data[0].visitors);
     });
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         todayVisitorsCountUp.update(data.value);
     });
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         todayVisitsCountUp.update(data.value);
     });
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         todayActionsCountUp.update(data.value);
     });
@@ -229,14 +233,14 @@ visitSummaryChart.setOption({
 });
 visitSummaryChart.showLoading();
 function updateVisitSummaryChart() {
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
         'date': 'last90',
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         var days = [];
         var visitors = [];
@@ -254,14 +258,14 @@ function updateVisitSummaryChart() {
             }]
         });
     });
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
         'date': 'last90',
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         var visits = [];
         for (var i in data) {
@@ -274,14 +278,14 @@ function updateVisitSummaryChart() {
             }]
         });
     });
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
         'date': 'last90',
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         var actions = [];
         for (var i in data) {
@@ -422,14 +426,14 @@ function normalizeSymbolSize(val, data, resize) {
     };
 };
 function updateVisitHourlyChart() {
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitTime.getVisitInformationPerServerTime',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
         'date': 'last7',
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         var days = [];
         var visitors = [];
@@ -605,14 +609,14 @@ visitMapChart.setOption({
     }]
 });
 function updateVisitMapChart() {
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'UserCountry.getCountry',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'month',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         var visitors = [];
         var visits = [];
@@ -828,14 +832,14 @@ visitCalendarChart.setOption({
     }]
 });
 function updateVisitCalendarChart() {
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
         'date': `last${siteEstablishedDays()}`,
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         var cursorYear = firstYear;
         var series = [{
@@ -871,3 +875,4 @@ setInterval(function () {
         updateVisitCalendarChart();
     };
 }, 60000);
+{%- endif -%}

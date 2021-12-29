@@ -1,3 +1,6 @@
+---
+---
+
 // common.js
 
 // menu
@@ -19,49 +22,50 @@ $(document).ready(function () {
 // masthead background
 $('.ui.inverted.masthead.segment').addClass(`bg${Math.ceil(Math.random() * 14)}`).removeClass('zoomed');
 
+{%- if site.data.analytics.matomo.site_id -%}
 // analytics
-$.getJSON(analyticsAPI.url, {
+$.getJSON('{{ site.data.analytics.matomo.url }}', {
     'module': 'API',
     'method': 'VisitsSummary.getVisits',
-    'idSite': analyticsAPI.id,
+    'idSite': '{{ site.data.analytics.matomo.site_id }}',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': analyticsAPI.token
+    'token_auth': '{{ site.data.analytics.matomo.token }}'
 }, function (data) {
     $('#yesterday-visits').text(data.value);
 });
-$.getJSON(analyticsAPI.url, {
+$.getJSON('{{ site.data.analytics.matomo.url }}', {
     'module': 'API',
     'method': 'VisitsSummary.getActions',
-    'idSite': analyticsAPI.id,
+    'idSite': '{{ site.data.analytics.matomo.site_id }}',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': analyticsAPI.token
+    'token_auth': '{{ site.data.analytics.matomo.token }}'
 }, function (data) {
     $('#yesterday-actions').text(data.value);
 });
 function updateAnalytics() {
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         $('#today-visits').text(data.value);
     });
-    $.getJSON(analyticsAPI.url, {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
-        'idSite': analyticsAPI.id,
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': analyticsAPI.token
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         $('#today-actions').text(data.value);
     });
@@ -72,3 +76,4 @@ setInterval(function () {
         updateAnalytics();
     };
 }, 60000);
+{%- endif -%}

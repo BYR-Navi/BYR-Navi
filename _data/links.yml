@@ -51,13 +51,13 @@
       style: blue
       url: https://www.decathlon.com.cn/
 
-    - name: 造作
-      style: basic
-      url: https://zaozuo.com/
+    # - name: 造作
+    #   style: basic
+    #   url: https://zaozuo.com/
 
-    - name: 锤子
-      style: basic
-      url: http://www.smartisan.com/
+    # - name: 锤子
+    #   style: basic
+    #   url: http://www.smartisan.com/
 
     - name: 大疆
       style: black

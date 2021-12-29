@@ -10,11 +10,6 @@
 
 {%- if site.data.analytics.matomo.site_id -%}
     <script type="text/javascript">
-        var analyticsAPI = {
-            id: '{{ site.data.analytics.matomo.site_id }}',
-            url: '{{ site.data.analytics.matomo.url }}',
-            token: '{{ site.data.analytics.matomo.token }}'
-        };
         var _paq = _paq || [];
         _paq.push(["setDomains", [{% for domain in site.data.analytics.matomo.domains %}"{{ domain }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]]);
         _paq.push(['trackPageView']);
