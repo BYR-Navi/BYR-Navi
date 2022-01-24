@@ -23,17 +23,13 @@
       icon: apple grey
       url: https://www.apple.com/
 
-    - name: 一号店
-      style: basic
-      url: https://www.yhd.com/
-
     - name: 当当
-      style: basic
+      style: pink
       url: http://www.dangdang.com/
 
-    # - name: 严选
-    #   style: basic
-    #   url: http://you.163.com/
+    - name: 严选
+      style: basic
+      url: http://you.163.com/
 
     - name: UNIQLO
       style: red
@@ -50,14 +46,6 @@
     - name: Decathlon
       style: blue
       url: https://www.decathlon.com.cn/
-
-    # - name: 造作
-    #   style: basic
-    #   url: https://zaozuo.com/
-
-    # - name: 锤子
-    #   style: basic
-    #   url: http://www.smartisan.com/
 
     - name: 大疆
       style: black
@@ -76,22 +64,22 @@
     - name: '12306'
       icon: train red
       style: basic
-      url: http://www.12306.cn/
+      url: https://www.12306.cn/
 
     - name: 快递查询
       icon: truck olive
       style: basic
-      url: http://www.kuaidi100.com/
+      url: https://kuaidi100.com/
 
     - name: 大众点评
       icon: utensils orange
       style: basic
-      url: http://www.dianping.com/
+      url: https://www.dianping.com/
 
-    # - name: 网易邮箱
-    #   icon: envelope red
-    #   style: basic
-    #   url: http://email.163.com/
+    - name: 网易邮箱
+      icon: envelope red
+      style: basic
+      url: https://email.163.com/
 
     - name: QQ邮箱
       icon: qq black
@@ -132,13 +120,13 @@
       style: basic
       url: https://www.tianyancha.com/
 
-    - name: 稿定设计
-      style: basic
-      url: https://www.gaoding.com/
+    # - name: 稿定设计
+    #   style: basic
+    #   url: https://www.gaoding.com/
 
-    - name: MacWk
-      style: basic
-      url: https://macwk.com/
+    # - name: MacWk
+    #   style: basic
+    #   url: https://macwk.com/
 
   - name: 社交
     links:
@@ -205,15 +193,15 @@
 
     - name: MOOC
       style: basic
-      url: http://mooc.org/
+      url: https://mooc.org/
 
     - name: 网易公开课
       style: basic
-      url: http://open.163.com/
+      url: https://open.163.com/
 
     - name: W3School
       style: basic
-      url: http://www.w3school.com.cn/
+      url: https://www.w3school.com.cn/
 
     - name: Stack Overflow
       icon: stack overflow orange
@@ -222,7 +210,7 @@
 
     - name: SegmentFault
       style: basic
-      url: http://segmentfault.com/
+      url: https://segmentfault.com/
 
     - name: Tutorials Point
       style: basic
@@ -255,10 +243,6 @@
       style: basic
       url: https://youku.com/
 
-    # - name: 土豆
-    #   style: basic
-    #   url: https://tudou.com/
-
     - name: Youtube
       icon: youtube red
       style: basic
@@ -288,10 +272,6 @@
       style: basic
       url: https://ac.qq.com/
 
-    # - name: 虾米
-    #   style: orange
-    #   url: https://xiami.com/
-
     - name: 豆瓣电影
       icon: film blue
       style: basic
@@ -299,7 +279,6 @@
 
     - name: FIX
       style: yellow
-      # url: http://www.zimuxia.cn/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BD%9C%E5%93%81
       url: https://docs.qq.com/sheet/DWm16S2lEdkF2QnNF
 
     - name: NEW
@@ -310,13 +289,9 @@
       style: blue
       url: http://wanwansub.com/node/139
 
-    - name: 人人
-      style: blue
-      url: http://www.yyetss.com/
-
-    # - name: 电波
-    #   style: basic
-    #   url: http://dbfansub.com/
+    - name: 阿哥
+      style: orange
+      url: https://agmov.com/
 
     - name: 猪猪
       style: purple
@@ -324,15 +299,11 @@
 
     - name: TNH
       style: basic
-      url: https://www.tokyonothot.com/
+      url: https://www.tnhsub.com/
 
-    - name: 追新番
-      style: yellow
-      url: http://www.zhuixinfan.com/
-
-    # - name: 幻樱
-    #   style: pink
-    #   url: http://www.hysub.net/
+    - name: 幻樱
+      style: pink
+      url: http://www.hysub.net/
 
     - name: 斗鱼
       style: orange
@@ -345,9 +316,9 @@
       style: basic
       url: https://www.bupt.edu.cn/
 
-    - name: 本科教务系统
-      style: basic
-      url: https://jwgl.bupt.edu.cn/jsxsd/
+    # - name: 本科教务系统
+    #   style: basic
+    #   url: https://jwgl.bupt.edu.cn/jsxsd/
 
     - name: 研究生教务系统
       style: basic
@@ -365,13 +336,13 @@
       style: blue
       url: https://byr.pt/promotionlink.php?key=63030ce02da245eb152d2e8dc8dd6add
 
-    - name: 北邮IPTV
-      style: basic
-      url: http://tv.byr.cn/
+    # - name: 北邮IPTV
+    #   style: basic
+    #   url: http://tv.byr.cn/
 
-    - name: 信息门户
-      style: basic
-      url: http://my.bupt.edu.cn/
+    # - name: 信息门户
+    #   style: basic
+    #   url: http://my.bupt.edu.cn/
 
     - name: 图书馆
       style: basic
@@ -389,13 +360,13 @@
       style: basic
       url: http://mail.bupt.edu.cn/
 
-    - name: VPN服务
-      style: basic
-      url: https://nic.bupt.edu.cn/list/list.php?p=5_13_1
+    # - name: VPN服务
+    #   style: basic
+    #   url: https://nic.bupt.edu.cn/list/list.php?p=5_13_1
 
-    - name: 空闲自习室查询
-      style: basic
-      url: http://buptclass.com/
+    # - name: 空闲自习室查询
+    #   style: basic
+    #   url: http://buptclass.com/
 
   - name: 校园助手
     links:
@@ -473,9 +444,9 @@
       style: basic
       url: http://search.icybee.cn/
 
-    - name: 检索用户发帖
-      style: basic
-      url: http://search.lovezxp.com/
+    # - name: 检索用户发帖
+    #   style: basic
+    #   url: http://search.lovezxp.com/
 
     - name: 查看论坛数据
       style: basic
@@ -499,6 +470,6 @@
       style: basic
       url: http://bbs.byr.cn/#!vote
 
-    - name: 玩转论坛指南
-      style: basic
-      url: http://bbs.byr.cn/#!article/Talking/5852307
+    # - name: 玩转论坛指南
+    #   style: basic
+    #   url: http://bbs.byr.cn/#!article/Talking/5852307

@@ -230,14 +230,6 @@
     style: black
     show: false
 
-# - id: xiami
-#   name: 虾米音乐
-#   url: https://xiami.com/search?key={query}
-#   shortcut:
-#     icon: music orange inverted
-#     style: black
-#     show: false
-
 - id: bilibili
   name: 哔哩哔哩
   url: https://search.bilibili.com/all?keyword={query}
@@ -261,14 +253,6 @@
     icon: closed captioning blue inverted
     style: black
     show: false
-
-# - id: zimuxia
-#   name: FIX字幕侠
-#   url: http://zimuxia.cn/?s={query}
-#   shortcut:
-#     icon: closed captioning yellow inverted
-#     style: black
-#     show: false
 
 - id: newzmz
   name: NEW字幕组
@@ -328,14 +312,6 @@
     icon: magnet yellow inverted
     style: black
     show: false
-
-# - id: comicat
-#   name: 漫猫
-#   url: http://www.comicat.org/search.php?keyword={query}
-#   shortcut:
-#     icon: magnet green inverted
-#     style: black
-#     show: true
 
 - id: lime
   name: Lime Torrents
