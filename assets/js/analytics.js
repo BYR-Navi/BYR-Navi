@@ -5,11 +5,11 @@
 
 // date range
 var establishedAt = new Date($('meta[name=established_at]').attr('content'));
-function siteEstablishedDays() {
-    let d = new Date();
-    let today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
-    return Math.floor((today - establishedAt) / 86400000 + 1);
-};
+// function siteEstablishedDays() {
+//     let d = new Date();
+//     let today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+//     return Math.floor((today - establishedAt) / 86400000 + 1);
+// };
 
 // clock
 $('#established-at').countdown(establishedAt, {
@@ -33,7 +33,7 @@ var countUpOptions = {
 var yesterdayVisitorsCountUp = new CountUp('yesterday-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayVisitsCountUp = new CountUp('yesterday-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayActionsCountUp = new CountUp('yesterday-actions-stat', 0, 0, 0, 2.5, countUpOptions);
-var totalActionsCountUp = new CountUp('total-actions', 0, 0, 0, 2.5, countUpOptions);
+// var totalActionsCountUp = new CountUp('total-actions', 0, 0, 0, 2.5, countUpOptions);
 var liveVisitorsCountUp = new CountUp('live-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
@@ -72,17 +72,17 @@ $.getJSON('{{ site.data.analytics.matomo.url }}', {
     yesterdayActionsCountUp.update(data.value);
 });
 function updateVisit() {
-    $.getJSON('{{ site.data.analytics.matomo.url }}', {
-        'module': 'API',
-        'method': 'VisitsSummary.getActions',
-        'idSite': '{{ site.data.analytics.matomo.site_id }}',
-        'period': 'range',
-        'date': `last${siteEstablishedDays()}`,
-        'format': 'JSON',
-        'token_auth': '{{ site.data.analytics.matomo.token }}'
-    }, function (data) {
-        totalActionsCountUp.update(data.value);
-    });
+    // $.getJSON('{{ site.data.analytics.matomo.url }}', {
+    //     'module': 'API',
+    //     'method': 'VisitsSummary.getActions',
+    //     'idSite': '{{ site.data.analytics.matomo.site_id }}',
+    //     'period': 'range',
+    //     'date': `last${siteEstablishedDays()}`,
+    //     'format': 'JSON',
+    //     'token_auth': '{{ site.data.analytics.matomo.token }}'
+    // }, function (data) {
+    //     totalActionsCountUp.update(data.value);
+    // });
     $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'Live.getCounters',
@@ -692,7 +692,8 @@ setInterval(function () {
 }, 60000);
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
-var firstYear = establishedAt.getFullYear();
+// var firstYear = establishedAt.getFullYear();
+var firstYear = 2018;
 var maxYear = 2022;
 visitCalendarChart.setOption({
     baseOption: {
@@ -724,32 +725,24 @@ visitCalendarChart.setOption({
             left: 0
         },
         calendar: [{
-            range: 2016,
-            right: 5
-        }, {
-            range: 2017,
-            right: 5,
-            top: 240
-        }, {
             range: 2018,
-            right: 5,
-            top: 420
+            right: 5
         }, {
             range: 2019,
             right: 5,
-            top: 600
+            top: 240
         }, {
             range: 2020,
             right: 5,
-            top: 780
+            top: 420
         }, {
             range: 2021,
             right: 5,
-            top: 960
+            top: 600
         }, {
             range: 2022,
-            right: 6,
-            top: 1140
+            right: 5,
+            top: 780
         }],
         series: [{
             type: 'heatmap',
@@ -775,16 +768,6 @@ visitCalendarChart.setOption({
             type: 'heatmap',
             coordinateSystem: 'calendar',
             calendarIndex: 4,
-            data: []
-        }, {
-            type: 'heatmap',
-            coordinateSystem: 'calendar',
-            calendarIndex: 5,
-            data: []
-        }, {
-            type: 'heatmap',
-            coordinateSystem: 'calendar',
-            calendarIndex: 6,
             data: []
         }]
     },
@@ -819,14 +802,6 @@ visitCalendarChart.setOption({
                 orient: 'vertical',
                 left: 'center',
                 top: 4610
-            }, {
-                orient: 'vertical',
-                left: 'center',
-                top: 5740
-            }, {
-                orient: 'vertical',
-                left: 'center',
-                top: 6870
             }]
         }
     }]
@@ -837,7 +812,8 @@ function updateVisitCalendarChart() {
         'method': 'VisitsSummary.getActions',
         'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
-        'date': `last${siteEstablishedDays()}`,
+        // 'date': `last${siteEstablishedDays()}`,
+        'date': 'last1825',
         'format': 'JSON',
         'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
