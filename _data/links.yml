@@ -281,8 +281,9 @@
       style: yellow
       url: https://www.zimuxia.cn/%e6%88%91%e4%bb%ac%e7%9a%84%e4%bd%9c%e5%93%81
 
-    - name: FIX3
-      style: yellow
+    - name: FIX
+      icon: file excel green
+      style: basic
       url: https://docs.qq.com/sheet/DWm16S2lEdkF2QnNF
 
     - name: NEW
