@@ -254,6 +254,14 @@
     style: black
     show: false
 
+- id: zimuxia
+  name: FIX字幕侠
+  url: https://www.zimuxia.cn/?s={query}
+  shortcut:
+    icon: closed captioning yellow inverted
+    style: black
+    show: false
+
 - id: newzmz
   name: NEW字幕组
   url: https://newzmz.com/tvslist.html?keyword={query}
