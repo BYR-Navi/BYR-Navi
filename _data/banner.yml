@@ -1,12 +1,12 @@
 message:
   show: true
-  hitokoto: true
-  content: 12-13国家公祭日
-  detail: 勿忘国耻
+  hitokoto: false
+  content: MU5735客机坠毁
+  detail: More
   color: black
-  icon: calendar
+  icon: plane
   image: false
-  link: https://www.baidu.com/s?wd=12-13%E5%85%AC%E7%A5%AD%E6%97%A5
+  link: https://www.baidu.com/s?wd=mu5735
 
 advertisement:
   show: false
