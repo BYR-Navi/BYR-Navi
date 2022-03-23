@@ -1,6 +1,6 @@
 message:
   show: true
-  hitokoto: false
+  hitokoto: true
   content: MU5735客机坠毁
   detail: More
   color: black
