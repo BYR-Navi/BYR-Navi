@@ -239,10 +239,6 @@
 
   - name: 娱乐
     links:
-    - name: 优酷
-      style: basic
-      url: https://youku.com/
-
     - name: Youtube
       icon: youtube red
       style: basic
@@ -256,9 +252,17 @@
       style: orange
       url: http://mgtv.com/
 
+    - name: 咪咕视频
+      style: basic
+      url: https://pink.miguvideo.com/
+
     - name: 腾讯视频
       style: basic
       url: https://v.qq.com/
+
+    - name: 优酷
+      style: basic
+      url: https://youku.com/
 
     - name: 哔哩哔哩
       style: pink
