@@ -353,7 +353,10 @@ visitHourlyChart.setOption({
             type: 'category',
             data: [],
             splitLine: {
-                show: true
+                show: true,
+                lineStyle: {
+                    type: 'dashed'
+                }
             },
             axisLine: {
                 show: false
