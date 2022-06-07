@@ -346,7 +346,7 @@ visitHourlyChart.setOption({
                 }
             },
             axisLine: {
-                show: true
+                show: false
             }
         },
         yAxis: {
