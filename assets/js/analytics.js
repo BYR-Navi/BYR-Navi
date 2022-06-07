@@ -353,7 +353,7 @@ visitHourlyChart.setOption({
             type: 'category',
             data: [],
             axisLine: {
-                show: true
+                show: false
             }
         },
         series: [{
