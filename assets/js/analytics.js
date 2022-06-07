@@ -339,6 +339,12 @@ visitHourlyChart.setOption({
             type: 'category',
             data: ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23'],
             boundaryGap: false,
+            splitLine: {
+                show: true,
+                lineStyle: {
+                    type: 'dashed'
+                }
+            },
             axisLine: {
                 show: false
             }
@@ -346,13 +352,6 @@ visitHourlyChart.setOption({
         yAxis: {
             type: 'category',
             data: [],
-            boundaryGap: false,
-            splitLine: {
-                show: true,
-                lineStyle: {
-                    type: 'dashed'
-                }
-            },
             axisLine: {
                 show: false
             }
