@@ -346,20 +346,14 @@ visitHourlyChart.setOption({
                 }
             },
             axisLine: {
-                show: false
+                show: true
             }
         },
         yAxis: {
             type: 'category',
             data: [],
-            splitLine: {
-                show: true,
-                lineStyle: {
-                    type: 'dashed'
-                }
-            },
             axisLine: {
-                show: false
+                show: true
             }
         },
         series: [{
