@@ -329,6 +329,14 @@
     style: black
     show: true
 
+- id: rarbg
+  name: RARBG
+  url: https://www.rarbggo.to/search/?search={query}
+  shortcut:
+    icon: file archive blue inverted
+    style: black
+    show: false
+
 - id: onejav
   name: OneJav
   url: https://onejav.com/search/{query}
