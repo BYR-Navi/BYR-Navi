@@ -150,6 +150,14 @@
     style: black
     show: false
 
+- id: zlib
+  name: ZLIB
+  url: https://zlib.pub/search/{query}
+  shortcut:
+    icon: book blue inverted
+    style: black
+    show: true
+
 - id: etymonline
   name: Etymonline
   url: https://etymonline.com/index.php?search={query}
