@@ -1,12 +1,12 @@
 message:
   show: true
-  hitokoto: true
-  content: MU5735客机坠毁
-  detail: More
+  hitokoto: false
+  content: 操作系统迁移到了“Jammy Jellyfish”
+  detail: 大概影响了15位用户的使用
   color: black
-  icon: plane
+  icon: ubuntu
   image: false
-  link: https://www.baidu.com/s?wd=mu5735
+  link: https://releases.ubuntu.com/22.04/
 
 advertisement:
   show: false
