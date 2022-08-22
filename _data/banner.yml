@@ -1,7 +1,7 @@
 message:
   show: true
   hitokoto: false
-  content: 操作系统迁移到了“Jammy Jellyfish”
+  content: 操作系统升级到了“Jammy Jellyfish”
   detail: 大概影响了15位用户的使用
   color: black
   icon: ubuntu
