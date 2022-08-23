@@ -302,9 +302,9 @@
       style: orange
       url: https://agmov.com/
 
-    - name: 猪猪
-      style: purple
-      url: http://www.zzrbl.com/
+    # - name: 猪猪
+    #   style: purple
+    #   url: http://www.zzrbl.com/
 
     - name: TNH
       style: basic

@@ -1,6 +1,6 @@
 message:
   show: true
-  hitokoto: false
+  hitokoto: true
   content: 操作系统升级到了“Jammy Jellyfish”
   detail: 大概影响了15位用户的使用
   color: black
