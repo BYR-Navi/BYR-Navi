@@ -46,7 +46,7 @@ $.getJSON('{{ site.data.analytics.matomo.url }}', {
 }, function (data) {
     $('#yesterday-actions').text(data.value);
 });
-function updateAnalytics() {
+(function updateAnalytics() {
     $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
@@ -69,11 +69,16 @@ function updateAnalytics() {
     }, function (data) {
         $('#today-actions').text(data.value);
     });
-};
-updateAnalytics();
-setInterval(function () {
-    if (!document.hidden) {
-        updateAnalytics();
-    };
-}, 60000);
+    setTimeout(function () {
+        if (!document.hidden) {
+            updateAnalytics();
+        };
+    }, {{ site.update_interval }});
+})();
+// updateAnalytics();
+// setInterval(function () {
+//     if (!document.hidden) {
+//         updateAnalytics();
+//     };
+// }, 60000);
 {%- endif -%}

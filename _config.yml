@@ -23,6 +23,8 @@ logo: /images/logo.png
 logo_dark: /images/logo-dark.svg
 logo_white: /images/logo-white.svg
 
+update_interval: 60000
+
 plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
