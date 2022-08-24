@@ -21,7 +21,7 @@ dayjs.locale('zh-cn');
 dayjs.extend(window.dayjs_plugin_relativeTime);
 (function updateBuildTimeBadge() {
     if (!document.hidden) {
-        $('#build-time img').attr('src', `https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-${encodeURIComponent(dayjs($('meta[name=built_at]').attr('content')).fromNow())}-brightgreen?logo=jekyll`);
+        $('#build-time img').attr('src', `https://img.shields.io/badge/%E6%9E%84%E5%BB%BA%E4%BA%8E-${encodeURIComponent(dayjs($('meta[name=built_at]').attr('content')).fromNow())}-brightgreen?logo=jekyll`);
     };
     setTimeout(function () {
         updateBuildTimeBadge();
