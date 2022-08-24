@@ -7,7 +7,6 @@
 (function updateGitHubBadges() {
     if (!document.hidden) {
         let repository = $('meta[name=repository]').attr('content');
-        // $('#github-watch img').attr('src', `https://img.shields.io/github/watchers/${repository}.svg?style=social&label=Watch`);
         $('#github-star img').attr('src', `https://img.shields.io/github/stars/${repository}?style=social`);
         $('#github-fork img').attr('src', `https://img.shields.io/github/forks/${repository}?style=social`);
     };
