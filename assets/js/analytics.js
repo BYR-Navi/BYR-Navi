@@ -132,7 +132,7 @@ setInterval(function () {
     if (!document.hidden) {
         updateVisit();
     };
-}, 60000);
+}, {{ site.update_interval }});
 
 // chart
 var visitSummaryChart = echarts.init(document.getElementById('visit-summary'), 'light');
@@ -305,7 +305,7 @@ setInterval(function () {
     if (!document.hidden) {
         updateVisitSummaryChart();
     };
-}, 60000);
+}, {{ site.update_interval }});
 
 var visitHourlyChart = echarts.init(document.getElementById('visit-hourly'), 'light');
 visitHourlyChart.setOption({
@@ -511,7 +511,7 @@ setInterval(function () {
     if (!document.hidden) {
         updateVisitHourlyChart();
     };
-}, 60000);
+}, {{ site.update_interval }});
 
 var visitMapChart = echarts.init(document.getElementById('visit-map'), 'light');
 visitMapChart.setOption({
@@ -689,7 +689,7 @@ setInterval(function () {
     if (!document.hidden) {
         updateVisitMapChart();
     };
-}, 60000);
+}, {{ site.update_interval }});
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
 // var firstYear = establishedAt.getFullYear();
@@ -850,5 +850,5 @@ setInterval(function () {
     if (!document.hidden) {
         updateVisitCalendarChart();
     };
-}, 60000);
+}, {{ site.update_interval }});
 {%- endif -%}

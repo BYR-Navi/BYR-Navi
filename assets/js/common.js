@@ -75,10 +75,4 @@ $.getJSON('{{ site.data.analytics.matomo.url }}', {
         };
     }, {{ site.update_interval }});
 })();
-// updateAnalytics();
-// setInterval(function () {
-//     if (!document.hidden) {
-//         updateAnalytics();
-//     };
-// }, 60000);
 {%- endif -%}

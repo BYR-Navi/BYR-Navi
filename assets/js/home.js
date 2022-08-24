@@ -4,36 +4,48 @@
 // home.js
 
 // GitHub
-function updateGitHub(repository) {
+(function updateGitHub() {
+    let repository = $('meta[name=repository]').attr('content');
     $('#github-watch img').attr('src', `https://img.shields.io/github/watchers/${repository}.svg?style=social&label=Watch`);
     $('#github-star img').attr('src', `https://img.shields.io/github/stars/${repository}.svg?style=social&label=Star`);
     $('#github-fork img').attr('src', `https://img.shields.io/github/forks/${repository}.svg?style=social&label=Fork`);
-};
-var repository = $('meta[name=repository]').attr('content');
-updateGitHub(repository);
-setInterval(function () {
-    if (!document.hidden) {
-        updateGitHub(repository);
-    };
-}, 60000);
+    setTimeout(function () {
+        if (!document.hidden) {
+            updateGitHub();
+        };
+    }, {{ site.update_interval }});
+})();
+// var repository = $('meta[name=repository]').attr('content');
+// updateGitHub(repository);
+// setInterval(function () {
+//     if (!document.hidden) {
+//         updateGitHub(repository);
+//     };
+// }, {{ site.update_interval }});
 
 // version
 dayjs.locale('zh-cn');
 dayjs.extend(window.dayjs_plugin_relativeTime);
-function updateVersion(timestamp) {
-    $('#version img').attr('src', `https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-${encodeURIComponent(dayjs(timestamp).fromNow())}-brightgreen.svg`);
-};
-var updateAt = $('meta[name=updated_at]').attr('content');
-updateVersion(updateAt);
-setInterval(function () {
-    if (!document.hidden) {
-        updateVersion(updateAt);
-    };
-}, 60000);
+(function updateVersion() {
+    let updateAt = $('meta[name=updated_at]').attr('content');
+    $('#version img').attr('src', `https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-${encodeURIComponent(dayjs(updateAt).fromNow())}-brightgreen.svg`);
+    setTimeout(function () {
+        if (!document.hidden) {
+            updateVersion();
+        };
+    }, {{ site.update_interval }});
+})();
+// var updateAt = $('meta[name=updated_at]').attr('content');
+// updateVersion(updateAt);
+// setInterval(function () {
+//     if (!document.hidden) {
+//         updateVersion(updateAt);
+//     };
+// }, {{ site.update_interval }});
 
 {%- if site.data.analytics.matomo.site_id -%}
 // visit
-function updateVisit() {
+(function updateVisit() {
     $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
@@ -55,13 +67,18 @@ function updateVisit() {
     }, function (data) {
         $('#live-visitors img').attr('src', `https://img.shields.io/badge/%E5%BD%93%E5%89%8D%E5%9C%A8%E7%BA%BF-${encodeURIComponent(data[0].visitors)}-brightgreen.svg`);
     });
-};
-updateVisit();
-setInterval(function () {
-    if (!document.hidden) {
-        updateVisit();
-    };
-}, 60000);
+    setTimeout(function () {
+        if (!document.hidden) {
+            updateVisit();
+        };
+    }, {{ site.update_interval }});
+})();
+// updateVisit();
+// setInterval(function () {
+//     if (!document.hidden) {
+//         updateVisit();
+//     };
+// }, {{ site.update_interval }});
 {%- endif -%}
 
 // search
