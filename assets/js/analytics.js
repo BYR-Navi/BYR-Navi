@@ -71,68 +71,67 @@ $.getJSON('{{ site.data.analytics.matomo.url }}', {
 }, function (data) {
     yesterdayActionsCountUp.update(data.value);
 });
-function updateVisit() {
-    // $.getJSON('{{ site.data.analytics.matomo.url }}', {
-    //     'module': 'API',
-    //     'method': 'VisitsSummary.getActions',
-    //     'idSite': '{{ site.data.analytics.matomo.site_id }}',
-    //     'period': 'range',
-    //     'date': `last${siteEstablishedDays()}`,
-    //     'format': 'JSON',
-    //     'token_auth': '{{ site.data.analytics.matomo.token }}'
-    // }, function (data) {
-    //     totalActionsCountUp.update(data.value);
-    // });
-    $.getJSON('{{ site.data.analytics.matomo.url }}', {
-        'module': 'API',
-        'method': 'Live.getCounters',
-        'idSite': '{{ site.data.analytics.matomo.site_id }}',
-        'lastMinutes': '30',
-        'format': 'JSON',
-        'token_auth': '{{ site.data.analytics.matomo.token }}'
-    }, function (data) {
-        liveVisitorsCountUp.update(data[0].visitors);
-    });
-    $.getJSON('{{ site.data.analytics.matomo.url }}', {
-        'module': 'API',
-        'method': 'VisitsSummary.getUniqueVisitors',
-        'idSite': '{{ site.data.analytics.matomo.site_id }}',
-        'period': 'day',
-        'date': 'today',
-        'format': 'JSON',
-        'token_auth': '{{ site.data.analytics.matomo.token }}'
-    }, function (data) {
-        todayVisitorsCountUp.update(data.value);
-    });
-    $.getJSON('{{ site.data.analytics.matomo.url }}', {
-        'module': 'API',
-        'method': 'VisitsSummary.getVisits',
-        'idSite': '{{ site.data.analytics.matomo.site_id }}',
-        'period': 'day',
-        'date': 'today',
-        'format': 'JSON',
-        'token_auth': '{{ site.data.analytics.matomo.token }}'
-    }, function (data) {
-        todayVisitsCountUp.update(data.value);
-    });
-    $.getJSON('{{ site.data.analytics.matomo.url }}', {
-        'module': 'API',
-        'method': 'VisitsSummary.getActions',
-        'idSite': '{{ site.data.analytics.matomo.site_id }}',
-        'period': 'day',
-        'date': 'today',
-        'format': 'JSON',
-        'token_auth': '{{ site.data.analytics.matomo.token }}'
-    }, function (data) {
-        todayActionsCountUp.update(data.value);
-    });
-};
-updateVisit();
-setInterval(function () {
+(function updateVisit() {
     if (!document.hidden) {
-        updateVisit();
+        // $.getJSON('{{ site.data.analytics.matomo.url }}', {
+        //     'module': 'API',
+        //     'method': 'VisitsSummary.getActions',
+        //     'idSite': '{{ site.data.analytics.matomo.site_id }}',
+        //     'period': 'range',
+        //     'date': `last${siteEstablishedDays()}`,
+        //     'format': 'JSON',
+        //     'token_auth': '{{ site.data.analytics.matomo.token }}'
+        // }, function (data) {
+        //     totalActionsCountUp.update(data.value);
+        // });
+        $.getJSON('{{ site.data.analytics.matomo.url }}', {
+            'module': 'API',
+            'method': 'Live.getCounters',
+            'idSite': '{{ site.data.analytics.matomo.site_id }}',
+            'lastMinutes': '30',
+            'format': 'JSON',
+            'token_auth': '{{ site.data.analytics.matomo.token }}'
+        }, function (data) {
+            liveVisitorsCountUp.update(data[0].visitors);
+        });
+        $.getJSON('{{ site.data.analytics.matomo.url }}', {
+            'module': 'API',
+            'method': 'VisitsSummary.getUniqueVisitors',
+            'idSite': '{{ site.data.analytics.matomo.site_id }}',
+            'period': 'day',
+            'date': 'today',
+            'format': 'JSON',
+            'token_auth': '{{ site.data.analytics.matomo.token }}'
+        }, function (data) {
+            todayVisitorsCountUp.update(data.value);
+        });
+        $.getJSON('{{ site.data.analytics.matomo.url }}', {
+            'module': 'API',
+            'method': 'VisitsSummary.getVisits',
+            'idSite': '{{ site.data.analytics.matomo.site_id }}',
+            'period': 'day',
+            'date': 'today',
+            'format': 'JSON',
+            'token_auth': '{{ site.data.analytics.matomo.token }}'
+        }, function (data) {
+            todayVisitsCountUp.update(data.value);
+        });
+        $.getJSON('{{ site.data.analytics.matomo.url }}', {
+            'module': 'API',
+            'method': 'VisitsSummary.getActions',
+            'idSite': '{{ site.data.analytics.matomo.site_id }}',
+            'period': 'day',
+            'date': 'today',
+            'format': 'JSON',
+            'token_auth': '{{ site.data.analytics.matomo.token }}'
+        }, function (data) {
+            todayActionsCountUp.update(data.value);
+        });
     };
-}, {{ site.update_interval }});
+    setTimeout(function () {
+        updateVisit();
+    }, {{ site.update_interval }});
+})();
 
 // chart
 var visitSummaryChart = echarts.init(document.getElementById('visit-summary'), 'light');
@@ -231,81 +230,78 @@ visitSummaryChart.setOption({
         }
     }]
 });
-visitSummaryChart.showLoading();
-function updateVisitSummaryChart() {
-    $.getJSON('{{ site.data.analytics.matomo.url }}', {
-        'module': 'API',
-        'method': 'VisitsSummary.getUniqueVisitors',
-        'idSite': '{{ site.data.analytics.matomo.site_id }}',
-        'period': 'day',
-        'date': 'last90',
-        'format': 'JSON',
-        'token_auth': '{{ site.data.analytics.matomo.token }}'
-    }, function (data) {
-        var days = [];
-        var visitors = [];
-        for (var i in data) {
-            days.push(i);
-            visitors.push(data[i]);
-        };
-        visitSummaryChart.setOption({
-            xAxis: {
-                data: days
-            },
-            series: [{
-                name: '访客数',
-                data: visitors
-            }]
-        });
-    });
-    $.getJSON('{{ site.data.analytics.matomo.url }}', {
-        'module': 'API',
-        'method': 'VisitsSummary.getVisits',
-        'idSite': '{{ site.data.analytics.matomo.site_id }}',
-        'period': 'day',
-        'date': 'last90',
-        'format': 'JSON',
-        'token_auth': '{{ site.data.analytics.matomo.token }}'
-    }, function (data) {
-        var visits = [];
-        for (var i in data) {
-            visits.push(data[i]);
-        };
-        visitSummaryChart.setOption({
-            series: [{
-                name: '访问次数',
-                data: visits
-            }]
-        });
-    });
-    $.getJSON('{{ site.data.analytics.matomo.url }}', {
-        'module': 'API',
-        'method': 'VisitsSummary.getActions',
-        'idSite': '{{ site.data.analytics.matomo.site_id }}',
-        'period': 'day',
-        'date': 'last90',
-        'format': 'JSON',
-        'token_auth': '{{ site.data.analytics.matomo.token }}'
-    }, function (data) {
-        var actions = [];
-        for (var i in data) {
-            actions.push(data[i]);
-        };
-        visitSummaryChart.setOption({
-            series: [{
-                name: '浏览次数',
-                data: actions
-            }]
-        });
-    });
-};
-updateVisitSummaryChart();
-visitSummaryChart.hideLoading();
-setInterval(function () {
+(function updateVisitSummaryChart() {
     if (!document.hidden) {
-        updateVisitSummaryChart();
+        $.getJSON('{{ site.data.analytics.matomo.url }}', {
+            'module': 'API',
+            'method': 'VisitsSummary.getUniqueVisitors',
+            'idSite': '{{ site.data.analytics.matomo.site_id }}',
+            'period': 'day',
+            'date': 'last90',
+            'format': 'JSON',
+            'token_auth': '{{ site.data.analytics.matomo.token }}'
+        }, function (data) {
+            var days = [];
+            var visitors = [];
+            for (var i in data) {
+                days.push(i);
+                visitors.push(data[i]);
+            };
+            visitSummaryChart.setOption({
+                xAxis: {
+                    data: days
+                },
+                series: [{
+                    name: '访客数',
+                    data: visitors
+                }]
+            });
+        });
+        $.getJSON('{{ site.data.analytics.matomo.url }}', {
+            'module': 'API',
+            'method': 'VisitsSummary.getVisits',
+            'idSite': '{{ site.data.analytics.matomo.site_id }}',
+            'period': 'day',
+            'date': 'last90',
+            'format': 'JSON',
+            'token_auth': '{{ site.data.analytics.matomo.token }}'
+        }, function (data) {
+            var visits = [];
+            for (var i in data) {
+                visits.push(data[i]);
+            };
+            visitSummaryChart.setOption({
+                series: [{
+                    name: '访问次数',
+                    data: visits
+                }]
+            });
+        });
+        $.getJSON('{{ site.data.analytics.matomo.url }}', {
+            'module': 'API',
+            'method': 'VisitsSummary.getActions',
+            'idSite': '{{ site.data.analytics.matomo.site_id }}',
+            'period': 'day',
+            'date': 'last90',
+            'format': 'JSON',
+            'token_auth': '{{ site.data.analytics.matomo.token }}'
+        }, function (data) {
+            var actions = [];
+            for (var i in data) {
+                actions.push(data[i]);
+            };
+            visitSummaryChart.setOption({
+                series: [{
+                    name: '浏览次数',
+                    data: actions
+                }]
+            });
+        });
     };
-}, {{ site.update_interval }});
+    setTimeout(function () {
+        updateVisitSummaryChart();
+    }, {{ site.update_interval }});
+})();
 
 var visitHourlyChart = echarts.init(document.getElementById('visit-hourly'), 'light');
 visitHourlyChart.setOption({
@@ -400,7 +396,6 @@ visitHourlyChart.setOption({
         }
     }]
 });
-visitHourlyChart.showLoading();
 function normalizeSymbolSize(val, data, resize) {
     if (val === 0) {
         return 0;
@@ -425,93 +420,91 @@ function normalizeSymbolSize(val, data, resize) {
         };
     };
 };
-function updateVisitHourlyChart() {
-    $.getJSON('{{ site.data.analytics.matomo.url }}', {
-        'module': 'API',
-        'method': 'VisitTime.getVisitInformationPerServerTime',
-        'idSite': '{{ site.data.analytics.matomo.site_id }}',
-        'period': 'day',
-        'date': 'last7',
-        'format': 'JSON',
-        'token_auth': '{{ site.data.analytics.matomo.token }}'
-    }, function (data) {
-        var days = [];
-        var visitors = [];
-        var visits = [];
-        var actions = [];
-        for (var day in data) {
-            days.unshift(day);
-            for (var hourNum in data[day]) {
-                visitors.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_uniq_visitors']]);
-                visits.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_visits']]);
-                actions.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_actions']]);
+(function updateVisitHourlyChart() {
+    if (!document.hidden) {
+        $.getJSON('{{ site.data.analytics.matomo.url }}', {
+            'module': 'API',
+            'method': 'VisitTime.getVisitInformationPerServerTime',
+            'idSite': '{{ site.data.analytics.matomo.site_id }}',
+            'period': 'day',
+            'date': 'last7',
+            'format': 'JSON',
+            'token_auth': '{{ site.data.analytics.matomo.token }}'
+        }, function (data) {
+            var days = [];
+            var visitors = [];
+            var visits = [];
+            var actions = [];
+            for (var day in data) {
+                days.unshift(day);
+                for (var hourNum in data[day]) {
+                    visitors.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_uniq_visitors']]);
+                    visits.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_visits']]);
+                    actions.push([data[day][hourNum]['label'], day, data[day][hourNum]['nb_actions']]);
+                };
             };
-        };
-        visitHourlyChart.setOption({
-            baseOption: {
-                yAxis: {
-                    data: days
-                },
-                series: [{
-                    name: '访客数',
-                    data: visitors,
-                    symbolSize: function (val) {
-                        return normalizeSymbolSize(val[2], visitors, false);
-                    }
-                },
-                {
-                    name: '访问次数',
-                    data: visits,
-                    symbolSize: function (val) {
-                        return normalizeSymbolSize(val[2], visits, false);
-                    }
-                },
-                {
-                    name: '浏览次数',
-                    data: actions,
-                    symbolSize: function (val) {
-                        return normalizeSymbolSize(val[2], actions, false);
-                    }
-                }]
-            },
-            media: [{
-                query: {
-                    maxWidth: 767
-                },
-                option: {
+            visitHourlyChart.setOption({
+                baseOption: {
+                    yAxis: {
+                        data: days
+                    },
                     series: [{
                         name: '访客数',
                         data: visitors,
                         symbolSize: function (val) {
-                            return normalizeSymbolSize(val[2], visitors, true);
+                            return normalizeSymbolSize(val[2], visitors, false);
                         }
                     },
                     {
                         name: '访问次数',
                         data: visits,
                         symbolSize: function (val) {
-                            return normalizeSymbolSize(val[2], visits, true);
+                            return normalizeSymbolSize(val[2], visits, false);
                         }
                     },
                     {
                         name: '浏览次数',
                         data: actions,
                         symbolSize: function (val) {
-                            return normalizeSymbolSize(val[2], actions, true);
+                            return normalizeSymbolSize(val[2], actions, false);
                         }
                     }]
-                }
-            }]
+                },
+                media: [{
+                    query: {
+                        maxWidth: 767
+                    },
+                    option: {
+                        series: [{
+                            name: '访客数',
+                            data: visitors,
+                            symbolSize: function (val) {
+                                return normalizeSymbolSize(val[2], visitors, true);
+                            }
+                        },
+                        {
+                            name: '访问次数',
+                            data: visits,
+                            symbolSize: function (val) {
+                                return normalizeSymbolSize(val[2], visits, true);
+                            }
+                        },
+                        {
+                            name: '浏览次数',
+                            data: actions,
+                            symbolSize: function (val) {
+                                return normalizeSymbolSize(val[2], actions, true);
+                            }
+                        }]
+                    }
+                }]
+            });
         });
-    });
-};
-updateVisitHourlyChart();
-visitHourlyChart.hideLoading();
-setInterval(function () {
-    if (!document.hidden) {
-        updateVisitHourlyChart();
     };
-}, {{ site.update_interval }});
+    setTimeout(function () {
+        updateVisitHourlyChart();
+    }, {{ site.update_interval }});
+})();
 
 var visitMapChart = echarts.init(document.getElementById('visit-map'), 'light');
 visitMapChart.setOption({
@@ -608,88 +601,87 @@ visitMapChart.setOption({
         }
     }]
 });
-function updateVisitMapChart() {
-    $.getJSON('{{ site.data.analytics.matomo.url }}', {
-        'module': 'API',
-        'method': 'UserCountry.getCountry',
-        'idSite': '{{ site.data.analytics.matomo.site_id }}',
-        'period': 'month',
-        'date': 'today',
-        'format': 'JSON',
-        'token_auth': '{{ site.data.analytics.matomo.token }}'
-    }, function (data) {
-        var visitors = [];
-        var visits = [];
-        var actions = [];
-        var visitorsChina = 0;
-        var visitsChina = 0;
-        var actionsChina = 0;
-        for (var i in data) {
-            if (data[i]['label'] == 'China') {
-                var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
-                var visitsChina = visitsChina + data[i]['nb_visits'];
-                var actionsChina = actionsChina + data[i]['nb_actions'];
-            } else if (data[i]['label'] == 'Hong Kong SAR China') {
-                var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
-                var visitsChina = visitsChina + data[i]['nb_visits'];
-                var actionsChina = actionsChina + data[i]['nb_actions'];
-            } else if (data[i]['label'] == 'Taiwan') {
-                var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
-                var visitsChina = visitsChina + data[i]['nb_visits'];
-                var actionsChina = actionsChina + data[i]['nb_actions'];
-            } else if (data[i]['label'] == 'Unknown') {
-                var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
-                var visitsChina = visitsChina + data[i]['nb_visits'];
-                var actionsChina = actionsChina + data[i]['nb_actions'];
-            } else {
-                visitors.push({
-                    'name': data[i]['label'],
-                    'value': data[i]['sum_daily_nb_uniq_visitors']
-                });
-                visits.push({
-                    'name': data[i]['label'],
-                    'value': data[i]['nb_visits']
-                });
-                actions.push({
-                    'name': data[i]['label'],
-                    'value': data[i]['nb_actions']
-                });
-            };
-        };
-        visitors.push({
-            'name': 'China',
-            'value': visitorsChina
-        });
-        visits.push({
-            'name': 'China',
-            'value': visitsChina
-        });
-        actions.push({
-            'name': 'China',
-            'value': actionsChina
-        });
-        visitMapChart.setOption({
-            series: [{
-                name: '访客数',
-                data: visitors
-            },
-            {
-                name: '访问次数',
-                data: visits
-            },
-            {
-                name: '浏览次数',
-                data: actions
-            }]
-        });
-    });
-};
-updateVisitMapChart();
-setInterval(function () {
+(function updateVisitMapChart() {
     if (!document.hidden) {
-        updateVisitMapChart();
+        $.getJSON('{{ site.data.analytics.matomo.url }}', {
+            'module': 'API',
+            'method': 'UserCountry.getCountry',
+            'idSite': '{{ site.data.analytics.matomo.site_id }}',
+            'period': 'month',
+            'date': 'today',
+            'format': 'JSON',
+            'token_auth': '{{ site.data.analytics.matomo.token }}'
+        }, function (data) {
+            var visitors = [];
+            var visits = [];
+            var actions = [];
+            var visitorsChina = 0;
+            var visitsChina = 0;
+            var actionsChina = 0;
+            for (var i in data) {
+                if (data[i]['label'] == 'China') {
+                    var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
+                    var visitsChina = visitsChina + data[i]['nb_visits'];
+                    var actionsChina = actionsChina + data[i]['nb_actions'];
+                } else if (data[i]['label'] == 'Hong Kong SAR China') {
+                    var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
+                    var visitsChina = visitsChina + data[i]['nb_visits'];
+                    var actionsChina = actionsChina + data[i]['nb_actions'];
+                } else if (data[i]['label'] == 'Taiwan') {
+                    var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
+                    var visitsChina = visitsChina + data[i]['nb_visits'];
+                    var actionsChina = actionsChina + data[i]['nb_actions'];
+                } else if (data[i]['label'] == 'Unknown') {
+                    var visitorsChina = visitorsChina + data[i]['sum_daily_nb_uniq_visitors'];
+                    var visitsChina = visitsChina + data[i]['nb_visits'];
+                    var actionsChina = actionsChina + data[i]['nb_actions'];
+                } else {
+                    visitors.push({
+                        'name': data[i]['label'],
+                        'value': data[i]['sum_daily_nb_uniq_visitors']
+                    });
+                    visits.push({
+                        'name': data[i]['label'],
+                        'value': data[i]['nb_visits']
+                    });
+                    actions.push({
+                        'name': data[i]['label'],
+                        'value': data[i]['nb_actions']
+                    });
+                };
+            };
+            visitors.push({
+                'name': 'China',
+                'value': visitorsChina
+            });
+            visits.push({
+                'name': 'China',
+                'value': visitsChina
+            });
+            actions.push({
+                'name': 'China',
+                'value': actionsChina
+            });
+            visitMapChart.setOption({
+                series: [{
+                    name: '访客数',
+                    data: visitors
+                },
+                {
+                    name: '访问次数',
+                    data: visits
+                },
+                {
+                    name: '浏览次数',
+                    data: actions
+                }]
+            });
+        });
     };
-}, {{ site.update_interval }});
+    setTimeout(function () {
+        updateVisitMapChart();
+    }, {{ site.update_interval }});
+})();
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
 // var firstYear = establishedAt.getFullYear();
@@ -806,49 +798,48 @@ visitCalendarChart.setOption({
         }
     }]
 });
-function updateVisitCalendarChart() {
-    $.getJSON('{{ site.data.analytics.matomo.url }}', {
-        'module': 'API',
-        'method': 'VisitsSummary.getActions',
-        'idSite': '{{ site.data.analytics.matomo.site_id }}',
-        'period': 'day',
-        // 'date': `last${siteEstablishedDays()}`,
-        'date': 'last1825',
-        'format': 'JSON',
-        'token_auth': '{{ site.data.analytics.matomo.token }}'
-    }, function (data) {
-        var cursorYear = firstYear;
-        var series = [{
-            calendarIndex: cursorYear - firstYear,
-            data: []
-        }];
-        for (var i in data) {
-            if (data[i] !== 0) {
-                year = Number(i.slice(0, 4));
-                if (year > cursorYear && year <= maxYear) {
-                    cursorYear = year;
-                    series.push({
-                        calendarIndex: cursorYear - firstYear,
-                        data: []
-                    });
-                } else if (year < firstYear || year > maxYear) {
-                    continue;
-                };
-                series[cursorYear - firstYear].data.push([
-                    echarts.format.formatTime('yyyy-MM-dd', i),
-                    data[i]
-                ]);
-            };
-        };
-        visitCalendarChart.setOption({
-            series: series
-        });
-    });
-};
-updateVisitCalendarChart();
-setInterval(function () {
+(function updateVisitCalendarChart() {
     if (!document.hidden) {
-        updateVisitCalendarChart();
+        $.getJSON('{{ site.data.analytics.matomo.url }}', {
+            'module': 'API',
+            'method': 'VisitsSummary.getActions',
+            'idSite': '{{ site.data.analytics.matomo.site_id }}',
+            'period': 'day',
+            // 'date': `last${siteEstablishedDays()}`,
+            'date': 'last1825',
+            'format': 'JSON',
+            'token_auth': '{{ site.data.analytics.matomo.token }}'
+        }, function (data) {
+            var cursorYear = firstYear;
+            var series = [{
+                calendarIndex: cursorYear - firstYear,
+                data: []
+            }];
+            for (var i in data) {
+                if (data[i] !== 0) {
+                    year = Number(i.slice(0, 4));
+                    if (year > cursorYear && year <= maxYear) {
+                        cursorYear = year;
+                        series.push({
+                            calendarIndex: cursorYear - firstYear,
+                            data: []
+                        });
+                    } else if (year < firstYear || year > maxYear) {
+                        continue;
+                    };
+                    series[cursorYear - firstYear].data.push([
+                        echarts.format.formatTime('yyyy-MM-dd', i),
+                        data[i]
+                    ]);
+                };
+            };
+            visitCalendarChart.setOption({
+                series: series
+            });
+        });
     };
-}, {{ site.update_interval }});
+    setTimeout(function () {
+        updateVisitCalendarChart();
+    }, {{ site.update_interval }});
+})();
 {%- endif -%}
