@@ -1,6 +1,6 @@
 [![Build Status](https://img.shields.io/travis/com/BYR-Navi/BYR-Navi?logo=travisci)][travis-ci]
 [![Website](https://img.shields.io/website?url=http%3A%2F%2Fbyr-navi.com)][website]
-[![License](https://img.shields.io/github/license/BYR-Navi/BYR-Navi)][license]
+[![License](https://img.shields.io/github/license/BYR-Navi/BYR-Navi?logo=linode)][license]
 [![Last Commit](https://img.shields.io/github/last-commit/BYR-Navi/BYR-Navi?logo=github)][commit]
 [![Donate](https://img.shields.io/badge/Donate-Coffee-A5673F?logo=buymeacoffee)][donate]
 
