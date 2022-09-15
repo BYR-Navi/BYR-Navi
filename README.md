@@ -19,14 +19,14 @@ To be efficient, the best way to understand this project is to start with the Je
 
 Before you start, you should have some basic understanding of the following:
 
-- HTML
-- CSS
-- JavaScript
-- jQuery
+- <img height="24" width="24" src="https://unpkg.com/simple-icons/icons/html5.svg" /> HTML
+- <img height="24" width="24" src="https://unpkg.com/simple-icons/icons/css3.svg" /> CSS
+- <img height="24" width="24" src="https://unpkg.com/simple-icons/icons/javascript.svg" /> JavaScript
+- <img height="24" width="24" src="https://unpkg.com/simple-icons/icons/jquery.svg" /> jQuery
 - YAML format
-- Liquid (Template Engine)
-- Ruby
-- UNIX/Linux Shell Script
+- [Liquid][liquid] (Template Engine)
+- <img height="24" width="24" src="https://unpkg.com/simple-icons/icons/ruby.svg" /> Ruby
+- <img height="24" width="24" src="https://unpkg.com/simple-icons/icons/linux.svg" /> UNIX/Linux Shell Script
 
 ### Quick Start
 
@@ -90,6 +90,7 @@ Donate [here][donate].
 - [jQuery.countdown][countdown]
 - [JavaScript Cookie][js-cookie]
 - [url.js][js-url]
+- [UNPKG][unpkg]
 - [Hitokoto][hitokoto]
 - [ECharts][echarts]
 - [Matomo][matomo]
@@ -116,6 +117,7 @@ Donate [here][donate].
 [countdown]: https://hilios.github.io/jQuery.countdown/ "The Final Countdown plugin for jQuery"
 [js-cookie]: https://github.com/js-cookie/js-cookie "JavaScript Cookie"
 [js-url]: https://github.com/websanova/js-url "url.js"
+[unpkg]: https://unpkg.com/ "UNPKG"
 [hitokoto]: https://hitokoto.cn/api "Hitokoto"
 [echarts]: https://echarts.apache.org/ "ECharts"
 [matomo]: https://matomo.org/ "Matomo"
@@ -127,6 +129,7 @@ Donate [here][donate].
 [jekyll-manual-deployment]: https://jekyllrb.com/docs/deployment/manual/ "Jekyll Manual Deployment"
 [jekyll-ruby-101-gems]: https://jekyllrb.com/docs/ruby-101/#gems "Jekyll Ruby 101 Gems"
 [jekyll-ruby-101-bundler]: https://jekyllrb.com/docs/ruby-101/#bundler "Jekyll Ruby 101 Bundler"
+[liquid]: https://shopify.github.io/liquid/ "Liquid"
 [localhost-4000]: http://localhost:4000 "Local Host (Port: 4000)"
 [github-pages]: https://pages.github.com/ "GitHub Pages"
 [letsencrypt]: https://letsencrypt.org/ "Let&rsquo;s Encrypt"
