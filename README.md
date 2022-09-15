@@ -4,7 +4,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/BYR-Navi/BYR-Navi?logo=github)][commit]
 [![Donate](https://img.shields.io/badge/Donate-Coffee-A5673F?logo=buymeacoffee)][donate]
 
-# BYR-Navi
+# <img height="32" src="https://byr-navi.com/images/logo-dark.svg" /> BYR-Navi
 A Light-Weight and Configurable Navigation [Website][website] Framework (for BYR)
 
 ## :triangular_ruler: Design Philosophy
