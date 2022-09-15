@@ -19,14 +19,14 @@ To be efficient, the best way to understand this project is to start with the Je
 
 Before you start, you should have some basic understanding of the following:
 
-- <img height="24" width="24" src="https://unpkg.com/simple-icons/icons/html5.svg" /> HTML
-- <img height="24" width="24" src="https://unpkg.com/simple-icons/icons/css3.svg" /> CSS
-- <img height="24" width="24" src="https://unpkg.com/simple-icons/icons/javascript.svg" /> JavaScript
-- <img height="24" width="24" src="https://unpkg.com/simple-icons/icons/jquery.svg" /> jQuery
+- <img height="16" width="16" src="https://unpkg.com/simple-icons/icons/html5.svg" /> HTML
+- <img height="16" width="16" src="https://unpkg.com/simple-icons/icons/css3.svg" /> CSS
+- <img height="16" width="16" src="https://unpkg.com/simple-icons/icons/javascript.svg" /> JavaScript
+- <img height="16" width="16" src="https://unpkg.com/simple-icons/icons/jquery.svg" /> jQuery
 - YAML format
 - [Liquid][liquid] (Template Engine)
-- <img height="24" width="24" src="https://unpkg.com/simple-icons/icons/ruby.svg" /> Ruby
-- <img height="24" width="24" src="https://unpkg.com/simple-icons/icons/linux.svg" /> UNIX/Linux Shell Script
+- <img height="16" width="16" src="https://unpkg.com/simple-icons/icons/ruby.svg" /> Ruby
+- <img height="16" width="16" src="https://unpkg.com/simple-icons/icons/linux.svg" /> UNIX/Linux Shell Script
 
 ### Quick Start
 
