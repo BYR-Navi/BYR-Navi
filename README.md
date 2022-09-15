@@ -19,14 +19,14 @@ To be efficient, the best way to understand this project is to start with the Je
 
 Before you start, you should have some basic understanding of the following:
 
-- <img height="16" width="16" src="https://unpkg.com/simple-icons/icons/html5.svg" /> HTML
-- <img height="16" width="16" src="https://unpkg.com/simple-icons/icons/css3.svg" /> CSS
-- <img height="16" width="16" src="https://unpkg.com/simple-icons/icons/javascript.svg" /> JavaScript
-- <img height="16" width="16" src="https://unpkg.com/simple-icons/icons/jquery.svg" /> jQuery
+- <img height="16" src="https://unpkg.com/simple-icons/icons/html5.svg" /> HTML
+- <img height="16" src="https://unpkg.com/simple-icons/icons/css3.svg" /> CSS
+- <img height="16" src="https://unpkg.com/simple-icons/icons/javascript.svg" /> JavaScript
+- <img height="16" src="https://unpkg.com/simple-icons/icons/jquery.svg" /> jQuery
 - YAML format
 - [Liquid][liquid] (Template Engine)
-- <img height="16" width="16" src="https://unpkg.com/simple-icons/icons/ruby.svg" /> Ruby
-- <img height="16" width="16" src="https://unpkg.com/simple-icons/icons/linux.svg" /> UNIX/Linux Shell Script
+- <img height="16" src="https://unpkg.com/simple-icons/icons/ruby.svg" /> Ruby
+- <img height="16" src="https://unpkg.com/simple-icons/icons/linux.svg" /> UNIX/Linux Shell Script
 
 ### Quick Start
 
@@ -83,8 +83,8 @@ Donate [here][donate].
 
 ## :rocket: Powered by
 - [Fomantic UI][fomantic]
-- [jQuery][jquery]
-- [Shields.io][shields]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/jquery.svg" /> [jQuery][jquery]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/shieldsdotio.svg" /> [Shields.io][shields]
 - [Day.js][day]
 - [CountUp.js][countup]
 - [jQuery.countdown][countdown]
@@ -92,12 +92,12 @@ Donate [here][donate].
 - [url.js][js-url]
 - [UNPKG][unpkg]
 - [Hitokoto][hitokoto]
-- [ECharts][echarts]
-- [Matomo][matomo]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/apacheecharts.svg" /> [ECharts][echarts]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/matomo.svg" /> [Matomo][matomo]
 - [GeoIP][geoip]
-- [Jekyll][jekyll]
-- [Let&rsquo;s Encrypt][letsencrypt]
-- [Linode][linode]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/jekyll.svg" /> [Jekyll][jekyll]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/letsencrypt.svg" /> [Let&rsquo;s Encrypt][letsencrypt]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/linode.svg" /> [Linode][linode]
 
 ## :copyright: License
 [MIT License][license]
