@@ -24,7 +24,7 @@ Before you start, you should have some basic understanding of the following:
 - <img height="16" src="https://unpkg.com/simple-icons/icons/javascript.svg" /> JavaScript
 - <img height="16" src="https://unpkg.com/simple-icons/icons/jquery.svg" /> jQuery
 - YAML format
-- [Liquid][liquid] (Template Engine)
+- [Liquid][liquid] (Template Engine by <img height="16" src="https://unpkg.com/simple-icons/icons/shopify.svg" /> Shopify)
 - <img height="16" src="https://unpkg.com/simple-icons/icons/ruby.svg" /> Ruby
 - <img height="16" src="https://unpkg.com/simple-icons/icons/linux.svg" /> UNIX/Linux Shell Script
 
