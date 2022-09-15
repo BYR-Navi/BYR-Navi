@@ -4,7 +4,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/BYR-Navi/BYR-Navi?logo=github)][commit]
 [![Donate](https://img.shields.io/badge/Donate-Coffee-A5673F?logo=buymeacoffee)][donate]
 
-# <img height="32" src="https://byr-navi.com/images/logo-dark.svg" /> BYR-Navi
+# <img height="32" src="https://byr-navi.com/images/logo-dark.svg" alt="Icon" /> BYR-Navi
 A Light-Weight and Configurable Navigation [Website][website] Framework (for BYR)
 
 ## :triangular_ruler: Design Philosophy
@@ -19,14 +19,14 @@ To be efficient, the best way to understand this project is to start with the Je
 
 Before you start, you should have some basic understanding of the following:
 
-- <img height="16" src="https://unpkg.com/simple-icons/icons/html5.svg" /> HTML
-- <img height="16" src="https://unpkg.com/simple-icons/icons/css3.svg" /> CSS
-- <img height="16" src="https://unpkg.com/simple-icons/icons/javascript.svg" /> JavaScript
-- <img height="16" src="https://unpkg.com/simple-icons/icons/jquery.svg" /> jQuery
+- <img height="16" src="https://unpkg.com/simple-icons/icons/html5.svg" alt="Icon" /> HTML
+- <img height="16" src="https://unpkg.com/simple-icons/icons/css3.svg" alt="Icon" /> CSS
+- <img height="16" src="https://unpkg.com/simple-icons/icons/javascript.svg" alt="Icon" /> JavaScript
+- <img height="16" src="https://unpkg.com/simple-icons/icons/jquery.svg" alt="Icon" /> jQuery
 - YAML format
-- [Liquid][liquid] (Template Engine by <img height="16" src="https://unpkg.com/simple-icons/icons/shopify.svg" /> Shopify)
-- <img height="16" src="https://unpkg.com/simple-icons/icons/ruby.svg" /> Ruby
-- <img height="16" src="https://unpkg.com/simple-icons/icons/linux.svg" /> UNIX/Linux Shell Script
+- [Liquid][liquid] (Template Engine by <img height="16" src="https://unpkg.com/simple-icons/icons/shopify.svg" alt="Icon" /> Shopify)
+- <img height="16" src="https://unpkg.com/simple-icons/icons/ruby.svg" alt="Icon" /> Ruby
+- <img height="16" src="https://unpkg.com/simple-icons/icons/linux.svg" alt="Icon" /> UNIX/Linux Shell Script
 
 ### Quick Start
 
@@ -83,8 +83,8 @@ Donate [here][donate].
 
 ## :rocket: Powered by
 - [Fomantic UI][fomantic]
-- <img height="16" src="https://unpkg.com/simple-icons/icons/jquery.svg" /> [jQuery][jquery]
-- <img height="16" src="https://unpkg.com/simple-icons/icons/shieldsdotio.svg" /> [Shields.io][shields]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/jquery.svg" alt="Icon" /> [jQuery][jquery]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/shieldsdotio.svg" alt="Icon" /> [Shields.io][shields]
 - [Day.js][day]
 - [CountUp.js][countup]
 - [jQuery.countdown][countdown]
@@ -92,12 +92,12 @@ Donate [here][donate].
 - [url.js][js-url]
 - [UNPKG][unpkg]
 - [Hitokoto][hitokoto]
-- <img height="16" src="https://unpkg.com/simple-icons/icons/apacheecharts.svg" /> [ECharts][echarts]
-- <img height="16" src="https://unpkg.com/simple-icons/icons/matomo.svg" /> [Matomo][matomo]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/apacheecharts.svg" alt="Icon" /> [ECharts][echarts]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/matomo.svg" alt="Icon" /> [Matomo][matomo]
 - [GeoIP][geoip]
-- <img height="16" src="https://unpkg.com/simple-icons/icons/jekyll.svg" /> [Jekyll][jekyll]
-- <img height="16" src="https://unpkg.com/simple-icons/icons/letsencrypt.svg" /> [Let&rsquo;s Encrypt][letsencrypt]
-- <img height="16" src="https://unpkg.com/simple-icons/icons/linode.svg" /> [Linode][linode]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/jekyll.svg" alt="Icon" /> [Jekyll][jekyll]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/letsencrypt.svg" alt="Icon" /> [Let&rsquo;s Encrypt][letsencrypt]
+- <img height="16" src="https://unpkg.com/simple-icons/icons/linode.svg" alt="Icon" /> [Linode][linode]
 
 ## :copyright: License
 [MIT License][license]
