@@ -26,7 +26,7 @@
             {%- endfor -%}
             <h1 class="ui inverted header">{% if page_icon %}<i class="{{ page_icon }} icon"></i>{% elsif page.icon %}<i class="{{ page.icon }} icon"></i>{% endif %}{{ page.title }}</h1>
             {%- if page.active_key == 'customize' -%}
-                <div class="ui mini black label"><i class="flask icon"></i>Beta Feature</div>
+                <div class="ui mini black label"><i class="vial icon"></i>Beta Feature</div>
             {%- elsif page.active_key == 'analytics' -%}
                 <div id="established-at" class="ui mini black labels"></div>
                 <!-- <div class="ui mini black label"><i class="history icon"></i><span id="total-actions">0</span><div class="detail">PV</div></div> -->
