@@ -1,12 +1,12 @@
 message:
   show: true
-  hitokoto: true
-  content: 操作系统升级到了“Jammy Jellyfish”
-  detail: 大概影响了15位用户的使用
+  hitokoto: false
+  content: 江泽民同志逝世
+  detail: 享年96岁
   color: black
-  icon: ubuntu
+  icon: monument
   image: false
-  link: https://releases.ubuntu.com/22.04/
+  link: https://mp.weixin.qq.com/s/v8Pe6SN1xtQTCBh8bVkwIQ
 
 advertisement:
   show: false
