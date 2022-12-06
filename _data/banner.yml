@@ -1,6 +1,6 @@
 message:
   show: true
-  hitokoto: false
+  hitokoto: true
   content: 江泽民同志逝世
   detail: 享年96岁
   color: black
