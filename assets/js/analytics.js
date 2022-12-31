@@ -685,8 +685,8 @@ visitMapChart.setOption({
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
 // var firstYear = establishedAt.getFullYear();
-var firstYear = 2018;
-var maxYear = 2022;
+var firstYear = 2019;
+var maxYear = 2023;
 visitCalendarChart.setOption({
     baseOption: {
         title: {
@@ -717,22 +717,22 @@ visitCalendarChart.setOption({
             left: 0
         },
         calendar: [{
-            range: 2018,
-            right: 5
-        }, {
             range: 2019,
-            right: 5,
-            top: 240
+            right: 5
         }, {
             range: 2020,
             right: 5,
-            top: 420
+            top: 240
         }, {
             range: 2021,
             right: 5,
-            top: 600
+            top: 420
         }, {
             range: 2022,
+            right: 5,
+            top: 600
+        }, {
+            range: 2023,
             right: 5,
             top: 780
         }],
