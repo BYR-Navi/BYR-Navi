@@ -332,6 +332,9 @@
 - id: lime
   name: Lime Torrents
   url: https://limetorrents.cc/search/all/{query}/
+  transcode:
+    from: ' '
+    to: '+'
   shortcut:
     icon: lemon green inverted
     style: black
