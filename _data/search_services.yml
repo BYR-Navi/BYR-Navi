@@ -337,10 +337,9 @@
     style: black
     show: true
 
-
 - id: 1337x
   name: 1337X
-  url: https://1337x.to/search/hi/{query}/
+  url: https://1337x.to/search/{query}/1/
   shortcut:
     icon: times red inverted
     style: black
