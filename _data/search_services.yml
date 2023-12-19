@@ -341,7 +341,7 @@
   name: 1337X
   url: https://1337x.to/search/{query}/1/
   transcode:
-    from: ' '
+    from: '%20'
     to: '+'
   shortcut:
     icon: times red inverted
