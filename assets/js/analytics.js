@@ -4,7 +4,7 @@
 // analytics.js
 
 // date range
-var establishedAt = new Date($('meta[name=established_at]').attr('content'));
+const establishedAt = new Date($('meta[name=established_at]').attr('content'));
 // function siteEstablishedDays() {
 //     let d = new Date();
 //     let today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
@@ -685,8 +685,11 @@ visitMapChart.setOption({
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
 // var firstYear = establishedAt.getFullYear();
-var firstYear = 2019;
-var maxYear = 2023;
+const thisYear = new Date().getUTCFullYear();
+const firstYear = thisYear - 4;
+const secondYear = thisYear - 3;
+const thirdYear = thisYear - 2;
+const fourthYear = thisYear - 1;
 visitCalendarChart.setOption({
     baseOption: {
         title: {
@@ -717,22 +720,22 @@ visitCalendarChart.setOption({
             left: 0
         },
         calendar: [{
-            range: 2019,
+            range: firstYear,
             right: 5
         }, {
-            range: 2020,
+            range: secondYear,
             right: 5,
             top: 240
         }, {
-            range: 2021,
+            range: thirdYear,
             right: 5,
             top: 420
         }, {
-            range: 2022,
+            range: fourthYear,
             right: 5,
             top: 600
         }, {
-            range: 2023,
+            range: thisYear,
             right: 5,
             top: 780
         }],
@@ -818,13 +821,13 @@ visitCalendarChart.setOption({
             for (var i in data) {
                 if (data[i] !== 0) {
                     year = Number(i.slice(0, 4));
-                    if (year > cursorYear && year <= maxYear) {
+                    if (year > cursorYear && year <= thisYear) {
                         cursorYear = year;
                         series.push({
                             calendarIndex: cursorYear - firstYear,
                             data: []
                         });
-                    } else if (year < firstYear || year > maxYear) {
+                    } else if (year < firstYear || year > thisYear) {
                         continue;
                     };
                     series[cursorYear - firstYear].data.push([

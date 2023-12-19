@@ -337,6 +337,15 @@
     style: black
     show: true
 
+
+- id: 1337x
+  name: 1337X
+  url: https://1337x.to/search/hi/{query}/
+  shortcut:
+    icon: times red inverted
+    style: black
+    show: true
+
 - id: rarbg
   name: RARBG
   url: https://www.rarbggo.to/search/?search={query}
