@@ -356,6 +356,14 @@
     style: black
     show: false
 
+ id: btdigg
+  name: BTDigg
+  url: https://en.btdig.com/search?q={query}
+  shortcut:
+    icon: magnet green inverted
+    style: black
+    show: false
+
 - id: onejav
   name: OneJav
   url: https://onejav.com/search/{query}
