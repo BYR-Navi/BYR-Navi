@@ -356,7 +356,7 @@
     style: black
     show: false
 
- id: btdigg
+- id: btdigg
   name: BTDigg
   url: https://en.btdig.com/search?q={query}
   shortcut:
