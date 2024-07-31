@@ -278,6 +278,14 @@
     style: black
     show: false
 
+- id: rrdy
+  name: 人人电影
+  url: https://www.rrdynb.com/plus/search.php?q={query}
+  shortcut:
+    icon: film blue inverted
+    style: black
+    show: false
+
 - id: fkdy
   name: 影视
   url: http://ifkdy.com/?q={query}
