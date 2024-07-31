@@ -272,7 +272,7 @@
 
 - id: newzmz
   name: NEW字幕组
-  url: https://newzmz.com/tvslist.html?keyword={query}
+  url: https://nz99.xyz/tvslist.html?keyword={query}
   shortcut:
     icon: closed captioning inverted
     style: black
