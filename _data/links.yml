@@ -302,13 +302,13 @@
       style: orange
       url: https://t-rex.tzfile.com/
 
-    - name: 弯弯
-      style: blue
-      url: http://wanwansub.com/node/139
+    # - name: 弯弯
+    #   style: blue
+    #   url: http://wanwansub.com/node/139
 
-    - name: 阿哥
-      style: orange
-      url: https://agmov.com/
+    - name: SubHD
+      style: blue
+      url: https://subhd.tv/
 
     # - name: 猪猪
     #   style: purple
@@ -318,9 +318,9 @@
       style: basic
       url: https://www.tnhzmz.com/
 
-    - name: 幻月
-      style: basic
-      url: https://www.huanyuezmz.site/
+    # - name: 幻月
+    #   style: basic
+    #   url: https://www.huanyuezmz.site/
 
     - name: 幻樱
       style: pink
